@@ -11,6 +11,7 @@ body {
   background: #f2f4f8;
   color: #111827;
   line-height: 1.6;
+  padding-bottom: 80px; /* space for sticky CTA */
 }
 
 /* ================= LINKS ================= */
@@ -48,7 +49,7 @@ nav a {
   color: #0b4fd8;
 }
 
-/* ================= HERO / APACHE BANNER ================= */
+/* ================= HERO ================= */
 .hero {
   background: linear-gradient(120deg, #0b4fd8, #020617);
   color: #ffffff;
@@ -152,15 +153,6 @@ section h2::after {
   text-decoration: none;
 }
 
-/* ================= LISTS ================= */
-ul {
-  padding-left: 18px;
-}
-
-ul li {
-  margin-bottom: 6px;
-}
-
 /* ================= FOOTER ================= */
 footer {
   background: #020617;
@@ -174,6 +166,43 @@ footer {
   padding: 18px 16px;
   text-align: center;
   font-size: 14px;
+}
+
+/* ================= STICKY CTA ================= */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #020617;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 6px;
+  z-index: 999;
+  box-shadow: 0 -6px 18px rgba(0,0,0,0.3);
+}
+
+.sticky-cta a {
+  flex: 1;
+  margin: 0 6px;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.sticky-cta .testride {
+  background: linear-gradient(135deg,#0b4fd8,#1e40af);
+}
+
+.sticky-cta .quote {
+  background: linear-gradient(135deg,#e11d48,#be123c);
+}
+
+.sticky-cta .whatsapp {
+  background: linear-gradient(135deg,#16a34a,#15803d);
 }
 
 /* ================= MOBILE ================= */
