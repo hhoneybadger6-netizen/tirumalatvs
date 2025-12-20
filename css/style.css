@@ -1,4 +1,4 @@
-/* ================= BASIC RESET ================= */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +8,13 @@
 }
 
 body {
-  background: #f3f6fb;
+  background: #f2f4f8;
   color: #111827;
   line-height: 1.6;
 }
 
 /* ================= LINKS ================= */
 a {
-  color: #0b4fd8;
   text-decoration: none;
   font-weight: 600;
 }
@@ -27,7 +26,7 @@ a:hover {
 /* ================= HEADER ================= */
 header {
   background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 2px solid #e11d48;
 }
 
 .header-container {
@@ -41,27 +40,29 @@ header {
 
 header h2 {
   font-size: 22px;
+  color: #e11d48;
 }
 
 nav a {
   margin-left: 18px;
+  color: #0b4fd8;
 }
 
-/* ================= HERO / BANNER ================= */
+/* ================= HERO / APACHE BANNER ================= */
 .hero {
-  background: linear-gradient(135deg, #0b4fd8, #1e40af);
+  background: linear-gradient(120deg, #0b4fd8, #020617);
   color: #ffffff;
 }
 
 .hero-inner {
   max-width: 1200px;
   margin: auto;
-  padding: 55px 16px 45px;
+  padding: 70px 16px 60px;
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 8px;
+  font-size: 46px;
+  margin-bottom: 10px;
 }
 
 .hero p {
@@ -69,19 +70,20 @@ nav a {
   opacity: 0.95;
 }
 
-/* ================= MAIN LAYOUT ================= */
+/* ================= MAIN ================= */
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 36px 16px;
+  padding: 40px 16px;
 }
 
+/* ================= SECTIONS ================= */
 section {
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   background: #ffffff;
-  border-radius: 14px;
-  padding: 26px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
 }
 
 section h2 {
@@ -93,9 +95,9 @@ section h2 {
 section h2::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 70px;
   height: 4px;
-  background: #0b4fd8;
+  background: linear-gradient(90deg,#e11d48,#0b4fd8);
   margin-top: 6px;
   border-radius: 4px;
 }
@@ -108,17 +110,11 @@ section h2::after {
 }
 
 .card {
-  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  background: linear-gradient(180deg, #ffffff, #f9fafb);
   padding: 22px;
   border-radius: 14px;
-  border-left: 6px solid #0b4fd8;
-  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 32px rgba(0,0,0,0.12);
+  border-left: 6px solid #e11d48;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
 }
 
 .card h3 {
@@ -140,15 +136,15 @@ section h2::after {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff !important;
+  background: linear-gradient(135deg, #e11d48, #be123c);
+}
+
+.btn.blue {
   background: linear-gradient(135deg, #0b4fd8, #1e40af);
 }
 
 .btn.green {
   background: linear-gradient(135deg, #16a34a, #15803d);
-}
-
-.btn.orange {
-  background: linear-gradient(135deg, #f97316, #ea580c);
 }
 
 .btn:hover {
@@ -167,8 +163,8 @@ ul li {
 
 /* ================= FOOTER ================= */
 footer {
-  background: #ffffff;
-  border-top: 1px solid #e5e7eb;
+  background: #020617;
+  color: #e5e7eb;
   margin-top: 30px;
 }
 
@@ -178,16 +174,11 @@ footer {
   padding: 18px 16px;
   text-align: center;
   font-size: 14px;
-  color: #6b7280;
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 32px;
-  }
-
-  section {
-    padding: 20px;
+    font-size: 34px;
   }
 }
