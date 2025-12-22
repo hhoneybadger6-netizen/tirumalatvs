@@ -1,170 +1,212 @@
+/* --- TVS BRAND COLORS --- */
+:root {
+    --tvs-blue: #1f509a;
+    --tvs-red: #e31e24;
+    --dark-grey: #333;
+    --light-grey: #f4f4f4;
+    --white: #ffffff;
+}
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background: #f4f6f9;
-  color: #1f2933;
-  line-height: 1.6;
+    line-height: 1.6;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
 }
 
-/* HEADER */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- HEADER & NAVIGATION --- */
 header {
-  background: #ffffff;
-  border-bottom: 3px solid #0b4fd8;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.header-wrap {
-  max-width: 1200px;
-  margin: auto;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.top-bar {
+    background-color: var(--tvs-blue);
+    color: var(--white);
+    padding: 5px 5%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-header h1 {
-  font-size: 24px;
-  color: #0b4fd8;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
 }
 
-nav a {
-  margin-left: 16px;
-  text-decoration: none;
-  color: #0b4fd8;
-  font-weight: bold;
+.logo h1 {
+    color: var(--tvs-blue);
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.logo span {
+    color: var(--tvs-red);
 }
 
-/* HERO */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    font-weight: 600;
+    color: var(--dark-grey);
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--tvs-red);
+}
+
+.btn-book {
+    background-color: var(--tvs-red);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* --- HERO SECTION --- */
 .hero {
-  background: linear-gradient(120deg, #0b4fd8, #062f87);
-  color: white;
-  padding: 70px 20px;
-}
-
-.hero-content {
-  max-width: 1200px;
-  margin: auto;
+    background: linear-gradient(rgba(31, 80, 154, 0.8), rgba(31, 80, 154, 0.8)), url('../assets/hero-bg.jpg'); /* Add your shop photo here */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
 .hero h2 {
-  font-size: 40px;
-  margin-bottom: 12px;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 18px;
-  max-width: 650px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-.hero-buttons {
-  margin-top: 24px;
+.hero-btn {
+    padding: 15px 30px;
+    background-color: var(--tvs-red);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 14px 26px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-right: 12px;
+/* --- GRID LAYOUTS (MODELS) --- */
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: var(--tvs-blue);
 }
 
-.btn-primary {
-  background: #e11d48;
-  color: white;
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 5%;
 }
 
-.btn-secondary {
-  background: white;
-  color: #0b4fd8;
+.model-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
 }
 
-/* SECTIONS */
-.section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 50px 20px;
+.model-card:hover {
+    transform: translateY(-5px);
 }
 
-.section h3 {
-  font-size: 28px;
-  color: #0b4fd8;
-  margin-bottom: 16px;
+.model-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.section p {
-  max-width: 900px;
-  margin-bottom: 14px;
+.model-info {
+    padding: 20px;
 }
 
-/* CARDS */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+.model-info h3 {
+    color: var(--tvs-blue);
+    margin-bottom: 10px;
 }
 
-.card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+.btn-outline {
+    display: inline-block;
+    border: 2px solid var(--tvs-blue);
+    color: var(--tvs-blue);
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.card h4 {
-  color: #0b4fd8;
-  margin-bottom: 8px;
+.btn-outline:hover {
+    background: var(--tvs-blue);
+    color: white;
 }
 
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #e11d48;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* QUICK LINKS */
-.quick-links {
-  background: #fff3cd;
-  padding: 40px 20px;
-}
-
-.quick-links-grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.quick-box {
-  background: white;
-  padding: 18px;
-  border-radius: 8px;
-  border-left: 5px solid #e11d48;
-}
-
-.quick-box a {
-  font-weight: bold;
-  color: #0b4fd8;
-  text-decoration: none;
-}
-
-/* FOOTER */
+/* --- FOOTER --- */
 footer {
-  background: #0b4fd8;
-  color: white;
-  text-align: center;
-  padding: 18px;
-  margin-top: 40px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 5% 10px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section h4 {
+    color: var(--tvs-red);
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Mobile menu implementation needed if advanced */
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
 }
