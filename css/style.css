@@ -1,201 +1,216 @@
-/* --- css/style.css --- */
-
-:root {
-    --tvs-blue: #003399;   /* Deep Blue from Screenshot */
-    --tvs-red: #e31e24;    /* TVS Red */
-    --dark-blue: #0b1e47;  /* Darker Blue for Top Buttons */
-    --text-grey: #444;
-    --light-bg: #f8f9fa;
-}
-
+/* --- GLOBAL RESETS --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+}
+
+:root {
+    --tvs-blue: #1f509a;
+    --tvs-red: #d3161c;
+    --text-dark: #222;
+    --text-light: #666;
+    --bg-light: #f9f9f9;
+    --white: #ffffff;
 }
 
 body {
-    background-color: var(--light-bg);
-    color: #333;
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.7;
 }
 
-a { text-decoration: none; color: inherit; }
+a { text-decoration: none; color: inherit; transition: 0.3s; }
 ul { list-style: none; }
 
-/* --- 1. HEADER SECTION --- */
+/* --- HEADER & NAV --- */
+.top-bar {
+    background-color: var(--tvs-blue);
+    color: white;
+    padding: 8px 5%;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.5px;
+}
+
 header {
     background: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* The Top Row with 3 Blue Buttons */
-.top-actions {
-    display: flex;
-    justify-content: flex-end; /* Pushes buttons to the right */
-    background: white;
-    padding: 10px 5%;
-    gap: 10px;
-}
-
-.action-btn {
-    background-color: var(--dark-blue);
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 700;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-.action-btn:hover { background-color: var(--tvs-red); }
-
-/* The Logo and Main Menu Row */
-.main-nav {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5%;
-    background: white;
-    border-top: 1px solid #eee;
+    padding: 20px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.logo img {
-    height: 50px; /* Adjust based on your logo size */
-}
-
-.logo-text {
-    font-size: 1.8rem;
+.logo h1 {
+    font-size: 2rem;
+    color: var(--tvs-blue);
     font-weight: 800;
-    color: var(--tvs-red);
-    font-style: italic;
+    letter-spacing: -1px;
 }
+.logo span { color: var(--tvs-red); }
 
-.nav-menu {
+.nav-links {
     display: flex;
-    gap: 25px;
+    gap: 40px; /* Space between links */
 }
 
-.nav-menu li a {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.nav-links a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-dark);
 }
 
-.nav-menu li a:hover { color: var(--tvs-blue); }
+.nav-links a:hover { color: var(--tvs-blue); }
 
-/* --- 2. HERO SLIDER SECTION --- */
-.hero-banner {
-    width: 100%;
-    height: 80vh;
-    background: url('../assets/hero-bg.jpg') no-repeat center center/cover;
-    position: relative;
+.btn-book {
+    background-color: var(--tvs-red);
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 50px; /* Rounded pill shape */
+    font-weight: 600;
+}
+
+.btn-book:hover { background-color: #b01217; transform: translateY(-2px); }
+
+/* --- HERO SECTION --- */
+.hero {
+    /* Ensure you have an image named hero-bg.jpg in assets */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Tall, roomy header */
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-}
-/* If no image, use a gradient placeholder */
-.hero-banner.placeholder {
-    background: linear-gradient(to right, #1e1e1e, #4a4a4a);
-    color: white;
-    text-align: center;
-}
-
-/* --- 3. ACHIEVEMENTS / WELCOME SECTION --- */
-.section-container {
-    padding: 60px 5%;
-    text-align: center;
-    background: white;
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 40px;
-    color: black;
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    border: 1px solid #eee;
-    padding: 30px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-.card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-
-/* --- 4. FOOTER (Exact Match to Screenshot) --- */
-/* The Blue Bar */
-.footer-blue-bar {
-    background-color: var(--dark-blue);
-    color: white;
-    padding: 40px 5%;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.contact-item {
     text-align: center;
-    font-size: 1.2rem;
+    color: white;
+    padding: 20px;
 }
 
-.contact-item span {
-    display: block;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-/* The Links Section */
-.footer-links {
-    background: white;
-    padding: 50px 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    color: #555;
-}
-
-.footer-col h4 {
-    color: black;
+.hero h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    padding: 15px 40px;
+    background-color: var(--tvs-blue);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
     font-size: 1.1rem;
 }
 
-.footer-col ul li {
-    margin-bottom: 12px;
+/* --- SECTIONS (The Roomy Part) --- */
+section {
+    padding: 100px 10%; /* Lots of white space top/bottom/sides */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.footer-col ul li a {
-    font-size: 0.95rem;
-    color: #666;
-}
-
-.footer-col ul li a:hover { color: var(--tvs-red); }
-
-.copyright {
+.section-title {
     text-align: center;
-    padding: 20px;
-    font-size: 0.8rem;
-    background: #f1f1f1;
-    color: #777;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: var(--tvs-blue);
 }
 
-/* Responsive Mobile */
-@media (max-width: 768px) {
-    .top-actions { display: none; } /* Hide top buttons on small mobile */
-    .nav-menu { display: none; } /* Needs a mobile toggle for advanced code */
-    .footer-blue-bar { flex-direction: column; gap: 20px; }
+/* --- ABOUT TVS BLOCK --- */
+.about-tvs {
+    text-align: center;
+    background-color: var(--white);
 }
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    color: var(--text-light);
+    font-size: 1.15rem;
+    margin-bottom: 25px;
+}
+
+/* --- MODEL CARDS --- */
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Wide cards */
+    gap: 40px;
+}
+
+.model-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06); /* Soft shadow */
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.model-card:hover { transform: translateY(-10px); }
+
+.model-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.model-info { padding: 30px; }
+
+.model-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 2px solid var(--tvs-blue);
+    color: var(--tvs-blue);
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-outline:hover { background: var(--tvs-blue); color: white; }
+
+/* --- FOOTER --- */
+footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 80px 10% 40px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section h4 { color: white; margin-bottom: 20px; font-size: 1.2rem; }
+.footer-bottom { border-top: 1px solid #333; margin-top: 50px; padding-top: 20px; text-align: center; font-size: 0.9rem; }
