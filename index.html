@@ -3,114 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tirumala TVS - Bidarahalli</title>
+    <title>Tirumala TVS Bidarahalli | Authorized Main Dealer</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* INLINE STYLES FOR ROOMY DESIGN */
+        body { font-family: 'Poppins', sans-serif; background-color: #fafafa; }
+        
+        /* Hero Section Enhancements */
+        .hero {
+            height: 85vh; /* Taller hero */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/hero-bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Roomy Section Padding */
+        section { padding: 80px 10%; }
+        
+        /* About TVS Section */
+        .about-tvs {
+            background-color: white;
+            text-align: center;
+        }
+        .about-tvs h2 { font-size: 2.5rem; color: var(--tvs-blue); margin-bottom: 30px; }
+        .about-tvs p { 
+            font-size: 1.1rem; 
+            line-height: 1.8; 
+            color: #555; 
+            max-width: 900px; 
+            margin: 0 auto 20px auto; 
+        }
+
+        /* Model Card Improvements */
+        .model-card {
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Softer shadow */
+            transition: transform 0.3s ease;
+        }
+        .model-card:hover { transform: translateY(-10px); }
+        .model-info { padding: 30px 20px; } /* More internal padding */
+    </style>
 </head>
 <body>
 
+    <div class="top-bar">
+        <span>📍 Bidarahalli, Bangalore - 49</span>
+        <span>📞 +91 99649 46512</span>
+    </div>
+
     <header>
-        <div class="top-actions">
-            <a href="contacts.html" class="action-btn">Book Service Appointment</a>
-            <a href="contacts.html" class="action-btn">Get Quotation</a>
-            <a href="contacts.html" class="action-btn">Book Test Drive</a>
-        </div>
-
-        <div class="main-nav">
+        <div class="nav-container">
             <a href="index.html" class="logo">
-                <div class="logo-text">Tirumala <span style="color: var(--tvs-blue);">TVS</span></div>
+                <h1>Tirumala <span>TVS</span></h1>
             </a>
-
-            <ul class="nav-menu">
-                <li><a href="index.html" style="color: var(--tvs-blue);">HOME ↗</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="models.html">MOTORCYCLES</a></li>
-                <li><a href="models.html">SCOOTERS</a></li>
-                <li><a href="models.html">MOPEDS</a></li>
-                <li><a href="models.html">ELECTRIC</a></li>
-                <li><a href="contacts.html">SERVICES</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="models.html">All Models</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="contacts.html" class="btn-book">Book Service</a></li>
             </ul>
         </div>
     </header>
-    <section class="hero-banner placeholder">
-        <div>
-            <h1>TVS RONIN</h1>
-            <p>The Ultimate Modern-Retro | Start Unscripted</p>
-            <br>
-            <a href="contacts.html" class="action-btn" style="background: var(--tvs-red);">Book Now</a>
+
+    <section class="hero">
+        <h2 style="font-size: 3.5rem; font-weight: 700;">Experience the New TVS</h2>
+        <p style="font-size: 1.4rem; font-weight: 300;">Your Trusted Dealership in Bidarahalli, Bangalore.</p>
+        <div style="margin-top: 30px;">
+            <a href="models.html" class="hero-btn">View Latest Bikes</a>
+            <a href="contacts.html" class="hero-btn" style="background: white; color: var(--tvs-blue); margin-left: 15px;">Locate Us</a>
         </div>
     </section>
 
-    <section class="section-container">
-        <h2 class="section-title">Achievements</h2>
-        <div class="grid-3">
-            <div class="card">
-                <h3>🏆 Great Place to Work</h3>
-                <p>Certified for Jan 2025 - Jan 2026.</p>
-            </div>
-            <div class="card">
-                <h3>🏍 Bike of the Year</h3>
-                <p>TVS Raider 125 - Commuter of the year.</p>
-            </div>
-            <div class="card">
-                <h3>⭐ JD Power Award</h3>
-                <p>Highest Customer Satisfaction.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section-container" style="background: #f9f9f9;">
-        <h2 class="section-title">About Tirumala TVS</h2>
-        <p style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
-            We are the premier TVS dealership in Bidarahalli, Bangalore. 
-            From the rugged XL100 to the racing DNA of the Apache series, 
-            we bring you the best of TVS engineering combined with world-class service.
+    <section class="about-tvs">
+        <h2>About TVS Motor Company</h2>
+        <p>
+            TVS Motor Company is a reputed two and three-wheeler manufacturer globally, championing progress through 
+            Sustainable Mobility with four state-of-the-art manufacturing facilities in India and Indonesia.
+        </p>
+        <p>
+            Rooted in our 100-year legacy of Trust, Value, and Passion for Customers and Exactness, we take pride in making 
+            internationally aspirational products of the highest quality through innovative and sustainable processes. 
+            We are the only two-wheeler company to have received the prestigious Deming Prize for quality.
+        </p>
+        <p>
+            From the sporty Apache series to the family-favourite Jupiter, TVS Motor Company offers a product for every Indian rider.
         </p>
     </section>
 
+    <section style="background-color: #f4f6f9;">
+        <h2 class="section-title" style="font-size: 2.5rem;">Latest Launches</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 50px;">Explore the newest technology from TVS</p>
+        
+        <div class="models-grid">
+            <div class="model-card">
+                <img src="https://placehold.co/600x400?text=New+TVS+Jupiter+110" alt="TVS Jupiter 110">
+                <div class="model-info">
+                    <h3>All New TVS Jupiter 110</h3>
+                    <p>Now with <strong>iGO Assist</strong> technology. More Mileage. More Power.</p>
+                    <a href="models/jupiter113.html" class="btn-outline">View Specs</a>
+                </div>
+            </div>
+
+            <div class="model-card">
+                <img src="https://placehold.co/600x400?text=TVS+Raider+iGO" alt="TVS Raider">
+                <div class="model-info">
+                    <h3>TVS Raider iGO</h3>
+                    <p>The Wicked Ride with <strong>Boost Mode</strong> and 0-60 in 5.9s.</p>
+                    <a href="models/raider.html" class="btn-outline">View Specs</a>
+                </div>
+            </div>
+
+            <div class="model-card">
+                <img src="https://placehold.co/600x400?text=TVS+Ronin" alt="TVS Ronin">
+                <div class="model-info">
+                    <h3>TVS Ronin</h3>
+                    <p>Modern-Retro Scrambler. #Unscripted life.</p>
+                    <a href="models/ronin.html" class="btn-outline">View Specs</a>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="models.html" style="text-decoration: underline; color: var(--tvs-blue); font-weight: bold;">See All 15+ Models</a>
+        </div>
+    </section>
+
     <footer>
-        <div class="footer-blue-bar">
-            <div class="contact-item">
-                <span>✉</span>
-                tirumalatvs716@gmail.com
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tirumala TVS</h4>
+                <p>Authorized Main Dealer</p>
+                <p>Bidarahalli, Bangalore – 560049</p>
+                <p>Near Main Bus Stop</p>
             </div>
-            <div class="contact-item">
-                <span>📞</span>
-                +91 99649 46512
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Phone: +91 99649 46512</p>
+                <p>Email: tirumalatvs716@gmail.com</p>
             </div>
-        </div>
-
-        <div class="footer-links">
-            <div class="footer-col">
+            <div class="footer-section">
                 <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="contacts.html">Contact Us</a></li>
-                    <li><a href="contacts.html">Book Service Appointment</a></li>
-                    <li><a href="contacts.html">Book a Test Drive</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Models</h4>
-                <ul>
-                    <li><a href="models.html">Motorcycles</a></li>
-                    <li><a href="models.html">Scooters</a></li>
-                    <li><a href="models.html">Mopeds</a></li>
-                    <li><a href="models.html">Electric</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Showroom Address</h4>
-                <p>Tirumala TVS</p>
-                <p>Near Main Bus Stop,</p>
-                <p>Bidarahalli, Bangalore - 49</p>
+                <p><a href="models.html">All Models</a></p>
+                <p><a href="contacts.html">Book Service</a></p>
             </div>
         </div>
-
-        <div class="copyright">
-            Copyright © 2025 Tirumala TVS. All rights reserved.
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tirumala TVS Bidarahalli. All Rights Reserved.</p>
         </div>
     </footer>
-    </body>
+
+</body>
 </html>
