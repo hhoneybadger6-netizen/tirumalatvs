@@ -3,149 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Models - Tirumala TVS</title>
+    <title>All Models | Tirumala TVS</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .page-header {
-            background-color: var(--tvs-blue); 
-            color: white; 
-            padding: 60px 5%; 
-            text-align: center;
-        }
-        .category-title {
-            grid-column: 1 / -1;
-            font-size: 1.8rem;
-            color: #333;
-            margin: 40px 0 20px 20px;
-            border-left: 5px solid var(--tvs-red);
-            padding-left: 15px;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <h1>Tirumala <span>TVS</span></h1>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="models.html" style="color: var(--tvs-red);">All Models</a></li>
-                <li><a href="contacts.html">Contact Us</a></li>
-            </ul>
+    <nav class="nav-container">
+        <a href="index.html" class="logo">
+            <h1>Tirumala <span>TVS</span></h1>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="models.html" style="color: var(--tvs-red);">Inventory</a>
+            <a href="contacts.html">Service</a>
         </div>
-    </header>
+    </nav>
 
-    <div class="page-header">
-        <h2>Our Vehicle Collection</h2>
-        <p>Explore the complete range of TVS Motorcycles, Scooters, and Mopeds.</p>
-    </div>
+    <section class="info-section">
+        <div class="section-head">
+            <h2>Our Vehicle Collection</h2>
+            <p>Explore the complete range of TVS Motorcycles and Scooters</p>
+        </div>
 
-    <div class="models-grid">
+        <div class="models-grid">
 
-        <h3 class="category-title">Scooters</h3>
-
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=New+Jupiter+110" alt="TVS Jupiter 110">
-            <div class="model-info">
-                <h3>TVS Jupiter 110</h3>
-                <p>New 113cc Engine with iGO Assist.</p>
-                <a href="models/jupiter113.html" class="btn-outline">View Details</a>
+            <div class="model-card">
+                <img src="assets/zest.jpg" alt="Zest" onerror="this.src='https://placehold.co/600x400?text=Zest'">
+                <div class="model-info">
+                    <h3>TVS Zest 110</h3>
+                    <p>110cc | Lightweight | 19L Storage</p>
+                    <a href="models/zest110.html" class="btn-view">View Specs</a>
+                </div>
             </div>
-        </div>
 
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+Jupiter+125" alt="TVS Jupiter 125">
-            <div class="model-info">
-                <h3>TVS Jupiter 125</h3>
-                <p>Zyada Se Bhi Zyada. Largest under-seat storage.</p>
-                <a href="models/jupiter125.html" class="btn-outline">View Details</a>
+            <div class="model-card">
+                <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter'">
+                <div class="model-info">
+                    <h3>New TVS Jupiter 110</h3>
+                    <p>113cc | iGO Assist | Digital Cluster</p>
+                    <a href="models/jupiter113.html" class="btn-view">View Specs</a>
+                </div>
             </div>
-        </div>
 
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+Ntorq+125" alt="TVS Ntorq">
-            <div class="model-info">
-                <h3>TVS Ntorq 125</h3>
-                <p>India's First Bluetooth Connected Scooter.</p>
-                <a href="models/ntorq125.html" class="btn-outline">View Details</a>
+            <div class="model-card">
+                <img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'">
+                <div class="model-info">
+                    <h3>TVS Raider 125</h3>
+                    <p>125cc | TFT Display | 5.9s 0-60</p>
+                    <a href="models/raider.html" class="btn-view">View Specs</a>
+                </div>
             </div>
-        </div>
 
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+Zest+110" alt="TVS Zest">
-            <div class="model-info">
-                <h3>TVS Zest 110</h3>
-                <p>Power and style in a compact package.</p>
-                <a href="models/zest110.html" class="btn-outline">View Details</a>
+            <div class="model-card">
+                <img src="assets/ntorq.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400?text=Ntorq'">
+                <div class="model-info">
+                    <h3>TVS Ntorq 125</h3>
+                    <p>125cc | Bluetooth | Race Tuned</p>
+                    <a href="models/ntorq125.html" class="btn-view">View Specs</a>
+                </div>
             </div>
-        </div>
 
-        <h3 class="category-title">Motorcycles</h3>
-
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+Raider" alt="TVS Raider">
-            <div class="model-info">
-                <h3>TVS Raider 125</h3>
-                <p>The Wicked Ride. Best-in-class sporty commuter.</p>
-                <a href="models/raider.html" class="btn-outline">View Details</a>
+            <div class="model-card">
+                <img src="assets/xl100.jpg" alt="XL100" onerror="this.src='https://placehold.co/600x400?text=XL100'">
+                <div class="model-info">
+                    <h3>TVS XL100</h3>
+                    <p>Heavy Duty | Multi-Utility</p>
+                    <a href="models/xl100.html" class="btn-view">View Specs</a>
+                </div>
             </div>
-        </div>
-
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+Ronin" alt="TVS Ronin">
-            <div class="model-info">
-                <h3>TVS Ronin</h3>
-                <p>Versatile Modern-Retro Scrambler.</p>
-                <a href="models/ronin.html" class="btn-outline">View Details</a>
+            
+             <div class="model-card">
+                <img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin'">
+                <div class="model-info">
+                    <h3>TVS Ronin</h3>
+                    <p>225cc | Modern Retro | Scrambler</p>
+                    <a href="models/ronin.html" class="btn-view">View Specs</a>
+                </div>
             </div>
+
         </div>
-
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+Apache+160" alt="TVS Apache">
-            <div class="model-info">
-                <h3>Apache RTR 160 4V</h3>
-                <p>Racing DNA Unleashed.</p>
-                <a href="models/apache160.html" class="btn-outline">View Details</a>
-            </div>
-        </div>
-
-         <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+Apache+200" alt="TVS Apache 200">
-            <div class="model-info">
-                <h3>Apache RTR 200 4V</h3>
-                <p>The Ultimate Race Machine.</p>
-                <a href="models/apache200.html" class="btn-outline">View Details</a>
-            </div>
-        </div>
-
-        <h3 class="category-title">Electric & Mopeds</h3>
-
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+iQube+Electric" alt="TVS iQube">
-            <div class="model-info">
-                <h3>TVS iQube Electric</h3>
-                <p>Smart, Silent, Eco-friendly. Up to 145km Range.</p>
-                <a href="models/iqube.html" class="btn-outline">View Details</a>
-            </div>
-        </div>
-
-        <div class="model-card">
-            <img src="https://placehold.co/600x400?text=TVS+XL100" alt="TVS XL100">
-            <div class="model-info">
-                <h3>TVS XL100</h3>
-                <p>Heavy Duty. The Multi-Utility King.</p>
-                <a href="models/xl100.html" class="btn-outline">View Details</a>
-            </div>
-        </div>
-
-    </div>
+    </section>
 
     <footer>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Tirumala TVS Bidarahalli.</p>
-        </div>
+        <p>&copy; 2024 Tirumala TVS Bidarahalli.</p>
     </footer>
 
 </body>
