@@ -1,180 +1,201 @@
-/* --- FILE: css/style.css --- */
+/* --- css/style.css --- */
 
-/* TVS BRAND COLORS */
 :root {
-    --tvs-blue: #1f509a;
-    --tvs-red: #e31e24;
-    --dark: #333;
-    --light: #f4f4f4;
-    --white: #ffffff;
+    --tvs-blue: #003399;   /* Deep Blue from Screenshot */
+    --tvs-red: #e31e24;    /* TVS Red */
+    --dark-blue: #0b1e47;  /* Darker Blue for Top Buttons */
+    --text-grey: #444;
+    --light-bg: #f8f9fa;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--light-bg);
+    color: #333;
 }
 
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
-/* --- HEADER --- */
+/* --- 1. HEADER SECTION --- */
 header {
-    background: var(--white);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.top-bar {
-    background: var(--tvs-blue);
-    color: white;
-    padding: 8px 5%;
-    font-size: 0.9rem;
+/* The Top Row with 3 Blue Buttons */
+.top-actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Pushes buttons to the right */
+    background: white;
+    padding: 10px 5%;
+    gap: 10px;
 }
 
-.nav-container {
+.action-btn {
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.action-btn:hover { background-color: var(--tvs-red); }
+
+/* The Logo and Main Menu Row */
+.main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 5px 5%;
+    background: white;
+    border-top: 1px solid #eee;
 }
 
-.logo h1 { font-size: 1.8rem; color: var(--tvs-blue); font-weight: 800; }
-.logo span { color: var(--tvs-red); }
+.logo img {
+    height: 50px; /* Adjust based on your logo size */
+}
 
-/* NAVIGATION MENU */
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--tvs-red);
+    font-style: italic;
+}
+
 .nav-menu {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .nav-menu li a {
-    font-weight: 600;
-    font-size: 1rem;
-    transition: 0.3s;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.nav-menu li a:hover { color: var(--tvs-red); }
+.nav-menu li a:hover { color: var(--tvs-blue); }
 
-/* --- HERO SECTION --- */
-.hero {
-    /* Replace 'hero-bg.jpg' with your shop image if you have one */
-    background: linear-gradient(rgba(31, 80, 154, 0.8), rgba(31, 80, 154, 0.8));
-    height: 70vh;
+/* --- 2. HERO SLIDER SECTION --- */
+.hero-banner {
+    width: 100%;
+    height: 80vh;
+    background: url('../assets/hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
-
-.hero h2 { font-size: 2.5rem; margin-bottom: 15px; }
-.hero p { font-size: 1.2rem; margin-bottom: 25px; }
-
-/* HERO BUTTONS (Sales & Service) */
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-primary {
-    background-color: var(--tvs-red);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-secondary {
-    background-color: white;
-    color: var(--tvs-blue);
-    padding: 12px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border: 2px solid white;
-}
-
-.btn-primary:hover { background-color: #c11218; }
-.btn-secondary:hover { background-color: #eee; }
-
-/* --- CATEGORIES SECTION --- */
-.category-section {
-    padding: 50px 5%;
-    text-align: center;
-}
-
-.cat-grid {
-    display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+}
+/* If no image, use a gradient placeholder */
+.hero-banner.placeholder {
+    background: linear-gradient(to right, #1e1e1e, #4a4a4a);
+    color: white;
+    text-align: center;
 }
 
-.cat-card {
+/* --- 3. ACHIEVEMENTS / WELCOME SECTION --- */
+.section-container {
+    padding: 60px 5%;
+    text-align: center;
     background: white;
-    width: 200px;
-    padding: 30px 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-bottom: 4px solid var(--tvs-blue);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 8px;
     transition: 0.3s;
 }
+.card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
-.cat-card:hover { transform: translateY(-5px); border-bottom: 4px solid var(--tvs-red); }
-.cat-card h3 { color: var(--tvs-blue); }
-
-/* --- FOOTER --- */
-footer {
-    background: #222;
+/* --- 4. FOOTER (Exact Match to Screenshot) --- */
+/* The Blue Bar */
+.footer-blue-bar {
+    background-color: var(--dark-blue);
     color: white;
-    padding: 50px 5% 10px;
-    margin-top: 50px;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-.footer-col h4 {
-    color: var(--tvs-red);
-    margin-bottom: 20px;
+.contact-item {
+    text-align: center;
     font-size: 1.2rem;
 }
 
-.footer-col ul li { margin-bottom: 10px; }
-.footer-col ul li a { color: #ccc; transition: 0.3s; }
-.footer-col ul li a:hover { color: white; padding-left: 5px; }
-
-.footer-bottom {
-    border-top: 1px solid #444;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 0.9rem;
-    color: #888;
+.contact-item span {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-/* RESPONSIVE */
+/* The Links Section */
+.footer-links {
+    background: white;
+    padding: 50px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    color: #555;
+}
+
+.footer-col h4 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.footer-col ul li a:hover { color: var(--tvs-red); }
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    background: #f1f1f1;
+    color: #777;
+}
+
+/* Responsive Mobile */
 @media (max-width: 768px) {
-    .nav-menu { display: none; } /* Mobile menu hidden for simplicity in this step */
-    .hero h2 { font-size: 2rem; }
+    .top-actions { display: none; } /* Hide top buttons on small mobile */
+    .nav-menu { display: none; } /* Needs a mobile toggle for advanced code */
+    .footer-blue-bar { flex-direction: column; gap: 20px; }
 }
