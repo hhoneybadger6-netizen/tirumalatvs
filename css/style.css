@@ -93,11 +93,15 @@ header {
 
 /* --- HERO SECTION --- */
 .hero {
-    /* CORRECT PATH: Goes back one folder (../) to find assets */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/hero-bg.jpg');
+    /* FIXED: Using the double extension filename visible in your screenshot */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/hero-bg.jpg.jpg');
+    
+    /* Fallback color if image still fails */
+    background-color: #1f509a;
+    
     background-size: cover;
     background-position: center;
-    height: 85vh; /* Tall and premium feel */
+    height: 85vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,7 +138,7 @@ header {
 
 .hero-btn:hover { background-color: #163c75; }
 
-/* --- SECTIONS (The Roomy Layout) --- */
+/* --- SECTIONS --- */
 section {
     padding: 80px 10%;
     max-width: 1400px;
@@ -189,7 +193,7 @@ section {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    background-color: #eee; /* Grey placeholder color if image fails */
+    background-color: #eee;
 }
 
 .model-info { padding: 25px; text-align: left; }
