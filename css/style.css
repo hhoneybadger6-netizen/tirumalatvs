@@ -1,207 +1,80 @@
-/* --- GLOBAL & FONTS --- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+/* --- PRODUCT PAGE STYLES (New) --- */
 
-:root {
-    --tvs-blue: #1f509a;
-    --tvs-dark-blue: #163c75;
-    --tvs-red: #d3161c;
-    --dark-grey: #222;
-    --light-grey: #f4f6f9;
-    --white: #ffffff;
-    --text-grey: #555;
-    --shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-body { background: var(--white); color: var(--dark-grey); line-height: 1.6; }
-a { text-decoration: none; color: inherit; transition: 0.3s; }
-ul { list-style: none; }
-
-/* --- HEADER --- */
-.top-bar {
-    background: var(--tvs-blue);
+/* 1. Product Hero */
+.product-hero {
+    background: linear-gradient(135deg, var(--tvs-blue), var(--tvs-dark-blue));
     color: white;
-    padding: 8px 5%;
-    font-size: 0.85rem;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 500;
-}
-
-header {
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.logo h1 { font-size: 1.8rem; color: var(--tvs-blue); font-weight: 800; text-transform: uppercase; }
-.logo span { color: var(--tvs-red); }
-
-.nav-links { display: flex; gap: 30px; align-items: center; }
-.nav-links a { font-weight: 600; color: var(--dark-grey); font-size: 0.95rem; }
-.nav-links a:hover { color: var(--tvs-blue); }
-
-/* --- HERO SECTION --- */
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../assets/hero-bg.jpg.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 80px 5%;
     text-align: center;
-    color: white;
-    padding: 20px;
-}
-
-.hero h2 { 
-    font-size: 3.5rem; 
-    font-weight: 800; 
-    text-transform: uppercase; 
-    margin-bottom: 10px; 
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
-}
-.hero p { font-size: 1.3rem; margin-bottom: 30px; font-weight: 300; }
-
-/* --- ACTION BAR --- */
-.action-bar {
-    background: var(--tvs-blue);
-    padding: 30px 5%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: -50px;
     position: relative;
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-}
-
-.action-btn {
-    background: white;
-    color: var(--tvs-blue);
-    padding: 15px 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    min-width: 200px;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.action-btn:hover { background: var(--tvs-red); color: white; transform: translateY(-3px); }
-
-/* --- SECTIONS --- */
-section { padding: 80px 10%; max-width: 1400px; margin: 0 auto; }
-.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 10px; color: var(--dark-grey); font-weight: 800; text-transform: uppercase; }
-.section-subtitle { text-align: center; color: #666; margin-bottom: 50px; font-size: 1.1rem; }
-
-/* --- MODELS GRID --- */
-.models-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.model-card {
-    background: white;
-    border-radius: 12px;
     overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
 }
+.product-hero h2 { font-size: 3rem; font-weight: 800; margin-bottom: 10px; }
+.product-hero p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 30px; }
 
-.model-card:hover { transform: translateY(-8px); }
-.model-card img { width: 100%; height: 220px; object-fit: cover; background-color: var(--light-grey); }
-.model-info { padding: 25px; }
-.model-info h3 { font-size: 1.4rem; color: var(--dark-grey); margin-bottom: 5px; font-weight: 700; }
-.model-info p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
-
-.btn-view {
-    display: inline-block;
-    border: 2px solid var(--tvs-blue);
-    color: var(--tvs-blue);
-    padding: 8px 25px;
-    font-weight: 600;
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-.btn-view:hover { background: var(--tvs-blue); color: white; }
-
-/* --- TESTIMONIALS (NEW) --- */
-.testimonials-grid {
+/* 2. Feature Grid (The "Roomy" Look) */
+.features-section { background-color: var(--white); }
+.features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
-
-.testimonial-card {
-    background: white;
+.feature-card {
+    background: #fff;
     padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    border-bottom: 4px solid var(--tvs-red);
+    transition: transform 0.3s;
+    border: 1px solid #eee;
+}
+.feature-card:hover { transform: translateY(-5px); }
+.feature-icon { font-size: 2.5rem; margin-bottom: 15px; display: block; }
+.feature-card h4 { color: var(--tvs-blue); margin-bottom: 10px; font-weight: 700; }
+
+/* 3. Specs Table */
+.specs-section { background-color: var(--light-grey); }
+.spec-container {
+    background: white;
     border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    border-left: 5px solid var(--tvs-red); /* Adds a nice red accent */
-    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
 }
-
-.star-rating {
-    color: #FFD700; /* Gold color */
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+.spec-row {
+    display: flex;
+    border-bottom: 1px solid #eee;
 }
-
-.review-text {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 20px;
-    font-size: 1rem;
-}
-
-.customer-info {
+.spec-row:last-child { border-bottom: none; }
+.spec-label {
+    width: 35%;
+    background-color: #f1f4f8;
+    padding: 15px 20px;
+    font-weight: 600;
+    color: var(--tvs-blue);
     display: flex;
     align-items: center;
+}
+.spec-value {
+    width: 65%;
+    padding: 15px 20px;
+    color: #444;
+}
+
+/* 4. Sticky Bottom Bar (Mobile Friendly) */
+.sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
     gap: 15px;
+    z-index: 9999;
 }
-
-.customer-details h4 {
-    font-size: 1rem;
-    color: var(--dark-grey);
-    font-weight: 700;
-}
-
-.customer-details span {
-    font-size: 0.85rem;
-    color: var(--tvs-blue);
-    font-weight: 600;
-}
-
-/* --- FOOTER --- */
-footer { background: #111; color: #bbb; padding: 70px 5% 20px; margin-top: 50px; }
-.footer-container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; max-width: 1400px; margin: 0 auto; }
-.footer-col { flex: 1; min-width: 200px; }
-.footer-col h4 { color: white; font-size: 1.2rem; margin-bottom: 20px; border-left: 4px solid var(--tvs-red); padding-left: 10px; font-weight: 700; }
-.footer-col p { font-size: 0.95rem; margin-bottom: 10px; }
-.footer-col ul li { margin-bottom: 10px; }
-.footer-col ul li a { font-size: 0.95rem; }
-.footer-col ul li a:hover { color: var(--tvs-red); padding-left: 5px; }
-.footer-bottom { border-top: 1px solid #333; margin-top: 50px; padding-top: 20px; text-align: center; font-size: 0.9rem; }
