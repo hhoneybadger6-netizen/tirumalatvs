@@ -5,20 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tirumala TVS Bidarahalli | Authorized Main Dealer</title>
     <link rel="stylesheet" href="css/style.css">
-    
-    <style>
-        .world-of-tvs { background-color: #f4f6f9; padding: 100px 10%; }
-        .world-container { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 50px; }
-        .world-col-left { flex: 1.2; min-width: 350px; }
-        .world-col-left h3 { font-size: 2rem; color: #333; }
-        .world-col-left h4 { color: #1f509a; font-size: 1.5rem; margin-bottom: 20px; font-weight: 600; }
-        .world-col-left p { color: #555; font-size: 1.1rem; margin-bottom: 25px; }
-        
-        .world-col-right { flex: 1; min-width: 300px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .world-point { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
-        .world-point h4 { color: #1f509a; margin-top: 10px; margin-bottom: 5px; font-weight: 600; }
-        .world-point p { font-size: 0.9rem; color: #666; }
-    </style>
 </head>
 <body>
 
@@ -27,21 +13,17 @@
         <span>📞 +91 99649 46512 | tirumalatvs716@gmail.com</span>
     </div>
 
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <h1>Tirumala <span>TVS</span></h1>
-            </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="models.html">Inventory</a></li>
-                    <li><a href="contacts.html">Service</a></li>
-                    <li><a href="contacts.html" style="color: #d3161c;">Contact Us</a></li>
-                </ul>
-            </nav>
+    <nav class="nav-container">
+        <a href="index.html" class="logo">
+            <h1>Tirumala <span>TVS</span></h1>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="models.html">Inventory</a>
+            <a href="contacts.html">Service</a>
+            <a href="contacts.html" style="color: var(--tvs-red);">Contact Us</a>
         </div>
-    </header>
+    </nav>
 
     <section class="hero">
         <h2>Experience the New TVS</h2>
@@ -57,102 +39,57 @@
         <a href="contacts.html" class="action-btn">💬 General Enquiry</a>
     </div>
 
-    <section class="world-of-tvs">
-        <div class="world-container">
-            <div class="world-col-left">
-                <h3>Championing Progress</h3>
-                <h4>Welcome to Tirumala TVS Bidarahalli</h4>
-                <p>We are committed to being a socially responsible, and leading manufacturer of high value for money, environmentally friendly, lifetime personal transportation products.</p>
-                <p>Tirumala TVS Bidarahalli is proud to bring these internationally aspirational products to your doorstep, with a commitment to trust and exceptional customer service.</p>
-            </div>
-            <div class="world-col-right">
-                <div class="world-point">
-                    <div style="font-size: 1.5rem;">✔️</div>
-                    <h4>Over 50 million Vehicles</h4>
-                    <p>Celebrated globally.</p>
-                </div>
-                <div class="world-point">
-                    <div style="font-size: 1.5rem;">✔️</div>
-                    <h4>A vehicle for everyone</h4>
-                    <p>Largest portfolio.</p>
-                </div>
-                <div class="world-point">
-                    <div style="font-size: 1.5rem;">✔️</div>
-                    <h4>Presence in 80+ countries</h4>
-                    <p>Global trust.</p>
-                </div>
-                <div class="world-point">
-                    <div style="font-size: 1.5rem;">✔️</div>
-                    <h4>Industry Leader TVSM</h4>
-                    <p>Innovation first.</p>
-                </div>
-            </div>
+    <section class="info-section">
+        <div class="section-head">
+            <h2>Welcome to Tirumala TVS</h2>
+            <p>Championing Progress | Industry Leader TVSM</p>
+        </div>
+        <div class="features-grid">
+             <div class="feature-card">
+                 <span class="feature-icon">🏆</span>
+                 <h4>50 Million+ Vehicles</h4>
+                 <p>Celebrating mobility and progress for countless people globally.</p>
+             </div>
+             <div class="feature-card">
+                 <span class="feature-icon">🌍</span>
+                 <h4>80+ Countries</h4>
+                 <p>A trusted brand with a global presence and legacy.</p>
+             </div>
+             <div class="feature-card">
+                 <span class="feature-icon">🏍</span>
+                 <h4>Vehicle for Everyone</h4>
+                 <p>Largest portfolio from Mopeds to Premium Racing Bikes.</p>
+             </div>
         </div>
     </section>
 
-    <section style="background-color: #ffffff;">
+    <section style="background-color: var(--light-grey);">
         <h2 class="section-title">Latest Launches</h2>
-        <p class="section-subtitle">Explore the new technology at our showroom</p>
-
         <div class="models-grid">
             <div class="model-card">
-                <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+Image'">
+                <img src="assets/zest.jpg" alt="Zest 110" onerror="this.src='https://placehold.co/600x400?text=Zest'">
+                <div class="model-info">
+                    <h3>TVS Zest 110</h3>
+                    <p>Live Full. Live Free. Best in class pickup.</p>
+                    <a href="models/zest110.html" class="btn-view">View Details</a>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter'">
                 <div class="model-info">
                     <h3>New TVS Jupiter 110</h3>
-                    <p>India's most loved scooter now with <strong>iGO Assist</strong> technology.</p>
+                    <p>Now with iGO Assist technology.</p>
                     <a href="models/jupiter113.html" class="btn-view">View Details</a>
                 </div>
             </div>
 
             <div class="model-card">
-                <img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider+Image'">
+                <img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'">
                 <div class="model-info">
                     <h3>TVS Raider 125</h3>
-                    <p>The wicked ride. Commuter of the Year award winner.</p>
+                    <p>The wicked ride. Commuter of the year.</p>
                     <a href="models/raider.html" class="btn-view">View Details</a>
-                </div>
-            </div>
-
-            <div class="model-card">
-                <img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin+Image'">
-                <div class="model-info">
-                    <h3>TVS Ronin</h3>
-                    <p>Modern-Retro Scrambler. Create your own unscripted story.</p>
-                    <a href="models/ronin.html" class="btn-view">View Details</a>
-                </div>
-            </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 40px;">
-             <a href="models.html" style="background: #1f509a; color: white; padding: 12px 30px; border-radius: 50px; font-weight: bold;">View All Models</a>
-        </div>
-    </section>
-
-    <section style="background-color: #f4f6f9;">
-        <h2 class="section-title">Happy Riders</h2>
-        <p class="section-subtitle">See what our customers say about their new rides</p>
-
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p class="review-text">"I bought the new Jupiter 110 from Tirumala TVS. The staff was very helpful, and the bike's mileage is excellent for my daily office commute. Highly recommended!"</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">RK</div>
-                    <div class="customer-details">
-                        <h4>Rahul Kumar</h4>
-                        <span>Owner of TVS Jupiter</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p class="review-text">"The TVS Raider 125 is a beast! The sporty look is amazing, and the pickup is great. The delivery process at the showroom was smooth and fast."</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">AS</div>
-                    <div class="customer-details">
-                        <h4>Arjun Sharma</h4>
-                        <span>Owner of TVS Raider</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -162,27 +99,20 @@
         <div class="footer-container">
             <div class="footer-col">
                 <h4>Tirumala TVS</h4>
-                <p>Authorized Main Dealer.</p>
-                <p>Your trusted partner for TVS Sales & Service in Bidarahalli since opening.</p>
+                <p>Authorized Main Dealer. Your trusted partner for Sales & Service.</p>
             </div>
             <div class="footer-col">
-                <h4>Quick Actions</h4>
+                <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="contacts.html">Book Service Appointment</a></li>
+                    <li><a href="contacts.html">Book Service</a></li>
                     <li><a href="contacts.html">Book Test Ride</a></li>
-                    <li><a href="contacts.html">General Enquiry</a></li>
-                    <li><a href="https://wa.me/919964946512">WhatsApp Us</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p>📍 No. 123, Main Road, Bidarahalli, Bangalore - 49</p>
-                <p>📞 +91 99649 46512</p>
-                <p>✉️ tirumalatvs716@gmail.com</p>
+                <h4>Contact</h4>
+                <p>Bidarahalli, Bangalore - 49</p>
+                <p>+91 99649 46512</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Tirumala TVS Bidarahalli. All Rights Reserved.</p>
         </div>
     </footer>
 
