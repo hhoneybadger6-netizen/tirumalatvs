@@ -1,16 +1,18 @@
-/* --- GLOBAL RESETS --- */
+/* --- GLOBAL RESET & FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
     --tvs-blue: #1f509a;
     --tvs-red: #d3161c;
     --text-dark: #222;
-    --text-light: #666;
+    --text-grey: #555;
     --bg-light: #f9f9f9;
     --white: #ffffff;
 }
@@ -24,20 +26,20 @@ body {
 a { text-decoration: none; color: inherit; transition: 0.3s; }
 ul { list-style: none; }
 
-/* --- HEADER & NAV --- */
+/* --- HEADER & NAVIGATION --- */
 .top-bar {
     background-color: var(--tvs-blue);
     color: white;
-    padding: 8px 5%;
-    font-size: 0.85rem;
+    padding: 10px 5%;
+    font-size: 0.9rem;
     display: flex;
     justify-content: space-between;
-    letter-spacing: 0.5px;
+    font-weight: 500;
 }
 
 header {
     background: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -47,28 +49,30 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 15px 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .logo h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--tvs-blue);
     font-weight: 800;
-    letter-spacing: -1px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
 }
 .logo span { color: var(--tvs-red); }
 
 .nav-links {
     display: flex;
-    gap: 40px; /* Space between links */
+    gap: 30px;
+    align-items: center;
 }
 
 .nav-links a {
     font-weight: 500;
-    font-size: 1rem;
     color: var(--text-dark);
+    font-size: 1rem;
 }
 
 .nav-links a:hover { color: var(--tvs-blue); }
@@ -76,20 +80,24 @@ header {
 .btn-book {
     background-color: var(--tvs-red);
     color: white !important;
-    padding: 12px 25px;
-    border-radius: 50px; /* Rounded pill shape */
+    padding: 10px 25px;
+    border-radius: 50px;
     font-weight: 600;
+    box-shadow: 0 4px 10px rgba(211, 22, 28, 0.3);
 }
 
-.btn-book:hover { background-color: #b01217; transform: translateY(-2px); }
+.btn-book:hover {
+    background-color: #b01217;
+    transform: translateY(-2px);
+}
 
 /* --- HERO SECTION --- */
 .hero {
-    /* Ensure you have an image named hero-bg.jpg in assets */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assets/hero-bg.jpg');
+    /* CORRECT PATH: Goes back one folder (../) to find assets */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 80vh; /* Tall, roomy header */
+    height: 85vh; /* Tall and premium feel */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,107 +109,120 @@ header {
 
 .hero h2 {
     font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
     letter-spacing: -1px;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    margin-bottom: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 35px;
     font-weight: 300;
-    opacity: 0.9;
+    max-width: 700px;
 }
 
 .hero-btn {
-    padding: 15px 40px;
+    padding: 15px 35px;
     background-color: var(--tvs-blue);
     color: white;
     font-weight: 600;
     border-radius: 5px;
     font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
 }
 
-/* --- SECTIONS (The Roomy Part) --- */
+.hero-btn:hover { background-color: #163c75; }
+
+/* --- SECTIONS (The Roomy Layout) --- */
 section {
-    padding: 100px 10%; /* Lots of white space top/bottom/sides */
+    padding: 80px 10%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 60px;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
     color: var(--tvs-blue);
+    font-weight: 700;
 }
 
-/* --- ABOUT TVS BLOCK --- */
-.about-tvs {
+.section-subtitle {
     text-align: center;
-    background-color: var(--white);
+    color: var(--text-grey);
+    margin-bottom: 60px;
+    font-size: 1.1rem;
 }
 
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
+/* --- ABOUT TEXT --- */
+.about-text p {
+    margin-bottom: 20px;
+    color: var(--text-grey);
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.about-content p {
-    color: var(--text-light);
-    font-size: 1.15rem;
-    margin-bottom: 25px;
-}
-
-/* --- MODEL CARDS --- */
+/* --- MODELS GRID --- */
 .models-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Wide cards */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
 }
 
 .model-card {
     background: white;
-    border-radius: 15px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.06); /* Soft shadow */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
     border: 1px solid #eee;
 }
 
-.model-card:hover { transform: translateY(-10px); }
+.model-card:hover { transform: translateY(-8px); }
 
 .model-card img {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
+    background-color: #eee; /* Grey placeholder color if image fails */
 }
 
-.model-info { padding: 30px; }
+.model-info { padding: 25px; text-align: left; }
 
 .model-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
     color: var(--text-dark);
+}
+
+.model-info p {
+    font-size: 0.95rem;
+    color: var(--text-grey);
+    margin-bottom: 20px;
 }
 
 .btn-outline {
     display: inline-block;
     border: 2px solid var(--tvs-blue);
     color: var(--tvs-blue);
-    padding: 10px 25px;
-    margin-top: 20px;
+    padding: 8px 20px;
     border-radius: 5px;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .btn-outline:hover { background: var(--tvs-blue); color: white; }
 
 /* --- FOOTER --- */
 footer {
-    background-color: #111;
-    color: #aaa;
-    padding: 80px 10% 40px;
+    background-color: #1a1a1a;
+    color: #bbb;
+    padding: 70px 10% 30px;
     margin-top: 50px;
 }
 
@@ -213,4 +234,11 @@ footer {
 }
 
 .footer-section h4 { color: white; margin-bottom: 20px; font-size: 1.2rem; }
-.footer-bottom { border-top: 1px solid #333; margin-top: 50px; padding-top: 20px; text-align: center; font-size: 0.9rem; }
+.footer-section p { margin-bottom: 10px; }
+.footer-bottom { 
+    border-top: 1px solid #333; 
+    margin-top: 50px; 
+    padding-top: 20px; 
+    text-align: center; 
+    font-size: 0.9rem; 
+}
