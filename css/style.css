@@ -1,174 +1,108 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tirumala TVS | Authorized TVS Dealer Bengaluru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-body {
-  background: #f2f4f8;
-  color: #1f2937;
-}
+<header>
+  <div class="header-inner">
+    <div class="logo">Tirumala TVS</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="models.html">Motorcycles</a>
+      <a href="models.html#scooters">Scooters</a>
+      <a href="models.html#mopeds">Mopeds</a>
+      <a href="models.html#electric">Electric</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
 
-/* HEADER */
-header {
-  background: #ffffff;
-  border-bottom: 4px solid #0b4fd8;
-}
+<section class="hero">
+  <div class="hero-content">
+    <h1>Driven by Trust. Powered by TVS.</h1>
+    <p>
+      Authorized TVS Motor Company dealer in Bengaluru offering motorcycles,
+      scooters, electric vehicles, genuine service, finance and test rides.
+    </p>
+    <div class="hero-buttons">
+      <a href="models.html" class="btn-red">Explore Models</a>
+      <a href="#services" class="btn-white">Book Test Ride</a>
+    </div>
+  </div>
+</section>
 
-.header-inner {
-  max-width: 1300px;
-  margin: auto;
-  padding: 14px 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+<section id="about">
+  <h2 class="section-title">About TVS Motor Company</h2>
+  <p class="section-sub">
+    TVS Motor Company is one of India’s most respected two-wheeler manufacturers
+    with four decades of racing excellence, innovation and global presence
+    across 80+ countries.
+  </p>
+</section>
 
-.logo {
-  font-size: 24px;
-  font-weight: 800;
-  color: #0b4fd8;
-}
+<section>
+  <h2 class="section-title">Why Tirumala TVS?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Authorized Dealer</h3>
+      <p>Manufacturer-backed sales, service & genuine spares.</p>
+    </div>
+    <div class="card">
+      <h3>Complete TVS Portfolio</h3>
+      <p>Apache, Raider, Ronin, Jupiter, Ntorq, iQube & XL 100.</p>
+    </div>
+    <div class="card">
+      <h3>Customer-First Approach</h3>
+      <p>Transparent pricing, finance assistance & long-term support.</p>
+    </div>
+  </div>
+</section>
 
-nav a {
-  margin-left: 18px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #111827;
-}
+<section class="category-strip" id="services">
+  <h2 class="section-title">Quick Actions</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Compare Models</h3>
+      <p>View specifications & variants.</p>
+      <a href="models.html">View Models →</a>
+    </div>
+    <div class="card">
+      <h3>Book Test Ride</h3>
+      <p>Schedule a ride instantly.</p>
+      <a href="#services">Book Now →</a>
+    </div>
+    <div class="card">
+      <h3>Book Service</h3>
+      <p>Authorized TVS service appointment.</p>
+      <a href="#services">Book Service →</a>
+    </div>
+    <div class="card">
+      <h3>Explore Electric</h3>
+      <p>TVS iQube electric scooters.</p>
+      <a href="models.html#electric">Explore →</a>
+    </div>
+  </div>
+</section>
 
-nav a:hover {
-  color: #e11d48;
-}
+<section class="quick-links">
+  <h2 class="section-title">Quick Links</h2>
+  <div class="grid">
+    <a href="#about">About Us</a>
+    <a href="#services">Book Service</a>
+    <a href="#services">Book Test Ride</a>
+    <a href="models.html">All Models</a>
+  </div>
+</section>
 
-/* HERO */
-.hero {
-  background:
-    linear-gradient(to right, rgba(11,79,216,.85), rgba(225,29,72,.85)),
-    url("https://images.unsplash.com/photo-1606229365485-93a3b8ee0385");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
+<footer>
+  © 2026 Tirumala TVS, Bengaluru | Authorized TVS Dealer
+</footer>
 
-.hero-content {
-  max-width: 1300px;
-  margin: auto;
-  padding: 90px 18px 70px;
-}
-
-.hero h1 {
-  font-size: 46px;
-  margin-bottom: 14px;
-}
-
-.hero p {
-  max-width: 720px;
-  font-size: 18px;
-  margin-bottom: 28px;
-}
-
-.hero-buttons a {
-  display: inline-block;
-  margin-right: 12px;
-  margin-bottom: 10px;
-  padding: 14px 30px;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
-.btn-red {
-  background: #e11d48;
-  color: #fff;
-}
-
-.btn-white {
-  background: #fff;
-  color: #0b4fd8;
-}
-
-/* SECTIONS */
-section {
-  max-width: 1300px;
-  margin: auto;
-  padding: 50px 18px;
-}
-
-.section-title {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #0b4fd8;
-}
-
-.section-sub {
-  margin-bottom: 28px;
-  color: #374151;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
-}
-
-/* CARD */
-.card {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 22px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.08);
-  border-top: 5px solid #0b4fd8;
-}
-
-.card h3 {
-  margin-bottom: 8px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #374151;
-}
-
-.card a {
-  display: inline-block;
-  margin-top: 14px;
-  color: #e11d48;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* CATEGORY STRIP */
-.category-strip {
-  background: #0b4fd8;
-  color: #fff;
-  padding: 30px 18px;
-}
-
-.category-strip .grid .card {
-  border-top: none;
-  background: #ffffff;
-}
-
-/* QUICK LINKS */
-.quick-links {
-  background: #020617;
-  color: #cbd5e1;
-}
-
-.quick-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* FOOTER */
-footer {
-  background: #020617;
-  color: #9ca3af;
-  text-align: center;
-  padding: 24px 16px;
-  font-size: 14px;
-}
+</body>
+</html>
