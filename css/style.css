@@ -17,7 +17,7 @@ body { background: var(--white); color: var(--dark-grey); line-height: 1.6; }
 a { text-decoration: none; color: inherit; transition: 0.3s; }
 ul { list-style: none; }
 
-/* --- HEADER & NAVIGATION --- */
+/* --- HEADER --- */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -47,6 +47,7 @@ ul { list-style: none; }
 
 /* --- HOME PAGE HERO --- */
 .hero {
+    /* Uses your specific double extension file */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../assets/hero-bg.jpg.jpg');
     background-size: cover;
     background-position: center;
@@ -96,12 +97,7 @@ ul { list-style: none; }
 }
 .action-btn:hover { background: var(--tvs-red); color: white; transform: translateY(-3px); }
 
-/* --- SECTIONS COMMON --- */
-section { padding: 80px 10%; max-width: 1400px; margin: 0 auto; }
-.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 10px; color: var(--dark-grey); font-weight: 800; text-transform: uppercase; }
-.section-subtitle { text-align: center; color: #666; margin-bottom: 50px; font-size: 1.1rem; }
-
-/* --- HOME PAGE GRID (Latest Launches) --- */
+/* --- HOME & INVENTORY GRIDS --- */
 .models-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -113,16 +109,17 @@ section { padding: 80px 10%; max-width: 1400px; margin: 0 auto; }
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease;
+    border: 1px solid #eee;
 }
 .model-card:hover { transform: translateY(-8px); }
-.model-card img { width: 100%; height: 220px; object-fit: cover; background-color: var(--light-grey); }
+.model-card img { width: 100%; height: 220px; object-fit: cover; background-color: #eee; }
 .model-info { padding: 25px; }
 .model-info h3 { font-size: 1.4rem; color: var(--dark-grey); margin-bottom: 5px; font-weight: 700; }
 .model-info p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
 .btn-view { display: inline-block; border: 2px solid var(--tvs-blue); color: var(--tvs-blue); padding: 8px 25px; font-weight: 600; border-radius: 4px; }
 .btn-view:hover { background: var(--tvs-blue); color: white; }
 
-/* --- ZEST/MODEL PAGE STYLES (New) --- */
+/* --- PREMIUM MODEL PAGE STYLES (Zest Style) --- */
 .model-hero {
     display: flex;
     flex-wrap: wrap;
@@ -132,12 +129,15 @@ section { padding: 80px 10%; max-width: 1400px; margin: 0 auto; }
     min-height: 85vh;
 }
 .hero-text { flex: 1; min-width: 350px; padding-right: 50px; }
-.hero-tag { background: var(--zest-teal); color: white; padding: 5px 12px; font-size: 0.8rem; border-radius: 20px; font-weight: 700; }
+.hero-tag { background: var(--tvs-blue); color: white; padding: 5px 12px; font-size: 0.8rem; border-radius: 20px; font-weight: 700; letter-spacing: 1px; }
 .hero-text h1 { font-size: 4rem; margin: 15px 0 5px; color: var(--dark-grey); line-height: 1; }
-.hero-text h3 { font-size: 1.5rem; color: var(--tvs-blue); margin-bottom: 20px; font-weight: 500; }
+.hero-text h3 { font-size: 1.5rem; color: var(--tvs-red); margin-bottom: 20px; font-weight: 500; }
+.hero-text p { font-size: 1.1rem; color: #555; margin-bottom: 35px; max-width: 500px; }
 .hero-btns { display: flex; gap: 15px; }
-.btn-primary { background: var(--tvs-blue); color: white; padding: 12px 30px; border-radius: 5px; font-weight: 600; }
+.btn-primary { background: var(--tvs-blue); color: white; padding: 12px 30px; border-radius: 5px; font-weight: 600; box-shadow: 0 5px 15px rgba(31, 80, 154, 0.3); }
 .btn-secondary { border: 2px solid var(--tvs-blue); color: var(--tvs-blue); padding: 12px 30px; border-radius: 5px; font-weight: 600; }
+.hero-image { flex: 1.2; text-align: center; }
+.hero-image img { width: 100%; max-width: 700px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.2)); }
 
 .stats-bar {
     background: white;
@@ -154,12 +154,13 @@ section { padding: 80px 10%; max-width: 1400px; margin: 0 auto; }
 
 .info-section { padding: 80px 10%; background: white; }
 .section-head { text-align: center; margin-bottom: 60px; }
+.section-head h2 { font-size: 2.5rem; margin-bottom: 10px; }
 .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 .feature-card { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); border: 1px solid #f0f0f0; transition: 0.3s; }
+.feature-card:hover { transform: translateY(-10px); border-color: var(--tvs-blue); }
 .feature-icon { font-size: 2.5rem; margin-bottom: 20px; display: block; }
 .feature-card h4 { font-size: 1.3rem; margin-bottom: 10px; color: var(--dark-grey); }
 
-/* --- SPECS TABLE (For Models) --- */
 .specs-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); overflow: hidden; }
 .spec-row { display: flex; border-bottom: 1px solid #eee; }
 .spec-key { width: 40%; background: #f9f9f9; padding: 20px; font-weight: 600; color: #444; }
@@ -167,5 +168,3 @@ section { padding: 80px 10%; max-width: 1400px; margin: 0 auto; }
 
 /* --- FOOTER --- */
 footer { background: #111; color: #888; padding: 50px 5%; margin-top: 80px; text-align: center; }
-.footer-container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; text-align: left; }
-.footer-col h4 { color: white; margin-bottom: 20px; }
