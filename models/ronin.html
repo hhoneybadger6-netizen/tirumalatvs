@@ -3,66 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TVS Ronin | Unscripted</title>
+    <title>TVS Ronin | Tirumala TVS</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="../index.html" class="logo"><h1>Tirumala <span>TVS</span></h1></a>
-            <nav><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../models.html">Inventory</a></li><li><a href="../contacts.html">Service</a></li></ul></nav>
+    <nav class="nav-container">
+        <a href="../index.html" class="logo"><h1>Tirumala <span>TVS</span></h1></a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../models.html">Inventory</a>
+            <a href="../contacts.html" style="color: var(--tvs-red);">Book Test Ride</a>
         </div>
-    </header>
+    </nav>
 
     <section class="model-hero">
         <div class="hero-text">
-            <span style="background: #333; color: white; padding: 5px 10px; font-size: 0.8rem; border-radius: 4px; font-weight: bold;">PREMIUM</span>
+            <span class="hero-tag" style="background: #444;">PREMIUM</span>
             <h1>TVS Ronin</h1>
-            <h3>Live the Unscripted Life</h3>
+            <h3>#Unscripted Life</h3>
             <p>
                 A modern-retro scrambler designed for the city and the open road. 
-                Featuring a 225cc engine, golden USD forks, and dual-channel ABS.
+                With a 225cc engine, golden USD forks, and dual-channel ABS, it defies categorization.
             </p>
-            <div style="display: flex; gap: 15px;">
-                <a href="../contacts.html" class="hero-btn">📅 Book Test Ride</a>
-                <a href="https://wa.me/919964946512" class="btn-outline">💬 WhatsApp</a>
+            <div class="hero-btns">
+                <a href="../contacts.html" class="btn-primary">📅 Book Test Ride</a>
+                <a href="https://wa.me/919964946512" class="btn-secondary">💬 WhatsApp</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="../assets/ronin.jpg" alt="TVS Ronin">
+            <img src="../assets/ronin.jpg" alt="TVS Ronin" onerror="this.src='https://placehold.co/800x600?text=Ronin'">
         </div>
     </section>
 
     <div class="stats-bar">
-        <div class="stat-item"><h4>225.9 cc</h4><span>Engine</span></div>
-        <div class="stat-item"><h4>20.4 PS</h4><span>Power</span></div>
-        <div class="stat-item"><h4>19.93 Nm</h4><span>Torque</span></div>
-        <div class="stat-item"><h4>Dual ABS</h4><span>Safety</span></div>
+        <div class="stat-box"><h4>225.9 cc</h4><p>Oil Cooled</p></div>
+        <div class="stat-box"><h4>20.4 PS</h4><p>Power</p></div>
+        <div class="stat-box"><h4>Dual ABS</h4><p>Safety</p></div>
+        <div class="stat-box"><h4>USD</h4><p>Gold Forks</p></div>
     </div>
 
-    <section>
-        <h2 class="section-title">Key Highlights</h2>
+    <section class="info-section">
+        <div class="section-head"><h2>Premium Features</h2></div>
         <div class="features-grid">
-            <div class="feature-card"><span class="feature-icon">☔</span><h4>Rain & Urban Mode</h4><p>Switchable ABS modes for different riding conditions.</p></div>
-            <div class="feature-card"><span class="feature-icon">🏍</span><h4>GTT Tech</h4><p>Glide Through Traffic capability for effortless city riding.</p></div>
-            <div class="feature-card"><span class="feature-icon">🔱</span><h4>USD Forks</h4><p>Premium gold-finished Upside Down forks for stability.</p></div>
-            <div class="feature-card"><span class="feature-icon">🔗</span><h4>SmartXonnect</h4><p>Bluetooth connectivity with voice assist and navigation.</p></div>
+            <div class="feature-card"><span class="feature-icon">☔</span><h4>Rain & Urban Mode</h4><p>Switchable ABS modes to adapt braking for different weather conditions.</p></div>
+            <div class="feature-card"><span class="feature-icon">🏍</span><h4>GTT Technology</h4><p>Glide Through Traffic capability allows effortless crawling in heavy traffic.</p></div>
+            <div class="feature-card"><span class="feature-icon">🔱</span><h4>USD Forks</h4><p>Premium gold-finished Upside Down forks for better stability and looks.</p></div>
+            <div class="feature-card"><span class="feature-icon">🔗</span><h4>SmartXonnect</h4><p>Full digital circular pod with Voice Assist and Navigation.</p></div>
         </div>
     </section>
 
-    <section style="background-color: var(--light-grey); padding-top: 60px;">
-        <h2 class="section-title">Technical Specs</h2>
-        <div class="specs-grid">
-            <div class="spec-box"><span class="spec-icon">⚙️</span><div class="spec-label">Engine</div><div class="spec-value">225.9 cc</div></div>
-            <div class="spec-box"><span class="spec-icon">🐎</span><div class="spec-label">Power</div><div class="spec-value">20.4 PS</div></div>
-            <div class="spec-box"><span class="spec-icon">🛢</span><div class="spec-label">Fuel Tank</div><div class="spec-value">14 Liters</div></div>
-            <div class="spec-box"><span class="spec-icon">⚖️</span><div class="spec-label">Weight</div><div class="spec-value">160 kg</div></div>
-            <div class="spec-box"><span class="spec-icon">🛑</span><div class="spec-label">Brakes</div><div class="spec-value">Dual Disc ABS</div></div>
-            <div class="spec-box"><span class="spec-icon">💡</span><div class="spec-label">Headlamp</div><div class="spec-value">T-Face LED</div></div>
+    <section class="info-section" style="background-color: #f9f9f9;">
+        <div class="section-head"><h2>Technical Specifications</h2></div>
+        <div class="specs-container">
+            <div class="spec-row"><div class="spec-key">Engine</div><div class="spec-val">225.9 cc, Single Cylinder, Oil Cooled</div></div>
+            <div class="spec-row"><div class="spec-key">Power</div><div class="spec-val">20.4 PS @ 7750 rpm</div></div>
+            <div class="spec-row"><div class="spec-key">Torque</div><div class="spec-val">19.93 Nm @ 3750 rpm</div></div>
+            <div class="spec-row"><div class="spec-key">Brakes</div><div class="spec-val">Front & Rear Disc with Dual Channel ABS</div></div>
+            <div class="spec-row"><div class="spec-key">Fuel Tank</div><div class="spec-val">14 Liters</div></div>
+            <div class="spec-row"><div class="spec-key">Weight</div><div class="spec-val">160 kg</div></div>
         </div>
     </section>
 
-    <footer><div class="footer-bottom"><p>&copy; 2024 Tirumala TVS Bidarahalli.</p></div></footer>
+    <footer><p>&copy; 2024 Tirumala TVS Bidarahalli.</p></footer>
 </body>
 </html>
