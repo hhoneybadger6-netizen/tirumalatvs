@@ -4,67 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS Ronin | Tirumala TVS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-    <nav class="nav-container">
-        <a href="../index.html" class="logo"><h1>Tirumala <span>TVS</span></h1></a>
-        <div class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="../models.html">Inventory</a>
-            <a href="../contacts.html" style="color: var(--tvs-red);">Book Test Ride</a>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <div class="nav-links" id="navMenu">
+                <a href="../index.html">Home</a>
+                <a href="../models.html">Inventory</a>
+                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
+            </div>
         </div>
     </nav>
 
-    <section class="model-hero">
-        <div class="hero-text">
-            <span class="hero-tag" style="background: #444;">PREMIUM</span>
-            <h1>TVS Ronin</h1>
-            <h3>#Unscripted Life</h3>
-            <p>
-                A modern-retro scrambler designed for the city and the open road. 
-                With a 225cc engine, golden USD forks, and dual-channel ABS, it defies categorization.
-            </p>
-            <div class="hero-btns">
-                <a href="../contacts.html" class="btn-primary">📅 Book Test Ride</a>
-                <a href="https://wa.me/919964946512" class="btn-secondary">💬 WhatsApp</a>
+    <div class="model-hero">
+        <div class="hero-text-side">
+            <span class="model-tag" style="background:#333;">UNSCRIPTED LIFE</span>
+            <h1 class="model-title">TVS Ronin</h1>
+            <p class="section-subtitle">Modern-Retro Scrambler. Built for the city, ready for the highway.</p>
+            <div class="model-price">₹ 1,49,000* <br><span>(Starting Ex-Showroom)</span></div>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20Ronin" class="btn btn-primary">Book Test Ride 🏍️</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="../assets/ronin.jpg" alt="TVS Ronin" onerror="this.src='https://placehold.co/800x600?text=Ronin'">
+        <div class="hero-img-side">
+            <img src="../assets/ronin.jpg" alt="TVS Ronin" onerror="this.src='https://placehold.co/800x600?text=TVS+Ronin'">
         </div>
-    </section>
-
-    <div class="stats-bar">
-        <div class="stat-box"><h4>225.9 cc</h4><p>Oil Cooled</p></div>
-        <div class="stat-box"><h4>20.4 PS</h4><p>Power</p></div>
-        <div class="stat-box"><h4>Dual ABS</h4><p>Safety</p></div>
-        <div class="stat-box"><h4>USD</h4><p>Gold Forks</p></div>
     </div>
 
-    <section class="info-section">
-        <div class="section-head"><h2>Premium Features</h2></div>
-        <div class="features-grid">
-            <div class="feature-card"><span class="feature-icon">☔</span><h4>Rain & Urban Mode</h4><p>Switchable ABS modes to adapt braking for different weather conditions.</p></div>
-            <div class="feature-card"><span class="feature-icon">🏍</span><h4>GTT Technology</h4><p>Glide Through Traffic capability allows effortless crawling in heavy traffic.</p></div>
-            <div class="feature-card"><span class="feature-icon">🔱</span><h4>USD Forks</h4><p>Premium gold-finished Upside Down forks for better stability and looks.</p></div>
-            <div class="feature-card"><span class="feature-icon">🔗</span><h4>SmartXonnect</h4><p>Full digital circular pod with Voice Assist and Navigation.</p></div>
+    <div class="spec-bar-dark">
+        <div class="spec-bar-grid">
+            <div class="dark-spec-item"><h4>225cc</h4><p>Engine</p></div>
+            <div class="dark-spec-item"><h4>20.4</h4><p>PS Power</p></div>
+            <div class="dark-spec-item"><h4>ABS</h4><p>Dual Channel</p></div>
+            <div class="dark-spec-item"><h4>USD</h4><p>Front Forks</p></div>
         </div>
-    </section>
+    </div>
 
-    <section class="info-section" style="background-color: #f9f9f9;">
-        <div class="section-head"><h2>Technical Specifications</h2></div>
-        <div class="specs-container">
-            <div class="spec-row"><div class="spec-key">Engine</div><div class="spec-val">225.9 cc, Single Cylinder, Oil Cooled</div></div>
-            <div class="spec-row"><div class="spec-key">Power</div><div class="spec-val">20.4 PS @ 7750 rpm</div></div>
-            <div class="spec-row"><div class="spec-key">Torque</div><div class="spec-val">19.93 Nm @ 3750 rpm</div></div>
-            <div class="spec-row"><div class="spec-key">Brakes</div><div class="spec-val">Front & Rear Disc with Dual Channel ABS</div></div>
-            <div class="spec-row"><div class="spec-key">Fuel Tank</div><div class="spec-val">14 Liters</div></div>
-            <div class="spec-row"><div class="spec-key">Weight</div><div class="spec-val">160 kg</div></div>
+    <div class="feature-section container">
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Unique T-Face Pilot Lamp</h3>
+                <p>Signature design that sets you apart. The modern retro LED setup ensures you are seen, day or night.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/ronin_light.jpg" alt="Ronin Light" onerror="this.src='https://placehold.co/600x400?text=T-Face+Lamp'"></div>
         </div>
-    </section>
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Offset Speedometer</h3>
+                <p>A uniquely positioned digital pod with Bluetooth connectivity, voice assist, and turn-by-turn navigation.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/ronin_speedo.jpg" alt="Ronin Speedometer" onerror="this.src='https://placehold.co/600x400?text=Offset+Speedometer'"></div>
+        </div>
+    </div>
+    
+    <div class="section-padding bg-light text-center">
+        <h2 style="margin-bottom: 20px;">Live Unscripted</h2>
+        <a href="https://wa.me/919964946512?text=Get%20Quote%20Ronin" class="btn btn-whatsapp">Get On-Road Price 💬</a>
+    </div>
 
-    <footer><p>&copy; 2024 Tirumala TVS Bidarahalli.</p></footer>
+    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
