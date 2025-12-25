@@ -3,357 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tirumala TVS | Authorized Dealership Bidarahalli</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* --- ROOT VARIABLES (TVS BRAND COLORS) --- */
-        :root {
-            --tvs-blue: #1F2A44;
-            --tvs-red: #E31837;
-            --white: #ffffff;
-            --light-gray: #f4f4f4;
-            --dark-gray: #333333;
-            --shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        /* --- RESET & BASIC SETUP --- */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--light-gray);
-            color: var(--dark-gray);
-            line-height: 1.6;
-        }
-
-        a { text-decoration: none; color: inherit; transition: 0.3s; }
-        ul { list-style: none; }
-
-        /* --- HEADER & NAVIGATION (LOCKED DESIGN) --- */
-        header {
-            background-color: var(--tvs-blue);
-            color: var(--white);
-            padding: 15px 0;
-            position: sticky; /* Keeps nav locked to top */
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 800;
-            text-transform: uppercase;
-            border-left: 5px solid var(--tvs-red);
-            padding-left: 10px;
-        }
-        
-        .logo span { color: var(--tvs-red); }
-
-        .nav-links { display: flex; gap: 25px; }
-        .nav-links a { font-weight: 500; font-size: 16px; }
-        .nav-links a:hover { color: var(--tvs-red); }
-
-        .cta-btn {
-            background-color: var(--tvs-red);
-            padding: 10px 20px;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-        .cta-btn:hover { background-color: #b0122a; }
-
-        /* --- HERO SECTION --- */
-        .hero {
-            height: 600px;
-            background: linear-gradient(rgba(31, 42, 68, 0.8), rgba(31, 42, 68, 0.6)), 
-                        url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: var(--white);
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .hero-content p { font-size: 1.2rem; margin-bottom: 30px; }
-
-        /* --- MODELS GRID --- */
-        .section { padding: 80px 0; }
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            color: var(--tvs-blue);
-        }
-        .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; }
-        .divider { height: 4px; width: 60px; background: var(--tvs-red); margin: 0 auto; }
-
-        .models-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .model-card {
-            background: var(--white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s;
-            text-align: center;
-        }
-
-        .model-card:hover { transform: translateY(-5px); }
-
-        .model-img {
-            height: 200px;
-            background: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-        }
-        
-        .model-info { padding: 20px; }
-        .model-info h3 { color: var(--tvs-blue); margin-bottom: 10px; }
-        .model-btn {
-            display: inline-block;
-            margin-top: 10px;
-            color: var(--tvs-red);
-            font-weight: bold;
-            border: 2px solid var(--tvs-red);
-            padding: 8px 20px;
-            border-radius: 20px;
-        }
-        .model-btn:hover { background: var(--tvs-red); color: white; }
-
-        /* --- CONTACT SECTION (RESTORED + LINK ADDED) --- */
-        .contact-section { background-color: var(--tvs-blue); color: var(--white); }
-        .contact-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 50px;
-            background: var(--white);
-            color: var(--dark-gray);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .contact-info {
-            flex: 1;
-            padding: 40px;
-            background: #f9f9f9;
-        }
-
-        .contact-form-container {
-            flex: 1;
-            padding: 40px;
-        }
-
-        .info-item { margin-bottom: 20px; display: flex; align-items: center; gap: 15px; }
-        .info-item i { color: var(--tvs-red); font-size: 1.2rem; }
-
-        /* Form Styling */
-        form { display: flex; flex-direction: column; gap: 20px; }
-        
-        .form-group { position: relative; }
-        
-        .form-group input, 
-        .form-group textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            outline: none;
-            background: #f8f8f8;
-            transition: 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: var(--tvs-blue);
-            background: #fff;
-        }
-
-        .submit-btn {
-            background-color: var(--tvs-red);
-            color: white;
-            border: none;
-            padding: 15px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-            text-transform: uppercase;
-        }
-
-        .submit-btn:hover { background-color: #b0122a; }
-
-        /* --- FOOTER --- */
-        footer {
-            background: #111;
-            color: #888;
-            padding: 40px 0;
-            text-align: center;
-        }
-        footer p { font-size: 0.9rem; }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.5rem; }
-            .nav-links { display: none; } /* Simplified for mobile */
-            .contact-wrapper { flex-direction: column; }
-        }
-    </style>
+    <title>Tirumala TVS Bidarahalli | Authorized Main Dealer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">Tirumala <span>TVS</span></div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#models">Motorcycles</a></li>
-                    <li><a href="#scooters">Scooters</a></li>
-                    <li><a href="#service">Service</a></li>
-                </ul>
-            </nav>
-            <a href="#contact" class="cta-btn">Enquire Now</a>
+    <div class="header-top">
+        <a href="#contact" class="btn-header-action">Book Service</a>
+        <a href="#contact" class="btn-header-action">Get Quotation</a>
+        <a href="#contact" class="btn-header-action">Book Test Drive</a>
+    </div>
+
+    <nav class="main-nav-container">
+        <a href="index.html" class="logo-text">Tirumala <span>TVS</span></a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="models.html">VEHICLES</a>
+            <a href="#services">SERVICES</a>
+            <a href="#contact">CONTACT</a>
         </div>
-    </header>
+    </nav>
 
     <section class="hero">
-        <div class="container hero-content">
-            <h1>Experience Power & Precision</h1>
-            <p>Welcome to Tirumala TVS Bidarahalli - Your Premium TVS Partner in Bangalore</p>
-            <a href="#models" class="cta-btn">View Models</a>
+        <h2>Experience the New TVS</h2>
+        <p>Your Trusted Authorized Dealership in Bidarahalli, Bangalore.</p>
+        <a href="models.html" class="hero-btn">View Latest Bikes</a>
+    </section>
+
+    <div class="action-bar">
+        <a href="#contact" class="action-btn">📅 Book Service</a>
+        <a href="#contact" class="action-btn">🏍 Book Test Ride</a>
+        <a href="https://wa.me/919964946512?text=General%20Enquiry" class="action-btn">💬 General Enquiry</a>
+    </div>
+
+    <section id="about" class="brand-legacy">
+        <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Welcome to Tirumala TVS</h2>
+        <p>We are committed to being a socially responsible and leading manufacturer.</p>
+        <div class="brand-grid">
+            <div class="brand-item"><span class="brand-icon">✔️</span><h3>50M+ Vehicles</h3><p>Celebrated globally.</p></div>
+            <div class="brand-item"><span class="brand-icon">✔️</span><h3>80+ Countries</h3><p>Global trust.</p></div>
+            <div class="brand-item"><span class="brand-icon">✔️</span><h3>Industry Leader</h3><p>Innovation first.</p></div>
         </div>
     </section>
 
-    <section id="models" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Motorcycles</h2>
-                <div class="divider"></div>
+    <section style="background-color: white;">
+        <h2 class="section-title">Latest Launches</h2>
+        <div class="models-grid">
+            <div class="model-card">
+                <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter'">
+                <div class="model-info"><h3>New TVS Jupiter 110</h3><p>New 113cc Engine with iGO Assist.</p><a href="models/jupiter113.html" class="btn-view">View Details</a></div>
             </div>
-            <div class="models-grid">
-                <div class="model-card">
-                    <div class="model-img"><i class="fas fa-motorcycle fa-3x"></i></div> <div class="model-info">
-                        <h3>TVS Apache RR 310</h3>
-                        <p>Racing DNA Unleashed</p>
-                        <a href="#contact" class="model-btn">Get On-Road Price</a>
-                    </div>
-                </div>
-                <div class="model-card">
-                    <div class="model-img"><i class="fas fa-motorcycle fa-3x"></i></div>
-                    <div class="model-info">
-                        <h3>TVS Ronin</h3>
-                        <p>Unscripted Life</p>
-                        <a href="#contact" class="model-btn">Get On-Road Price</a>
-                    </div>
-                </div>
-                <div class="model-card">
-                    <div class="model-img"><i class="fas fa-motorcycle fa-3x"></i></div>
-                    <div class="model-info">
-                        <h3>TVS Raider</h3>
-                        <p>The Wicked Ride</p>
-                        <a href="#contact" class="model-btn">Get On-Road Price</a>
-                    </div>
-                </div>
+            <div class="model-card">
+                <img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'">
+                <div class="model-info"><h3>TVS Raider 125</h3><p>The wicked ride. Commuter of the year.</p><a href="models/raider.html" class="btn-view">View Details</a></div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <div class="section-title">
-                <h2 style="color:white;">Contact Us</h2>
-                <div class="divider" style="background:white;"></div>
-            </div>
-            
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Visit Our Showroom</h3>
-                    <p>We are located in the heart of Bidarahalli.</p>
-                    <br>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Tirumala TVS, Bidarahalli, Bangalore</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 XXXXX XXXXX</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>sales@tirumalatvs.com</span>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <h3>Send an Enquiry</h3>
-                    
-                    <form action="https://formspree.io/f/xqezrzkn" method="POST">
-                        
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Full Name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Email Address" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Phone Number" required>
-                        </div>
-
-                        <div class="form-group">
-                            <select name="model_interest" style="width:100%; padding:15px; border:1px solid #ddd; border-radius:5px; background:#f8f8f8;">
-                                <option value="" disabled selected>Select Model of Interest</option>
-                                <option value="Apache">Apache Series</option>
-                                <option value="Jupiter">Jupiter Series</option>
-                                <option value="Ronin">Ronin</option>
-                                <option value="Ntorq">Ntorq</option>
-                                <option value="Service">Service / Spares</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea name="message" rows="4" placeholder="Your Message or Query" required></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Send Message</button>
-
-                    </form>
-                </div>
+            <div class="model-card">
+                <img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin'">
+                <div class="model-info"><h3>TVS Ronin</h3><p>Modern-Retro Scrambler.</p><a href="models/ronin.html" class="btn-view">View Details</a></div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Tirumala TVS Bidarahalli. All rights reserved.</p>
+    <section class="services-section" id="services">
+        <h2 class="section-title">Services Offered</h2>
+        <p class="section-subtitle">Professional care for your TVS vehicle</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">👨‍🔧</span>
+                <h3>Trusted Care</h3>
+                <p>Regular checkups and expert repairs by trained TVS technicians.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">⚙️</span>
+                <h3>Engine Diagnostics</h3>
+                <p>Ensure peak performance with modern diagnostic tools.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🛢️</span>
+                <h3>Oil Change</h3>
+                <p>Genuine oil and parts to improve mileage and engine life.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🛑</span>
+                <h3>Brake & Suspension</h3>
+                <p>Safety checks for brakes and suspension systems.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🔋</span>
+                <h3>Battery & Electrical</h3>
+                <p>Complete checkup of battery health and electrical wiring.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">🛠️</span>
+                <h3>TVS Service Packages</h3>
+                <p>Affordable annual maintenance contracts (AMC).</p>
+            </div>
+        </div>
+
+        <a href="https://wa.me/919964946512?text=Hello%20Tirumala%20TVS,%20I%20would%20like%20to%20book%20a%20service%20appointment." class="btn-book-service" target="_blank">Book Service Appointment 💬</a>
+    </section>
+
+    <section style="background-color: white;">
+        <h2 class="section-title">Happy Riders</h2>
+        <p class="section-subtitle">Real experiences from our customers</p>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="star-rating">★★★★★</div>
+                <p>"The mileage is impressive for city rides, giving around 55 kmpl. Comfortable seat."</p>
+                <div class="customer-info"><div style="background:#ccc;width:40px;height:40px;border-radius:50%;"></div><div class="customer-details"><h4>Usama Faruqui</h4><span>Jupiter Owner</span></div></div>
+            </div>
+            <div class="testimonial-card">
+                <div class="star-rating">★★★★★</div>
+                <p>"I'm surprised to see the mileage! Getting nearly 60+ kmpl on highways."</p>
+                <div class="customer-info"><div style="background:#ccc;width:40px;height:40px;border-radius:50%;"></div><div class="customer-details"><h4>Safik Ahmed</h4><span>Raider Owner</span></div></div>
+            </div>
+            <div class="testimonial-card">
+                <div class="star-rating">★★★★★</div>
+                <p>"Best service experience in Bidarahalli. Mechanics are knowledgeable."</p>
+                <div class="customer-info"><div style="background:#ccc;width:40px;height:40px;border-radius:50%;"></div><div class="customer-details"><h4>Vikram M.</h4><span>Apache Owner</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-wrapper" id="contact">
+        <div class="contact-left">
+            <h2 class="section-title" style="text-align: left;">Contact Us</h2>
+            <p style="margin-bottom: 30px; color: #666;">Fill the form below to reach us.</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label class="form-label">Name *</label><input type="text" name="name" class="form-input" placeholder="Your fullname" required>
+                <label class="form-label">Phone *</label><input type="tel" name="phone" class="form-input" placeholder="Your phone number" required>
+                <label class="form-label">Purpose *</label>
+                <select name="purpose" class="form-input" required>
+                    <option value="General Enquiry">General Enquiry</option>
+                    <option value="Book Service">Book Service Appointment</option>
+                    <option value="Get Quotation">Get Quotation / Price</option>
+                    <option value="Test Drive">Book Test Drive</option>
+                </select>
+                <label class="form-label">Message</label><textarea name="message" class="form-input" rows="4" placeholder="Vehicle details..."></textarea>
+                <button type="submit" class="btn-submit-form">Submit Request</button>
+            </form>
+        </div>
+        <div class="contact-right"></div>
+    </div>
+
+    <div class="footer-contact-bar">
+        <div class="contact-item">✉️ tirumalatvs716@gmail.com</div>
+        <div class="contact-item">📞 +91 99649 46512</div>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column"><h4>Quick Links</h4><ul><li><a href="index.html">About Us</a></li><li><a href="#contact">Contact Us</a></li><li><a href="#contact">Book Service</a></li></ul></div>
+            <div class="footer-column"><h4>Models</h4><ul><li><a href="models.html">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li><li><a href="models.html#electric">Electric</a></li></ul></div>
+            <div class="footer-column">
+                <h4>Showroom</h4>
+                <ul>
+                    <li><a href="#">Tirumala TVS Bidarahalli</a></li>
+                    <li><a href="#">Authorized Main Dealer</a></li>
+                    <li><a href="https://www.google.com/maps/search/Tirumala+TVS+Bidarahalli" class="btn-map" target="_blank">📍 Go to Location</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <div class="copyright-bar"><div>Copyright © 2025 Tirumala TVS Bidarahalli.</div></div>
+    <a href="https://wa.me/919964946512?text=Hi%20Tirumala%20TVS" class="whatsapp-float" target="_blank">💬</a>
 
+    <script>function toggleMenu(){document.getElementById("navMenu").classList.toggle("active");}</script>
 </body>
 </html>
