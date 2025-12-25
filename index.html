@@ -8,18 +8,22 @@
 </head>
 <body>
 
-    <div class="top-bar">
-        <span>📍 Bidarahalli, Bangalore - 49</span>
-        <span>📞 +91 99649 46512 | tirumalatvs716@gmail.com</span>
+    <div class="header-top">
+        <a href="contacts.html" class="btn-header-action">Book Service Appointment</a>
+        <a href="contacts.html" class="btn-header-action">Get Quotation</a>
+        <a href="contacts.html" class="btn-header-action">Book Test Drive</a>
     </div>
 
-    <nav class="nav-container">
-        <a href="index.html" class="logo"><h1>Tirumala <span>TVS</span></h1></a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="models.html">Inventory</a>
-            <a href="contacts.html">Service</a>
-            <a href="contacts.html" style="color: var(--tvs-red);">Contact Us</a>
+    <nav class="main-nav-container">
+        <a href="index.html" class="logo-text">Tirumala <span>TVS</span></a>
+        <div class="nav-menu">
+            <a href="index.html">HOME ↗</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="models.html">MOTORCYCLES</a>
+            <a href="models.html">SCOOTERS</a>
+            <a href="models.html">MOPEDS</a>
+            <a href="models.html">ELECTRIC</a>
+            <a href="contacts.html">SERVICES</a>
         </div>
     </nav>
 
@@ -29,13 +33,7 @@
         <a href="models.html" class="hero-btn">View Latest Bikes</a>
     </section>
 
-    <div class="action-bar">
-        <a href="contacts.html" class="action-btn">📅 Book Service</a>
-        <a href="contacts.html" class="action-btn">🏍 Book Test Ride</a>
-        <a href="contacts.html" class="action-btn">💬 General Enquiry</a>
-    </div>
-
-    <section class="brand-legacy">
+    <section id="about" class="brand-legacy">
         <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Welcome to Tirumala TVS</h2>
         <p>We are committed to being a socially responsible and leading manufacturer.</p>
         
@@ -88,104 +86,41 @@
         </div>
     </section>
 
-    <section style="background-color: white;">
-        <h2 class="section-title">Happy Riders</h2>
-        <p class="section-subtitle">Real experiences from our valued customers</p>
-        
-        <div class="testimonials-grid">
+    <div class="contact-wrapper">
+        <div class="contact-left">
+            <h2 class="section-title" style="text-align: left;">Contact Us</h2>
+            <p style="margin-bottom: 30px; color: #666;">Fill the form below to reach us.</p>
             
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"The mileage is impressive for city rides, giving around 55 kmpl. The seat is very comfortable for my family. The suspension handles bad roads really well. Perfect for daily office goers!"</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">UF</div>
-                    <div class="customer-details"><h4>Usama Faruqui</h4><span>Jupiter Owner</span></div>
-                </div>
-            </div>
+            <form action="https://formspree.io/f/YOUR_ID" method="POST">
+                <label class="form-label">Name *</label>
+                <input type="text" class="form-input" placeholder="Your fullname" required>
 
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"I'm surprised to see the mileage! Getting nearly 60+ kmpl on highways. It's a 'Wicked' ride just like the name says. The digital display and bluetooth features are top notch."</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">SA</div>
-                    <div class="customer-details"><h4>Safik Ahmed</h4><span>Raider 125 Owner</span></div>
-                </div>
-            </div>
+                <label class="form-label">Email *</label>
+                <input type="email" class="form-input" placeholder="Your email address" required>
 
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"If you want a thrilling ride, Ntorq is it. The exhaust sound turns heads! Bluetooth navigation is super helpful for my daily commute. It's a powerhouse on the road."</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">FZ</div>
-                    <div class="customer-details"><h4>Faizan</h4><span>Ntorq Race XP Owner</span></div>
-                </div>
-            </div>
+                <label class="form-label">Phone *</label>
+                <input type="tel" class="form-input" placeholder="Your phone number" required>
 
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"Riding is smooth and silent. I get a real range of 100km in Eco mode which is enough for 2 days. Charging at home is very convenient. Best decision to switch to EV!"</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">MZ</div>
-                    <div class="customer-details"><h4>Md. Zeeshan</h4><span>iQube Owner</span></div>
-                </div>
-            </div>
+                <label class="form-label">Message *</label>
+                <textarea class="form-input" rows="5" placeholder="Write Your Message"></textarea>
 
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"Engine refinement is next level. Highway cruising at 80kmph feels buttery smooth. The GTT feature makes city traffic easy. It's a head-turner wherever I go."</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">SH</div>
-                    <div class="customer-details"><h4>Shyam</h4><span>Ronin Owner</span></div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"Best 160cc bike hands down. Quick acceleration and impressive pickup. Handling is very sharp in city traffic. I love the aggressive look and the new headlight design."</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">MN</div>
-                    <div class="customer-details"><h4>Manish</h4><span>Apache 160 Owner</span></div>
-                </div>
-            </div>
-
+                <button type="submit" class="btn-submit-form">Submit Message</button>
+            </form>
         </div>
-    </section>
-
-    <section class="contact-section">
-        <h2 class="section-title">Contact Us</h2>
-        <p class="section-subtitle">Get in touch with us for queries or bookings</p>
         
-        <div class="contact-container">
-            <div class="contact-form-box">
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <label>Name *</label>
-                        <input type="text" name="name" placeholder="Your fullname" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email *</label>
-                        <input type="email" name="email" placeholder="Your email address" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Phone *</label>
-                        <input type="tel" name="phone" placeholder="Your phone number" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Message *</label>
-                        <textarea name="message" rows="5" placeholder="Write Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Submit Message</button>
-                </form>
+        <div class="contact-right">
             </div>
-            <div class="contact-visual">
-                <p>TVS<br>Tirumala</p>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <div class="footer-contact-bar">
-        <div class="contact-item">✉️ tirumalatvs716@gmail.com</div>
-        <div class="contact-item">📞 +91 99649 46512</div>
+        <div class="contact-item">
+            <div class="contact-icon-circle">✉️</div>
+            <a href="mailto:tirumalatvs716@gmail.com" style="color: white;">tirumalatvs716@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <div class="contact-icon-circle">📞</div>
+            <a href="tel:+919964946512" style="color: white;">+91 99649 46512</a>
+        </div>
     </div>
 
     <footer class="main-footer">
@@ -207,10 +142,10 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Showroom</h4>
+                <h4>Showrooms</h4>
                 <ul>
                     <li><a href="#">Tirumala TVS Bidarahalli</a></li>
-                    <li><a href="#">Bangalore - 560049</a></li>
+                    <li><a href="#">Authorized Main Dealer</a></li>
                 </ul>
             </div>
         </div>
