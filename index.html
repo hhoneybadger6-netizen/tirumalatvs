@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tirumala TVS - Bidarahalli</title>
+    <title>Tirumala TVS | Authorized Dealership Bidarahalli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* CSS Reset and Basic Styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* --- ROOT VARIABLES (TVS BRAND COLORS) --- */
+        :root {
+            --tvs-blue: #1F2A44;
+            --tvs-red: #E31837;
+            --white: #ffffff;
+            --light-gray: #f4f4f4;
+            --dark-gray: #333333;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
+        /* --- RESET & BASIC SETUP --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
             line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
         }
 
-        /* Header Navigation */
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* --- HEADER & NAVIGATION (LOCKED DESIGN) --- */
         header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 1rem 0;
-            position: sticky;
+            background-color: var(--tvs-blue);
+            color: var(--white);
+            padding: 15px 0;
+            position: sticky; /* Keeps nav locked to top */
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
         .container {
@@ -39,145 +50,177 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-left: 5px solid var(--tvs-red);
+            padding-left: 10px;
+        }
+        
+        .logo span { color: var(--tvs-red); }
+
+        .nav-links { display: flex; gap: 25px; }
+        .nav-links a { font-weight: 500; font-size: 16px; }
+        .nav-links a:hover { color: var(--tvs-red); }
+
+        .cta-btn {
+            background-color: var(--tvs-red);
+            padding: 10px 20px;
+            border-radius: 4px;
             font-weight: bold;
-            color: #d32f2f; /* TVS Red-ish color */
         }
+        .cta-btn:hover { background-color: #b0122a; }
 
-        .logo span {
-            color: #fff;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #d32f2f;
-        }
-
-        /* Hero Section */
+        /* --- HERO SECTION --- */
         .hero {
-            background-color: #333;
-            color: #fff;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Placeholder Motorcycle Image */
+            height: 600px;
+            background: linear-gradient(rgba(31, 42, 68, 0.8), rgba(31, 42, 68, 0.6)), 
+                        url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
         }
 
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
+        .hero-content p { font-size: 1.2rem; margin-bottom: 30px; }
 
-        .btn {
-            display: inline-block;
-            background-color: #d32f2f;
-            color: #fff;
-            padding: 10px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #b71c1c;
-        }
-
-        /* About Section */
-        .section {
-            padding: 60px 0;
-        }
-
+        /* --- MODELS GRID --- */
+        .section { padding: 80px 0; }
         .section-title {
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 2rem;
-            color: #333;
+            margin-bottom: 50px;
+            color: var(--tvs-blue);
+        }
+        .section-title h2 { font-size: 2.5rem; margin-bottom: 10px; }
+        .divider { height: 4px; width: 60px; background: var(--tvs-red); margin: 0 auto; }
+
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
         }
 
-        .about-content {
-            background: #fff;
-            padding: 40px;
+        .model-card {
+            background: var(--white);
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
             text-align: center;
         }
 
-        /* Contact Section (with Formspree) */
-        .contact-container {
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: 0 auto;
-        }
+        .model-card:hover { transform: translateY(-5px); }
 
-        form {
+        .model-img {
+            height: 200px;
+            background: #ddd;
             display: flex;
-            flex-direction: column;
-            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            color: #666;
         }
-
-        label {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        input, textarea {
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-            width: 100%;
-        }
-
-        button[type="submit"] {
-            background-color: #d32f2f;
-            color: white;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: bold;
+        
+        .model-info { padding: 20px; }
+        .model-info h3 { color: var(--tvs-blue); margin-bottom: 10px; }
+        .model-btn {
+            display: inline-block;
             margin-top: 10px;
+            color: var(--tvs-red);
+            font-weight: bold;
+            border: 2px solid var(--tvs-red);
+            padding: 8px 20px;
+            border-radius: 20px;
+        }
+        .model-btn:hover { background: var(--tvs-red); color: white; }
+
+        /* --- CONTACT SECTION (RESTORED + LINK ADDED) --- */
+        .contact-section { background-color: var(--tvs-blue); color: var(--white); }
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            background: var(--white);
+            color: var(--dark-gray);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
-        button[type="submit"]:hover {
-            background-color: #b71c1c;
+        .contact-info {
+            flex: 1;
+            padding: 40px;
+            background: #f9f9f9;
         }
 
-        /* Footer */
+        .contact-form-container {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .info-item { margin-bottom: 20px; display: flex; align-items: center; gap: 15px; }
+        .info-item i { color: var(--tvs-red); font-size: 1.2rem; }
+
+        /* Form Styling */
+        form { display: flex; flex-direction: column; gap: 20px; }
+        
+        .form-group { position: relative; }
+        
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            background: #f8f8f8;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--tvs-blue);
+            background: #fff;
+        }
+
+        .submit-btn {
+            background-color: var(--tvs-red);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover { background-color: #b0122a; }
+
+        /* --- FOOTER --- */
         footer {
-            background-color: #1a1a1a;
-            color: #fff;
+            background: #111;
+            color: #888;
+            padding: 40px 0;
             text-align: center;
-            padding: 20px 0;
-            margin-top: auto;
+        }
+        footer p { font-size: 0.9rem; }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .nav-links { display: none; } /* Simplified for mobile */
+            .contact-wrapper { flex-direction: column; }
         }
     </style>
 </head>
@@ -187,65 +230,122 @@
         <div class="container">
             <div class="logo">Tirumala <span>TVS</span></div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#models">Motorcycles</a></li>
+                    <li><a href="#scooters">Scooters</a></li>
+                    <li><a href="#service">Service</a></li>
                 </ul>
             </nav>
+            <a href="#contact" class="cta-btn">Enquire Now</a>
         </div>
     </header>
 
     <section class="hero">
-        <div class="container">
-            <h1>Welcome to Tirumala TVS</h1>
-            <p>Your Trusted TVS Dealership in Bidarahalli, Bangalore</p>
-            <a href="#contact" class="btn">Book a Test Ride</a>
+        <div class="container hero-content">
+            <h1>Experience Power & Precision</h1>
+            <p>Welcome to Tirumala TVS Bidarahalli - Your Premium TVS Partner in Bangalore</p>
+            <a href="#models" class="cta-btn">View Models</a>
         </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="models" class="section">
         <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <p>We are the premier TVS dealership in Bidarahalli. We offer the complete range of TVS motorcycles and scooters, along with genuine spare parts and expert service.</p>
-                <br>
-                <p><strong>Address:</strong> Tirumala TVS, Bidarahalli, Bangalore, Karnataka.</p>
+            <div class="section-title">
+                <h2>Our Motorcycles</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="models-grid">
+                <div class="model-card">
+                    <div class="model-img"><i class="fas fa-motorcycle fa-3x"></i></div> <div class="model-info">
+                        <h3>TVS Apache RR 310</h3>
+                        <p>Racing DNA Unleashed</p>
+                        <a href="#contact" class="model-btn">Get On-Road Price</a>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-img"><i class="fas fa-motorcycle fa-3x"></i></div>
+                    <div class="model-info">
+                        <h3>TVS Ronin</h3>
+                        <p>Unscripted Life</p>
+                        <a href="#contact" class="model-btn">Get On-Road Price</a>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-img"><i class="fas fa-motorcycle fa-3x"></i></div>
+                    <div class="model-info">
+                        <h3>TVS Raider</h3>
+                        <p>The Wicked Ride</p>
+                        <a href="#contact" class="model-btn">Get On-Road Price</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-container">
-                <p style="text-align:center; margin-bottom: 20px;">Have questions? Send us a message!</p>
-                
-                <form action="https://formspree.io/f/xqezrzkn" method="POST">
-                    
-                    <div>
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name" id="name" placeholder="John Doe" required>
+            <div class="section-title">
+                <h2 style="color:white;">Contact Us</h2>
+                <div class="divider" style="background:white;"></div>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Visit Our Showroom</h3>
+                    <p>We are located in the heart of Bidarahalli.</p>
+                    <br>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Tirumala TVS, Bidarahalli, Bangalore</span>
                     </div>
-
-                    <div>
-                        <label for="email">Your Email</label>
-                        <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 XXXXX XXXXX</span>
                     </div>
-                    
-                    <div>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" placeholder="Your mobile number">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sales@tirumalatvs.com</span>
                     </div>
-
-                    <div>
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message" rows="5" placeholder="I am interested in..." required></textarea>
-                    </div>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
                 </div>
+
+                <div class="contact-form-container">
+                    <h3>Send an Enquiry</h3>
+                    
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST">
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select name="model_interest" style="width:100%; padding:15px; border:1px solid #ddd; border-radius:5px; background:#f8f8f8;">
+                                <option value="" disabled selected>Select Model of Interest</option>
+                                <option value="Apache">Apache Series</option>
+                                <option value="Jupiter">Jupiter Series</option>
+                                <option value="Ronin">Ronin</option>
+                                <option value="Ntorq">Ntorq</option>
+                                <option value="Service">Service / Spares</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" rows="4" placeholder="Your Message or Query" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
