@@ -3,7 +3,7 @@
 
 :root {
     --tvs-blue: #1f509a;       /* Standard TVS Blue */
-    --header-blue: #1a2b5e;    /* Dark Blue from Header/Footer Screenshot */
+    --header-blue: #1a2b5e;    /* Dark Blue from Header/Footer */
     --tvs-red: #d3161c;
     --dark-grey: #222;
     --light-grey: #f4f6f9;
@@ -16,104 +16,34 @@ body { background: var(--white); color: var(--dark-grey); line-height: 1.6; }
 a { text-decoration: none; color: inherit; transition: 0.3s; }
 ul { list-style: none; }
 
-/* =========================================
-   NEW HEADER DESIGN (From Screenshot)
-   ========================================= */
+/* --- HEADER DESIGN --- */
+.header-top { padding: 15px 5%; display: flex; justify-content: flex-end; gap: 15px; background: white; }
+.btn-header-action { background-color: var(--header-blue); color: white; padding: 10px 20px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; border-radius: 4px; letter-spacing: 0.5px; }
+.btn-header-action:hover { background-color: var(--tvs-red); transform: translateY(-2px); }
 
-/* 1. Top Action Buttons Bar */
-.header-top {
-    padding: 15px 5%;
-    display: flex;
-    justify-content: flex-end; /* Pushes buttons to right */
-    gap: 15px;
-    background: white;
-}
+.main-nav-container { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+.logo-text { font-size: 1.8rem; color: var(--header-blue); font-weight: 800; text-transform: uppercase; letter-spacing: -0.5px; }
+.nav-menu { display: flex; gap: 40px; }
+.nav-menu a { font-size: 0.9rem; font-weight: 700; color: var(--header-blue); text-transform: uppercase; letter-spacing: 1px; }
+.nav-menu a:hover { color: var(--tvs-red); }
 
-.btn-header-action {
-    background-color: var(--header-blue);
-    color: white;
-    padding: 10px 20px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-}
-
-.btn-header-action:hover {
-    background-color: var(--tvs-red);
-    transform: translateY(-2px);
-}
-
-/* 2. Main Navigation Bar */
-.main-nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-    background: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo-text {
-    font-size: 1.8rem;
-    color: var(--header-blue); /* Match header blue */
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: -0.5px;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-menu a {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--header-blue);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-}
-
-.nav-menu a:hover {
-    color: var(--tvs-red);
-}
-
-/* =========================================
-   HOME PAGE SECTIONS
-   ========================================= */
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../assets/hero-bg.jpg.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
+/* --- HERO & ACTION BAR --- */
+.hero { background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../assets/hero-bg.jpg.jpg'); background-size: cover; background-position: center; height: 75vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px; }
 .hero h2 { font-size: 3.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; }
 .hero-btn { background: var(--tvs-blue); color: white; padding: 15px 30px; border-radius: 5px; font-weight: bold; }
+.action-bar { background: var(--tvs-blue); padding: 30px 5%; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: -50px; position: relative; z-index: 10; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-radius: 8px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+.action-btn { background: white; color: var(--tvs-blue); padding: 15px 30px; font-weight: 700; text-transform: uppercase; border-radius: 5px; display: flex; align-items: center; gap: 10px; min-width: 200px; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.action-btn:hover { background: var(--tvs-red); color: white; transform: translateY(-3px); }
 
-/* Red Brand Section */
+/* --- BRAND & SECTIONS --- */
 .brand-legacy { background-color: var(--tvs-red); color: white; padding: 80px 10%; text-align: center; }
 .brand-grid { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 40px; margin-top: 40px; }
 .brand-item { flex: 1; min-width: 250px; }
 .brand-icon { font-size: 3rem; margin-bottom: 15px; display: block; border: 2px solid white; width: 80px; height: 80px; line-height: 75px; border-radius: 50%; margin-left: auto; margin-right: auto; }
 .brand-item h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; }
-
-/* Latest Launches Grid */
 .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 10px; color: var(--dark-grey); font-weight: 800; }
+
+/* --- MODELS GRID --- */
 .models-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 60px 10%; }
 .model-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid #eee; text-align: center; }
 .model-card img { width: 100%; height: 220px; object-fit: cover; background-color: #eee; }
@@ -122,104 +52,37 @@ ul { list-style: none; }
 .btn-view { display: inline-block; border: 2px solid var(--tvs-blue); color: var(--tvs-blue); padding: 8px 25px; font-weight: 600; border-radius: 4px; margin-top: 10px; }
 .btn-view:hover { background: var(--tvs-blue); color: white; }
 
-/* =========================================
-   NEW CONTACT FORM DESIGN (From Screenshot)
-   ========================================= */
-.contact-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    background: white;
-    overflow: hidden;
-}
+/* --- TESTIMONIALS (Restored) --- */
+.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 10% 80px; }
+.testimonial-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-left: 5px solid var(--tvs-red); }
+.star-rating { color: #FFD700; font-size: 1.2rem; margin-bottom: 15px; }
+.customer-info { display: flex; align-items: center; gap: 15px; margin-top: 20px; }
+.customer-details h4 { font-size: 1rem; font-weight: 700; }
 
-.contact-left {
-    flex: 1;
-    min-width: 400px;
-    padding: 80px 10%;
-}
-
-.contact-right {
-    flex: 1;
-    min-width: 300px;
-    background: var(--header-blue); /* Base Blue */
-    position: relative;
-    min-height: 500px;
-}
-
-/* Creating the Red/Blue Geometric Shapes with CSS */
-.contact-right::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--tvs-red);
-    clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 10%); /* Top red shape */
-    z-index: 1;
-}
-
-.contact-right::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    height: 80%;
-    background: #16224d; /* Darker Blue */
-    clip-path: polygon(100% 100%, 0% 100%, 100% 0%); /* Bottom triangle */
-    z-index: 0;
-}
-
-/* Form Styling */
-.form-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #333;
-}
-.form-input {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 25px;
-    font-size: 1rem;
-    background: #fdfdfd;
-}
+/* --- CONTACT FORM --- */
+.contact-wrapper { display: flex; flex-wrap: wrap; background: white; overflow: hidden; }
+.contact-left { flex: 1; min-width: 400px; padding: 80px 10%; }
+.contact-right { flex: 1; min-width: 300px; background: var(--header-blue); position: relative; min-height: 500px; }
+.contact-right::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--tvs-red); clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 10%); z-index: 1; }
+.contact-right::after { content: ''; position: absolute; bottom: 0; right: 0; width: 80%; height: 80%; background: #16224d; clip-path: polygon(100% 100%, 0% 100%, 100% 0%); z-index: 0; }
+.form-label { display: block; margin-bottom: 8px; font-weight: 600; color: #333; }
+.form-input { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 25px; font-size: 1rem; background: #fdfdfd; }
 .form-input:focus { border-color: var(--tvs-red); outline: none; }
-.btn-submit-form {
-    background: var(--header-blue);
-    color: white;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
-    text-transform: uppercase;
-}
+.btn-submit-form { background: var(--header-blue); color: white; padding: 15px 40px; border: none; border-radius: 4px; font-weight: 700; font-size: 1rem; cursor: pointer; text-transform: uppercase; }
 .btn-submit-form:hover { background: var(--tvs-red); }
 
-/* =========================================
-   FOOTER (From Screenshot)
-   ========================================= */
+/* --- FOOTER --- */
 .footer-contact-bar { background-color: var(--header-blue); color: white; padding: 30px 5%; display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: center; }
 .contact-item { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 1.1rem; }
 .contact-icon-circle { background: white; color: var(--header-blue); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
-
 .main-footer { background-color: white; padding: 60px 10%; color: #333; }
 .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; }
 .footer-column h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 25px; color: #222; }
 .footer-column ul li { margin-bottom: 12px; }
 .footer-column ul li a:hover { color: var(--tvs-red); padding-left: 5px; }
-
 .copyright-bar { background-color: white; border-top: 1px solid #eee; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: #666; }
 
-/* =========================================
-   PREMIUM MODEL PAGE STYLES (Zest Locked Design)
-   ========================================= */
-/* These are needed so model pages don't break */
+/* --- PREMIUM MODEL PAGE STYLES (Locked Zest Design) --- */
 .model-hero { display: flex; flex-wrap: wrap; align-items: center; padding: 60px 5%; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); min-height: 85vh; }
 .hero-text { flex: 1; min-width: 350px; padding-right: 50px; }
 .hero-tag { background: var(--tvs-blue); color: white; padding: 5px 12px; font-size: 0.8rem; border-radius: 20px; font-weight: 700; letter-spacing: 1px; }
