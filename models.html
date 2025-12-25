@@ -10,113 +10,78 @@
 
     <nav class="main-nav-container">
         <a href="index.html" class="logo-text">Tirumala <span>TVS</span></a>
-        
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
         <div class="nav-menu" id="navMenu">
             <a href="index.html">HOME</a>
-            <a href="index.html#about">ABOUT</a>
-            <a href="models.html" style="color: var(--tvs-red);">INVENTORY</a>
+            <a href="#motorcycles">MOTORCYCLES</a>
+            <a href="#scooters">SCOOTERS</a>
+            <a href="#electric">ELECTRIC</a>
             <a href="index.html#contact">CONTACT</a>
         </div>
     </nav>
 
-    <section class="info-section">
-        <div class="section-head">
-            <h2>Our Vehicle Collection</h2>
-            <p>Explore the complete range of TVS Motorcycles and Scooters</p>
+    <div class="category-header" id="motorcycles">MOTORCYCLES</div>
+    <div class="models-grid">
+        <div class="model-card">
+            <img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=Apache'">
+            <div class="model-info"><h3>Apache RTR 160 4V</h3><p>Racing DNA Unleashed</p><a href="models/apache160.html" class="btn-view">View Details</a></div>
         </div>
+        <div class="model-card">
+            <img src="assets/apache200.jpg" alt="Apache 200" onerror="this.src='https://placehold.co/600x400?text=Apache+200'">
+            <div class="model-info"><h3>Apache RTR 200 4V</h3><p>Race Tuned Slipper Clutch</p><a href="models/apache200.html" class="btn-view">View Details</a></div>
+        </div>
+        <div class="model-card">
+            <img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin'">
+            <div class="model-info"><h3>TVS Ronin</h3><p>Unscripted Life</p><a href="models/ronin.html" class="btn-view">View Details</a></div>
+        </div>
+        <div class="model-card">
+            <img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'">
+            <div class="model-info"><h3>TVS Raider 125</h3><p>The Wicked Ride</p><a href="models/raider.html" class="btn-view">View Details</a></div>
+        </div>
+    </div>
 
-        <div class="models-grid">
-            <div class="model-card">
-                <img src="assets/zest.jpg" alt="Zest" onerror="this.src='https://placehold.co/600x400?text=Zest'">
-                <div class="model-info">
-                    <h3>TVS Zest 110</h3>
-                    <p>110cc | Lightweight</p>
-                    <a href="models/zest110.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
-            <div class="model-card">
-                <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'">
-                <div class="model-info">
-                    <h3>New TVS Jupiter 110</h3>
-                    <p>113cc | iGO Assist</p>
-                    <a href="models/jupiter113.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
-            <div class="model-card">
-                <img src="assets/jupiter125.jpg" alt="Jupiter 125" onerror="this.src='https://placehold.co/600x400?text=Jupiter+125'">
-                <div class="model-info">
-                    <h3>TVS Jupiter 125</h3>
-                    <p>125cc | 2 Helmet Storage</p>
-                    <a href="models/jupiter125.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
-            <div class="model-card">
-                <img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'">
-                <div class="model-info">
-                    <h3>TVS Raider 125</h3>
-                    <p>125cc | TFT Display</p>
-                    <a href="models/raider.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
-            <div class="model-card">
-                <img src="assets/ntorq.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400?text=Ntorq'">
-                <div class="model-info">
-                    <h3>TVS Ntorq 125</h3>
-                    <p>125cc | Bluetooth</p>
-                    <a href="models/ntorq125.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
-            <div class="model-card">
-                <img src="assets/xl100.jpg" alt="XL100" onerror="this.src='https://placehold.co/600x400?text=XL100'">
-                <div class="model-info">
-                    <h3>TVS XL100</h3>
-                    <p>Heavy Duty | i-Touch</p>
-                    <a href="models/xl100.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
-            <div class="model-card">
-                <img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin'">
-                <div class="model-info">
-                    <h3>TVS Ronin</h3>
-                    <p>225cc | Scrambler</p>
-                    <a href="models/ronin.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
-            <div class="model-card">
-                <img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400?text=iQube'">
-                <div class="model-info">
-                    <h3>TVS iQube Electric</h3>
-                    <p>100km Range | Smart</p>
-                    <a href="models/iqube.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
-             <div class="model-card">
-                <img src="assets/apache160.jpg" alt="Apache" onerror="this.src='https://placehold.co/600x400?text=Apache'">
-                <div class="model-info">
-                    <h3>Apache RTR 160 4V</h3>
-                    <p>160cc | 3 Ride Modes</p>
-                    <a href="models/apache160.html" class="btn-view">View Specs</a>
-                </div>
-            </div>
+    <div class="category-header" id="scooters">SCOOTERS</div>
+    <div class="models-grid">
+        <div class="model-card">
+            <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'">
+            <div class="model-info"><h3>New Jupiter 110</h3><p>Zyada Se Bhi Zyada</p><a href="models/jupiter113.html" class="btn-view">View Details</a></div>
         </div>
-    </section>
+        <div class="model-card">
+            <img src="assets/jupiter125.jpg" alt="Jupiter 125" onerror="this.src='https://placehold.co/600x400?text=Jupiter+125'">
+            <div class="model-info"><h3>Jupiter 125</h3><p>Progressive Neo Masculine</p><a href="models/jupiter125.html" class="btn-view">View Details</a></div>
+        </div>
+        <div class="model-card">
+            <img src="assets/ntorq.jpg" alt="Ntorq 125" onerror="this.src='https://placehold.co/600x400?text=Ntorq'">
+            <div class="model-info"><h3>Ntorq 125</h3><p>Play Smart</p><a href="models/ntorq125.html" class="btn-view">View Details</a></div>
+        </div>
+        <div class="model-card">
+            <img src="assets/ntorq.jpg" alt="Ntorq XP" onerror="this.src='https://placehold.co/600x400?text=Ntorq+XP'">
+            <div class="model-info"><h3>Ntorq Race XP</h3><p>India's Most Powerful 125</p><a href="models/ntorq150.html" class="btn-view">View Details</a></div>
+        </div>
+        <div class="model-card">
+            <img src="assets/zest.jpg" alt="Zest 110" onerror="this.src='https://placehold.co/600x400?text=Zest'">
+            <div class="model-info"><h3>Zest 110</h3><p>Live Full. Live Free.</p><a href="models/zest110.html" class="btn-view">View Details</a></div>
+        </div>
+    </div>
+
+    <div class="category-header" id="electric">ELECTRIC & MOPEDS</div>
+    <div class="models-grid">
+        <div class="model-card">
+            <img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400?text=iQube'">
+            <div class="model-info"><h3>TVS iQube</h3><p>Smart. Simple. Silent.</p><a href="models/iqube.html" class="btn-view">View Details</a></div>
+        </div>
+        <div class="model-card">
+            <img src="assets/xl100.jpg" alt="XL100" onerror="this.src='https://placehold.co/600x400?text=XL100'">
+            <div class="model-info"><h3>XL100 Heavy Duty</h3><p>The Multi-Utility King</p><a href="models/xl100.html" class="btn-view">View Details</a></div>
+        </div>
+    </div>
 
     <div class="footer-contact-bar">
         <div class="contact-item">✉️ tirumalatvs716@gmail.com</div>
         <div class="contact-item">📞 +91 99649 46512</div>
     </div>
-    <div class="copyright-bar">
-        <div>Copyright © 2025 Tirumala TVS Bidarahalli.</div>
-    </div>
+    <div class="copyright-bar"><div>Copyright © 2025 Tirumala TVS Bidarahalli.</div></div>
 
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("navMenu");
-            menu.classList.toggle("active");
-        }
-    </script>
-
+    <script>function toggleMenu(){document.getElementById("navMenu").classList.toggle("active");}</script>
 </body>
 </html>
