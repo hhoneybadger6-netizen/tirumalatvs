@@ -3,147 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TVS Zest 110 | Full Specifications</title>
+    <title>TVS Zest 110 | Tirumala TVS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-    <nav class="nav-container">
-        <a href="../index.html" class="logo"><h1>Tirumala <span>TVS</span></h1></a>
-        <div class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="../models.html">Inventory</a>
-            <a href="../contacts.html" style="color: var(--tvs-red);">Book Test Ride</a>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <div class="nav-links" id="navMenu">
+                <a href="../index.html">Home</a>
+                <a href="../models.html">Inventory</a>
+                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
+            </div>
         </div>
     </nav>
 
-    <section class="model-hero">
-        <div class="hero-text">
-            <span class="hero-tag">BEST IN CLASS PICKUP</span>
-            <h1>TVS Zest 110</h1>
-            <h3>Live Full. Live Free.</h3>
-            <p>
-                The TVS Zest 110 is more than just a scooter; it's a statement of style and freedom. 
-                With a peppy 110cc ET-Fi engine, best-in-class storage, and lightweight handling, 
-                it is designed to breeze through Bangalore traffic with ease.
-            </p>
-            <div class="hero-btns">
-                <a href="../contacts.html" class="btn-primary">📅 Book Test Ride</a>
-                <a href="https://wa.me/919964946512" class="btn-secondary">💬 WhatsApp</a>
+    <div class="model-hero">
+        <div class="hero-text-side">
+            <span class="model-tag" style="background:#e91e63;">LIVE FULL. LIVE FREE.</span>
+            <h1 class="model-title">TVS Zest 110</h1>
+            <p class="section-subtitle">The fun and zesty ride. Best-in-class pickup and easy maneuverability for the city.</p>
+            <div class="model-price">₹ 74,000* <br><span>(Starting Ex-Showroom)</span></div>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20Zest" class="btn btn-primary">Book Test Ride 🛵</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="../assets/zest.jpg" alt="TVS Zest 110 Matte Series" onerror="this.src='https://placehold.co/800x600?text=Zest+Image+Missing'">
-        </div>
-    </section>
-
-    <div class="stats-bar">
-        <div class="stat-box">
-            <h4>110 cc</h4>
-            <p>ET-Fi Engine</p>
-        </div>
-        <div class="stat-box">
-            <h4>103 kg</h4>
-            <p>Lightweight</p>
-        </div>
-        <div class="stat-box">
-            <h4>7.8 PS</h4>
-            <p>Max Power</p>
-        </div>
-        <div class="stat-box">
-            <h4>19 L</h4>
-            <p>Storage Space</p>
+        <div class="hero-img-side">
+            <img src="../assets/zest.jpg" alt="TVS Zest 110" onerror="this.src='https://placehold.co/800x600?text=Zest+110+Gloss'">
         </div>
     </div>
 
-    <section class="info-section">
-        <div class="section-head">
-            <h2>Why Choose Zest 110?</h2>
-            <p>Packed with features that make your daily ride comfortable and fun.</p>
+    <div class="spec-bar-dark">
+        <div class="spec-bar-grid">
+            <div class="dark-spec-item"><h4>110cc</h4><p>EcoThrust Engine</p></div>
+            <div class="dark-spec-item"><h4>Light</h4><p>Handling</p></div>
+            <div class="dark-spec-item"><h4>19L</h4><p>Storage</p></div>
+            <div class="dark-spec-item"><h4>USB</h4><p>Charger</p></div>
         </div>
+    </div>
 
-        <div class="features-grid">
-            <div class="feature-card">
-                <span class="feature-icon">🚀</span>
-                <h4>Best-in-Class Pickup</h4>
-                <p>Zip from 0-60 km/h faster than any other scooter in its category, thanks to the high-torque ET-Fi engine.</p>
+    <div class="feature-section container">
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Premium Dual Tone Seat</h3>
+                <p>Designed for comfort and style. The beige and brown dual-tone seat adds a premium touch to your ride.</p>
             </div>
-            <div class="feature-card">
-                <span class="feature-icon">💡</span>
-                <h4>LED DRL & Tail Lamp</h4>
-                <p>Premium LED Daytime Running Lights and a signature LED tail lamp ensure you are visible and stylish.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">🔌</span>
-                <h4>USB Smartphone Charger</h4>
-                <p>Never run out of battery. The front glove box comes with a dedicated charging port for your phone.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">🛡</span>
-                <h4>Parking Brake</h4>
-                <p>A unique rear wheel parking brake keeps your scooter safe and stable even on sloped roads.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">🍩</span>
-                <h4>Tubeless Tyres</h4>
-                <p>Ride without worry. High-grip tubeless tyres prevent sudden deflation in case of punctures.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">🛋</span>
-                <h4>Wider Seat</h4>
-                <p>A textured, wider seat with dual-tone beige interiors gives a premium feel and superior comfort.</p>
-            </div>
+            <div class="feature-img"><img src="../assets/zest_seat.jpg" alt="Zest Seat" onerror="this.src='https://placehold.co/600x400?text=Premium+Seat'"></div>
         </div>
-    </section>
-
-    <section class="info-section" style="background-color: #f9f9f9;">
-        <div class="section-head">
-            <h2>Technical Specifications</h2>
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Smartphone Charger</h3>
+                <p>Never run out of battery. The front glove box comes with a USB charger to keep your phone powered on the go.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/zest_charger.jpg" alt="USB Charger" onerror="this.src='https://placehold.co/600x400?text=USB+Charging'"></div>
         </div>
+    </div>
 
-        <div class="specs-container">
-            <div class="spec-row">
-                <div class="spec-key">Engine Type</div>
-                <div class="spec-val">Single Cylinder, 4 Stroke, Air Cooled Spark Ignition</div>
-            </div>
-            <div class="spec-row">
-                <div class="spec-key">Displacement</div>
-                <div class="spec-val">109.7 cc</div>
-            </div>
-            <div class="spec-row">
-                <div class="spec-key">Max Power</div>
-                <div class="spec-val">5.75 kW (7.8 PS) @ 7500 rpm</div>
-            </div>
-            <div class="spec-row">
-                <div class="spec-key">Max Torque</div>
-                <div class="spec-val">8.8 Nm @ 5500 rpm</div>
-            </div>
-            <div class="spec-row">
-                <div class="spec-key">Transmission</div>
-                <div class="spec-val">CVT (Continuous Variomatic Transmission)</div>
-            </div>
-            <div class="spec-row">
-                <div class="spec-key">Kerb Weight</div>
-                <div class="spec-val">103 kg</div>
-            </div>
-            <div class="spec-row">
-                <div class="spec-key">Fuel Tank Capacity</div>
-                <div class="spec-val">5 Liters</div>
-            </div>
-            <div class="spec-row">
-                <div class="spec-key">Under-seat Storage</div>
-                <div class="spec-val">19 Liters</div>
-            </div>
-            <div class="spec-row">
-                <div class="spec-key">Brakes</div>
-                <div class="spec-val">110mm Drum (Front) / 130mm Drum (Rear) with SBT</div>
-            </div>
-        </div>
-    </section>
+    <div class="section-padding bg-light text-center">
+        <h2 style="margin-bottom: 20px;">Your Perfect City Partner</h2>
+        <a href="https://wa.me/919964946512?text=Get%20Quote%20Zest" class="btn btn-whatsapp">Get On-Road Price 💬</a>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Tirumala TVS Bidarahalli. Authorized Main Dealer.</p>
-    </footer>
-
+    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
