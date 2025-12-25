@@ -4,66 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS iQube Electric | Tirumala TVS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-    <nav class="nav-container">
-        <a href="../index.html" class="logo"><h1>Tirumala <span>TVS</span></h1></a>
-        <div class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="../models.html">Inventory</a>
-            <a href="../contacts.html" style="color: var(--tvs-red);">Book Test Ride</a>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <div class="nav-links" id="navMenu">
+                <a href="../index.html">Home</a>
+                <a href="../models.html">Inventory</a>
+                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
+            </div>
         </div>
     </nav>
 
-    <section class="model-hero">
-        <div class="hero-text">
-            <span class="hero-tag" style="background: #25D366;">ELECTRIC</span>
-            <h1>TVS iQube</h1>
-            <h3>Smart. Simple. Silent.</h3>
-            <p>
-                The #1 family EV choice. With a real-world range of 100km+, top speed of 78km/h, 
-                and huge savings on fuel, it is the smartest way to commute.
-            </p>
-            <div class="hero-btns">
-                <a href="../contacts.html" class="btn-primary">📅 Book Test Ride</a>
-                <a href="https://wa.me/919964946512" class="btn-secondary">💬 WhatsApp</a>
+    <div class="model-hero">
+        <div class="hero-text-side">
+            <span class="model-tag" style="background:#00cba9;">#SMARTLYSIMPLE</span>
+            <h1 class="model-title">TVS iQube</h1>
+            <p class="section-subtitle">Your sensible, silent, and smart travel companion. Switch to electric today.</p>
+            <div class="model-price">₹ 1,17,000* <br><span>(Includes FAME II Subsidy)</span></div>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20iQube" class="btn btn-primary">Book Test Ride ⚡</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="../assets/iqube.jpg" alt="TVS iQube" onerror="this.src='https://placehold.co/800x600?text=iQube+EV'">
+        <div class="hero-img-side">
+            <img src="../assets/iqube.jpg" alt="TVS iQube" onerror="this.src='https://placehold.co/800x600?text=TVS+iQube+Electric'">
         </div>
-    </section>
-
-    <div class="stats-bar">
-        <div class="stat-box"><h4>100 km</h4><p>Real Range</p></div>
-        <div class="stat-box"><h4>4.5 hrs</h4><p>Charging</p></div>
-        <div class="stat-box"><h4>78 km/h</h4><p>Top Speed</p></div>
-        <div class="stat-box"><h4>₹ 30k</h4><p>Yearly Savings</p></div>
     </div>
 
-    <section class="info-section">
-        <div class="section-head"><h2>Electric Intelligence</h2></div>
-        <div class="features-grid">
-            <div class="feature-card"><span class="feature-icon">🔋</span><h4>Reliable Range</h4><p>Travel 100km on a single charge in Eco mode.</p></div>
-            <div class="feature-card"><span class="feature-icon">📱</span><h4>Touchscreen</h4><p>7-inch colour TFT dashboard with Joystick control.</p></div>
-            <div class="feature-card"><span class="feature-icon">🔙</span><h4>Q-Park Assist</h4><p>Reverse mode makes parking in tight spots effortless.</p></div>
-            <div class="feature-card"><span class="feature-icon">🎒</span><h4>32L Storage</h4><p>Massive boot space that fits 2 helmets comfortably.</p></div>
+    <div class="spec-bar-dark">
+        <div class="spec-bar-grid">
+            <div class="dark-spec-item"><h4>100km</h4><p>Real Range</p></div>
+            <div class="dark-spec-item"><h4>78km/h</h4><p>Top Speed</p></div>
+            <div class="dark-spec-item"><h4>₹ 350</h4><p>Run Cost / Month</p></div>
+            <div class="dark-spec-item"><h4>5 hrs</h4><p>Charging Time</p></div>
         </div>
-    </section>
+    </div>
 
-    <section class="info-section" style="background-color: #f9f9f9;">
-        <div class="section-head"><h2>Technical Specifications</h2></div>
-        <div class="specs-container">
-            <div class="spec-row"><div class="spec-key">Motor Power</div><div class="spec-val">4.4 kW Peak Power</div></div>
-            <div class="spec-row"><div class="spec-key">Acceleration</div><div class="spec-val">0-40 km/h in 4.2 seconds</div></div>
-            <div class="spec-row"><div class="spec-key">Charging Time</div><div class="spec-val">0-80% in 4 hours 30 mins</div></div>
-            <div class="spec-row"><div class="spec-key">Warranty</div><div class="spec-val">3 Years / 50,000 km</div></div>
-            <div class="spec-row"><div class="spec-key">Battery Rating</div><div class="spec-val">IP67 Water & Dust Resistance</div></div>
+    <div class="feature-section container">
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Q-Park Assist</h3>
+                <p>Parking is effortless. Use the reverse mode to move back out of tight parking spots without using your feet.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/iqube_park.jpg" alt="Q Park" onerror="this.src='https://placehold.co/600x400?text=Reverse+Mode'"></div>
         </div>
-    </section>
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Huge Savings</h3>
+                <p>Save over ₹ 30,000 every year on fuel costs. The running cost is less than 30 paise per km.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/iqube_savings.jpg" alt="Savings" onerror="this.src='https://placehold.co/600x400?text=Fuel+Savings'"></div>
+        </div>
+    </div>
+    
+    <div class="section-padding bg-light text-center">
+        <h2 style="margin-bottom: 20px;">Switch to Electric</h2>
+        <a href="https://wa.me/919964946512?text=Get%20Quote%20iQube" class="btn btn-whatsapp">Check Subsidy & Price 💬</a>
+    </div>
 
-    <footer><p>&copy; 2024 Tirumala TVS Bidarahalli.</p></footer>
+    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
