@@ -3,64 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TVS Ntorq Race XP | High Power</title>
+    <title>Ntorq Race XP | Tirumala TVS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-    <header>
-        <div class="nav-container">
-            <a href="../index.html" class="logo"><h1>Tirumala <span>TVS</span></h1></a>
-            <nav><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../models.html">Inventory</a></li><li><a href="../contacts.html">Service</a></li></ul></nav>
-        </div>
-    </header>
-
-    <section class="model-hero">
-        <div class="hero-text">
-            <span style="background: #d3161c; color: white; padding: 5px 10px; font-size: 0.8rem; border-radius: 4px; font-weight: bold;">RACE XP</span>
-            <h1>TVS Ntorq Race XP</h1>
-            <h3>Xtra Power. Xtra Pace.</h3>
-            <p>
-                The Race XP is the top-of-the-line Ntorq. 
-                It delivers segment-leading 10.2 PS power and features industry-first Voice Assist.
-            </p>
-            <div style="display: flex; gap: 15px;">
-                <a href="../contacts.html" class="hero-btn">📅 Book Test Ride</a>
-                <a href="https://wa.me/919964946512" class="btn-outline">💬 WhatsApp</a>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <div class="nav-links" id="navMenu">
+                <a href="../index.html">Home</a>
+                <a href="../models.html">Inventory</a>
+                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="../assets/ntorq.jpg" alt="TVS Ntorq Race XP">
-        </div>
-    </section>
+    </nav>
 
-    <div class="stats-bar" style="background: #d3161c;">
-        <div class="stat-item"><h4>10.2 PS</h4><span>Max Power</span></div>
-        <div class="stat-item"><h4>98 km/h</h4><span>Top Speed</span></div>
-        <div class="stat-item"><h4>8.6 sec</h4><span>0-60 km/h</span></div>
-        <div class="stat-item"><h4>Voice</h4><span>Assist</span></div>
+    <div class="model-hero">
+        <div class="hero-text-side">
+            <span class="model-tag" style="background:#ff0000;">INDIA'S MOST POWERFUL</span>
+            <h1 class="model-title">Ntorq 125 Race XP</h1>
+            <p class="section-subtitle">Xtra Power. Xtra Pace. The only scooter in the segment with more than 10 PS power.</p>
+            <div class="model-price">₹ 97,000* <br><span>(Starting Ex-Showroom)</span></div>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20RaceXP" class="btn btn-primary">Book Test Ride 🚀</a>
+            </div>
+        </div>
+        <div class="hero-img-side">
+            <img src="../assets/ntorq.jpg" alt="Ntorq Race XP" onerror="this.src='https://placehold.co/800x600?text=Ntorq+Race+XP+Red'">
+        </div>
     </div>
 
-    <section>
-        <h2 class="section-title">XP Features</h2>
-        <div class="features-grid">
-            <div class="feature-card"><span class="feature-icon">🏎</span><h4>Ride Modes</h4><p>Switch between 'Street' and 'Race' modes instantly.</p></div>
-            <div class="feature-card"><span class="feature-icon">🗣</span><h4>Voice Assist</h4><p>Control navigation and console with voice commands.</p></div>
-            <div class="feature-card"><span class="feature-icon">💪</span><h4>10.2 PS</h4><p>Highest power in the 125cc segment.</p></div>
-            <div class="feature-card"><span class="feature-icon">🎨</span><h4>Race Graphics</h4><p>Aggressive race-inspired decals and red wheels.</p></div>
+    <div class="spec-bar-dark">
+        <div class="spec-bar-grid">
+            <div class="dark-spec-item"><h4>10.2</h4><p>PS Power</p></div>
+            <div class="dark-spec-item"><h4>98</h4><p>km/h Top Speed</p></div>
+            <div class="dark-spec-item"><h4>2</h4><p>Ride Modes</p></div>
+            <div class="dark-spec-item"><h4>Voice</h4><p>Assist</p></div>
         </div>
-    </section>
+    </div>
 
-    <section style="background-color: var(--light-grey); padding-top: 60px;">
-        <h2 class="section-title">Technical Specs</h2>
-        <div class="specs-grid">
-            <div class="spec-box"><span class="spec-icon">⚙️</span><div class="spec-label">Engine</div><div class="spec-value">124.8 cc XP</div></div>
-            <div class="spec-box"><span class="spec-icon">🐎</span><div class="spec-label">Power</div><div class="spec-value">10.2 PS</div></div>
-            <div class="spec-box"><span class="spec-icon">🛢</span><div class="spec-label">Fuel Tank</div><div class="spec-value">5.8 Liters</div></div>
-            <div class="spec-box"><span class="spec-icon">⏱</span><div class="spec-label">Accel</div><div class="spec-value">0-60 in 8.6s</div></div>
+    <div class="feature-section container">
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Voice Assist Technology</h3>
+                <p>Command your scooter with your voice. Change modes, get navigation, or adjust brightness without taking your hands off the handle.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/ntorq_voice.jpg" alt="Voice Assist" onerror="this.src='https://placehold.co/600x400?text=Voice+Command'"></div>
         </div>
-    </section>
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Race Mode & Street Mode</h3>
+                <p>Choose 'Race Mode' for thrilling acceleration or 'Street Mode' for smooth city commuting and better mileage.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/ntorq_ui.jpg" alt="Race Modes" onerror="this.src='https://placehold.co/600x400?text=Mode+Switch'"></div>
+        </div>
+    </div>
 
-    <footer><div class="footer-bottom"><p>&copy; 2024 Tirumala TVS Bidarahalli.</p></div></footer>
+    <div class="section-padding bg-light text-center">
+        <h2 style="margin-bottom: 20px;">Experience The Power</h2>
+        <a href="https://wa.me/919964946512?text=Get%20Quote%20RaceXP" class="btn btn-whatsapp">Get On-Road Price 💬</a>
+    </div>
+
+    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
