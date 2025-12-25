@@ -9,21 +9,22 @@
 <body>
 
     <div class="header-top">
-        <a href="#contact" class="btn-header-action">Book Service Appointment</a>
-        <a href="#contact" class="btn-header-action">Get Quotation</a>
-        <a href="#contact" class="btn-header-action">Book Test Drive</a>
+        <a href="#contact" class="btn-header-action">Book Service</a>
+        <a href="#contact" class="btn-header-action">Get Quote</a>
+        <a href="#contact" class="btn-header-action">Test Drive</a>
     </div>
 
     <nav class="main-nav-container">
         <a href="index.html" class="logo-text">Tirumala <span>TVS</span></a>
-        <div class="nav-menu">
-            <a href="index.html">HOME ↗</a>
+        
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html">HOME</a>
             <a href="#about">ABOUT</a>
-            <a href="models.html">MOTORCYCLES</a>
-            <a href="models.html">SCOOTERS</a>
-            <a href="models.html">MOPEDS</a>
-            <a href="models.html">ELECTRIC</a>
+            <a href="models.html">VEHICLES</a>
             <a href="#contact">SERVICES</a>
+            <a href="#contact">CONTACT</a>
         </div>
     </nav>
 
@@ -40,18 +41,17 @@
     </div>
 
     <section id="about" class="brand-legacy">
-        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Welcome to Tirumala TVS</h2>
+        <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Welcome to Tirumala TVS</h2>
         <p>We are committed to being a socially responsible and leading manufacturer.</p>
-        
         <div class="brand-grid">
             <div class="brand-item">
                 <span class="brand-icon">✔️</span>
-                <h3>Over 50 Million Vehicles</h3>
+                <h3>50M+ Vehicles</h3>
                 <p>Celebrated globally.</p>
             </div>
             <div class="brand-item">
                 <span class="brand-icon">✔️</span>
-                <h3>Presence in 80+ Countries</h3>
+                <h3>80+ Countries</h3>
                 <p>Global trust.</p>
             </div>
             <div class="brand-item">
@@ -94,11 +94,11 @@
 
     <section style="background-color: white;">
         <h2 class="section-title">Happy Riders</h2>
-        <p class="section-subtitle">Real experiences from our valued customers</p>
+        <p class="section-subtitle">Real experiences from our customers</p>
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="star-rating">★★★★★</div>
-                <p>"The mileage is impressive for city rides, giving around 55 kmpl. The seat is very comfortable for my family."</p>
+                <p>"The mileage is impressive for city rides, giving around 55 kmpl. Comfortable seat."</p>
                 <div class="customer-info">
                     <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%;"></div>
                     <div class="customer-details"><h4>Usama Faruqui</h4><span>Jupiter Owner</span></div>
@@ -106,18 +106,10 @@
             </div>
             <div class="testimonial-card">
                 <div class="star-rating">★★★★★</div>
-                <p>"I'm surprised to see the mileage! Getting nearly 60+ kmpl on highways. It's a 'Wicked' ride just like the name."</p>
+                <p>"I'm surprised to see the mileage! Getting nearly 60+ kmpl on highways."</p>
                 <div class="customer-info">
                     <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%;"></div>
                     <div class="customer-details"><h4>Safik Ahmed</h4><span>Raider Owner</span></div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"Best service experience in Bidarahalli. Mechanics are knowledgeable and very polite. Highly recommended."</p>
-                <div class="customer-info">
-                    <div style="background: #ccc; width: 40px; height: 40px; border-radius: 50%;"></div>
-                    <div class="customer-details"><h4>Vikram M.</h4><span>Apache Owner</span></div>
                 </div>
             </div>
         </div>
@@ -127,14 +119,11 @@
         <div class="contact-left">
             <h2 class="section-title" style="text-align: left;">Contact Us</h2>
             <p style="margin-bottom: 30px; color: #666;">Fill the form below to reach us.</p>
-            
             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <label class="form-label">Name *</label>
                 <input type="text" name="name" class="form-input" placeholder="Your fullname" required>
-
                 <label class="form-label">Phone *</label>
                 <input type="tel" name="phone" class="form-input" placeholder="Your phone number" required>
-
                 <label class="form-label">Purpose *</label>
                 <select name="purpose" class="form-input" required>
                     <option value="General Enquiry">General Enquiry</option>
@@ -142,26 +131,17 @@
                     <option value="Get Quotation">Get Quotation / Price</option>
                     <option value="Test Drive">Book Test Drive</option>
                 </select>
-
                 <label class="form-label">Message</label>
                 <textarea name="message" class="form-input" rows="4" placeholder="Vehicle model or specific details..."></textarea>
-
                 <button type="submit" class="btn-submit-form">Submit Request</button>
             </form>
         </div>
-        
         <div class="contact-right"></div>
     </div>
 
     <div class="footer-contact-bar">
-        <div class="contact-item">
-            <div class="contact-icon-circle">✉️</div>
-            <a href="mailto:tirumalatvs716@gmail.com" style="color: white;">tirumalatvs716@gmail.com</a>
-        </div>
-        <div class="contact-item">
-            <div class="contact-icon-circle">📞</div>
-            <a href="tel:+919964946512" style="color: white;">+91 99649 46512</a>
-        </div>
+        <div class="contact-item">✉️ tirumalatvs716@gmail.com</div>
+        <div class="contact-item">📞 +91 99649 46512</div>
     </div>
 
     <footer class="main-footer">
@@ -183,10 +163,10 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Showrooms</h4>
+                <h4>Showroom</h4>
                 <ul>
                     <li><a href="#">Tirumala TVS Bidarahalli</a></li>
-                    <li><a href="#">Authorized Main Dealer</a></li>
+                    <li><a href="#">Bangalore - 560049</a></li>
                 </ul>
             </div>
         </div>
@@ -197,7 +177,14 @@
         <div>FOLLOW US: 📘 📷</div>
     </div>
 
-    <a href="https://wa.me/919964946512?text=Hi%20Tirumala%20TVS,%20I%20am%20interested%20in%20a%20vehicle." class="whatsapp-float" target="_blank">💬</a>
+    <a href="https://wa.me/919964946512?text=Hi%20Tirumala%20TVS" class="whatsapp-float" target="_blank">💬</a>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
 
 </body>
 </html>
