@@ -8,201 +8,56 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="container nav-content">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
+            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
             <div class="nav-links" id="navMenu">
                 <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
                 <a href="models.html" class="active">Vehicles</a>
-                <a href="index.html#services">Services</a>
                 <a href="index.html#contact" class="btn-nav-contact">Contact Us</a>
             </div>
         </div>
     </nav>
-
-    <header class="models-header">
-        <div class="container">
-            <h1>Our Vehicle Collection</h1>
-            <p>Performance, Comfort, and Technology - Choose your ride.</p>
-        </div>
-    </header>
-
-    <div class="filter-bar">
-        <div class="container filter-links">
-            <a href="#motorcycles" class="active">Motorcycles</a>
-            <a href="#scooters">Scooters</a>
-            <a href="#electric">Electric</a>
-        </div>
-    </div>
-
+    <header class="models-header"><div class="container"><h1>Our Vehicle Collection</h1><p>Performance, Comfort, and Technology.</p></div></header>
+    <div class="filter-bar"><div class="container filter-links"><a href="#motorcycles">Motorcycles</a><a href="#scooters">Scooters</a><a href="#electric">Electric</a></div></div>
+    
     <section class="section-padding bg-light">
         <div class="container">
-            
-            <div id="motorcycles" style="margin-bottom: 60px;">
-                <h2 style="margin-bottom: 30px; border-left: 5px solid var(--accent); padding-left: 15px;">Motorcycles</h2>
-                
+            <div id="motorcycles" style="margin-bottom:60px;">
+                <h2 style="margin-bottom:30px; border-left:5px solid var(--accent); padding-left:15px;">Motorcycles</h2>
                 <div class="spec-card">
-                    <div class="spec-img-box">
-                        <img src="assets/apache160.jpg" alt="Apache 160 4V" onerror="this.src='https://placehold.co/600x400?text=Apache+160+4V'">
-                    </div>
-                    <div class="spec-content">
-                        <h3>Apache RTR 160 4V</h3>
-                        <div class="spec-tagline">RACING DNA UNLEASHED</div>
-                        <p>The most powerful 160cc bike with ride modes and SmartXonnect technology.</p>
-                        
-                        <div class="specs-row">
-                            <div class="spec-item"><span>159.7 cc</span><small>Engine</small></div>
-                            <div class="spec-item"><span>17.55 PS</span><small>Power</small></div>
-                            <div class="spec-item"><span>114 km/h</span><small>Top Speed</small></div>
-                        </div>
-
-                        <div class="price-tag">Starts at ₹ 1,24,000*</div>
-                        <div class="card-actions">
-                            <a href="models/apache160.html" class="btn btn-primary">View Full Details</a>
-                            <a href="https://wa.me/919964946512?text=Get%20Quote%20Apache160" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
+                    <div class="spec-img-box"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400'"></div>
+                    <div class="spec-content"><h3>Apache RTR 160 4V</h3><div class="spec-tagline">RACING DNA UNLEASHED</div><div class="specs-row"><div class="spec-item"><span>160cc</span><small>Engine</small></div><div class="spec-item"><span>17.55 PS</span><small>Power</small></div></div><div class="price-tag">Starts at ₹ 1,24,000*</div><div class="card-actions"><a href="models/apache160.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
                 </div>
-
                 <div class="spec-card">
-                    <div class="spec-img-box">
-                        <img src="assets/raider.jpg" alt="Raider 125" onerror="this.src='https://placehold.co/600x400?text=Raider+125'">
-                    </div>
-                    <div class="spec-content">
-                        <h3>TVS Raider 125</h3>
-                        <div class="spec-tagline">THE WICKED RIDE</div>
-                        <p>Best-in-class acceleration with a sporty design and animalistic LED headlamp.</p>
-                        
-                        <div class="specs-row">
-                            <div class="spec-item"><span>124.8 cc</span><small>Engine</small></div>
-                            <div class="spec-item"><span>67 kmpl</span><small>Mileage</small></div>
-                            <div class="spec-item"><span>5.9 sec</span><small>0-60 km/h</small></div>
-                        </div>
-
-                        <div class="price-tag">Starts at ₹ 95,000*</div>
-                        <div class="card-actions">
-                            <a href="models/raider.html" class="btn btn-primary">View Full Details</a>
-                            <a href="https://wa.me/919964946512?text=Get%20Quote%20Raider" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
+                    <div class="spec-img-box"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400'"></div>
+                    <div class="spec-content"><h3>TVS Raider 125</h3><div class="spec-tagline">THE WICKED RIDE</div><div class="specs-row"><div class="spec-item"><span>125cc</span><small>Engine</small></div><div class="spec-item"><span>67 kmpl</span><small>Mileage</small></div></div><div class="price-tag">Starts at ₹ 95,000*</div><div class="card-actions"><a href="models/raider.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
                 </div>
             </div>
-
-            <div id="scooters" style="margin-bottom: 60px;">
-                <h2 style="margin-bottom: 30px; border-left: 5px solid var(--accent); padding-left: 15px;">Scooters</h2>
-
+            
+            <div id="scooters" style="margin-bottom:60px;">
+                <h2 style="margin-bottom:30px; border-left:5px solid var(--accent); padding-left:15px;">Scooters</h2>
                 <div class="spec-card">
-                    <div class="spec-img-box">
-                        <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=New+Jupiter+110'">
-                    </div>
-                    <div class="spec-content">
-                        <h3>New TVS Jupiter 110</h3>
-                        <div class="spec-tagline">ZYADA SE BHI ZYADA</div>
-                        <p>India's most loved family scooter now with next-gen iGO Assist technology.</p>
-                        
-                        <div class="specs-row">
-                            <div class="spec-item"><span>113.3 cc</span><small>Engine</small></div>
-                            <div class="spec-item"><span>Digital</span><small>Cluster</small></div>
-                            <div class="spec-item"><span>Lrg Boot</span><small>Storage</small></div>
-                        </div>
-
-                        <div class="price-tag">Starts at ₹ 73,000*</div>
-                        <div class="card-actions">
-                            <a href="models/jupiter113.html" class="btn btn-primary">View Full Details</a>
-                            <a href="https://wa.me/919964946512?text=Get%20Quote%20Jupiter" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
+                    <div class="spec-img-box"><img src="assets/jupiter110.jpg" alt="Jupiter" onerror="this.src='https://placehold.co/600x400'"></div>
+                    <div class="spec-content"><h3>New Jupiter 110</h3><div class="spec-tagline">ZYADA SE BHI ZYADA</div><div class="specs-row"><div class="spec-item"><span>113cc</span><small>Engine</small></div><div class="spec-item"><span>iGO</span><small>Assist</small></div></div><div class="price-tag">Starts at ₹ 73,000*</div><div class="card-actions"><a href="models/jupiter113.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
                 </div>
-
-                 <div class="spec-card">
-                    <div class="spec-img-box">
-                        <img src="assets/ntorq.jpg" alt="Ntorq 125" onerror="this.src='https://placehold.co/600x400?text=Ntorq+125'">
-                    </div>
-                    <div class="spec-content">
-                        <h3>TVS Ntorq 125</h3>
-                        <div class="spec-tagline">PLAY SMART</div>
-                        <p>India's first connected scooter with Bluetooth and Navigation assist.</p>
-                        
-                        <div class="specs-row">
-                            <div class="spec-item"><span>124.8 cc</span><small>Engine</small></div>
-                            <div class="spec-item"><span>3 Valves</span><small>Tech</small></div>
-                            <div class="spec-item"><span>95 km/h</span><small>Top Speed</small></div>
-                        </div>
-
-                        <div class="price-tag">Starts at ₹ 85,000*</div>
-                        <div class="card-actions">
-                            <a href="models/ntorq125.html" class="btn btn-primary">View Full Details</a>
-                            <a href="https://wa.me/919964946512?text=Get%20Quote%20Ntorq" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
+                <div class="spec-card">
+                    <div class="spec-img-box"><img src="assets/ntorq.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400'"></div>
+                    <div class="spec-content"><h3>Ntorq 125</h3><div class="spec-tagline">PLAY SMART</div><div class="specs-row"><div class="spec-item"><span>125cc</span><small>Engine</small></div><div class="spec-item"><span>BT</span><small>Connect</small></div></div><div class="price-tag">Starts at ₹ 85,000*</div><div class="card-actions"><a href="models/ntorq125.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
                 </div>
             </div>
 
             <div id="electric">
-                <h2 style="margin-bottom: 30px; border-left: 5px solid var(--accent); padding-left: 15px;">Electric</h2>
-
+                <h2 style="margin-bottom:30px; border-left:5px solid var(--accent); padding-left:15px;">Electric</h2>
                 <div class="spec-card">
-                    <div class="spec-img-box">
-                        <img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400?text=TVS+iQube'">
-                    </div>
-                    <div class="spec-content">
-                        <h3>TVS iQube Electric</h3>
-                        <div class="spec-tagline">SMART. SIMPLE. SILENT.</div>
-                        <p>Experience the future of mobility with smart features and zero emissions.</p>
-                        
-                        <div class="specs-row">
-                            <div class="spec-item"><span>100 km</span><small>Range</small></div>
-                            <div class="spec-item"><span>78 km/h</span><small>Top Speed</small></div>
-                            <div class="spec-item"><span>5 hrs</span><small>Charging</small></div>
-                        </div>
-
-                        <div class="price-tag">Starts at ₹ 1,15,000*</div>
-                        <div class="card-actions">
-                            <a href="models/iqube.html" class="btn btn-primary">View Full Details</a>
-                            <a href="https://wa.me/919964946512?text=Get%20Quote%20iQube" class="btn btn-outline">Get Quote</a>
-                        </div>
-                    </div>
+                    <div class="spec-img-box"><img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400'"></div>
+                    <div class="spec-content"><h3>TVS iQube</h3><div class="spec-tagline">SMART. SIMPLE. SILENT.</div><div class="specs-row"><div class="spec-item"><span>100km</span><small>Range</small></div><div class="spec-item"><span>78km/h</span><small>Speed</small></div></div><div class="price-tag">Starts at ₹ 1,17,000*</div><div class="card-actions"><a href="models/iqube.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
                 </div>
             </div>
-
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Tirumala <span>TVS</span></h3>
-                    <p>Your authorized main dealer for sales, service, and spares.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="models.html">All Vehicles</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Models</h4>
-                    <ul>
-                        <li><a href="#motorcycles">Motorcycles</a></li>
-                        <li><a href="#scooters">Scooters</a></li>
-                        <li><a href="#electric">Electric</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div style="border-top: 1px solid #222; padding: 20px 0; text-align: center;">
-                <p>&copy; 2025 Tirumala TVS Bidarahalli. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>function toggleMenu(){document.getElementById("navMenu").classList.toggle("active");}</script>
+    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <script>function toggleMenu(){document.getElementById('navMenu').classList.toggle('active');}</script>
 </body>
 </html>
