@@ -4,172 +4,302 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tirumala TVS Bidarahalli | Authorized Main Dealer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="header-top">
-        <a href="#contact" class="btn-header-action">Book Service</a>
-        <a href="#contact" class="btn-header-action">Get Quotation</a>
-        <a href="#contact" class="btn-header-action">Book Test Drive</a>
-    </div>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
 
-    <nav class="main-nav-container">
-        <a href="index.html" class="logo-text">Tirumala <span>TVS</span></a>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <div class="nav-menu" id="navMenu">
-            <a href="index.html">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="models.html">VEHICLES</a>
-            <a href="#services">SERVICES</a>
-            <a href="#contact">CONTACT</a>
+            <div class="nav-links" id="navMenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="models.html">Vehicles</a>
+                <a href="#services">Services</a>
+                <a href="#contact" class="btn-nav-contact">Contact Us</a>
+            </div>
         </div>
     </nav>
 
-    <section class="hero">
-        <h2>Experience the New TVS</h2>
-        <p>Your Trusted Authorized Dealership in Bidarahalli, Bangalore.</p>
-        <a href="models.html" class="hero-btn">View Latest Bikes</a>
-    </section>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Experience the <span class="highlight">Power of TVS</span></h1>
+            <p>Your Trusted Authorized Dealership in Bidarahalli, Bangalore.</p>
+            <div class="hero-buttons">
+                <a href="models.html" class="btn btn-primary">View Bikes</a>
+                <a href="#contact" class="btn btn-outline">Book Test Ride</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="action-bar">
-        <a href="#contact" class="action-btn">📅 Book Service</a>
-        <a href="#contact" class="action-btn">🏍 Book Test Ride</a>
-        <a href="https://wa.me/919964946512?text=General%20Enquiry" class="action-btn">💬 General Enquiry</a>
+    <div class="container">
+        <div class="action-bar">
+            <a href="#contact" class="action-item">
+                <span class="icon">📅</span>
+                <span>Book Service</span>
+            </a>
+            <a href="#contact" class="action-item">
+                <span class="icon">🏍️</span>
+                <span>Test Ride</span>
+            </a>
+            <a href="https://wa.me/919964946512?text=General%20Enquiry" class="action-item">
+                <span class="icon">💬</span>
+                <span>WhatsApp Us</span>
+            </a>
+            <a href="tel:+919964946512" class="action-item">
+                <span class="icon">📞</span>
+                <span>Call Now</span>
+            </a>
+        </div>
     </div>
 
-    <section id="about" class="brand-legacy">
-        <h2 style="font-size: 2.2rem; margin-bottom: 10px;">Welcome to Tirumala TVS</h2>
-        <p>We are committed to being a socially responsible and leading manufacturer.</p>
-        <div class="brand-grid">
-            <div class="brand-item"><span class="brand-icon">✔️</span><h3>50M+ Vehicles</h3><p>Celebrated globally.</p></div>
-            <div class="brand-item"><span class="brand-icon">✔️</span><h3>80+ Countries</h3><p>Global trust.</p></div>
-            <div class="brand-item"><span class="brand-icon">✔️</span><h3>Industry Leader</h3><p>Innovation first.</p></div>
-        </div>
-    </section>
-
-    <section style="background-color: white;">
-        <h2 class="section-title">Latest Launches</h2>
-        <div class="models-grid">
-            <div class="model-card">
-                <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter'">
-                <div class="model-info"><h3>New TVS Jupiter 110</h3><p>New 113cc Engine with iGO Assist.</p><a href="models/jupiter113.html" class="btn-view">View Details</a></div>
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Welcome to Tirumala TVS</h2>
+                <p>Committed to excellence, innovation, and customer satisfaction.</p>
             </div>
-            <div class="model-card">
-                <img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'">
-                <div class="model-info"><h3>TVS Raider 125</h3><p>The wicked ride. Commuter of the year.</p><a href="models/raider.html" class="btn-view">View Details</a></div>
-            </div>
-            <div class="model-card">
-                <img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin'">
-                <div class="model-info"><h3>TVS Ronin</h3><p>Modern-Retro Scrambler.</p><a href="models/ronin.html" class="btn-view">View Details</a></div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>50M+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-card">
+                    <h3>80+</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat-card">
+                    <h3>#1</h3>
+                    <p>JD Power Award</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="services-section" id="services">
-        <h2 class="section-title">Services Offered</h2>
-        <p class="section-subtitle">Professional care for your TVS vehicle</p>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <span class="service-icon">👨‍🔧</span>
-                <h3>Trusted Care</h3>
-                <p>Regular checkups and expert repairs by trained TVS technicians.</p>
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Launches</h2>
+                <p>Explore the newest additions to the TVS family.</p>
             </div>
-            <div class="service-card">
-                <span class="service-icon">⚙️</span>
-                <h3>Engine Diagnostics</h3>
-                <p>Ensure peak performance with modern diagnostic tools.</p>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'">
+                        <span class="badge">New</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>TVS Jupiter 110</h3>
+                        <p>Zyada ka Fayada with iGO Assist technology.</p>
+                        <a href="models.html" class="btn-link">View Details &rarr;</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'">
+                        <span class="badge">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>TVS Raider 125</h3>
+                        <p>The wicked ride. Commuter of the year.</p>
+                        <a href="models.html" class="btn-link">View Details &rarr;</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin'">
+                    </div>
+                    <div class="card-body">
+                        <h3>TVS Ronin</h3>
+                        <p>Modern-Retro Scrambler for the unscripted.</p>
+                        <a href="models.html" class="btn-link">View Details &rarr;</a>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-                <span class="service-icon">🛢️</span>
-                <h3>Oil Change</h3>
-                <p>Genuine oil and parts to improve mileage and engine life.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🛑</span>
-                <h3>Brake & Suspension</h3>
-                <p>Safety checks for brakes and suspension systems.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🔋</span>
-                <h3>Battery & Electrical</h3>
-                <p>Complete checkup of battery health and electrical wiring.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-icon">🛠️</span>
-                <h3>TVS Service Packages</h3>
-                <p>Affordable annual maintenance contracts (AMC).</p>
-            </div>
-        </div>
-
-        <a href="https://wa.me/919964946512?text=Hello%20Tirumala%20TVS,%20I%20would%20like%20to%20book%20a%20service%20appointment." class="btn-book-service" target="_blank">Book Service Appointment 💬</a>
-    </section>
-
-    <section style="background-color: white;">
-        <h2 class="section-title">Happy Riders</h2>
-        <p class="section-subtitle">Real experiences from our customers</p>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"The mileage is impressive for city rides, giving around 55 kmpl. Comfortable seat."</p>
-                <div class="customer-info"><div style="background:#ccc;width:40px;height:40px;border-radius:50%;"></div><div class="customer-details"><h4>Usama Faruqui</h4><span>Jupiter Owner</span></div></div>
-            </div>
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"I'm surprised to see the mileage! Getting nearly 60+ kmpl on highways."</p>
-                <div class="customer-info"><div style="background:#ccc;width:40px;height:40px;border-radius:50%;"></div><div class="customer-details"><h4>Safik Ahmed</h4><span>Raider Owner</span></div></div>
-            </div>
-            <div class="testimonial-card">
-                <div class="star-rating">★★★★★</div>
-                <p>"Best service experience in Bidarahalli. Mechanics are knowledgeable."</p>
-                <div class="customer-info"><div style="background:#ccc;width:40px;height:40px;border-radius:50%;"></div><div class="customer-details"><h4>Vikram M.</h4><span>Apache Owner</span></div></div>
+            <div class="center-btn">
+                <a href="models.html" class="btn btn-secondary">View All Vehicles</a>
             </div>
         </div>
     </section>
 
-    <div class="contact-wrapper" id="contact">
-        <div class="contact-left">
-            <h2 class="section-title" style="text-align: left;">Contact Us</h2>
-            <p style="margin-bottom: 30px; color: #666;">Fill the form below to reach us.</p>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <label class="form-label">Name *</label><input type="text" name="name" class="form-input" placeholder="Your fullname" required>
-                <label class="form-label">Phone *</label><input type="tel" name="phone" class="form-input" placeholder="Your phone number" required>
-                <label class="form-label">Purpose *</label>
-                <select name="purpose" class="form-input" required>
-                    <option value="General Enquiry">General Enquiry</option>
-                    <option value="Book Service">Book Service Appointment</option>
-                    <option value="Get Quotation">Get Quotation / Price</option>
-                    <option value="Test Drive">Book Test Drive</option>
-                </select>
-                <label class="form-label">Message</label><textarea name="message" class="form-input" rows="4" placeholder="Vehicle details..."></textarea>
-                <button type="submit" class="btn-submit-form">Submit Request</button>
-            </form>
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Professional care to keep your vehicle running like new.</p>
+            </div>
+            <div class="grid-3 service-grid">
+                <div class="service-box">
+                    <div class="service-icon">🛠️</div>
+                    <h3>General Service</h3>
+                    <p>Complete checkup and maintenance by certified technicians.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🛢️</div>
+                    <h3>Oil Change</h3>
+                    <p>Genuine TVS Tru4 oil for better engine life and mileage.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Engine Diagnostics</h3>
+                    <p>Advanced computer diagnostics to identify hidden issues.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🔋</div>
+                    <h3>Battery Check</h3>
+                    <p>Health check and replacement of batteries.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🛑</div>
+                    <h3>Brake Service</h3>
+                    <p>Brake pad replacement and safety inspections.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🧼</div>
+                    <h3>Foam Wash</h3>
+                    <p>Premium pressure wash and polishing services.</p>
+                </div>
+            </div>
+            <div class="center-btn" style="margin-top: 30px;">
+                <a href="https://wa.me/919964946512?text=Book%20Service" class="btn btn-whatsapp">Book Service Appointment</a>
+            </div>
         </div>
-        <div class="contact-right"></div>
-    </div>
+    </section>
 
-    <div class="footer-contact-bar">
-        <div class="contact-item">✉️ tirumalatvs716@gmail.com</div>
-        <div class="contact-item">📞 +91 99649 46512</div>
-    </div>
-    <footer class="main-footer">
-        <div class="footer-grid">
-            <div class="footer-column"><h4>Quick Links</h4><ul><li><a href="index.html">About Us</a></li><li><a href="#contact">Contact Us</a></li><li><a href="#contact">Book Service</a></li></ul></div>
-            <div class="footer-column"><h4>Models</h4><ul><li><a href="models.html">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li><li><a href="models.html#electric">Electric</a></li></ul></div>
-            <div class="footer-column">
-                <h4>Showroom</h4>
-                <ul>
-                    <li><a href="#">Tirumala TVS Bidarahalli</a></li>
-                    <li><a href="#">Authorized Main Dealer</a></li>
-                    <li><a href="https://www.google.com/maps/search/Tirumala+TVS+Bidarahalli" class="btn-map" target="_blank">📍 Go to Location</a></li>
-                </ul>
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Happy Riders</h2>
+                <p>What our customers say about Tirumala TVS.</p>
+            </div>
+            <div class="grid-3">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excellent service! The staff was very polite and the delivery was on time. Highly recommend Tirumala TVS."</p>
+                    <h4>- Rahul Sharma</h4>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Bought my new Raider from here. The finance process was smooth and quick. Great experience."</p>
+                    <h4>- Priya Gowda</h4>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best service center in Bidarahalli. They resolved my engine issue which other mechanics couldn't fix."</p>
+                    <h4>- Karthik N.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-form-wrapper">
+                    <h2>Get In Touch</h2>
+                    <p>Fill the form below and we will contact you shortly.</p>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone" required placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Interested In</label>
+                            <select name="purpose">
+                                <option>New Vehicle Enquiry</option>
+                                <option>Book Service</option>
+                                <option>Insurance / Finance</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="4" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Submit Request</button>
+                    </form>
+                </div>
+                <div class="contact-info-wrapper">
+                    <h3>Contact Info</h3>
+                    <div class="info-item">
+                        <span>📍</span>
+                        <p><strong>Tirumala TVS Bidarahalli</strong><br>Main Road, Bidarahalli, Bangalore - 560049</p>
+                    </div>
+                    <div class="info-item">
+                        <span>📞</span>
+                        <p>+91 99649 46512</p>
+                    </div>
+                    <div class="info-item">
+                        <span>✉️</span>
+                        <p>tirumalatvs716@gmail.com</p>
+                    </div>
+                    <div class="map-placeholder">
+                        <p>Map Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Tirumala <span>TVS</span></h3>
+                    <p>Your authorized main dealer for sales, service, and spares.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="models.html">All Vehicles</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Vehicle Types</h4>
+                    <ul>
+                        <li><a href="models.html#motorcycles">Motorcycles</a></li>
+                        <li><a href="models.html#scooters">Scooters</a></li>
+                        <li><a href="models.html#electric">Electric (iQube)</a></li>
+                        <li><a href="models.html#mopeds">Mopeds (XL100)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Working Hours</h4>
+                    <ul>
+                        <li>Mon - Sat: 9:00 AM - 8:00 PM</li>
+                        <li>Sunday: 9:00 AM - 2:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tirumala TVS Bidarahalli. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    <div class="copyright-bar"><div>Copyright © 2025 Tirumala TVS Bidarahalli.</div></div>
+
     <a href="https://wa.me/919964946512?text=Hi%20Tirumala%20TVS" class="whatsapp-float" target="_blank">💬</a>
 
-    <script>function toggleMenu(){document.getElementById("navMenu").classList.toggle("active");}</script>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
