@@ -4,86 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New TVS Jupiter 110 | Tirumala TVS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-    <nav class="nav-container">
-        <a href="../index.html" class="logo"><h1>Tirumala <span>TVS</span></h1></a>
-        <div class="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="../models.html">Inventory</a>
-            <a href="../contacts.html" style="color: var(--tvs-red);">Book Test Ride</a>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <div class="nav-links" id="navMenu">
+                <a href="../index.html">Home</a>
+                <a href="../models.html">Inventory</a>
+                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
+            </div>
         </div>
     </nav>
 
-    <section class="model-hero">
-        <div class="hero-text">
-            <span class="hero-tag" style="background: var(--tvs-blue);">NEW LAUNCH</span>
-            <h1>TVS Jupiter 110</h1>
-            <h3>Zyada Se Bhi Zyada</h3>
-            <p>
-                India's most loved family scooter is back with a bang. Now featuring a Next-Gen 113cc engine and 
-                <strong>iGO Assist Technology</strong> for 10% more mileage and instant overtaking power.
-            </p>
-            <div class="hero-btns">
-                <a href="../contacts.html" class="btn-primary">📅 Book Test Ride</a>
-                <a href="https://wa.me/919964946512" class="btn-secondary">💬 WhatsApp</a>
+    <div class="model-hero">
+        <div class="hero-text-side">
+            <span class="model-tag" style="background: var(--primary);">ZYADA SE BHI ZYADA</span>
+            <h1 class="model-title">New Jupiter 110</h1>
+            <p class="section-subtitle">Now with Next-Gen iGO Assist technology for instant power boost and better mileage.</p>
+            <div class="model-price">₹ 73,700* <br><span>(Starting Ex-Showroom)</span></div>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20Jupiter" class="btn btn-primary">Book Test Ride 🛵</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="../assets/jupiter110.jpg" alt="TVS Jupiter 110" onerror="this.src='https://placehold.co/800x600?text=Jupiter+110'">
+        <div class="hero-img-side">
+            <img src="../assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/800x600?text=New+Jupiter+110'">
         </div>
-    </section>
-
-    <div class="stats-bar">
-        <div class="stat-box"><h4>113.3 cc</h4><p>Engine</p></div>
-        <div class="stat-box"><h4>10% +</h4><p>More Mileage</p></div>
-        <div class="stat-box"><h4>9.8 Nm</h4><p>Torque</p></div>
-        <div class="stat-box"><h4>iGO</h4><p>Assist Tech</p></div>
     </div>
 
-    <section class="info-section">
-        <div class="section-head">
-            <h2>The New Benchmark</h2>
-            <p>Designed for the comfort and convenience of the entire family.</p>
+    <div class="spec-bar-dark">
+        <div class="spec-bar-grid">
+            <div class="dark-spec-item"><h4>113cc</h4><p>Engine</p></div>
+            <div class="dark-spec-item"><h4>iGO</h4><p>Assist Tech</p></div>
+            <div class="dark-spec-item"><h4>Start</h4><p>Silent Start</p></div>
+            <div class="dark-spec-item"><h4>LED</h4><p>Infinity Lamp</p></div>
         </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <span class="feature-icon">⚡</span>
-                <h4>iGO Assist</h4>
-                <p>Micro-hybrid technology provides an extra torque boost for easy overtaking and auto start-stop for fuel savings.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">⛽</span>
-                <h4>Smart Refuel</h4>
-                <p>External front fuel filling allows you to refuel without getting off the seat.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">🎒</span>
-                <h4>Double Helmet Space</h4>
-                <p>Best-in-class under-seat storage that can easily fit two helmets.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">📱</span>
-                <h4>SmartXonnect</h4>
-                <p>Bluetooth connected digital cluster with Turn-by-Turn navigation and Call/SMS alerts.</p>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <section class="info-section" style="background-color: #f9f9f9;">
-        <div class="section-head"><h2>Technical Specifications</h2></div>
-        <div class="specs-container">
-            <div class="spec-row"><div class="spec-key">Engine</div><div class="spec-val">113.3 cc, Single Cylinder, 4 Stroke</div></div>
-            <div class="spec-row"><div class="spec-key">Power</div><div class="spec-val">5.9 kW @ 6500 rpm</div></div>
-            <div class="spec-row"><div class="spec-key">Torque</div><div class="spec-val">9.8 Nm @ 5000 rpm (with Assist)</div></div>
-            <div class="spec-row"><div class="spec-key">Weight</div><div class="spec-val">105 kg</div></div>
-            <div class="spec-row"><div class="spec-key">Fuel Tank</div><div class="spec-val">5.1 Liters</div></div>
-            <div class="spec-row"><div class="spec-key">Brakes</div><div class="spec-val">Disc (Front Option) / Drum (Rear)</div></div>
+    <div class="feature-section container">
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>iGO Assist Technology</h3>
+                <p>Get an extra boost of power when overtaking. The integrated starter generator (ISG) battery assists the engine for smoother acceleration.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/jupiter_igo.jpg" alt="iGO Assist" onerror="this.src='https://placehold.co/600x400?text=iGO+Technology'"></div>
         </div>
-    </section>
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>Front Fuel Fill</h3>
+                <p>No need to get off the scooter at petrol pumps. The external front fuel filler offers maximum convenience.</p>
+            </div>
+            <div class="feature-img"><img src="../assets/jupiter_fuel.jpg" alt="Front Fuel" onerror="this.src='https://placehold.co/600x400?text=Front+Fuel+Fill'"></div>
+        </div>
+    </div>
+    
+    <div class="section-padding bg-light text-center">
+        <h2 style="margin-bottom: 20px;">Upgrade Your Ride</h2>
+        <a href="https://wa.me/919964946512?text=Get%20Quote%20Jupiter" class="btn btn-whatsapp">Get On-Road Price 💬</a>
+    </div>
 
-    <footer><p>&copy; 2024 Tirumala TVS Bidarahalli.</p></footer>
+    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
