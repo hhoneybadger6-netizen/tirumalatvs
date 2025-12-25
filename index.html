@@ -9,21 +9,21 @@
 <body>
 
     <div class="header-top">
-        <a href="contacts.html" class="btn-header-action">Book Service Appointment</a>
-        <a href="contacts.html" class="btn-header-action">Get Quotation</a>
-        <a href="contacts.html" class="btn-header-action">Book Test Drive</a>
+        <a href="#contact" class="btn-header-action">Book Service Appointment</a>
+        <a href="#contact" class="btn-header-action">Get Quotation</a>
+        <a href="#contact" class="btn-header-action">Book Test Drive</a>
     </div>
 
     <nav class="main-nav-container">
         <a href="index.html" class="logo-text">Tirumala <span>TVS</span></a>
         <div class="nav-menu">
             <a href="index.html">HOME ↗</a>
-            <a href="index.html#about">ABOUT</a>
+            <a href="#about">ABOUT</a>
             <a href="models.html">MOTORCYCLES</a>
             <a href="models.html">SCOOTERS</a>
             <a href="models.html">MOPEDS</a>
             <a href="models.html">ELECTRIC</a>
-            <a href="contacts.html">SERVICES</a>
+            <a href="#contact">SERVICES</a>
         </div>
     </nav>
 
@@ -34,14 +34,15 @@
     </section>
 
     <div class="action-bar">
-        <a href="contacts.html" class="action-btn">📅 Book Service</a>
-        <a href="contacts.html" class="action-btn">🏍 Book Test Ride</a>
-        <a href="contacts.html" class="action-btn">💬 General Enquiry</a>
+        <a href="#contact" class="action-btn">📅 Book Service</a>
+        <a href="#contact" class="action-btn">🏍 Book Test Ride</a>
+        <a href="https://wa.me/919964946512?text=General%20Enquiry" class="action-btn">💬 General Enquiry</a>
     </div>
 
     <section id="about" class="brand-legacy">
         <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Welcome to Tirumala TVS</h2>
         <p>We are committed to being a socially responsible and leading manufacturer.</p>
+        
         <div class="brand-grid">
             <div class="brand-item">
                 <span class="brand-icon">✔️</span>
@@ -122,22 +123,33 @@
         </div>
     </section>
 
-    <div class="contact-wrapper">
+    <div class="contact-wrapper" id="contact">
         <div class="contact-left">
             <h2 class="section-title" style="text-align: left;">Contact Us</h2>
             <p style="margin-bottom: 30px; color: #666;">Fill the form below to reach us.</p>
-            <form action="https://formspree.io/f/YOUR_ID" method="POST">
+            
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <label class="form-label">Name *</label>
-                <input type="text" class="form-input" placeholder="Your fullname" required>
-                <label class="form-label">Email *</label>
-                <input type="email" class="form-input" placeholder="Your email address" required>
+                <input type="text" name="name" class="form-input" placeholder="Your fullname" required>
+
                 <label class="form-label">Phone *</label>
-                <input type="tel" class="form-input" placeholder="Your phone number" required>
-                <label class="form-label">Message *</label>
-                <textarea class="form-input" rows="5" placeholder="Write Your Message"></textarea>
-                <button type="submit" class="btn-submit-form">Submit Message</button>
+                <input type="tel" name="phone" class="form-input" placeholder="Your phone number" required>
+
+                <label class="form-label">Purpose *</label>
+                <select name="purpose" class="form-input" required>
+                    <option value="General Enquiry">General Enquiry</option>
+                    <option value="Book Service">Book Service Appointment</option>
+                    <option value="Get Quotation">Get Quotation / Price</option>
+                    <option value="Test Drive">Book Test Drive</option>
+                </select>
+
+                <label class="form-label">Message</label>
+                <textarea name="message" class="form-input" rows="4" placeholder="Vehicle model or specific details..."></textarea>
+
+                <button type="submit" class="btn-submit-form">Submit Request</button>
             </form>
         </div>
+        
         <div class="contact-right"></div>
     </div>
 
@@ -157,9 +169,9 @@
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">About Us</a></li>
-                    <li><a href="contacts.html">Contact Us</a></li>
-                    <li><a href="contacts.html">Book Service</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#contact">Book Service</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -184,6 +196,8 @@
         <div>Copyright © 2025 Tirumala TVS Bidarahalli.</div>
         <div>FOLLOW US: 📘 📷</div>
     </div>
+
+    <a href="https://wa.me/919964946512?text=Hi%20Tirumala%20TVS,%20I%20am%20interested%20in%20a%20vehicle." class="whatsapp-float" target="_blank">💬</a>
 
 </body>
 </html>
