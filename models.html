@@ -2,62 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehicle Inventory | Tirumala TVS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Inventory | Tirumala TVS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
+
+    <header class="main-header">
+        <div class="container header-top">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-            <div class="nav-links" id="navMenu">
-                <a href="index.html">Home</a>
-                <a href="models.html" class="active">Vehicles</a>
-                <a href="index.html#contact" class="btn-nav-contact">Contact Us</a>
+            <div class="header-btn-group"><a href="index.html#contact" class="btn-header">Get Quote</a></div>
+        </div>
+        <div class="nav-bar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="models.html" style="color:var(--primary)">Inventory</a></li>
+                    <li class="nav-item"><a href="index.html#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </nav>
-    <header class="models-header"><div class="container"><h1>Our Vehicle Collection</h1><p>Performance, Comfort, and Technology.</p></div></header>
-    <div class="filter-bar"><div class="container filter-links"><a href="#motorcycles">Motorcycles</a><a href="#scooters">Scooters</a><a href="#electric">Electric</a></div></div>
-    
-    <section class="section-padding bg-light">
-        <div class="container">
-            <div id="motorcycles" style="margin-bottom:60px;">
-                <h2 style="margin-bottom:30px; border-left:5px solid var(--accent); padding-left:15px;">Motorcycles</h2>
-                <div class="spec-card">
-                    <div class="spec-img-box"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400'"></div>
-                    <div class="spec-content"><h3>Apache RTR 160 4V</h3><div class="spec-tagline">RACING DNA UNLEASHED</div><div class="specs-row"><div class="spec-item"><span>160cc</span><small>Engine</small></div><div class="spec-item"><span>17.55 PS</span><small>Power</small></div></div><div class="price-tag">Starts at ₹ 1,24,000*</div><div class="card-actions"><a href="models/apache160.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
-                </div>
-                <div class="spec-card">
-                    <div class="spec-img-box"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400'"></div>
-                    <div class="spec-content"><h3>TVS Raider 125</h3><div class="spec-tagline">THE WICKED RIDE</div><div class="specs-row"><div class="spec-item"><span>125cc</span><small>Engine</small></div><div class="spec-item"><span>67 kmpl</span><small>Mileage</small></div></div><div class="price-tag">Starts at ₹ 95,000*</div><div class="card-actions"><a href="models/raider.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
-                </div>
-            </div>
-            
-            <div id="scooters" style="margin-bottom:60px;">
-                <h2 style="margin-bottom:30px; border-left:5px solid var(--accent); padding-left:15px;">Scooters</h2>
-                <div class="spec-card">
-                    <div class="spec-img-box"><img src="assets/jupiter110.jpg" alt="Jupiter" onerror="this.src='https://placehold.co/600x400'"></div>
-                    <div class="spec-content"><h3>New Jupiter 110</h3><div class="spec-tagline">ZYADA SE BHI ZYADA</div><div class="specs-row"><div class="spec-item"><span>113cc</span><small>Engine</small></div><div class="spec-item"><span>iGO</span><small>Assist</small></div></div><div class="price-tag">Starts at ₹ 73,000*</div><div class="card-actions"><a href="models/jupiter113.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
-                </div>
-                <div class="spec-card">
-                    <div class="spec-img-box"><img src="assets/ntorq.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400'"></div>
-                    <div class="spec-content"><h3>Ntorq 125</h3><div class="spec-tagline">PLAY SMART</div><div class="specs-row"><div class="spec-item"><span>125cc</span><small>Engine</small></div><div class="spec-item"><span>BT</span><small>Connect</small></div></div><div class="price-tag">Starts at ₹ 85,000*</div><div class="card-actions"><a href="models/ntorq125.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
-                </div>
-            </div>
+    </header>
 
-            <div id="electric">
-                <h2 style="margin-bottom:30px; border-left:5px solid var(--accent); padding-left:15px;">Electric</h2>
-                <div class="spec-card">
-                    <div class="spec-img-box"><img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400'"></div>
-                    <div class="spec-content"><h3>TVS iQube</h3><div class="spec-tagline">SMART. SIMPLE. SILENT.</div><div class="specs-row"><div class="spec-item"><span>100km</span><small>Range</small></div><div class="spec-item"><span>78km/h</span><small>Speed</small></div></div><div class="price-tag">Starts at ₹ 1,17,000*</div><div class="card-actions"><a href="models/iqube.html" class="btn btn-primary">Details</a><a href="https://wa.me/919964946512" class="btn btn-outline">Quote</a></div></div>
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center"><h2>Full Inventory</h2><p>Click details to see more.</p></div>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <span class="badge">RACING</span>
+                    <div class="card-img"><img src="assets/apache160.jpg" alt="Apache 160"></div>
+                    <div class="card-info">
+                        <h3>Apache RTR 160 4V</h3>
+                        <p style="color:var(--primary); font-weight:bold;">Starts ₹ 1,24,000*</p>
+                        <a href="models/apache160.html" class="btn btn-outline full-width">View Details</a>
+                    </div>
                 </div>
-            </div>
+
+                <div class="card">
+                    <span class="badge">SPORTY</span>
+                    <div class="card-img"><img src="assets/raider.jpg" alt="Raider"></div>
+                    <div class="card-info">
+                        <h3>TVS Raider 125</h3>
+                        <p style="color:var(--primary); font-weight:bold;">Starts ₹ 95,000*</p>
+                        <a href="models/raider.html" class="btn btn-outline full-width">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="badge">FAMILY</span>
+                    <div class="card-img"><img src="assets/jupiter110.jpg" alt="Jupiter"></div>
+                    <div class="card-info">
+                        <h3>Jupiter 110</h3>
+                        <p style="color:var(--primary); font-weight:bold;">Starts ₹ 73,000*</p>
+                        <a href="models/jupiter113.html" class="btn btn-outline full-width">View Details</a>
+                    </div>
+                </div>
+                
+                </div>
         </div>
     </section>
-    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
-    <script>function toggleMenu(){document.getElementById('navMenu').classList.toggle('active');}</script>
+
+    <footer class="footer"><p>&copy; 2025 Tirumala TVS.</p></footer>
 </body>
 </html>
