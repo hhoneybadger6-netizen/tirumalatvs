@@ -65,25 +65,31 @@ ul { list-style: none; }
 .hero-content { position: relative; z-index: 2; max-width: 700px; color: white; }
 .hero h1 { font-family: var(--font-heading); font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; text-transform: uppercase; }
 
-/* --- ACTION BAR (Updated for 5 items) --- */
-.action-bar { display: grid; grid-template-columns: repeat(5, 1fr); background: var(--white); padding: 30px; box-shadow: var(--shadow); margin-top: -80px; position: relative; z-index: 10; border-radius: 8px; gap: 15px; }
+/* --- ACTION BAR (UPDATED FOR INSTAGRAM) --- */
+.action-bar { 
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); /* 5 Columns for 5 Buttons */
+    background: var(--white); 
+    padding: 30px; 
+    box-shadow: var(--shadow); 
+    margin-top: -80px; 
+    position: relative; 
+    z-index: 10; 
+    border-radius: 8px; 
+    gap: 15px; 
+}
 .action-item { text-align: center; border-right: 1px solid #eee; }
 .action-item:last-child { border: none; }
 .action-item span { font-family: var(--font-heading); font-weight: 700; color: var(--dark); display: block; margin-top: 5px; }
 .action-item .icon { font-size: 1.8rem; }
 
-/* --- INSTAGRAM GRADIENT BUTTON --- */
-.btn-instagram-float {
+/* --- INSTAGRAM STYLES --- */
+.icon-insta {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-weight: bold;
-}
-.icon-insta {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    -webkit-background-clip: text;
-    color: transparent;
+    display: inline-block;
 }
 
 /* --- WELCOME & HISTORY --- */
@@ -178,7 +184,7 @@ ul { list-style: none; }
     text-align: center;
     font-size: 30px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-    z-index: 10000;
+    z-index: 10000; /* FORCE TOP LAYER */
     display: flex;
     align-items: center;
     justify-content: center;
