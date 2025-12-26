@@ -1,54 +1,268 @@
-<section class="section-padding bg-light">
-        <div class="container">
-            <div class="text-center section-header">
-                <h2>Happy Riders</h2>
-                <p>What our customers say about Tirumala TVS.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirumala TVS | Authorized Dealer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-top">
+            <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <div class="header-btn-group">
+                <a href="#contact" class="btn-header">Book Service Appointment</a>
+                <a href="#contact" class="btn-header">Get Quotation</a>
+                <a href="#contact" class="btn-header">Book Test Drive</a>
             </div>
-            
-            <div class="grid-3" style="margin-top: 40px;">
-                
-                <div class="card" style="padding: 30px;">
-                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Excellent experience buying my new Apache RTR 160 4V. The sales team was polite, and the delivery process was very smooth. Highly recommend!"</p>
-                    <h4 style="font-family: 'Oswald', sans-serif; color: var(--primary);">– Arjun Kumar</h4>
-                    <span style="font-size: 0.8rem; color: #888;">Apache Owner</span>
-                </div>
+        </div>
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="models.html#motorcycles">Motorcycles</a></li>
+                    <li class="nav-item"><a href="models.html#scooters">Scooters</a></li>
+                    <li class="nav-item"><a href="models.html#electric">Mopeds</a></li>
+                    <li class="nav-item"><a href="models.html#electric">Electric</a></li>
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-                <div class="card" style="padding: 30px;">
-                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"I was confused between Jupiter and Ntorq. The staff patiently explained the features of both. Bought the Jupiter 110 and I love it!"</p>
-                    <h4 style="font-family: 'Oswald', sans-serif; color: var(--primary);">– Priya Sharma</h4>
-                    <span style="font-size: 0.8rem; color: #888;">Jupiter Owner</span>
-                </div>
-
-                <div class="card" style="padding: 30px;">
-                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Best service center in Bidarahalli. My bike had a starting issue that local mechanics couldn't fix. The technicians here fixed it in 2 hours."</p>
-                    <h4 style="font-family: 'Oswald', sans-serif; color: var(--primary);">– Rahul M.</h4>
-                    <span style="font-size: 0.8rem; color: #888;">Service Customer</span>
-                </div>
-
-                <div class="card" style="padding: 30px;">
-                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"The finance process was super fast. They handled all the paperwork, and I got my TVS Raider delivered within 2 days. Great service."</p>
-                    <h4 style="font-family: 'Oswald', sans-serif; color: var(--primary);">– Sneha Reddy</h4>
-                    <span style="font-size: 0.8rem; color: #888;">Raider Owner</span>
-                </div>
-
-                <div class="card" style="padding: 30px;">
-                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Bought the TVS iQube recently. The team explained the charging and subsidy process clearly. Very happy with my switch to electric."</p>
-                    <h4 style="font-family: 'Oswald', sans-serif; color: var(--primary);">– Vikram Singh</h4>
-                    <span style="font-size: 0.8rem; color: #888;">iQube Owner</span>
-                </div>
-
-                <div class="card" style="padding: 30px;">
-                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★☆</div>
-                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Genuine spare parts and transparent billing. It's hard to find trustworthy service centers these days, but Tirumala TVS is one of them."</p>
-                    <h4 style="font-family: 'Oswald', sans-serif; color: var(--primary);">– Anil Gowda</h4>
-                    <span style="font-size: 0.8rem; color: #888;">Regular Customer</span>
-                </div>
-
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Unleash The <br><span class="highlight">Racing DNA</span></h1>
+            <p>Authorized TVS Main Dealership in Bidarahalli. Experience power, performance, and premium service.</p>
+            <div class="hero-buttons">
+                <a href="models.html" class="btn btn-primary">Explore Inventory</a>
+                <a href="#contact" class="btn btn-outline">Visit Showroom</a>
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <div class="action-bar">
+            <a href="#contact" class="action-item"><span class="icon">📅</span><span>Book Service</span></a>
+            <a href="#contact" class="action-item"><span class="icon">🏍️</span><span>Test Ride</span></a>
+            <a href="https://wa.me/919964946512" class="action-item"><span class="icon">💬</span><span>WhatsApp</span></a>
+            <a href="tel:+919964946512" class="action-item"><span class="icon">📞</span><span>Call Now</span></a>
+        </div>
+    </div>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2>New Arrivals</h2>
+            </div>
+            <div class="grid-3" style="margin-top: 40px;">
+                <div class="card">
+                    <span class="badge">New Launch</span>
+                    <div class="card-img"><img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400'"></div>
+                    <div class="card-info">
+                        <h3>Jupiter 110</h3>
+                        <a href="models/jupiter113.html" class="btn btn-outline">View Specs</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="badge">Trending</span>
+                    <div class="card-img"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400'"></div>
+                    <div class="card-info">
+                        <h3>Raider 125</h3>
+                        <a href="models/raider.html" class="btn btn-outline">View Specs</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="badge">Premium</span>
+                    <div class="card-img"><img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400'"></div>
+                    <div class="card-info">
+                        <h3>TVS Ronin</h3>
+                        <a href="models/ronin.html" class="btn btn-outline">View Specs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: #f4f4f4;">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 style="font-family: 'Oswald', sans-serif; color: #1a3b8c; font-size: 2.5rem; margin-bottom: 10px;">Happy Riders</h2>
+                <p style="color: #666;">What our customers say about Tirumala TVS.</p>
+            </div>
+            
+            <div class="grid-3" style="margin-top: 40px;">
+                <div class="card" style="padding: 30px; text-align: left; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.6;">"Excellent experience buying my new Apache RTR 160 4V. The sales team was polite, and the delivery process was very smooth. Highly recommend!"</p>
+                    <h4 style="font-family: 'Oswald', sans-serif; color: #1a3b8c; margin-bottom: 5px;">– Arjun Kumar</h4>
+                    <span style="font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Apache Owner</span>
+                </div>
+                <div class="card" style="padding: 30px; text-align: left; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.6;">"I was confused between Jupiter and Ntorq. The staff patiently explained the features of both. Bought the Jupiter 110 and I love it!"</p>
+                    <h4 style="font-family: 'Oswald', sans-serif; color: #1a3b8c; margin-bottom: 5px;">– Priya Sharma</h4>
+                    <span style="font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Jupiter Owner</span>
+                </div>
+                <div class="card" style="padding: 30px; text-align: left; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.6;">"Best service center in Bidarahalli. My bike had a starting issue that local mechanics couldn't fix. The technicians here fixed it in 2 hours."</p>
+                    <h4 style="font-family: 'Oswald', sans-serif; color: #1a3b8c; margin-bottom: 5px;">– Rahul M.</h4>
+                    <span style="font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Service Customer</span>
+                </div>
+                <div class="card" style="padding: 30px; text-align: left; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.6;">"The finance process was super fast. They handled all the paperwork, and I got my TVS Raider delivered within 2 days. Great service."</p>
+                    <h4 style="font-family: 'Oswald', sans-serif; color: #1a3b8c; margin-bottom: 5px;">– Sneha Reddy</h4>
+                    <span style="font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Raider Owner</span>
+                </div>
+                <div class="card" style="padding: 30px; text-align: left; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.6;">"Bought the TVS iQube recently. The team explained the charging and subsidy process clearly. Very happy with my switch to electric."</p>
+                    <h4 style="font-family: 'Oswald', sans-serif; color: #1a3b8c; margin-bottom: 5px;">– Vikram Singh</h4>
+                    <span style="font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">iQube Owner</span>
+                </div>
+                <div class="card" style="padding: 30px; text-align: left; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="color: #ffc107; font-size: 1.2rem; margin-bottom: 15px;">★★★★☆</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.6;">"Genuine spare parts and transparent billing. It's hard to find trustworthy service centers these days, but Tirumala TVS is one of them."</p>
+                    <h4 style="font-family: 'Oswald', sans-serif; color: #1a3b8c; margin-bottom: 5px;">– Anil Gowda</h4>
+                    <span style="font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Regular Customer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="text-center section-header"><h2>Expert Service</h2></div>
+            <div class="grid-3" style="margin-top: 40px;">
+                <div class="card card-info" style="padding: 30px;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🛠️</div>
+                    <h3>General Maintenance</h3>
+                    <p>Comprehensive checkups by certified TVS experts.</p>
+                </div>
+                <div class="card card-info" style="padding: 30px;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🛢️</div>
+                    <h3>TVS Tru4 Oil</h3>
+                    <p>Engine oil replacement for smoother rides.</p>
+                </div>
+                <div class="card card-info" style="padding: 30px;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">⚙️</div>
+                    <h3>Smart Diagnostics</h3>
+                    <p>Advanced OBD scanning to detect issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-form-wrapper">
+                    <h2>Get In Touch</h2>
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST">
+                        <div class="form-group"><input type="text" name="name" required placeholder="Your Name"></div>
+                        <div class="form-group"><input type="tel" name="phone" required placeholder="Phone Number"></div>
+                        <div class="form-group">
+                            <select name="purpose">
+                                <option>General Enquiry</option>
+                                <option>Book Test Ride</option>
+                                <option>Book Service</option>
+                                <option>Get Quotation</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Submit Request</button>
+                    </form>
+                </div>
+                <div class="contact-info-wrapper">
+                    <h2>Visit Us</h2>
+                    <p style="margin-top: 20px; font-size: 1.2rem;">Tirumala TVS Bidarahalli</p>
+                    <p>Main Road, Bidarahalli, Bangalore - 560049</p>
+                    <div style="margin-top: 40px;">
+                        <p style="font-size: 1.5rem; font-weight: bold;">📞 +91 99649 46512</p>
+                        <p>✉️ tirumalatvs716@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top-bar">
+            <div class="container footer-contact-row">
+                <div class="footer-contact-item">
+                    <div class="footer-icon-circle">✉</div>
+                    <div class="footer-contact-text">tirumalatvs716@gmail.com</div>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="footer-icon-circle">📞</div>
+                    <div class="footer-contact-text">+91 99649 46512</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container footer-cols">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#contact">Book a Service</a></li>
+                        <li><a href="#contact">Book a Test Drive</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Models</h4>
+                    <ul class="footer-links">
+                        <li><a href="models.html#motorcycles">Motorcycles</a></li>
+                        <li><a href="models.html#scooters">Scooters</a></li>
+                        <li><a href="models.html#electric">Mopeds</a></li>
+                        <li><a href="models.html#electric">Electric</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Showrooms</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Tirumala TVS Bidarahalli</a></li>
+                        <li><a href="#contact">Sales & Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-bottom">
+                <div>Copyright © 2025 Tirumala TVS. All rights reserved.</div>
+                <div class="footer-social">FOLLOW US : <span style="font-size:1.2rem;">f</span></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navMenu");
+            if(nav.style.display === "block") { nav.style.display = "none"; } 
+            else { nav.style.display = "block"; nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+        }
+
+        // Show/Hide Scroll Top Button
+        window.addEventListener('scroll', function() {
+            var scrollBtn = document.querySelector('.scroll-top-btn');
+            if (window.scrollY > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
