@@ -4,69 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS Zest 110 | Tirumala TVS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
+    <header class="main-header">
+        <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-            <div class="nav-links" id="navMenu">
-                <a href="../index.html">Home</a>
-                <a href="../models.html">Inventory</a>
-                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
-            </div>
+            <div class="header-btn-group"><a href="../index.html#contact" class="btn-header">Get Quote</a></div>
         </div>
-    </nav>
+        <div class="nav-bar">
+            <div class="container"><ul class="nav-menu"><li class="nav-item"><a href="../index.html">Home</a></li><li class="nav-item"><a href="../models.html">Inventory</a></li><li class="nav-item"><a href="../index.html#contact">Contact</a></li></ul></div>
+        </div>
+    </header>
 
     <div class="model-hero">
         <div class="hero-text-side">
-            <span class="model-tag" style="background:#e91e63;">LIVE FULL. LIVE FREE.</span>
+            <span class="model-tag">LIVE FULL. LIVE FREE.</span>
             <h1 class="model-title">TVS Zest 110</h1>
-            <p class="section-subtitle">The fun and zesty ride. Best-in-class pickup and easy maneuverability for the city.</p>
-            <div class="model-price">₹ 74,000* <br><span>(Starting Ex-Showroom)</span></div>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20Zest" class="btn btn-primary">Book Test Ride 🛵</a>
+            <p style="font-size: 1.1rem; color: #555;">The fun and zesty ride. Best-in-class pickup and easy maneuverability.</p>
+            <div class="model-price">₹ 74,000* <br><span>(Ex-Showroom Price)</span></div>
+            <div style="display: flex; gap: 15px;">
+                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
+                <a href="https://wa.me/919964946512?text=Quote%20Zest" class="btn btn-whatsapp">WhatsApp 💬</a>
             </div>
         </div>
-        <div class="hero-img-side">
-            <img src="../assets/zest.jpg" alt="TVS Zest 110" onerror="this.src='https://placehold.co/800x600?text=Zest+110+Gloss'">
-        </div>
+        <div class="hero-img-side"><img src="../assets/zest.jpg" alt="Zest 110" onerror="this.src='https://placehold.co/800x600?text=Zest+110'"></div>
     </div>
 
-    <div class="spec-bar-dark">
-        <div class="spec-bar-grid">
-            <div class="dark-spec-item"><h4>110cc</h4><p>EcoThrust Engine</p></div>
-            <div class="dark-spec-item"><h4>Light</h4><p>Handling</p></div>
-            <div class="dark-spec-item"><h4>19L</h4><p>Storage</p></div>
-            <div class="dark-spec-item"><h4>USB</h4><p>Charger</p></div>
-        </div>
-    </div>
-
-    <div class="feature-section container">
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Premium Dual Tone Seat</h3>
-                <p>Designed for comfort and style. The beige and brown dual-tone seat adds a premium touch to your ride.</p>
-            </div>
-            <div class="feature-img"><img src="../assets/zest_seat.jpg" alt="Zest Seat" onerror="this.src='https://placehold.co/600x400?text=Premium+Seat'"></div>
-        </div>
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Smartphone Charger</h3>
-                <p>Never run out of battery. The front glove box comes with a USB charger to keep your phone powered on the go.</p>
-            </div>
-            <div class="feature-img"><img src="../assets/zest_charger.jpg" alt="USB Charger" onerror="this.src='https://placehold.co/600x400?text=USB+Charging'"></div>
-        </div>
-    </div>
-
-    <div class="section-padding bg-light text-center">
-        <h2 style="margin-bottom: 20px;">Your Perfect City Partner</h2>
-        <a href="https://wa.me/919964946512?text=Get%20Quote%20Zest" class="btn btn-whatsapp">Get On-Road Price 💬</a>
+    <div class="spec-grid">
+        <div class="spec-box"><h3>109.7 cc</h3><p>Engine</p></div>
+        <div class="spec-box"><h3>Light</h3><p>Weight</p></div>
+        <div class="spec-box"><h3>19L</h3><p>Storage</p></div>
+        <div class="spec-box"><h3>USB</h3><p>Charger</p></div>
     </div>
 
     <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
-    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
