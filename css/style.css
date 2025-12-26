@@ -65,34 +65,14 @@ ul { list-style: none; }
 .hero-content { position: relative; z-index: 2; max-width: 700px; color: white; }
 .hero h1 { font-family: var(--font-heading); font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; text-transform: uppercase; }
 
-/* --- ACTION BAR (UPDATED FOR INSTAGRAM) --- */
-.action-bar { 
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr); /* 5 Columns for 5 Buttons */
-    background: var(--white); 
-    padding: 30px; 
-    box-shadow: var(--shadow); 
-    margin-top: -80px; 
-    position: relative; 
-    z-index: 10; 
-    border-radius: 8px; 
-    gap: 15px; 
-}
+/* --- ACTION BAR (REVERTED TO NORMAL 4 COLUMNS) --- */
+.action-bar { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--white); padding: 30px; box-shadow: var(--shadow); margin-top: -80px; position: relative; z-index: 10; border-radius: 8px; gap: 15px; }
 .action-item { text-align: center; border-right: 1px solid #eee; }
 .action-item:last-child { border: none; }
 .action-item span { font-family: var(--font-heading); font-weight: 700; color: var(--dark); display: block; margin-top: 5px; }
 .action-item .icon { font-size: 1.8rem; }
 
-/* --- INSTAGRAM STYLES --- */
-.icon-insta {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-}
-
-/* --- WELCOME & HISTORY --- */
+/* --- SECTIONS & CARDS --- */
 .welcome-section { background-color: #e31e2d; color: white; padding: 80px 0; margin-top: 50px; }
 .welcome-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .welcome-text h2 { font-family: var(--font-heading); font-size: 3rem; margin: 15px 0 25px 0; }
@@ -109,7 +89,6 @@ ul { list-style: none; }
 .history-card h3 { font-family: var(--font-heading); color: var(--dark); margin-bottom: 10px; font-size: 1.4rem; }
 .history-card p { color: #555; line-height: 1.6; }
 
-/* --- CARDS & GRID --- */
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 .card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); position: relative; }
 .card:hover { transform: translateY(-10px); }
@@ -168,10 +147,12 @@ ul { list-style: none; }
 .feature-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
 .feature-card h4 { font-size: 1.4rem; margin-bottom: 15px; color: var(--primary-dark); font-family: var(--font-heading); }
 
-/* --- FLOATING ELEMENTS --- */
-.scroll-top-btn { position: fixed; bottom: 100px; right: 25px; width: 45px; height: 45px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); opacity: 0; pointer-events: none; transition: 0.3s; z-index: 9999; }
+/* --- FLOATING BUTTONS (NEW) --- */
+/* Scroll Top Button - Moved higher to clear Insta button */
+.scroll-top-btn { position: fixed; bottom: 170px; right: 30px; width: 45px; height: 45px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); opacity: 0; pointer-events: none; transition: 0.3s; z-index: 9999; }
 .scroll-top-btn.visible { opacity: 1; pointer-events: auto; }
 
+/* WhatsApp - Bottom Right */
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -184,7 +165,7 @@ ul { list-style: none; }
     text-align: center;
     font-size: 30px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-    z-index: 10000; /* FORCE TOP LAYER */
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,6 +174,29 @@ ul { list-style: none; }
     cursor: pointer;
 }
 .whatsapp-float:hover { background-color: #128C7E; transform: scale(1.1); }
+
+/* Instagram - Stacked ABOVE WhatsApp */
+.instagram-float {
+    position: fixed;
+    bottom: 100px; /* 30px (WA) + 60px (WA Height) + 10px (Gap) */
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white !important;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.instagram-float:hover { transform: scale(1.1); }
 
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -221,4 +225,6 @@ ul { list-style: none; }
     .spec-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
     .spec-box { border: none; }
     .whatsapp-float { width: 50px; height: 50px; font-size: 24px; bottom: 20px; right: 20px; }
+    .instagram-float { width: 50px; height: 50px; font-size: 24px; bottom: 80px; right: 20px; }
+    .scroll-top-btn { bottom: 140px; right: 20px; }
 }
