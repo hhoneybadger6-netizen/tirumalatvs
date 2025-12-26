@@ -4,77 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apache RTR 200 4V | Tirumala TVS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
+
+    <header class="main-header">
+        <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-            <div class="nav-links" id="navMenu">
-                <a href="../index.html">Home</a>
-                <a href="../models.html">Inventory</a>
-                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
+            <div class="header-btn-group">
+                <a href="../index.html#contact" class="btn-header">Book Service</a>
+                <a href="../index.html#contact" class="btn-header">Get Quote</a>
             </div>
         </div>
-    </nav>
+        <div class="nav-bar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="../models.html">Inventory</a></li>
+                    <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <div class="model-hero">
         <div class="hero-text-side">
             <span class="model-tag">RACE TUNED</span>
             <h1 class="model-title">Apache RTR 200 4V</h1>
-            <p class="section-subtitle">The most advanced naked sportbike. Featuring First-in-Segment Ride Modes & Adjustable Suspension.</p>
-            <div class="model-price">₹ 1,46,000* <br><span>(Starting Ex-Showroom)</span></div>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20Apache200" class="btn btn-primary">Book Test Ride 🏁</a>
-                <a href="tel:+919964946512" class="btn btn-outline">Call Showroom 📞</a>
+            <p style="font-size: 1.1rem; color: #555; margin-bottom: 20px;">
+                The ultimate racing machine. Featuring First-in-Segment Ride Modes, Adjustable Suspension, and Adjustable Levers.
+            </p>
+            <div class="model-price">
+                ₹ 1,46,000* <br><span>(Ex-Showroom Price)</span>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
+                <a href="https://wa.me/919964946512?text=Get%20Quote%20Apache200" class="btn btn-whatsapp">WhatsApp 💬</a>
             </div>
         </div>
         <div class="hero-img-side">
-            <img src="../assets/apache200.jpg" alt="Apache 200" onerror="this.src='https://placehold.co/800x600?text=Apache+RTR+200+4V'">
+            <img src="../assets/apache200.jpg" alt="Apache 200" onerror="this.src='https://placehold.co/800x600?text=Apache+200'">
         </div>
     </div>
 
-    <div class="spec-bar-dark">
-        <div class="spec-bar-grid">
-            <div class="dark-spec-item"><h4>20.82</h4><p>PS Power</p></div>
-            <div class="dark-spec-item"><h4>127</h4><p>km/h Top Speed</p></div>
-            <div class="dark-spec-item"><h4>RT-Fi</h4><p>Fuel Injection</p></div>
-            <div class="dark-spec-item"><h4>3</h4><p>Ride Modes</p></div>
-        </div>
+    <div class="spec-grid">
+        <div class="spec-box"><h3>197.7 cc</h3><p>Engine</p></div>
+        <div class="spec-box"><h3>20.82 PS</h3><p>Power</p></div>
+        <div class="spec-box"><h3>Dual Ch</h3><p>ABS</p></div>
+        <div class="spec-box"><h3>Slipper</h3><p>Clutch</p></div>
     </div>
 
-    <div class="feature-section container">
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>First-in-Segment Ride Modes</h3>
-                <p>Switch between Sport, Urban, and Rain modes on the fly. The ABS and engine response adapt to the condition for ultimate control.</p>
+    <section class="info-section bg-light">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <h2 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; color: var(--primary);">Key Features</h2>
             </div>
-            <div class="feature-img"><img src="../assets/apache_modes.jpg" alt="Ride Modes" onerror="this.src='https://placehold.co/600x400?text=Sport+Urban+Rain+Modes'"></div>
-        </div>
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Adjustable Suspension</h3>
-                <p>Showa front suspension with preload adjustment. Tune your bike for track racing or city comfort, just like a pro racer.</p>
+            <div class="info-grid">
+                <div class="feature-card">
+                    <h4>Adjustable Suspension</h4>
+                    <p>High-performance Showa suspension with preload adjustment to tune the bike for track or city use.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Ride Modes</h4>
+                    <p>Switch between Sport, Urban, and Rain modes on the fly to adapt ABS and engine response.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Race Tuned Slipper Clutch</h4>
+                    <p>Allows for aggressive downshifting while cornering without wheel hop, ensuring maximum stability.</p>
+                </div>
             </div>
-            <div class="feature-img"><img src="../assets/apache_suspension.jpg" alt="Showa Suspension" onerror="this.src='https://placehold.co/600x400?text=Adjustable+Suspension'"></div>
         </div>
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Race Tuned Slipper Clutch</h3>
-                <p>Aggressive downshifts without wheel hop. Enjoy lighter clutch operation and enhanced stability while cornering.</p>
-            </div>
-            <div class="feature-img"><img src="../assets/apache_clutch.jpg" alt="Slipper Clutch" onerror="this.src='https://placehold.co/600x400?text=Slipper+Clutch'"></div>
-        </div>
-    </div>
+    </section>
 
-    <div class="section-padding bg-light text-center">
-        <h2 style="margin-bottom: 20px;">Unleash The Racer In You</h2>
-        <a href="https://wa.me/919964946512?text=Get%20Quote%20Apache200" class="btn btn-whatsapp">Get On-Road Price 💬</a>
-    </div>
+    <footer class="footer">
+        <div class="container text-center"><p>&copy; 2025 Tirumala TVS. All Rights Reserved.</p></div>
+    </footer>
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
 
-    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
-    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
