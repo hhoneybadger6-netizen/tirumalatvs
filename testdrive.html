@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Test Ride | Tirumala TVS</title>
+    <title>Book Test Drive | Tirumala TVS</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,20 +43,18 @@
                         <label>Select Model <span class="required">*</span></label>
                         <select name="model" required>
                             <option value="" disabled selected>Choose Bike/Scooter</option>
-                            <option value="Apache 160 4V">Apache RTR 160 4V</option>
-                            <option value="Apache 200 4V">Apache RTR 200 4V</option>
-                            <option value="Raider 125">Raider 125</option>
+                            <option value="Apache Series">Apache Series</option>
+                            <option value="Jupiter Series">Jupiter Series</option>
+                            <option value="Ntorq">Ntorq</option>
+                            <option value="Raider">Raider</option>
                             <option value="Ronin">Ronin</option>
-                            <option value="Jupiter 110">Jupiter 110</option>
-                            <option value="Jupiter 125">Jupiter 125</option>
-                            <option value="Ntorq 125">Ntorq 125</option>
-                            <option value="iQube">iQube Electric</option>
+                            <option value="iQube">iQube</option>
                         </select>
 
                         <label>Preferred Date <span class="required">*</span></label>
                         <input type="date" name="date" required>
 
-                        <label>Do you have a valid Driving License? <span class="required">*</span></label>
+                        <label>Valid Driving License? <span class="required">*</span></label>
                         <select name="license_check" required>
                             <option value="Yes">Yes, I have a license</option>
                             <option value="No">No, I do not have a license</option>
@@ -68,29 +66,11 @@
 
                 <div class="service-info">
                     <h3>Important Information</h3>
+                    <div class="step-item"><div class="step-text"><strong>Step 1: License Mandatory</strong><br>Please carry a valid driving license.</div></div>
+                    <div class="step-item"><div class="step-text"><strong>Step 2: Safety First</strong><br>A helmet will be provided for the rider.</div></div>
+                    <div class="step-item"><div class="step-text"><strong>Step 3: Confirmation</strong><br>Our team will call to confirm vehicle availability.</div></div>
                     
-                    <div class="step-item">
-                        <div class="step-text">
-                            <strong>Step 1: License Mandatory</strong><br>
-                            Please carry a valid driving license for the test ride.
-                        </div>
-                    </div>
-
-                    <div class="step-item">
-                        <div class="step-text">
-                            <strong>Step 2: Safety First</strong><br>
-                            A helmet will be provided. Pillion riders must also wear a helmet.
-                        </div>
-                    </div>
-
-                    <div class="step-item">
-                        <div class="step-text">
-                            <strong>Step 3: Confirmation</strong><br>
-                            Our team will call you to confirm the vehicle availability for your slot.
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 30px; background: #f9f9f9; padding: 20px; border-left: 4px solid #e31e2d; border-radius: 4px;">
+                    <div style="margin-top: 30px; padding: 20px; background: #f9f9f9; border-left: 4px solid #e31e2d; border-radius: 4px;">
                         <h4>Location</h4>
                         <p style="color: #555;">Tirumala TVS, Main Road, Bidarahalli.</p>
                         <p style="color: #e31e2d; font-weight: bold; margin-top: 5px;">📞 +91 99649 46512</p>
@@ -104,5 +84,17 @@
     <footer class="footer">
         <div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div>
     </footer>
+
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollBtn = document.querySelector('.scroll-top-btn');
+            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } 
+            else { scrollBtn.classList.remove('visible'); }
+        });
+    </script>
 </body>
 </html>
