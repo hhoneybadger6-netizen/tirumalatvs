@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quotation | Tirumala TVS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="container header-top">
+            <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="header-btn-group">
+                <a href="index.html" class="btn-header">Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="models-header" style="background: var(--primary); color: white; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; font-family: 'Oswald', sans-serif; text-transform: uppercase;">Get On-Road Price</h1>
+            <p>Fill the details below to get the best quote instantly.</p>
+        </div>
+    </div>
+
+    <section class="service-section">
+        <div class="container">
+            <div class="service-layout">
+                
+                <div class="service-form">
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST">
+                        <input type="hidden" name="_next" value="thankyou.html">
+                        <input type="hidden" name="_subject" value="New Quotation Request">
+
+                        <label>Full Name <span class="required">*</span></label>
+                        <input type="text" name="name" placeholder="Enter Name" required>
+
+                        <label>Phone Number <span class="required">*</span></label>
+                        <input type="tel" name="phone" placeholder="Enter Phone" required>
+
+                        <label>Select Model <span class="required">*</span></label>
+                        <select name="model" required>
+                            <option value="Apache 160 4V">Apache RTR 160 4V</option>
+                            <option value="Apache 200 4V">Apache RTR 200 4V</option>
+                            <option value="Raider 125">Raider 125</option>
+                            <option value="Ronin">Ronin</option>
+                            <option value="Jupiter 110">Jupiter 110</option>
+                            <option value="Jupiter 125">Jupiter 125</option>
+                            <option value="Ntorq 125">Ntorq 125</option>
+                            <option value="iQube">iQube Electric</option>
+                            <option value="XL100">XL100</option>
+                        </select>
+
+                        <label>Purchase Plan <span class="required">*</span></label>
+                        <select name="plan">
+                            <option value="Cash">Cash Purchase</option>
+                            <option value="Finance/EMI">Finance / EMI Required</option>
+                            <option value="Exchange">Exchange Old Vehicle</option>
+                        </select>
+
+                        <button type="submit" class="btn-submit-service">Request Quote</button>
+                    </form>
+                </div>
+
+                <div class="service-info">
+                    <h3>Why buy from Tirumala TVS?</h3>
+                    <div class="step-item"><div class="step-text">✓ <strong>Best On-Road Prices</strong> in Bidarahalli.</div></div>
+                    <div class="step-item"><div class="step-text">✓ <strong>Quick Finance Approvals</strong> with low interest rates.</div></div>
+                    <div class="step-item"><div class="step-text">✓ <strong>Fast Delivery</strong> & Registration process.</div></div>
+                    <div class="step-item"><div class="step-text">✓ <strong>Exchange Bonus</strong> available on select models.</div></div>
+                    
+                    <div style="margin-top: 30px; background: #f9f9f9; padding: 20px; border-radius: 8px;">
+                        <h4>Need help deciding?</h4>
+                        <p>Call our Sales Team directly:</p>
+                        <p style="font-size: 1.2rem; color: var(--primary); font-weight: bold; margin-top: 10px;">📞 +91 99649 46512</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div>
+    </footer>
+</body>
+</html>
