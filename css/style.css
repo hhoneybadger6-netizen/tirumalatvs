@@ -1,4 +1,4 @@
-/* --- PREMIUM PERFORMANCE THEME (Mobile Optimized) --- */
+/* --- PREMIUM PERFORMANCE THEME (Final Mobile Optimized) --- */
 :root {
     --primary: #1a3b8c;       /* Dark Blue */
     --primary-dark: #0f255a;
@@ -20,7 +20,7 @@ img { max-width: 100%; display: block; }
 ul { list-style: none; }
 
 /* --- UTILITY --- */
-.container { max-width: 1300px; margin: 0 auto; padding: 0 20px; } /* Slightly smaller padding for mobile */
+.container { max-width: 1300px; margin: 0 auto; padding: 0 20px; }
 .section-padding { padding: 80px 0; }
 .text-center { text-align: center; }
 .bg-light { background: var(--light); }
@@ -45,11 +45,11 @@ ul { list-style: none; }
 
 /* --- NAV BAR --- */
 .nav-bar { background: #fff; border-top: 1px solid #eee; }
-.nav-menu { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1100px; margin: 0 auto; }
-.nav-item { position: relative; padding: 15px 10px; } /* Added padding for touch targets */
-.nav-item > a { font-family: var(--font-heading); font-weight: 600; text-transform: uppercase; font-size: 1rem; color: var(--dark); letter-spacing: 1px; display: flex; align-items: center; }
-.nav-item > a:hover { color: var(--primary); }
-.nav-arrow { font-size: 0.7rem; color: var(--primary); margin-left: 5px; transition: transform 0.3s; }
+.nav-menu { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1100px; margin: 0 auto; height: 60px; }
+.nav-item { position: relative; height: 100%; display: flex; align-items: center; }
+.nav-item > a { font-family: var(--font-heading); font-weight: 600; text-transform: uppercase; font-size: 1rem; color: var(--dark); letter-spacing: 1px; padding: 0 15px; height: 100%; display: flex; align-items: center; cursor: pointer; }
+.nav-item > a:hover { color: var(--primary); background: #f8f9fa; }
+.nav-arrow { font-size: 0.7rem; color: var(--primary); margin-left: 5px; }
 
 /* DROPDOWN MENU */
 .dropdown-menu {
@@ -59,11 +59,13 @@ ul { list-style: none; }
     border-top: 3px solid var(--primary); z-index: 1100;
     border-radius: 0 0 4px 4px; padding: 10px 0;
 }
+/* Desktop Hover Effect */
 .nav-item:hover .dropdown-menu { display: block; animation: fadeInUp 0.2s ease; }
+
 .dropdown-menu li { display: block; width: 100%; }
 .dropdown-menu a {
     font-family: var(--font-body); text-transform: uppercase; font-weight: 600; font-size: 0.85rem;
-    padding: 12px 20px; color: #444; border-bottom: 1px solid #f0f0f0; display: block;
+    padding: 12px 20px; color: #444; border-bottom: 1px solid #f0f0f0; display: block; height: auto;
 }
 .dropdown-menu a:hover { background: #f0f4ff; color: var(--primary); padding-left: 25px; }
 
@@ -107,6 +109,22 @@ ul { list-style: none; }
 .review-card p { font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.6; }
 .review-card h4 { font-family: var(--font-heading); color: var(--primary); margin-bottom: 5px; }
 
+/* Model Inner Pages */
+.model-hero { display: flex; align-items: center; justify-content: space-between; padding: 60px 5%; background: linear-gradient(135deg, #f8f9fa 0%, #eef2f5 100%); min-height: 85vh; }
+.hero-text-side { flex: 1; padding-right: 50px; }
+.hero-img-side { flex: 1.2; text-align: center; }
+.hero-img-side img { width: 100%; max-width: 800px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.2)); animation: fadeIn 1s ease-out; }
+.model-title { font-size: 3.5rem; font-family: var(--font-heading); text-transform: uppercase; line-height: 1.1; color: var(--primary-dark); margin-bottom: 10px; }
+.model-price { font-size: 2.2rem; font-weight: 700; color: var(--dark); margin: 25px 0; font-family: var(--font-heading); }
+.spec-grid { display: grid; grid-template-columns: repeat(4, 1fr); background: #111; color: white; padding: 40px 5%; }
+.spec-box { text-align: center; border-right: 1px solid #333; }
+.spec-box:last-child { border: none; }
+.spec-box h3 { font-size: 2rem; color: var(--accent); font-family: var(--font-heading); margin-bottom: 5px; }
+.info-section { padding: 80px 5%; }
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.feature-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
+.feature-card h4 { font-size: 1.4rem; margin-bottom: 15px; color: var(--primary-dark); font-family: var(--font-heading); }
+
 /* Contact & Footer */
 .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
 .contact-form-wrapper { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: var(--shadow); }
@@ -132,54 +150,33 @@ ul { list-style: none; }
 /* MOBILE OPTIMIZATION RULES           */
 /* ========================================= */
 @media (max-width: 900px) {
-    /* 1. Header & Menu */
+    /* Header & Menu */
     .header-top { flex-direction: column; gap: 15px; text-align: center; }
-    .header-btn-group { display: none; } /* Optional: Hide top buttons on mobile to save space, or keep them if preferred */
+    .header-btn-group { display: none; } 
     .menu-toggle { display: block; position: absolute; top: 20px; right: 20px; }
     
-    .nav-bar { display: none; } /* Initially hidden, JS toggles it */
+    .nav-bar { display: none; } 
     .nav-menu { flex-direction: column; width: 100%; height: auto; padding: 0; }
     .nav-item { width: 100%; flex-direction: column; align-items: flex-start; border-bottom: 1px solid #f0f0f0; padding: 0; }
     .nav-item > a { width: 100%; padding: 15px 20px; justify-content: space-between; }
     
     /* Mobile Dropdown Logic */
-    .dropdown-menu { 
-        position: static; /* Pushes content down instead of floating */
-        box-shadow: none; 
-        border-top: none; 
-        background: #f9f9f9; 
-        width: 100%;
-        padding-left: 0;
-        display: none; /* Hidden until clicked */
-    }
-    .nav-item.active .dropdown-menu { display: block; } /* JS will toggle 'active' class */
-    .nav-item.active .nav-arrow { transform: rotate(180deg); }
+    .dropdown-menu { position: static; box-shadow: none; border-top: none; background: #f9f9f9; width: 100%; padding-left: 0; display: none; }
+    /* The JS will add .active to .nav-item to show this */
+    .nav-item.active .dropdown-menu { display: block; }
     .dropdown-menu a { padding-left: 40px; font-size: 0.9rem; border-bottom: 1px solid #eee; }
 
-    /* 2. Hero Section */
-    .hero { height: auto; padding: 100px 0 60px 0; clip-path: none; text-align: center; } /* Remove clip-path on mobile */
+    /* Other Mobile Styles */
+    .hero { height: auto; padding: 100px 0 60px 0; clip-path: none; text-align: center; } 
     .hero h1 { font-size: 2.5rem; line-height: 1.2; }
     .hero p { font-size: 1rem; }
     .hero-buttons { justify-content: center; }
-
-    /* 3. Action Bar */
     .action-bar { grid-template-columns: 1fr 1fr; margin-top: 0; gap: 10px; padding: 20px; }
     .action-item { border: none; background: #f9f9f9; padding: 10px; border-radius: 4px; }
-
-    /* 4. Welcome Section */
     .welcome-section { padding: 50px 0; }
-    .welcome-grid { grid-template-columns: 1fr; gap: 40px; }
-    .welcome-text h2 { font-size: 2.2rem; }
-    .welcome-icons { grid-template-columns: 1fr; gap: 30px; }
-    .icon-box { display: flex; flex-direction: column; align-items: center; text-align: center; }
-
-    /* 5. General Layouts */
-    .section-padding { padding: 50px 0; }
-    .contact-layout { grid-template-columns: 1fr; gap: 30px; }
-    .contact-form-wrapper, .contact-info-wrapper { padding: 30px 20px; }
-    
-    /* 6. Footer */
-    .footer-contact-row { flex-direction: column; gap: 25px; }
-    .footer-cols { grid-template-columns: 1fr; text-align: center; }
-    .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
+    .welcome-grid, .welcome-icons, .contact-layout, .grid-3, .footer-contact-row, .footer-bottom { grid-template-columns: 1fr; flex-direction: column; gap: 25px; }
+    .model-hero { flex-direction: column-reverse; text-align: center; padding-top: 40px; }
+    .hero-text-side { padding-right: 0; margin-top: 30px; }
+    .spec-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+    .spec-box { border: none; }
 }
