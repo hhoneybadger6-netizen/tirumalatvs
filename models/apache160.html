@@ -10,17 +10,16 @@
 <body>
 
     <header class="main-header">
-        <div class="container">
-            <div class="header-top">
-                <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-                <div class="header-btn-group">
-                    <a href="../index.html#contact" class="btn-header">Book Service</a>
-                    <a href="../index.html#contact" class="btn-header">Get Quote</a>
-                </div>
+        <div class="container header-top">
+            <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="header-btn-group">
+                <a href="../index.html#contact" class="btn-header">Book Service</a>
+                <a href="../index.html#contact" class="btn-header">Get Quote</a>
             </div>
-            <div class="header-bottom" id="navMenu">
-                <ul class="nav-list">
+        </div>
+        <div class="nav-bar">
+            <div class="container">
+                <ul class="nav-menu">
                     <li class="nav-item"><a href="../index.html">Home</a></li>
                     <li class="nav-item"><a href="../models.html">Inventory</a></li>
                     <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
@@ -31,58 +30,77 @@
 
     <div class="model-hero">
         <div class="hero-text-side">
-            <span class="model-tag">RACING DNA UNLEASHED</span>
+            <span class="model-tag">RACING DNA</span>
             <h1 class="model-title">Apache RTR 160 4V</h1>
-            <p class="section-subtitle">The Unstoppable. The most powerful 160cc in its class with Ride Modes.</p>
+            <p style="font-size: 1.1rem; color: #555; margin-bottom: 20px;">
+                The most powerful 160cc bike in its class. Featuring segment-first Ride Modes, SmartXonnect Bluetooth, and Glide Through Traffic technology.
+            </p>
             
             <div class="model-price">
                 ₹ 1,24,870* <br><span>(Ex-Showroom Price)</span>
             </div>
 
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-start;">
                 <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
-                <a href="https://wa.me/919964946512?text=I%20am%20interested%20in%20Apache%20160" class="btn btn-whatsapp">WhatsApp 💬</a>
+                <a href="https://wa.me/919964946512?text=Get%20Quote%20Apache160" class="btn btn-whatsapp">WhatsApp 💬</a>
             </div>
         </div>
+        
         <div class="hero-img-side">
-            <img src="../assets/apache160.jpg" alt="Apache 160 4V" onerror="this.src='https://placehold.co/800x600?text=Apache+160+Image'">
+            <img src="../assets/apache160.jpg" alt="Apache 160 4V" onerror="this.src='https://placehold.co/800x600?text=Apache+160'">
         </div>
     </div>
 
-    <div class="feature-section container">
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>SmartXonnect Technology</h3>
-                <p>Stay connected while you ride. The Bluetooth-enabled instrument cluster offers Turn-by-Turn navigation and Call/SMS alerts.</p>
-            </div>
-            <div class="feature-img">
-                <img src="../assets/apache_display.jpg" alt="Smart Display" onerror="this.src='https://placehold.co/600x400?text=Smart+Display'">
-            </div>
+    <div class="spec-grid">
+        <div class="spec-box">
+            <h3>159.7 cc</h3>
+            <p>Engine Capacity</p>
+        </div>
+        <div class="spec-box">
+            <h3>17.55 PS</h3>
+            <p>Maximum Power</p>
+        </div>
+        <div class="spec-box">
+            <h3>114 km/h</h3>
+            <p>Top Speed</p>
+        </div>
+        <div class="spec-box">
+            <h3>3 Modes</h3>
+            <p>Ride Modes</p>
         </div>
     </div>
+
+    <section class="info-section bg-light">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <h2 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; color: var(--primary);">Key Features</h2>
+                <p>Technology that keeps you ahead.</p>
+            </div>
+            
+            <div class="info-grid">
+                <div class="feature-card">
+                    <h4>SmartXonnect</h4>
+                    <p>Bluetooth-enabled console with Turn-by-Turn navigation, Call/SMS alerts, and detailed Race Telemetry.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>GTT Technology</h4>
+                    <p>Glide Through Traffic capability allows for low-speed riding in heavy traffic without using the accelerator.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Aggressive LED Headlamp</h4>
+                    <p>New animalistic LED headlamp with signature DRL (Daytime Running Light) for superior visibility and style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container text-center">
-            <p>&copy; 2025 Tirumala TVS. All rights reserved.</p>
+            <p>&copy; 2025 Tirumala TVS. All Rights Reserved.</p>
         </div>
     </footer>
+    
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
 
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("navMenu");
-            if(menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-                var list = menu.querySelector('.nav-list');
-                list.style.flexDirection = "column";
-                list.style.background = "white";
-                list.style.padding = "20px";
-                list.style.position = "absolute";
-                list.style.width = "100%";
-                list.style.left = "0";
-            }
-        }
-    </script>
 </body>
 </html>
