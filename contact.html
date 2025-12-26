@@ -70,5 +70,17 @@
     <footer class="footer">
         <div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div>
     </footer>
+
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollBtn = document.querySelector('.scroll-top-btn');
+            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } 
+            else { scrollBtn.classList.remove('visible'); }
+        });
+    </script>
 </body>
 </html>
