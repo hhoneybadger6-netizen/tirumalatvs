@@ -14,9 +14,9 @@
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="header-btn-group">
-                <a href="service.html" class="btn-header">Book Service Appointment</a>
+                <a href="service.html" class="btn-header">Book Service</a>
                 <a href="quotation.html" class="btn-header">Get Quotation</a>
-                <a href="contact.html" class="btn-header">Book Test Drive</a>
+                <a href="testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
         <div class="nav-bar" id="navMenu">
@@ -24,6 +24,7 @@
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
                     <li class="nav-item"><a href="contact.html">About / Contact</a></li>
+                    
                     <li class="nav-item dropdown">
                         <a href="models.html#motorcycles">Motorcycles <span class="nav-arrow">▼</span></a>
                         <ul class="dropdown-menu">
@@ -33,6 +34,7 @@
                             <li><a href="models/ronin.html">Ronin</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a href="models.html#scooters">Scooters <span class="nav-arrow">▼</span></a>
                         <ul class="dropdown-menu">
@@ -42,12 +44,14 @@
                             <li><a href="models/zest110.html">Zest 110</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a href="models.html#electric">Electric <span class="nav-arrow">▼</span></a>
                         <ul class="dropdown-menu">
                             <li><a href="models/iqube.html">iQube</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item"><a href="service.html">Services</a></li>
                 </ul>
             </div>
@@ -69,7 +73,7 @@
     <div class="container">
         <div class="action-bar">
             <a href="service.html" class="action-item"><span class="icon">📅</span><span>Book Service</span></a>
-            <a href="contact.html" class="action-item"><span class="icon">🏍️</span><span>Test Ride</span></a>
+            <a href="testdrive.html" class="action-item"><span class="icon">🏍️</span><span>Test Ride</span></a>
             <a href="https://wa.me/919964946512" class="action-item"><span class="icon">💬</span><span>WhatsApp</span></a>
             <a href="tel:+919964946512" class="action-item"><span class="icon">📞</span><span>Call Now</span></a>
         </div>
@@ -102,6 +106,17 @@
         </div>
     </section>
 
+    <section class="section-padding" style="background-color: #f4f4f4;">
+        <div class="container">
+            <div class="text-center section-header"><h2>Happy Riders</h2><p>What our customers say about Tirumala TVS.</p></div>
+            <div class="grid-3" style="margin-top: 40px;">
+                <div class="review-card"><div class="stars">★★★★★</div><p>"Excellent experience buying my new Apache RTR 160 4V."</p><h4>– Arjun Kumar</h4><span>Apache Owner</span></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p>"I was confused between Jupiter and Ntorq. The staff helped me decide."</p><h4>– Priya Sharma</h4><span>Jupiter Owner</span></div>
+                <div class="review-card"><div class="stars">★★★★★</div><p>"Best service center in Bidarahalli. Fast and reliable."</p><h4>– Rahul M.</h4><span>Service Customer</span></div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-top-bar">
             <div class="container footer-contact-row">
@@ -111,16 +126,13 @@
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="contact.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book a Service</a></li><li><a href="contact.html">Book a Test Drive</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="contact.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book a Service</a></li><li><a href="testdrive.html">Book a Test Drive</a></li></ul></div>
                 <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
                 <div class="footer-col"><h4>Showrooms</h4><ul class="footer-links"><li><a href="contact.html">Tirumala TVS Bidarahalli</a></li></ul></div>
             </div>
         </div>
         <div class="container"><div class="footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div></div>
     </footer>
-
-    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
-    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <script>
         function toggleMenu() {
@@ -132,17 +144,9 @@
             if (window.innerWidth <= 900) {
                 var dropdowns = document.querySelectorAll('.nav-item.dropdown > a');
                 dropdowns.forEach(function(link) {
-                    link.addEventListener('click', function(e) {
-                        e.preventDefault(); 
-                        var parent = this.parentElement;
-                        parent.classList.toggle('active');
-                    });
+                    link.addEventListener('click', function(e) { e.preventDefault(); this.parentElement.classList.toggle('active'); });
                 });
             }
-        });
-        window.addEventListener('scroll', function() {
-            var scrollBtn = document.querySelector('.scroll-top-btn');
-            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } else { scrollBtn.classList.remove('visible'); }
         });
     </script>
 </body>
