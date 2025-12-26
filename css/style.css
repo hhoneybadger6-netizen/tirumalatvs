@@ -1,4 +1,4 @@
-/* --- PREMIUM PERFORMANCE THEME (Multi-Page Version) --- */
+/* --- PREMIUM PERFORMANCE THEME --- */
 :root {
     --primary: #003399;       /* TVS Blue */
     --primary-dark: #001a4d;
@@ -39,7 +39,7 @@ img { max-width: 100%; display: block; }
 .btn-outline:hover { background: var(--primary); color: var(--white); }
 .btn-whatsapp { background: #25D366; color: white; border-radius: 50px; }
 
-/* --- HEADER (Sticky) --- */
+/* --- HEADER --- */
 .main-header {
     background: var(--white); position: sticky; top: 0; z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary);
@@ -90,31 +90,59 @@ img { max-width: 100%; display: block; }
 .card-info h3 { font-family: var(--font-heading); font-size: 1.5rem; }
 .badge { position: absolute; top: 15px; right: 15px; background: var(--accent); color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
 
-/* --- INSIDE PAGE LAYOUT (Split) --- */
-.split-hero { display: flex; align-items: center; padding: 60px 0; background: linear-gradient(135deg, #f8f9fa 0%, #eef2f5 100%); min-height: 70vh; }
-.split-text { flex: 1; padding-right: 40px; }
-.split-img { flex: 1.2; }
-.split-img img { width: 100%; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15)); transform: scale(1.1); }
-.split-title { font-size: 3.5rem; font-family: var(--font-heading); text-transform: uppercase; line-height: 1; margin-bottom: 10px; color: var(--primary-dark); }
-.split-tag { display: inline-block; background: var(--accent); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 15px; }
+/* --- MODELS PAGE LIST --- */
+.models-header { background: #111; color: white; padding: 60px 0; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+.filter-bar { background: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 900; }
+.filter-links a { color: rgba(255,255,255,0.8); margin: 0 15px; font-weight: bold; text-transform: uppercase; font-family: var(--font-heading); }
+.filter-links a:hover { color: white; text-decoration: underline; }
+
+/* --- INNER MODEL PAGE STYLES (NEW) --- */
+.model-hero {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 60px 5%; background: linear-gradient(135deg, #f8f9fa 0%, #eef2f5 100%);
+    min-height: 85vh;
+}
+.hero-text-side { flex: 1; padding-right: 50px; }
+.hero-img-side { flex: 1.2; text-align: center; }
+.hero-img-side img { width: 100%; max-width: 800px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.2)); animation: fadeIn 1s ease-out; }
+.model-title { font-size: 3.5rem; font-family: var(--font-heading); text-transform: uppercase; line-height: 1.1; color: var(--primary-dark); margin-bottom: 10px; }
+.model-tag { display: inline-block; background: var(--accent); color: white; font-weight: bold; padding: 5px 15px; border-radius: 4px; margin-bottom: 20px; text-transform: uppercase; }
+.model-price { font-size: 2.2rem; font-weight: 700; color: var(--dark); margin: 25px 0; font-family: var(--font-heading); }
+.model-price span { font-size: 1rem; color: #666; font-weight: 400; font-family: var(--font-body); }
+
+.spec-grid { display: grid; grid-template-columns: repeat(4, 1fr); background: #111; color: white; padding: 40px 5%; }
+.spec-box { text-align: center; border-right: 1px solid #333; }
+.spec-box:last-child { border: none; }
+.spec-box h3 { font-size: 2rem; color: var(--accent); font-family: var(--font-heading); margin-bottom: 5px; }
+.spec-box p { color: #ccc; text-transform: uppercase; font-size: 0.9rem; }
+
+.info-section { padding: 80px 5%; }
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.feature-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
+.feature-card h4 { font-size: 1.4rem; margin-bottom: 15px; color: var(--primary-dark); font-family: var(--font-heading); }
 
 /* --- CONTACT & FOOTER --- */
-.contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); box-shadow: var(--shadow); border-radius: 8px; overflow: hidden; }
-.contact-form { padding: 40px; }
-.contact-info { background: var(--primary); color: white; padding: 40px; display: flex; flex-direction: column; justify-content: center; }
-.form-input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9; }
-.footer { background: #111; color: #666; padding: 30px; text-align: center; margin-top: 50px; }
+.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+.contact-form-wrapper { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: var(--shadow); }
+.form-group { margin-bottom: 20px; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9; }
+.footer { background: #111; color: #666; padding: 40px 0; text-align: center; margin-top: 50px; }
 .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; z-index: 2000; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
 
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
     .header-top { flex-direction: column; gap: 10px; }
-    .nav-bar { display: none; } /* Hide menu on mobile for simplicity or add toggle */
+    .nav-bar { display: none; } 
     .menu-toggle { display: block; position: absolute; top: 20px; right: 20px; }
     .hero h1 { font-size: 2.5rem; }
     .split-hero { flex-direction: column-reverse; text-align: center; }
-    .split-text { padding-right: 0; margin-top: 30px; }
-    .contact-wrapper { grid-template-columns: 1fr; }
+    .model-hero { flex-direction: column-reverse; text-align: center; padding-top: 40px; }
+    .hero-text-side { padding-right: 0; margin-top: 30px; }
+    .spec-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+    .spec-box { border: none; }
+    .contact-layout { grid-template-columns: 1fr; }
     .action-bar { grid-template-columns: 1fr 1fr; gap: 10px; }
     .action-item { border: none; }
 }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
