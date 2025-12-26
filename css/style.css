@@ -1,4 +1,4 @@
-/* --- PREMIUM PERFORMANCE THEME --- */
+/* --- PREMIUM PERFORMANCE THEME (Fixed Layout) --- */
 :root {
     --primary: #1a3b8c;       /* Dark Blue */
     --primary-dark: #0f255a;
@@ -65,8 +65,20 @@ ul { list-style: none; }
 .hero-content { position: relative; z-index: 2; max-width: 700px; color: white; }
 .hero h1 { font-family: var(--font-heading); font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; text-transform: uppercase; }
 
-/* --- ACTION BAR (Default 4 columns) --- */
-.action-bar { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--white); padding: 30px; box-shadow: var(--shadow); margin-top: -80px; position: relative; z-index: 10; border-radius: 8px; gap: 15px; }
+/* --- ACTION BAR (FIXED: NO OVERLAP) --- */
+.action-bar { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    background: var(--white); 
+    padding: 30px; 
+    box-shadow: var(--shadow); 
+    margin-top: 30px; /* CHANGED from negative to positive to fix overlap */
+    margin-bottom: 50px; /* Added spacing below */
+    position: relative; 
+    z-index: 10; 
+    border-radius: 8px; 
+    gap: 15px; 
+}
 .action-item { text-align: center; border-right: 1px solid #eee; }
 .action-item:last-child { border: none; }
 .action-item span { font-family: var(--font-heading); font-weight: 700; color: var(--dark); display: block; margin-top: 5px; }
@@ -176,7 +188,7 @@ ul { list-style: none; }
 
 .instagram-float {
     position: fixed;
-    bottom: 100px; /* Stacked above WhatsApp */
+    bottom: 100px; /* Above WhatsApp */
     right: 30px;
     width: 60px;
     height: 60px;
@@ -198,66 +210,34 @@ ul { list-style: none; }
 
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-/* ========================================= */
-/* MOBILE OPTIMIZATION (POLISHED)       */
-/* ========================================= */
+/* --- MOBILE --- */
 @media (max-width: 900px) {
-    /* 1. Header & Buttons */
-    .header-top { flex-direction: column; gap: 15px; text-align: center; padding: 10px 0; }
-    .header-btn-group { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; } 
-    .btn-header { font-size: 0.7rem; padding: 8px 12px; } /* Smaller buttons on mobile */
-    .menu-toggle { display: block; position: absolute; top: 20px; right: 20px; font-size: 1.5rem; }
-    
-    /* 2. Nav Menu */
+    .header-top { flex-direction: column; gap: 15px; text-align: center; }
+    .header-btn-group { display: none; } 
+    .menu-toggle { display: block; position: absolute; top: 20px; right: 20px; }
     .nav-bar { display: none; } 
-    .nav-menu { flex-direction: column; width: 100%; height: auto; padding: 0; background: #fff; }
+    .nav-menu { flex-direction: column; width: 100%; height: auto; padding: 0; }
     .nav-item { width: 100%; flex-direction: column; align-items: flex-start; border-bottom: 1px solid #f0f0f0; padding: 0; }
-    .nav-item > a { width: 100%; padding: 15px 20px; justify-content: space-between; font-size: 0.9rem; }
-    
-    /* Dropdowns */
+    .nav-item > a { width: 100%; padding: 15px 20px; justify-content: space-between; }
     .dropdown-menu { position: static; box-shadow: none; border-top: none; background: #f9f9f9; width: 100%; padding-left: 0; display: none; }
     .nav-item.active .dropdown-menu { display: block; }
-    .dropdown-menu a { padding-left: 40px; font-size: 0.85rem; border-bottom: 1px solid #eee; padding-top: 10px; padding-bottom: 10px; }
-
-    /* 3. Hero */
-    .hero { height: auto; padding: 80px 0 60px 0; clip-path: none; text-align: center; } 
-    .hero h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 15px; }
-    .hero p { font-size: 0.95rem; padding: 0 10px; }
-    .hero-buttons { justify-content: center; flex-direction: column; gap: 10px; }
-    .btn { width: 100%; max-width: 300px; margin: 0 auto; }
-
-    /* 4. Action Bar (Neat 2-Column Grid) */
-    .action-bar { 
-        display: grid; 
-        grid-template-columns: 1fr 1fr; /* 2 Columns neatly */
-        margin-top: 0; 
-        gap: 15px; 
-        padding: 20px; 
-    }
-    .action-item { 
-        border: none; 
-        background: #f8f9fa; 
-        padding: 15px; 
-        border-radius: 8px; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .action-item span { font-size: 0.8rem; margin-top: 8px; }
-    .action-item .icon { font-size: 1.5rem; }
-
-    /* 5. Sections */
-    .welcome-section { padding: 40px 0; }
-    .welcome-grid, .welcome-icons, .contact-layout, .grid-3, .footer-contact-row, .footer-bottom, .service-layout, .history-grid { grid-template-columns: 1fr; flex-direction: column; gap: 30px; }
-    .welcome-text h2 { font-size: 2rem; }
+    .dropdown-menu a { padding-left: 40px; font-size: 0.9rem; border-bottom: 1px solid #eee; }
+    .hero { height: auto; padding: 100px 0 60px 0; clip-path: none; text-align: center; } 
+    .hero h1 { font-size: 2.5rem; line-height: 1.2; }
+    .hero-buttons { justify-content: center; }
     
-    /* 6. Forms */
-    .service-form input, .service-form select { padding: 15px; font-size: 1rem; } /* Finger friendly */
-    .service-info { order: -1; margin-bottom: 20px; } /* Info on top for mobile */
-
-    /* 7. Floating Buttons (Adjusted size) */
+    /* Mobile Action Bar Fix */
+    .action-bar { grid-template-columns: 1fr 1fr; margin-top: 30px; gap: 10px; padding: 20px; }
+    .action-item { border: none; background: #f9f9f9; padding: 10px; border-radius: 4px; }
+    
+    .welcome-section { padding: 50px 0; }
+    .welcome-grid, .welcome-icons, .contact-layout, .grid-3, .footer-contact-row, .footer-bottom, .service-layout, .history-grid { grid-template-columns: 1fr; flex-direction: column; gap: 25px; }
+    .service-info { order: -1; }
+    .model-hero { flex-direction: column-reverse; text-align: center; padding-top: 40px; }
+    .hero-text-side { padding-right: 0; margin-top: 30px; }
+    .spec-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+    .spec-box { border: none; }
     .whatsapp-float { width: 50px; height: 50px; font-size: 24px; bottom: 20px; right: 20px; }
     .instagram-float { width: 50px; height: 50px; font-size: 24px; bottom: 80px; right: 20px; }
-    .scroll-top-btn { bottom: 140px; right: 20px; width: 40px; height: 40px; font-size: 1rem; }
+    .scroll-top-btn { bottom: 140px; right: 20px; }
 }
