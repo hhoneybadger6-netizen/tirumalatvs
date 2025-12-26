@@ -12,8 +12,49 @@
     <header class="main-header">
         <div class="container header-top">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="header-btn-group">
-                <a href="index.html" class="btn-header">Back to Home</a>
+                <a href="service.html" class="btn-header">Book Service</a>
+                <a href="quotation.html" class="btn-header">Get Quotation</a>
+                <a href="testdrive.html" class="btn-header">Book Test Drive</a>
+            </div>
+        </div>
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
+                    <li class="nav-item"><a href="contact.html">About / Contact</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="models.html#motorcycles">Motorcycles <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="models/apache160.html">Apache RTR 160 4V</a></li>
+                            <li><a href="models/apache200.html">Apache RTR 200 4V</a></li>
+                            <li><a href="models/raider.html">Raider 125</a></li>
+                            <li><a href="models/ronin.html">Ronin</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="models.html#scooters">Scooters <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="models/jupiter113.html">Jupiter 110</a></li>
+                            <li><a href="models/jupiter125.html">Jupiter 125</a></li>
+                            <li><a href="models/ntorq125.html">Ntorq 125</a></li>
+                            <li><a href="models/zest110.html">Zest 110</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="models.html#electric">Electric & Mopeds <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="models/iqube.html">iQube Electric</a></li>
+                            <li><a href="models/xl100.html">XL100 Heavy Duty</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="service.html">Services</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -42,6 +83,7 @@
 
                         <label>Select Model <span class="required">*</span></label>
                         <select name="model" required>
+                            <option value="" disabled selected>Select a Bike/Scooter</option>
                             <option value="Apache 160 4V">Apache RTR 160 4V</option>
                             <option value="Apache 200 4V">Apache RTR 200 4V</option>
                             <option value="Raider 125">Raider 125</option>
@@ -60,20 +102,40 @@
                             <option value="Exchange">Exchange Old Vehicle</option>
                         </select>
 
+                        <label>Additional Message (Optional)</label>
+                        <textarea name="message" rows="3" style="width:100%; padding:12px; border:1px solid #ddd; margin-bottom:25px;" placeholder="Any specific variant or color?"></textarea>
+
                         <button type="submit" class="btn-submit-service">Request Quote</button>
                     </form>
                 </div>
 
                 <div class="service-info">
                     <h3>Why buy from Tirumala TVS?</h3>
-                    <div class="step-item"><div class="step-text">✓ <strong>Best On-Road Prices</strong> in Bidarahalli.</div></div>
-                    <div class="step-item"><div class="step-text">✓ <strong>Quick Finance Approvals</strong> with low interest rates.</div></div>
-                    <div class="step-item"><div class="step-text">✓ <strong>Fast Delivery</strong> & Registration process.</div></div>
-                    <div class="step-item"><div class="step-text">✓ <strong>Exchange Bonus</strong> available on select models.</div></div>
                     
-                    <div style="margin-top: 30px; background: #f9f9f9; padding: 20px; border-radius: 8px;">
+                    <div class="step-item">
+                        <div class="step-text">
+                            ✓ <strong>Best On-Road Prices</strong> in Bidarahalli.
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-text">
+                            ✓ <strong>Quick Finance Approvals</strong> with low interest rates from top banks.
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-text">
+                            ✓ <strong>Fast Delivery</strong> & Hassle-free Registration process.
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-text">
+                            ✓ <strong>Exchange Bonus</strong> available on select models.
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary);">
                         <h4>Need help deciding?</h4>
-                        <p>Call our Sales Team directly:</p>
+                        <p style="color: #555; margin-top: 5px;">Speak to our Sales Team directly:</p>
                         <p style="font-size: 1.2rem; color: var(--primary); font-weight: bold; margin-top: 10px;">📞 +91 99649 46512</p>
                     </div>
                 </div>
@@ -82,8 +144,77 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div>
+    <footer>
+        <div class="footer-top-bar">
+            <div class="container footer-contact-row">
+                <div class="footer-contact-item">
+                    <div class="footer-icon-circle">✉</div>
+                    <div class="footer-contact-text">tirumalatvs716@gmail.com</div>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="footer-icon-circle">📞</div>
+                    <div class="footer-contact-text">+91 99649 46512</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container footer-cols">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="service.html">Book a Service</a></li>
+                        <li><a href="testdrive.html">Book a Test Drive</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Models</h4>
+                    <ul class="footer-links">
+                        <li><a href="models.html#motorcycles">Motorcycles</a></li>
+                        <li><a href="models.html#scooters">Scooters</a></li>
+                        <li><a href="models.html#electric">Electric</a></li>
+                        <li><a href="models.html#electric">Mopeds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Showrooms</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Tirumala TVS Bidarahalli</a></li>
+                        <li><a href="contact.html">Sales & Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-bottom">
+                <div>Copyright © 2025 Tirumala TVS. All rights reserved.</div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navMenu");
+            if(nav.style.display === "block") { nav.style.display = "none"; } 
+            else { nav.style.display = "block"; nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+        }
+        
+        // Mobile Accordion Logic
+        document.addEventListener("DOMContentLoaded", function() {
+            if (window.innerWidth <= 900) {
+                var dropdowns = document.querySelectorAll('.nav-item.dropdown > a');
+                dropdowns.forEach(function(link) {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault(); 
+                        var parent = this.parentElement;
+                        parent.classList.toggle('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
