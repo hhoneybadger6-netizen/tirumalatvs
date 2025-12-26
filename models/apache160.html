@@ -4,140 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apache RTR 160 4V | Tirumala TVS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
-            <div class="nav-links" id="navMenu">
-                <a href="../index.html">Home</a>
-                <a href="../index.html#about">About</a>
-                <a href="../models.html" class="active">Vehicles</a>
-                <a href="../index.html#services">Services</a>
-                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="section-padding bg-light">
+    <header class="main-header">
         <div class="container">
-            
-            <p style="margin-bottom: 20px; color: #666; font-size: 0.9rem;">
-                <a href="../index.html">Home</a> &gt; <a href="../models.html">Vehicles</a> &gt; <strong>Apache RTR 160 4V</strong>
-            </p>
-
-            <div class="product-hero-wrapper">
-                
-                <div class="product-gallery">
-                    <img src="../assets/apache160.jpg" alt="Apache 160 4V" class="main-image" onerror="this.src='https://placehold.co/800x600?text=Apache+RTR+160+4V'">
-                    
-                    <h3 style="margin-bottom: 15px; color: var(--primary);">Technical Specifications</h3>
-                    <table class="tech-table">
-                        <tr>
-                            <th>Engine Type</th>
-                            <td>SI, 4 Stroke, Oil Cooled</td>
-                        </tr>
-                        <tr>
-                            <th>Displacement</th>
-                            <td>159.7 cc</td>
-                        </tr>
-                        <tr>
-                            <th>Max Power</th>
-                            <td>17.55 PS @ 9250 rpm</td>
-                        </tr>
-                        <tr>
-                            <th>Max Torque</th>
-                            <td>14.73 Nm @ 7250 rpm</td>
-                        </tr>
-                        <tr>
-                            <th>Kerb Weight</th>
-                            <td>144 kg</td>
-                        </tr>
-                        <tr>
-                            <th>Fuel Capacity</th>
-                            <td>12 Litres</td>
-                        </tr>
-                    </table>
-
-                    <div class="highlight-box" style="text-align: left; margin-top: 20px;">
-                        <strong style="color: var(--accent);">Key Features:</strong>
-                        <ul style="margin-top: 10px; list-style: disc; padding-left: 20px;">
-                            <li>3 Ride Modes (Urban, Rain, Sport)</li>
-                            <li>SmartXonnect Bluetooth Technology</li>
-                            <li>Glide Through Traffic (GTT) Capability</li>
-                            <li>Aggressive LED Headlamp</li>
-                        </ul>
-                    </div>
+            <div class="header-top">
+                <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                <div class="header-btn-group">
+                    <a href="../index.html#contact" class="btn-header">Book Service</a>
+                    <a href="../index.html#contact" class="btn-header">Get Quote</a>
                 </div>
-
-                <div class="product-info-sidebar">
-                    <span class="product-tagline">RACING DNA UNLEASHED</span>
-                    <h1 class="product-title">Apache RTR 160 4V</h1>
-                    <p class="product-desc">The most powerful 160cc bike in its class. Born on the racetrack, it features segment-first Ride Modes and SmartXonnect technology.</p>
-                    
-                    <div class="key-highlights">
-                        <div class="highlight-box">
-                            <strong>17.55 PS</strong>
-                            <span>Power</span>
-                        </div>
-                        <div class="highlight-box">
-                            <strong>114 km/h</strong>
-                            <span>Top Speed</span>
-                        </div>
-                        <div class="highlight-box">
-                            <strong>Disc</strong>
-                            <span>Brakes</span>
-                        </div>
-                        <div class="highlight-box">
-                            <strong>45+ kmpl</strong>
-                            <span>Mileage</span>
-                        </div>
-                    </div>
-
-                    <h2 class="price-tag" style="font-size: 1.8rem; color: var(--primary);">Starts at ₹ 1,24,000*</h2>
-                    <p style="font-size: 0.8rem; color: #888; margin-bottom: 20px;">*Ex-showroom price. Varies by variant.</p>
-
-                    <div style="display: flex; flex-direction: column; gap: 10px;">
-                        <a href="https://wa.me/919964946512?text=I%20want%20to%20book%20a%20test%20ride%20for%20Apache%20160" class="btn btn-primary full-width">📅 Book Test Ride</a>
-                        <a href="https://wa.me/919964946512?text=Get%20quotation%20for%20Apache%20160" class="btn btn-whatsapp full-width">💬 Get On-Road Price</a>
-                        <a href="tel:+919964946512" class="btn btn-outline full-width">📞 Call Showroom</a>
-                    </div>
-                </div>
-
+            </div>
+            <div class="header-bottom" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="../models.html">Inventory</a></li>
+                    <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </header>
+
+    <div class="model-hero">
+        <div class="hero-text-side">
+            <span class="model-tag">RACING DNA UNLEASHED</span>
+            <h1 class="model-title">Apache RTR 160 4V</h1>
+            <p class="section-subtitle">The Unstoppable. The most powerful 160cc in its class with Ride Modes.</p>
+            
+            <div class="model-price">
+                ₹ 1,24,870* <br><span>(Ex-Showroom Price)</span>
+            </div>
+
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
+                <a href="https://wa.me/919964946512?text=I%20am%20interested%20in%20Apache%20160" class="btn btn-whatsapp">WhatsApp 💬</a>
+            </div>
+        </div>
+        <div class="hero-img-side">
+            <img src="../assets/apache160.jpg" alt="Apache 160 4V" onerror="this.src='https://placehold.co/800x600?text=Apache+160+Image'">
+        </div>
+    </div>
+
+    <div class="feature-section container">
+        <div class="feature-row">
+            <div class="feature-txt">
+                <h3>SmartXonnect Technology</h3>
+                <p>Stay connected while you ride. The Bluetooth-enabled instrument cluster offers Turn-by-Turn navigation and Call/SMS alerts.</p>
+            </div>
+            <div class="feature-img">
+                <img src="../assets/apache_display.jpg" alt="Smart Display" onerror="this.src='https://placehold.co/600x400?text=Smart+Display'">
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Tirumala <span>TVS</span></h3>
-                    <p>Authorized Main Dealer, Bidarahalli.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../models.html">All Vehicles</a></li>
-                        <li><a href="../index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div style="border-top: 1px solid #222; padding: 20px 0; text-align: center;">
-                <p>&copy; 2025 Tirumala TVS Bidarahalli.</p>
-            </div>
+        <div class="container text-center">
+            <p>&copy; 2025 Tirumala TVS. All rights reserved.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/919964946512?text=Hi%20Tirumala%20TVS" class="whatsapp-float" target="_blank">💬</a>
-
-    <script>function toggleMenu(){document.getElementById("navMenu").classList.toggle("active");}</script>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            if(menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+                var list = menu.querySelector('.nav-list');
+                list.style.flexDirection = "column";
+                list.style.background = "white";
+                list.style.padding = "20px";
+                list.style.position = "absolute";
+                list.style.width = "100%";
+                list.style.left = "0";
+            }
+        }
+    </script>
 </body>
 </html>
