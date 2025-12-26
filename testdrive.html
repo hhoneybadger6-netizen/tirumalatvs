@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Test Drive | Tirumala TVS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="container header-top">
+            <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="header-btn-group">
+                <a href="index.html" class="btn-header">Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="models-header" style="background: #e31e2d; color: white; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; font-family: 'Oswald', sans-serif; text-transform: uppercase;">Experience The Ride</h1>
+            <p>Book a test drive today and feel the power of TVS engineering.</p>
+        </div>
+    </div>
+
+    <section class="service-section">
+        <div class="container">
+            <div class="service-layout">
+                
+                <div class="service-form">
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST">
+                        <input type="hidden" name="_next" value="thankyou.html">
+                        <input type="hidden" name="_subject" value="New Test Drive Request">
+
+                        <label>Full Name <span class="required">*</span></label>
+                        <input type="text" name="name" placeholder="Your fullname" required>
+
+                        <label>Phone Number <span class="required">*</span></label>
+                        <input type="tel" name="phone" placeholder="Your phone number" required>
+
+                        <label>Select Model <span class="required">*</span></label>
+                        <select name="model" required>
+                            <option value="" disabled selected>Choose a Bike/Scooter</option>
+                            <option value="Apache 160 4V">Apache RTR 160 4V</option>
+                            <option value="Apache 200 4V">Apache RTR 200 4V</option>
+                            <option value="Raider 125">Raider 125</option>
+                            <option value="Ronin">Ronin</option>
+                            <option value="Jupiter 110">Jupiter 110</option>
+                            <option value="Jupiter 125">Jupiter 125</option>
+                            <option value="Ntorq 125">Ntorq 125</option>
+                            <option value="iQube">iQube Electric</option>
+                        </select>
+
+                        <label>Preferred Date <span class="required">*</span></label>
+                        <input type="date" name="date" required>
+
+                        <label>Do you have a valid Driving License? <span class="required">*</span></label>
+                        <select name="license_status" required>
+                            <option value="Yes">Yes, I have a valid license</option>
+                            <option value="No">No, I do not have a license</option>
+                        </select>
+
+                        <button type="submit" class="btn-submit-service" style="background-color: #e31e2d;">Book Test Drive</button>
+                    </form>
+                </div>
+
+                <div class="service-info">
+                    <h3>Important Information</h3>
+                    
+                    <div class="step-item">
+                        <div class="step-text">
+                            <strong>Requirement:</strong> A valid driving license is mandatory for the test ride. Please carry it with you.
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-text">
+                            <strong>Safety:</strong> A helmet will be provided for the rider. Pillion riders must also wear a helmet if accompanying.
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-text">
+                            <strong>Timing:</strong> Test drives are available between 10:00 AM and 6:00 PM, Monday to Saturday.
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px; padding: 20px; background: #f9f9f9; border-left: 4px solid #e31e2d; border-radius: 4px;">
+                        <h4 style="margin-bottom: 5px;">Showroom Location</h4>
+                        <p style="color: #666; margin-bottom: 5px;">Tirumala TVS Bidarahalli</p>
+                        <a href="https://maps.google.com" target="_blank" style="color: #1a3b8c; font-weight: bold; font-size: 0.9rem;">📍 View on Google Maps</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div>
+    </footer>
+</body>
+</html>
