@@ -4,78 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS Raider 125 | Tirumala TVS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="container nav-content">
+    <header class="main-header">
+        <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-            <div class="nav-links" id="navMenu">
-                <a href="../index.html">Home</a>
-                <a href="../models.html">Inventory</a>
-                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
+            <div class="header-btn-group">
+                <a href="../index.html#contact" class="btn-header">Get Quote</a>
             </div>
         </div>
-    </nav>
+        <div class="nav-bar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="../models.html">Inventory</a></li>
+                    <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <div class="model-hero">
         <div class="hero-text-side">
             <span class="model-tag">THE WICKED RIDE</span>
             <h1 class="model-title">TVS Raider 125</h1>
-            <p class="section-subtitle">Commuter of the Year. Best-in-class acceleration with a sporty distinctive look.</p>
-            <div class="model-price">₹ 95,219* <br><span>(Starting Ex-Showroom)</span></div>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20Raider" class="btn btn-primary">Book Test Ride 🏍️</a>
-                <a href="tel:+919964946512" class="btn btn-outline">Call Showroom 📞</a>
+            <p style="font-size: 1.1rem; color: #555;">Best-in-class acceleration with a sporty distinctive look and first-in-segment TFT console.</p>
+            <div class="model-price">₹ 95,219* <br><span>(Ex-Showroom Price)</span></div>
+            <div style="display: flex; gap: 15px;">
+                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
+                <a href="https://wa.me/919964946512?text=Quote%20Raider" class="btn btn-whatsapp">WhatsApp 💬</a>
             </div>
         </div>
-        <div class="hero-img-side">
-            <img src="../assets/raider.jpg" alt="TVS Raider" onerror="this.src='https://placehold.co/800x600?text=Raider+125'">
-        </div>
+        <div class="hero-img-side"><img src="../assets/raider.jpg" alt="Raider 125" onerror="this.src='https://placehold.co/800x600?text=Raider'"></div>
     </div>
 
-    <div class="spec-bar-dark">
-        <div class="spec-bar-grid">
-            <div class="dark-spec-item"><h4>67</h4><p>kmpl Mileage</p></div>
-            <div class="dark-spec-item"><h4>5.9s</h4><p>0-60 km/h</p></div>
-            <div class="dark-spec-item"><h4>11.38</h4><p>PS Power</p></div>
-            <div class="dark-spec-item"><h4>TFT</h4><p>Smart Console</p></div>
-        </div>
+    <div class="spec-grid">
+        <div class="spec-box"><h3>124.8 cc</h3><p>Engine</p></div>
+        <div class="spec-box"><h3>67 kmpl</h3><p>Mileage</p></div>
+        <div class="spec-box"><h3>5.9s</h3><p>0-60 km/h</p></div>
+        <div class="spec-box"><h3>TFT</h3><p>Console</p></div>
     </div>
 
-    <div class="feature-section container">
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Animalistic LED Headlamp</h3>
-                <p>The unique "Wicked" design of the headlamp gives the Raider a distinct road presence that turns heads everywhere.</p>
+    <section class="info-section bg-light">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom:50px;"><h2>Key Features</h2></div>
+            <div class="info-grid">
+                <div class="feature-card"><h4>Animalistic LED Headlamp</h4><p>Unique 'Wicked' design for distinct road presence and superior visibility.</p></div>
+                <div class="feature-card"><h4>Reverse LCD / TFT</h4><p>Digital console with gear shift indicator, distance to empty, and navigation.</p></div>
+                <div class="feature-card"><h4>Under-Seat Storage</h4><p>A convenient storage space under the split seat for your phone or wallet.</p></div>
             </div>
-            <div class="feature-img"><img src="../assets/raider_light.jpg" alt="Raider Headlamp" onerror="this.src='https://placehold.co/600x400?text=LED+Headlamp'"></div>
         </div>
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Reverse LCD / TFT Display</h3>
-                <p>A segment-first digital console with gear shift indicator, distance to empty, and navigation (on SmartXonnect variants).</p>
-            </div>
-            <div class="feature-img"><img src="../assets/raider_console.jpg" alt="Raider Console" onerror="this.src='https://placehold.co/600x400?text=Digital+Console'"></div>
-        </div>
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Under-Seat Storage</h3>
-                <p>A convenient storage space under the split seat for your mobile, wallet, or documents. A rare feature in motorcycles!</p>
-            </div>
-            <div class="feature-img"><img src="../assets/raider_seat.jpg" alt="Under Seat Storage" onerror="this.src='https://placehold.co/600x400?text=Storage+Space'"></div>
-        </div>
-    </div>
-
-    <div class="section-padding bg-light text-center">
-        <h2 style="margin-bottom: 20px;">Get Wicked Today</h2>
-        <a href="https://wa.me/919964946512?text=Get%20Quote%20Raider" class="btn btn-whatsapp">Get On-Road Price 💬</a>
-    </div>
+    </section>
 
     <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
-    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
