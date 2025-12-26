@@ -12,16 +12,23 @@
     <header class="main-header">
         <div class="container header-top">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="header-btn-group">
-                <a href="index.html#contact" class="btn-header">Get Quote</a>
+                <a href="index.html#contact" class="btn-header">Book Service Appointment</a>
+                <a href="index.html#contact" class="btn-header">Get Quotation</a>
+                <a href="index.html#contact" class="btn-header">Book Test Drive</a>
             </div>
         </div>
-        <div class="nav-bar">
+        <div class="nav-bar" id="navMenu">
             <div class="container">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="models.html" style="color:var(--primary)">Inventory</a></li>
-                    <li class="nav-item"><a href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a href="index.html#about">About</a></li>
+                    <li class="nav-item"><a href="#motorcycles">Motorcycles</a></li>
+                    <li class="nav-item"><a href="#scooters">Scooters</a></li>
+                    <li class="nav-item"><a href="#electric">Mopeds</a></li>
+                    <li class="nav-item"><a href="#electric">Electric</a></li>
+                    <li class="nav-item"><a href="index.html#services">Services</a></li>
                 </ul>
             </div>
         </div>
@@ -184,5 +191,13 @@
             <p>&copy; 2025 Tirumala TVS. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navMenu");
+            if(nav.style.display === "block") { nav.style.display = "none"; } 
+            else { nav.style.display = "block"; nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+        }
+    </script>
 </body>
 </html>
