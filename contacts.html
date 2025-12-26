@@ -25,6 +25,15 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="action-bar">
+            <a href="service.html" class="action-item"><span class="icon">📅</span><span>Book Service</span></a>
+            <a href="testdrive.html" class="action-item"><span class="icon">🏍️</span><span>Test Ride</span></a>
+            <a href="https://wa.me/919964946512" class="action-item"><span class="icon">💬</span><span>WhatsApp</span></a>
+            <a href="tel:+919964946512" class="action-item"><span class="icon">📞</span><span>Call Now</span></a>
+        </div>
+    </div>
+
     <section class="service-section">
         <div class="container">
             <div class="service-layout">
@@ -41,15 +50,15 @@
                         <label>Phone <span class="required">*</span></label>
                         <input type="tel" name="phone" required>
 
-                        <label>Purpose <span class="required">*</span></label>
-                        <select name="purpose">
-                            <option>Book Test Drive</option>
+                        <label>Type of Enquiry</label>
+                        <select name="type">
                             <option>General Enquiry</option>
-                            <option>Feedback / Complaint</option>
-                            <option>Insurance Renewal</option>
+                            <option>Sales</option>
+                            <option>Service Feedback</option>
+                            <option>Insurance/Finance</option>
                         </select>
 
-                        <label>Message (Optional)</label>
+                        <label>Message</label>
                         <textarea name="message" rows="4" style="width:100%; padding:10px; border:1px solid #ddd; margin-bottom:20px;"></textarea>
 
                         <button type="submit" class="btn-submit-service">Submit</button>
@@ -57,42 +66,45 @@
                 </div>
 
                 <div class="service-info">
-                    <h3>Visit Our Showroom</h3>
-                    <p style="font-size: 1.1rem; margin-bottom: 20px;">Experience the range of TVS vehicles in person.</p>
-                    
-                    <div class="step-item">
-                        <div class="step-text">
-                            <strong>Address:</strong><br>
-                            Main Road, Bidarahalli,<br>
-                            Bangalore - 560049
-                        </div>
-                    </div>
-                    
-                    <div class="step-item">
-                        <div class="step-text">
-                            <strong>Phone:</strong><br>
-                            +91 99649 46512
-                        </div>
-                    </div>
-
-                    <div class="step-item">
-                        <div class="step-text">
-                            <strong>Email:</strong><br>
-                            tirumalatvs716@gmail.com
-                        </div>
-                    </div>
-
-                    <div style="background: #eee; height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-top: 20px;">
-                        <span style="color: #888;">[ Google Map Embed Here ]</span>
-                    </div>
+                    <h3>Visit Showroom</h3>
+                    <div class="step-item"><div class="step-text"><strong>Address:</strong><br>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</div></div>
+                    <div class="step-item"><div class="step-text"><strong>Phone:</strong><br>+91 99649 46512</div></div>
+                    <div class="step-item"><div class="step-text"><strong>Email:</strong><br>tirumalatvs716@gmail.com</div></div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div>
+    <footer>
+        <div class="footer-top-bar">
+            <div class="container footer-contact-row">
+                <div class="footer-contact-item"><div class="footer-icon-circle">✉</div><div class="footer-contact-text">tirumalatvs716@gmail.com</div></div>
+                <div class="footer-contact-item"><div class="footer-icon-circle">📞</div><div class="footer-contact-text">+91 99649 46512</div></div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container footer-cols">
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="testdrive.html">Test Drive</a></li></ul></div>
+                <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
+                <div class="footer-col"><h4>Showrooms</h4><ul class="footer-links"><li><a href="contact.html">Tirumala TVS Bidarahalli</a></li></ul></div>
+            </div>
+        </div>
+        <div class="container"><div class="footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div></div>
     </footer>
+
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+
+    <a href="https://www.instagram.com/tirumalatvs_bidarahalli/" class="instagram-float" target="_blank">📸</a>
+    
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollBtn = document.querySelector('.scroll-top-btn');
+            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } 
+            else { scrollBtn.classList.remove('visible'); }
+        });
+    </script>
 </body>
 </html>
