@@ -24,8 +24,7 @@
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
                     
-                    <li class="nav-item"><a href="about.html">About Us</a></li>
-                    <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
                     
                     <li class="nav-item dropdown">
                         <a href="models.html#motorcycles">Motorcycles <span class="nav-arrow">▼</span></a>
@@ -36,7 +35,6 @@
                             <li><a href="models/ronin.html">Ronin</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a href="models.html#scooters">Scooters <span class="nav-arrow">▼</span></a>
                         <ul class="dropdown-menu">
@@ -46,15 +44,18 @@
                             <li><a href="models/zest110.html">Zest 110</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item dropdown">
-                        <a href="models.html#electric">Electric & Mopeds <span class="nav-arrow">▼</span></a>
+                        <a href="models.html#electric">Electric <span class="nav-arrow">▼</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="models/iqube.html">iQube Electric</a></li>
-                            <li><a href="models/xl100.html">XL100 Heavy Duty</a></li>
+                            <li><a href="models/iqube.html">iQube</a></li>
                         </ul>
                     </li>
-
+                    <li class="nav-item dropdown">
+                        <a href="models.html#electric">Mopeds <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="models/xl100.html">XL100</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a href="service.html">Services</a></li>
                 </ul>
             </div>
@@ -87,9 +88,11 @@
             <div class="welcome-text">
                 <div class="welcome-badge">👋 WELCOME TO</div>
                 <h2>Tirumala TVS</h2>
-                <p>We are committed to being a socially responsible and leading manufacturer.</p>
-                <a href="about.html" style="color: white; font-weight: bold; text-decoration: underline; margin-top: 10px; display: inline-block;">Read Our Story →</a>
+                <p>We are committed to being a socially responsible and leading manufacturer of high value for money products.</p>
+                
+                <a href="about.html" class="btn btn-outline" style="border-color: white; color: white; margin-top: 20px;">Read Full History →</a>
             </div>
+            
             <div class="welcome-icons">
                 <div class="icon-box"><div class="icon-circle">✓</div><h4>Over 50 million Vehicles</h4></div>
                 <div class="icon-box"><div class="icon-circle">✓</div><h4>A vehicle for everyone</h4></div>
@@ -110,17 +113,6 @@
         </div>
     </section>
 
-    <section class="section-padding" style="background-color: #f4f4f4;">
-        <div class="container">
-            <div class="text-center section-header"><h2>Happy Riders</h2><p>What our customers say about Tirumala TVS.</p></div>
-            <div class="grid-3" style="margin-top: 40px;">
-                <div class="review-card"><div class="stars">★★★★★</div><p>"Excellent experience buying my new Apache RTR 160 4V."</p><h4>– Arjun Kumar</h4><span>Apache Owner</span></div>
-                <div class="review-card"><div class="stars">★★★★★</div><p>"I was confused between Jupiter and Ntorq. The staff helped me decide."</p><h4>– Priya Sharma</h4><span>Jupiter Owner</span></div>
-                <div class="review-card"><div class="stars">★★★★★</div><p>"Best service center in Bidarahalli. Fast and reliable."</p><h4>– Rahul M.</h4><span>Service Customer</span></div>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div class="footer-top-bar">
             <div class="container footer-contact-row">
@@ -130,16 +122,13 @@
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book a Service</a></li><li><a href="testdrive.html">Book a Test Drive</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="testdrive.html">Test Drive</a></li></ul></div>
                 <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
                 <div class="footer-col"><h4>Showrooms</h4><ul class="footer-links"><li><a href="contact.html">Tirumala TVS Bidarahalli</a></li></ul></div>
             </div>
         </div>
         <div class="container"><div class="footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div></div>
     </footer>
-
-    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
-    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <script>
         function toggleMenu() {
@@ -154,10 +143,6 @@
                     link.addEventListener('click', function(e) { e.preventDefault(); this.parentElement.classList.toggle('active'); });
                 });
             }
-        });
-        window.addEventListener('scroll', function() {
-            var scrollBtn = document.querySelector('.scroll-top-btn');
-            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } else { scrollBtn.classList.remove('visible'); }
         });
     </script>
 </body>
