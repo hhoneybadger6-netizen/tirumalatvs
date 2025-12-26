@@ -51,10 +51,20 @@ img { max-width: 100%; display: block; }
 .btn-header { background: var(--header-blue); color: white; padding: 10px 20px; font-weight: 700; font-size: 0.8rem; border-radius: 4px; text-transform: uppercase; }
 .btn-header:hover { background: var(--primary); }
 
-.nav-bar { background: #f9f9f9; padding: 10px 0; }
-.nav-menu { display: flex; justify-content: center; gap: 30px; }
-.nav-item a { font-family: var(--font-heading); font-weight: 500; text-transform: uppercase; font-size: 1rem; color: var(--dark); }
-.nav-item a:hover { color: var(--accent); }
+/* --- NAVIGATION MENU (Updated) --- */
+.nav-bar { background: #fff; padding: 15px 0; border-top: 1px solid #eee; }
+.nav-menu { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 0 auto; }
+.nav-item a { 
+    font-family: var(--font-heading); 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 1rem; 
+    color: var(--dark); 
+    letter-spacing: 1px;
+}
+.nav-item a:hover { color: var(--primary); }
+.nav-arrow { font-size: 0.8rem; color: var(--primary); vertical-align: top; margin-left: 2px; }
+
 .menu-toggle { display: none; font-size: 2rem; cursor: pointer; }
 
 /* --- HERO (Home) --- */
@@ -79,7 +89,7 @@ img { max-width: 100%; display: block; }
 .action-item span { font-family: var(--font-heading); font-weight: 700; color: var(--dark); display: block; margin-top: 5px; }
 .action-item .icon { font-size: 2rem; }
 
-/* --- CARDS (Home & Models) --- */
+/* --- CARDS --- */
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
 .card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); position: relative; }
 .card:hover { transform: translateY(-10px); }
@@ -96,7 +106,7 @@ img { max-width: 100%; display: block; }
 .filter-links a { color: rgba(255,255,255,0.8); margin: 0 15px; font-weight: bold; text-transform: uppercase; font-family: var(--font-heading); }
 .filter-links a:hover { color: white; text-decoration: underline; }
 
-/* --- INNER MODEL PAGE STYLES (NEW) --- */
+/* --- INNER MODEL PAGE STYLES --- */
 .model-hero {
     display: flex; align-items: center; justify-content: space-between;
     padding: 60px 5%; background: linear-gradient(135deg, #f8f9fa 0%, #eef2f5 100%);
@@ -135,7 +145,7 @@ img { max-width: 100%; display: block; }
     .nav-bar { display: none; } 
     .menu-toggle { display: block; position: absolute; top: 20px; right: 20px; }
     .hero h1 { font-size: 2.5rem; }
-    .split-hero { flex-direction: column-reverse; text-align: center; }
+    .nav-menu { flex-direction: column; gap: 15px; text-align: center; }
     .model-hero { flex-direction: column-reverse; text-align: center; padding-top: 40px; }
     .hero-text-side { padding-right: 0; margin-top: 30px; }
     .spec-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
@@ -144,5 +154,4 @@ img { max-width: 100%; display: block; }
     .action-bar { grid-template-columns: 1fr 1fr; gap: 10px; }
     .action-item { border: none; }
 }
-
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
