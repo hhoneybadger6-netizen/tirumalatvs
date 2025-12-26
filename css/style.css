@@ -1,4 +1,4 @@
-/* --- PREMIUM PERFORMANCE THEME (Final Mobile Optimized) --- */
+/* --- PREMIUM PERFORMANCE THEME --- */
 :root {
     --primary: #1a3b8c;       /* Dark Blue */
     --primary-dark: #0f255a;
@@ -52,23 +52,11 @@ ul { list-style: none; }
 .nav-arrow { font-size: 0.7rem; color: var(--primary); margin-left: 5px; }
 
 /* DROPDOWN MENU */
-.dropdown-menu {
-    display: none; position: absolute; top: 100%; left: 0;
-    background: white; min-width: 240px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    border-top: 3px solid var(--primary); z-index: 1100;
-    border-radius: 0 0 4px 4px; padding: 10px 0;
-}
-/* Desktop Hover Effect */
+.dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 240px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-top: 3px solid var(--primary); z-index: 1100; border-radius: 0 0 4px 4px; padding: 10px 0; }
 .nav-item:hover .dropdown-menu { display: block; animation: fadeInUp 0.2s ease; }
-
 .dropdown-menu li { display: block; width: 100%; }
-.dropdown-menu a {
-    font-family: var(--font-body); text-transform: uppercase; font-weight: 600; font-size: 0.85rem;
-    padding: 12px 20px; color: #444; border-bottom: 1px solid #f0f0f0; display: block; height: auto;
-}
+.dropdown-menu a { font-family: var(--font-body); text-transform: uppercase; font-weight: 600; font-size: 0.85rem; padding: 12px 20px; color: #444; border-bottom: 1px solid #f0f0f0; display: block; height: auto; }
 .dropdown-menu a:hover { background: #f0f4ff; color: var(--primary); padding-left: 25px; }
-
 .menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; color: var(--primary); border: 1px solid #eee; padding: 5px 10px; border-radius: 4px; }
 
 /* --- HERO --- */
@@ -94,7 +82,7 @@ ul { list-style: none; }
 .icon-circle { width: 45px; height: 45px; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 15px; }
 .icon-box h4 { font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 8px; }
 
-/* Grid System */
+/* --- GRID & CARDS --- */
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 .card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); position: relative; }
 .card:hover { transform: translateY(-10px); }
@@ -104,12 +92,36 @@ ul { list-style: none; }
 .card-info { padding: 25px; text-align: center; }
 .card-info h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 5px; }
 .badge { position: absolute; top: 15px; right: 15px; background: var(--accent); color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
-
 .review-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: left; transition: var(--transition); }
 .review-card p { font-style: italic; color: #555; margin-bottom: 20px; line-height: 1.6; }
 .review-card h4 { font-family: var(--font-heading); color: var(--primary); margin-bottom: 5px; }
 
-/* Model Inner Pages */
+/* --- SERVICE REQUEST FORM (New) --- */
+.service-section { padding: 80px 0; background: #fff; }
+.service-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.service-form label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.95rem; color: #333; }
+.service-form .required { color: red; }
+.service-form input, .service-form select { width: 100%; padding: 12px 15px; margin-bottom: 25px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Poppins', sans-serif; font-size: 0.95rem; color: #555; background: #fff; }
+.service-form input:focus, .service-form select:focus { border-color: var(--primary); outline: none; }
+.btn-submit-service { background-color: #1a3b8c; color: white; padding: 12px 25px; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; cursor: pointer; text-transform: capitalize; font-family: 'Poppins', sans-serif; }
+.btn-submit-service:hover { background-color: #0f255a; }
+.service-info h3 { font-family: 'Poppins', sans-serif; font-size: 1.8rem; line-height: 1.3; color: #000; margin-bottom: 30px; font-weight: 600; }
+.step-item { margin-bottom: 25px; display: flex; gap: 15px; }
+.step-text { font-size: 1rem; color: #444; line-height: 1.6; }
+.step-text strong { color: #000; font-weight: 600; }
+
+/* --- FOOTER --- */
+.footer-top-bar { background-color: var(--primary); color: white; padding: 30px 0; text-align: center; }
+.footer-contact-row { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; }
+.footer-contact-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.footer-icon-circle { width: 40px; height: 40px; background: white; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+.footer-main { background-color: #f8f9fa; padding: 50px 0; border-bottom: 1px solid #ddd; }
+.footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.footer-col h4 { color: var(--dark); margin-bottom: 20px; font-family: var(--font-heading); font-size: 1.2rem; text-transform: uppercase; }
+.footer-links li { margin-bottom: 10px; }
+.footer-bottom { background: white; padding: 20px 0; font-size: 0.9rem; color: #666; display: flex; justify-content: space-between; align-items: center; }
+
+/* --- MODEL INNER --- */
 .model-hero { display: flex; align-items: center; justify-content: space-between; padding: 60px 5%; background: linear-gradient(135deg, #f8f9fa 0%, #eef2f5 100%); min-height: 85vh; }
 .hero-text-side { flex: 1; padding-right: 50px; }
 .hero-img-side { flex: 1.2; text-align: center; }
@@ -125,20 +137,6 @@ ul { list-style: none; }
 .feature-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
 .feature-card h4 { font-size: 1.4rem; margin-bottom: 15px; color: var(--primary-dark); font-family: var(--font-heading); }
 
-/* Contact & Footer */
-.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
-.contact-form-wrapper { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: var(--shadow); }
-.form-group input, .form-group select { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9; margin-bottom: 15px; }
-.footer-top-bar { background-color: var(--primary); color: white; padding: 30px 0; text-align: center; }
-.footer-contact-row { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; }
-.footer-contact-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-.footer-icon-circle { width: 40px; height: 40px; background: white; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
-.footer-main { background-color: #f8f9fa; padding: 50px 0; border-bottom: 1px solid #ddd; }
-.footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-.footer-col h4 { color: var(--dark); margin-bottom: 20px; font-family: var(--font-heading); font-size: 1.2rem; text-transform: uppercase; }
-.footer-links li { margin-bottom: 10px; }
-.footer-bottom { background: white; padding: 20px 0; font-size: 0.9rem; color: #666; display: flex; justify-content: space-between; align-items: center; }
-
 /* Floating Elements */
 .scroll-top-btn { position: fixed; bottom: 90px; right: 20px; width: 40px; height: 40px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); opacity: 0; pointer-events: none; transition: 0.3s; z-index: 1999; }
 .scroll-top-btn.visible { opacity: 1; pointer-events: auto; }
@@ -146,35 +144,26 @@ ul { list-style: none; }
 
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-/* ========================================= */
-/* MOBILE OPTIMIZATION RULES           */
-/* ========================================= */
+/* --- MOBILE OPTIMIZATION --- */
 @media (max-width: 900px) {
-    /* Header & Menu */
     .header-top { flex-direction: column; gap: 15px; text-align: center; }
     .header-btn-group { display: none; } 
     .menu-toggle { display: block; position: absolute; top: 20px; right: 20px; }
-    
     .nav-bar { display: none; } 
     .nav-menu { flex-direction: column; width: 100%; height: auto; padding: 0; }
     .nav-item { width: 100%; flex-direction: column; align-items: flex-start; border-bottom: 1px solid #f0f0f0; padding: 0; }
     .nav-item > a { width: 100%; padding: 15px 20px; justify-content: space-between; }
-    
-    /* Mobile Dropdown Logic */
     .dropdown-menu { position: static; box-shadow: none; border-top: none; background: #f9f9f9; width: 100%; padding-left: 0; display: none; }
-    /* The JS will add .active to .nav-item to show this */
     .nav-item.active .dropdown-menu { display: block; }
     .dropdown-menu a { padding-left: 40px; font-size: 0.9rem; border-bottom: 1px solid #eee; }
-
-    /* Other Mobile Styles */
     .hero { height: auto; padding: 100px 0 60px 0; clip-path: none; text-align: center; } 
     .hero h1 { font-size: 2.5rem; line-height: 1.2; }
-    .hero p { font-size: 1rem; }
     .hero-buttons { justify-content: center; }
     .action-bar { grid-template-columns: 1fr 1fr; margin-top: 0; gap: 10px; padding: 20px; }
     .action-item { border: none; background: #f9f9f9; padding: 10px; border-radius: 4px; }
     .welcome-section { padding: 50px 0; }
-    .welcome-grid, .welcome-icons, .contact-layout, .grid-3, .footer-contact-row, .footer-bottom { grid-template-columns: 1fr; flex-direction: column; gap: 25px; }
+    .welcome-grid, .welcome-icons, .contact-layout, .grid-3, .footer-contact-row, .footer-bottom, .service-layout { grid-template-columns: 1fr; flex-direction: column; gap: 25px; }
+    .service-info { order: -1; }
     .model-hero { flex-direction: column-reverse; text-align: center; padding-top: 40px; }
     .hero-text-side { padding-right: 0; margin-top: 30px; }
     .spec-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
