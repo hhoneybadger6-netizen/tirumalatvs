@@ -4,69 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS Ntorq 125 | Tirumala TVS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
+    <header class="main-header">
+        <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-            <div class="nav-links" id="navMenu">
-                <a href="../index.html">Home</a>
-                <a href="../models.html">Inventory</a>
-                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
-            </div>
+            <div class="header-btn-group"><a href="../index.html#contact" class="btn-header">Get Quote</a></div>
         </div>
-    </nav>
+        <div class="nav-bar">
+            <div class="container"><ul class="nav-menu"><li class="nav-item"><a href="../index.html">Home</a></li><li class="nav-item"><a href="../models.html">Inventory</a></li><li class="nav-item"><a href="../index.html#contact">Contact</a></li></ul></div>
+        </div>
+    </header>
 
     <div class="model-hero">
         <div class="hero-text-side">
-            <span class="model-tag" style="background:#d00000;">PLAY SMART</span>
-            <h1 class="model-title">TVS Ntorq 125</h1>
-            <p class="section-subtitle">India's First Connected Scooter. Inspired by Stealth Aircraft design.</p>
-            <div class="model-price">₹ 84,536* <br><span>(Starting Ex-Showroom)</span></div>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="https://wa.me/919964946512?text=Book%20Test%20Ride%20Ntorq" class="btn btn-primary">Book Test Ride 🏁</a>
+            <span class="model-tag">PLAY SMART</span>
+            <h1 class="model-title">Ntorq 125</h1>
+            <p style="font-size: 1.1rem; color: #555;">India's First Connected Scooter. Inspired by Stealth Aircraft design.</p>
+            <div class="model-price">₹ 84,536* <br><span>(Ex-Showroom Price)</span></div>
+            <div style="display: flex; gap: 15px;">
+                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
+                <a href="https://wa.me/919964946512?text=Quote%20Ntorq" class="btn btn-whatsapp">WhatsApp 💬</a>
             </div>
         </div>
-        <div class="hero-img-side">
-            <img src="../assets/ntorq.jpg" alt="TVS Ntorq" onerror="this.src='https://placehold.co/800x600?text=Ntorq+125'">
-        </div>
+        <div class="hero-img-side"><img src="../assets/ntorq.jpg" alt="Ntorq 125" onerror="this.src='https://placehold.co/800x600?text=Ntorq+125'"></div>
     </div>
 
-    <div class="spec-bar-dark">
-        <div class="spec-bar-grid">
-            <div class="dark-spec-item"><h4>125cc</h4><p>3-Valve Engine</p></div>
-            <div class="dark-spec-item"><h4>9.38</h4><p>PS Power</p></div>
-            <div class="dark-spec-item"><h4>0-60</h4><p>in 9 Seconds</p></div>
-            <div class="dark-spec-item"><h4>BT</h4><p>SmartXonnect</p></div>
-        </div>
+    <div class="spec-grid">
+        <div class="spec-box"><h3>124.8 cc</h3><p>3V Engine</p></div>
+        <div class="spec-box"><h3>9.38 PS</h3><p>Power</p></div>
+        <div class="spec-box"><h3>9s</h3><p>0-60 km/h</p></div>
+        <div class="spec-box"><h3>BT</h3><p>SmartXonnect</p></div>
     </div>
 
-    <div class="feature-section container">
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Gaming Console Cluster</h3>
-                <p>View Lap times, Top speed recorder, Navigation assistance, and Caller ID on your speedometer. It's not just a scooter, it's a machine.</p>
+    <section class="info-section bg-light">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom:50px;"><h2>Key Features</h2></div>
+            <div class="info-grid">
+                <div class="feature-card"><h4>Gaming Console</h4><p>View Lap times, Top speed recorder, Navigation assistance, and Caller ID.</p></div>
+                <div class="feature-card"><h4>Stealth Design</h4><p>Sharp edges, aggressive styling, and the signature 'T' tail lamp.</p></div>
+                <div class="feature-card"><h4>3-Valve Engine</h4><p>Race-tuned engine for superior pickup and performance.</p></div>
             </div>
-            <div class="feature-img"><img src="../assets/ntorq_console.jpg" alt="Ntorq Console" onerror="this.src='https://placehold.co/600x400?text=Gaming+Console'"></div>
         </div>
-        <div class="feature-row">
-            <div class="feature-txt">
-                <h3>Stealth Aircraft Design</h3>
-                <p>Sharp edges, aggressive styling, and the signature 'T' tail lamp make the Ntorq unmistakable on the road.</p>
-            </div>
-            <div class="feature-img"><img src="../assets/ntorq_design.jpg" alt="Ntorq Design" onerror="this.src='https://placehold.co/600x400?text=Stealth+Design'"></div>
-        </div>
-    </div>
-    
-    <div class="section-padding bg-light text-center">
-        <h2 style="margin-bottom: 20px;">Ready to Play?</h2>
-        <a href="https://wa.me/919964946512?text=Get%20Quote%20Ntorq" class="btn btn-whatsapp">Get On-Road Price 💬</a>
-    </div>
+    </section>
 
     <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
-    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
 </body>
 </html>
