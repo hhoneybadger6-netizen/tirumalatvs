@@ -23,7 +23,9 @@
             <div class="container">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
-                    <li class="nav-item"><a href="contact.html">About / Contact</a></li>
+                    
+                    <li class="nav-item"><a href="about.html">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact Us</a></li>
                     
                     <li class="nav-item dropdown">
                         <a href="models.html#motorcycles">Motorcycles <span class="nav-arrow">▼</span></a>
@@ -46,9 +48,10 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="models.html#electric">Electric <span class="nav-arrow">▼</span></a>
+                        <a href="models.html#electric">Electric & Mopeds <span class="nav-arrow">▼</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="models/iqube.html">iQube</a></li>
+                            <li><a href="models/iqube.html">iQube Electric</a></li>
+                            <li><a href="models/xl100.html">XL100 Heavy Duty</a></li>
                         </ul>
                     </li>
 
@@ -85,6 +88,7 @@
                 <div class="welcome-badge">👋 WELCOME TO</div>
                 <h2>Tirumala TVS</h2>
                 <p>We are committed to being a socially responsible and leading manufacturer.</p>
+                <a href="about.html" style="color: white; font-weight: bold; text-decoration: underline; margin-top: 10px; display: inline-block;">Read Our Story →</a>
             </div>
             <div class="welcome-icons">
                 <div class="icon-box"><div class="icon-circle">✓</div><h4>Over 50 million Vehicles</h4></div>
@@ -126,13 +130,16 @@
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="contact.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book a Service</a></li><li><a href="testdrive.html">Book a Test Drive</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book a Service</a></li><li><a href="testdrive.html">Book a Test Drive</a></li></ul></div>
                 <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
                 <div class="footer-col"><h4>Showrooms</h4><ul class="footer-links"><li><a href="contact.html">Tirumala TVS Bidarahalli</a></li></ul></div>
             </div>
         </div>
         <div class="container"><div class="footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div></div>
     </footer>
+
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <script>
         function toggleMenu() {
@@ -147,6 +154,10 @@
                     link.addEventListener('click', function(e) { e.preventDefault(); this.parentElement.classList.toggle('active'); });
                 });
             }
+        });
+        window.addEventListener('scroll', function() {
+            var scrollBtn = document.querySelector('.scroll-top-btn');
+            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } else { scrollBtn.classList.remove('visible'); }
         });
     </script>
 </body>
