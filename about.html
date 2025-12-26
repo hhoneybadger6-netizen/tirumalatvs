@@ -16,7 +16,7 @@
                 <a href="index.html" class="btn-header">Back to Home</a>
             </div>
         </div>
-        <div class="nav-bar">
+        <div class="nav-bar" id="navMenu">
             <div class="container">
                 <ul class="nav-menu" style="justify-content:center;">
                     <li class="nav-item"><a href="index.html">Home</a></li>
@@ -56,43 +56,36 @@
             </div>
 
             <div class="history-grid">
-                
                 <div class="history-card">
                     <div style="font-size: 3rem; color: #d32f2f; margin-bottom: 10px;">1911</div>
                     <h3>The Foundation</h3>
-                    <p>Founded by <strong>Shri T.V. Sundaram Iyengar</strong>, the TVS Group began as a bus service in Madurai. It became synonymous with punctuality ("You can set your watch by a TVS bus").</p>
+                    <p>Founded by <strong>Shri T.V. Sundaram Iyengar</strong>, the TVS Group began as a bus service in Madurai. It became synonymous with punctuality.</p>
                 </div>
-
                 <div class="history-card">
                     <div style="font-size: 3rem; color: #d32f2f; margin-bottom: 10px;">1980</div>
                     <h3>India's First 2-Seater Moped</h3>
-                    <p>TVS launched the <strong>TVS 50</strong> from its Hosur factory. It was India's first two-seater moped and revolutionized personal transport for the common man.</p>
+                    <p>TVS launched the <strong>TVS 50</strong> from its Hosur factory. It was India's first two-seater moped and revolutionized personal transport.</p>
                 </div>
-
                 <div class="history-card">
                     <div style="font-size: 3rem; color: #d32f2f; margin-bottom: 10px;">1982</div>
                     <h3>Birth of TVS Racing</h3>
-                    <p>TVS established <strong>TVS Racing</strong>, the first factory racing team in India. This racing DNA is now infused into every Apache and Ntorq engine.</p>
+                    <p>TVS established <strong>TVS Racing</strong>, the first factory racing team in India. This racing DNA is now infused into every Apache engine.</p>
                 </div>
-
                 <div class="history-card">
                     <div style="font-size: 3rem; color: #d32f2f; margin-bottom: 10px;">2002</div>
                     <h3>The Deming Prize</h3>
                     <p>TVS Motor Company became the <strong>first two-wheeler company in the world</strong> to be awarded the prestigious Deming Prize for Total Quality Management.</p>
                 </div>
-
                 <div class="history-card">
                     <div style="font-size: 3rem; color: #d32f2f; margin-bottom: 10px;">2013</div>
                     <h3>BMW Partnership</h3>
-                    <p>TVS signed a long-term strategic partnership with <strong>BMW Motorrad</strong>. Together, they developed the world-class 310cc platform (Apache RR 310).</p>
+                    <p>TVS signed a long-term strategic partnership with <strong>BMW Motorrad</strong>. Together, they developed the world-class 310cc platform.</p>
                 </div>
-
                 <div class="history-card">
                     <div style="font-size: 3rem; color: #d32f2f; margin-bottom: 10px;">2020</div>
                     <h3>Acquisition of Norton</h3>
                     <p>TVS acquired the iconic British brand <strong>Norton Motorcycles</strong>, marking its entry into the super-premium global motorcycle market.</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -102,6 +95,18 @@
             <p>&copy; 2025 Tirumala TVS. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollBtn = document.querySelector('.scroll-top-btn');
+            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } 
+            else { scrollBtn.classList.remove('visible'); }
+        });
+    </script>
 
 </body>
 </html>
