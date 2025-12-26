@@ -3,185 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tirumala TVS | Performance Dealer</title>
+    <title>Tirumala TVS | Authorized Main Dealer</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <div class="header-top">
-                <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
-                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-                <div class="header-btn-group">
-                    <a href="#contact" class="btn-header">Book Service</a>
-                    <a href="#contact" class="btn-header">Get Quote</a>
-                    <a href="#contact" class="btn-header">Test Ride</a>
-                </div>
-            </div>
-            <div class="header-bottom" id="navMenu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" style="color: var(--primary);">Home</a></li>
-                    <li class="nav-item"><a href="#about">About</a></li>
-                    <li class="nav-item"><a href="models.html#motorcycles">Motorcycles</a></li>
-                    <li class="nav-item"><a href="models.html#scooters">Scooters</a></li>
-                    <li class="nav-item"><a href="models.html#electric">EV Zone</a></li>
-                    <li class="nav-item"><a href="#services">Services</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="main-header">
+        <div class="container header-top">
+            <a href="#" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">☰</div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#inventory">Inventory</a></li>
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="#contact" class="btn btn-primary" style="padding: 8px 20px; color: white;">Book Service</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Unleash The <br><span class="highlight">Racing DNA</span></h1>
+            <h1>Unleash The <br><span>Racing DNA</span></h1>
             <p>Authorized TVS Main Dealership in Bidarahalli. Experience power, performance, and premium service.</p>
-            <div class="hero-buttons">
-                <a href="models.html" class="btn btn-primary">Explore Inventory</a>
-                <a href="#contact" class="btn btn-outline">Visit Showroom</a>
-            </div>
+            <a href="#inventory" class="btn btn-primary">View Inventory</a>
+            <a href="#contact" class="btn btn-outline" style="margin-left: 10px; color: white; border-color: white;">Visit Showroom</a>
         </div>
     </section>
 
     <div class="container">
         <div class="action-bar">
             <a href="#contact" class="action-item"><span class="icon">📅</span><span>Book Service</span></a>
-            <a href="#contact" class="action-item"><span class="icon">🏍️</span><span>Book Test Ride</span></a>
+            <a href="#contact" class="action-item"><span class="icon">🏍️</span><span>Test Ride</span></a>
             <a href="https://wa.me/919964946512" class="action-item"><span class="icon">💬</span><span>WhatsApp</span></a>
             <a href="tel:+919964946512" class="action-item"><span class="icon">📞</span><span>Call Now</span></a>
         </div>
     </div>
 
-    <section class="section-padding bg-light">
+    <section id="inventory" class="section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <h2>New Arrivals</h2>
-                <p>The latest engineering marvels from TVS.</p>
+            <div class="text-center section-header">
+                <h2>Our Collection</h2>
+                <p>Click on any bike to view full details.</p>
             </div>
-            <div class="grid-3" style="margin-top: 50px;">
-                <div class="card">
-                    <span class="badge">New Launch</span>
-                    <div class="card-image"><img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400'"></div>
-                    <div class="card-body">
-                        <h3>Jupiter 110</h3>
-                        <p>With iGO Assist Technology.</p>
-                        <a href="models/jupiter113.html" class="btn btn-outline" style="border-color:var(--primary); color:var(--primary);">View Specs</a>
+
+            <div class="grid-3">
+                <div class="bike-card">
+                    <div class="bike-img"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=Apache'"></div>
+                    <div class="bike-info">
+                        <h3>Apache RTR 160 4V</h3>
+                        <span class="bike-price">Starts ₹ 1,24,870*</span>
+                        <button class="btn btn-outline" onclick="openModal('modal-apache')">View Details</button>
                     </div>
                 </div>
-                <div class="card">
-                    <span class="badge">Trending</span>
-                    <div class="card-image"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400'"></div>
-                    <div class="card-body">
-                        <h3>Raider 125</h3>
-                        <p>The Wicked Ride.</p>
-                        <a href="models/raider.html" class="btn btn-outline" style="border-color:var(--primary); color:var(--primary);">View Specs</a>
+
+                <div class="bike-card">
+                    <div class="bike-img"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'"></div>
+                    <div class="bike-info">
+                        <h3>TVS Raider 125</h3>
+                        <span class="bike-price">Starts ₹ 95,219*</span>
+                        <button class="btn btn-outline" onclick="openModal('modal-raider')">View Details</button>
                     </div>
                 </div>
-                <div class="card">
-                    <span class="badge">Premium</span>
-                    <div class="card-image"><img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400'"></div>
-                    <div class="card-body">
+
+                <div class="bike-card">
+                    <div class="bike-img"><img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin'"></div>
+                    <div class="bike-info">
                         <h3>TVS Ronin</h3>
-                        <p>Unscripted Life.</p>
-                        <a href="models/ronin.html" class="btn btn-outline" style="border-color:var(--primary); color:var(--primary);">View Specs</a>
+                        <span class="bike-price">Starts ₹ 1,49,000*</span>
+                        <button class="btn btn-outline" onclick="openModal('modal-ronin')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="bike-card">
+                    <div class="bike-img"><img src="assets/jupiter110.jpg" alt="Jupiter" onerror="this.src='https://placehold.co/600x400?text=Jupiter'"></div>
+                    <div class="bike-info">
+                        <h3>New Jupiter 110</h3>
+                        <span class="bike-price">Starts ₹ 73,700*</span>
+                        <button class="btn btn-outline" onclick="openModal('modal-jupiter')">View Details</button>
+                    </div>
+                </div>
+
+                <div class="bike-card">
+                    <div class="bike-img"><img src="assets/ntorq.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400?text=Ntorq'"></div>
+                    <div class="bike-info">
+                        <h3>Ntorq 125</h3>
+                        <span class="bike-price">Starts ₹ 84,536*</span>
+                        <button class="btn btn-outline" onclick="openModal('modal-ntorq')">View Details</button>
+                    </div>
+                </div>
+
+                 <div class="bike-card">
+                    <div class="bike-img"><img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400?text=iQube'"></div>
+                    <div class="bike-info">
+                        <h3>TVS iQube Electric</h3>
+                        <span class="bike-price">Starts ₹ 1,17,000*</span>
+                        <button class="btn btn-outline" onclick="openModal('modal-iqube')">View Details</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="section-padding">
+    <section id="services" class="section-padding bg-light">
         <div class="container">
-            <div class="section-header text-center">
-                <h2>Expert Service</h2>
-                <p>We care for your bike as much as you do.</p>
+            <div class="text-center section-header">
+                <h2>Expert Services</h2>
+                <p>Keep your bike running like new.</p>
             </div>
-            <div class="grid-3" style="margin-top: 50px;">
-                <div class="service-box">
-                    <div class="service-icon">🛠️</div>
-                    <h3>General Maintenance</h3>
-                    <p>Comprehensive checkups by certified TVS experts using genuine tools.</p>
+            <div class="grid-3">
+                <div class="bike-card bike-info">
+                    <div style="font-size:3rem;">🛠️</div>
+                    <h3>General Service</h3>
+                    <p>Complete checkup by certified experts.</p>
                 </div>
-                <div class="service-box">
-                    <div class="service-icon">🛢️</div>
-                    <h3>TVS Tru4 Oil</h3>
-                    <p>Engine oil replacement for smoother rides and longer engine life.</p>
+                <div class="bike-card bike-info">
+                    <div style="font-size:3rem;">🛢️</div>
+                    <h3>Oil Change</h3>
+                    <p>Genuine TVS Tru4 Oil replacement.</p>
                 </div>
-                <div class="service-box">
-                    <div class="service-icon">⚙️</div>
-                    <h3>Smart Diagnostics</h3>
-                    <p>Advanced OBD scanning to detect and fix issues instantly.</p>
+                <div class="bike-card bike-info">
+                    <div style="font-size:3rem;">⚙️</div>
+                    <h3>Diagnostics</h3>
+                    <p>Advanced computer scanning.</p>
                 </div>
-            </div>
-            <div class="text-center" style="margin-top: 40px;">
-                <a href="#contact" class="btn btn-primary">Schedule Appointment</a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section-padding bg-light">
+    <section id="contact" class="section-padding">
         <div class="container">
-            <div class="contact-layout">
-                <div class="contact-form-wrapper">
-                    <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-                        <h2>Get In Touch</h2>
-                        <p>Fill the form to book a ride or service.</p>
-                    </div>
-                    
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h2>Get In Touch</h2>
+                    <p style="margin-bottom: 20px;">Book a test ride or service appointment.</p>
                     <form action="https://formspree.io/f/xqezrzkn" method="POST">
-                        <div class="form-group"><input type="text" name="name" required placeholder="Your Name"></div>
-                        <div class="form-group"><input type="tel" name="phone" required placeholder="Phone Number"></div>
-                        <div class="form-group">
-                            <select name="purpose">
-                                <option>General Enquiry</option>
-                                <option>Book Test Ride</option>
-                                <option>Book Service</option>
-                                <option>Get Quotation</option>
-                            </select>
-                        </div>
+                        <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                        <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required>
+                        <select name="purpose" class="form-input">
+                            <option>Book Service</option>
+                            <option>Test Ride</option>
+                            <option>New Vehicle Enquiry</option>
+                        </select>
                         <button type="submit" class="btn btn-primary full-width">Submit Request</button>
                     </form>
-
                 </div>
-                <div class="contact-info-wrapper">
-                    <h2>Visit Us</h2>
-                    <p style="margin-top: 20px; font-size: 1.2rem;">Tirumala TVS Bidarahalli</p>
+                <div class="contact-info">
+                    <h2>Visit Showroom</h2>
+                    <p style="font-size: 1.2rem; font-weight: bold; margin-top: 10px;">Tirumala TVS Bidarahalli</p>
                     <p>Main Road, Bidarahalli, Bangalore - 560049</p>
-                    <div style="margin-top: 40px;">
-                        <p style="font-size: 1.5rem; font-weight: bold;">📞 +91 99649 46512</p>
-                        <p>✉️ tirumalatvs716@gmail.com</p>
-                    </div>
+                    <hr style="border-color: rgba(255,255,255,0.2); margin: 20px 0;">
+                    <p>📞 +91 99649 46512</p>
+                    <p>✉️ tirumalatvs716@gmail.com</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2025 Tirumala TVS. All Rights Reserved.</p>
-        </div>
+    <footer style="background: #111; color: #666; padding: 20px; text-align: center;">
+        <p>&copy; 2025 Tirumala TVS. All Rights Reserved.</p>
     </footer>
 
     <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
 
+
+    <div class="modal-overlay" id="modal-apache">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-apache')">&times;</span>
+            <div class="modal-hero">
+                <div class="modal-text">
+                    <span class="modal-tag">RACING DNA</span>
+                    <h2 class="modal-title">Apache RTR 160 4V</h2>
+                    <p>The most powerful 160cc bike in its class with Ride Modes and SmartXonnect.</p>
+                    <div class="modal-specs">
+                        <div class="spec-box"><h4>17.55</h4><p>PS Power</p></div>
+                        <div class="spec-box"><h4>3</h4><p>Ride Modes</p></div>
+                        <div class="spec-box"><h4>114</h4><p>Top Speed</p></div>
+                    </div>
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST" style="margin-top:20px;">
+                        <input type="hidden" name="bike" value="Apache 160">
+                        <button class="btn btn-primary">Book Test Ride</button>
+                        <a href="https://wa.me/919964946512?text=Quote%20Apache" class="btn btn-outline">Get Quote</a>
+                    </form>
+                </div>
+                <div class="modal-img"><img src="assets/apache160.jpg" alt="Apache"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-raider">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-raider')">&times;</span>
+            <div class="modal-hero">
+                <div class="modal-text">
+                    <span class="modal-tag">THE WICKED RIDE</span>
+                    <h2 class="modal-title">TVS Raider 125</h2>
+                    <p>Best-in-class acceleration with a sporty distinctive look and TFT console.</p>
+                    <div class="modal-specs">
+                        <div class="spec-box"><h4>125cc</h4><p>Engine</p></div>
+                        <div class="spec-box"><h4>5.9s</h4><p>0-60 km/h</p></div>
+                        <div class="spec-box"><h4>67</h4><p>kmpl Mileage</p></div>
+                    </div>
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST" style="margin-top:20px;">
+                        <input type="hidden" name="bike" value="Raider 125">
+                        <button class="btn btn-primary">Book Test Ride</button>
+                        <a href="https://wa.me/919964946512?text=Quote%20Raider" class="btn btn-outline">Get Quote</a>
+                    </form>
+                </div>
+                <div class="modal-img"><img src="assets/raider.jpg" alt="Raider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-ronin">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-ronin')">&times;</span>
+            <div class="modal-hero">
+                <div class="modal-text">
+                    <span class="modal-tag">UNSCRIPTED LIFE</span>
+                    <h2 class="modal-title">TVS Ronin</h2>
+                    <p>Modern-Retro Scrambler built for the city and the highway.</p>
+                    <div class="modal-specs">
+                        <div class="spec-box"><h4>225cc</h4><p>Engine</p></div>
+                        <div class="spec-box"><h4>20.4</h4><p>PS Power</p></div>
+                        <div class="spec-box"><h4>ABS</h4><p>Dual Channel</p></div>
+                    </div>
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST" style="margin-top:20px;">
+                        <input type="hidden" name="bike" value="Ronin">
+                        <button class="btn btn-primary">Book Test Ride</button>
+                        <a href="https://wa.me/919964946512?text=Quote%20Ronin" class="btn btn-outline">Get Quote</a>
+                    </form>
+                </div>
+                <div class="modal-img"><img src="assets/ronin.jpg" alt="Ronin"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-jupiter">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-jupiter')">&times;</span>
+            <div class="modal-hero">
+                <div class="modal-text">
+                    <span class="modal-tag">ZYADA SE BHI ZYADA</span>
+                    <h2 class="modal-title">Jupiter 110</h2>
+                    <p>India's most loved scooter now with iGO Assist technology.</p>
+                    <div class="modal-specs">
+                        <div class="spec-box"><h4>113cc</h4><p>Engine</p></div>
+                        <div class="spec-box"><h4>iGO</h4><p>Assist Tech</p></div>
+                        <div class="spec-box"><h4>Metal</h4><p>Body</p></div>
+                    </div>
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST" style="margin-top:20px;">
+                        <input type="hidden" name="bike" value="Jupiter 110">
+                        <button class="btn btn-primary">Book Test Ride</button>
+                        <a href="https://wa.me/919964946512?text=Quote%20Jupiter" class="btn btn-outline">Get Quote</a>
+                    </form>
+                </div>
+                <div class="modal-img"><img src="assets/jupiter110.jpg" alt="Jupiter"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-ntorq">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-ntorq')">&times;</span>
+            <div class="modal-hero">
+                <div class="modal-text">
+                    <span class="modal-tag">PLAY SMART</span>
+                    <h2 class="modal-title">Ntorq 125</h2>
+                    <p>India's first connected scooter with Bluetooth and Navigation.</p>
+                    <div class="modal-specs">
+                        <div class="spec-box"><h4>125cc</h4><p>3V Engine</p></div>
+                        <div class="spec-box"><h4>9s</h4><p>0-60 km/h</p></div>
+                        <div class="spec-box"><h4>BT</h4><p>SmartXonnect</p></div>
+                    </div>
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST" style="margin-top:20px;">
+                        <input type="hidden" name="bike" value="Ntorq">
+                        <button class="btn btn-primary">Book Test Ride</button>
+                        <a href="https://wa.me/919964946512?text=Quote%20Ntorq" class="btn btn-outline">Get Quote</a>
+                    </form>
+                </div>
+                <div class="modal-img"><img src="assets/ntorq.jpg" alt="Ntorq"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-iqube">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-iqube')">&times;</span>
+            <div class="modal-hero">
+                <div class="modal-text">
+                    <span class="modal-tag">SMART. SIMPLE. SILENT.</span>
+                    <h2 class="modal-title">TVS iQube</h2>
+                    <p>Your sensible, silent, and smart electric travel companion.</p>
+                    <div class="modal-specs">
+                        <div class="spec-box"><h4>100km</h4><p>Range</p></div>
+                        <div class="spec-box"><h4>78km/h</h4><p>Speed</p></div>
+                        <div class="spec-box"><h4>5hrs</h4><p>Charging</p></div>
+                    </div>
+                    <form action="https://formspree.io/f/xqezrzkn" method="POST" style="margin-top:20px;">
+                        <input type="hidden" name="bike" value="iQube">
+                        <button class="btn btn-primary">Book Test Ride</button>
+                        <a href="https://wa.me/919964946512?text=Quote%20iQube" class="btn btn-outline">Get Quote</a>
+                    </form>
+                </div>
+                <div class="modal-img"><img src="assets/iqube.jpg" alt="iQube"></div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        function toggleMenu() {
+        function toggleMobileMenu() {
             var menu = document.getElementById("navMenu");
-            if(menu.style.display === "block") {
+            if(menu.style.display === "flex") {
                 menu.style.display = "none";
             } else {
-                menu.style.display = "block";
-                var list = menu.querySelector('.nav-list');
-                list.style.flexDirection = "column";
-                list.style.background = "white";
-                list.style.padding = "20px";
-                list.style.position = "absolute";
-                list.style.width = "100%";
-                list.style.left = "0";
-                list.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+                menu.style.display = "flex";
+                menu.style.flexDirection = "column";
+                menu.style.position = "absolute";
+                menu.style.top = "60px";
+                menu.style.left = "0";
+                menu.style.width = "100%";
+                menu.style.background = "white";
+                menu.style.padding = "20px";
+                menu.style.boxShadow = "0 5px 10px rgba(0,0,0,0.1)";
+            }
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+            document.body.style.overflow = 'hidden'; // Stop background scrolling
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            document.body.style.overflow = 'auto'; // Resume scrolling
+        }
+
+        // Close modal if clicking outside the content
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
             }
         }
     </script>
