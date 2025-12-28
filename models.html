@@ -14,52 +14,27 @@
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="header-btn-group">
-                <a href="index.html#contact" class="btn-header">Book Service</a>
-                <a href="index.html#contact" class="btn-header">Get Quote</a>
-                <a href="index.html#contact" class="btn-header">Book Test Drive</a>
+                <a href="service.html" class="btn-header">Book Service</a>
+                <a href="quotation.html" class="btn-header">Get Quotation</a>
+                <a href="testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
         <div class="nav-bar" id="navMenu">
             <div class="container">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
-                    <li class="nav-item"><a href="index.html#about">About</a></li>
+                    <li class="nav-item"><a href="about.html">About Us</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact Us</a></li>
                     
                     <li class="nav-item dropdown">
                         <a href="#motorcycles">Motorcycles <span class="nav-arrow">▼</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="models/apache160.html">Apache RTR 160 4V</a></li>
-                            <li><a href="models/apache200.html">Apache RTR 200 4V</a></li>
+                            <li><a href="models/apache160.html">Apache RTR Series</a></li>
                             <li><a href="models/raider.html">Raider 125</a></li>
                             <li><a href="models/ronin.html">Ronin</a></li>
                         </ul>
                     </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#scooters">Scooters <span class="nav-arrow">▼</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="models/jupiter113.html">Jupiter 110</a></li>
-                            <li><a href="models/jupiter125.html">Jupiter 125</a></li>
-                            <li><a href="models/ntorq125.html">Ntorq 125</a></li>
-                            <li><a href="models/zest110.html">Zest 110</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#electric">Mopeds <span class="nav-arrow">▼</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="models/xl100.html">XL100</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#electric">Electric <span class="nav-arrow">▼</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="models/iqube.html">iQube</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a href="service.html">Services</a></li>
                 </ul>
             </div>
         </div>
@@ -87,30 +62,72 @@
                 <h2 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; margin-bottom: 30px; border-left: 5px solid var(--accent); padding-left: 15px;">Motorcycles</h2>
                 <div class="grid-3">
                     <div class="card">
-                        <span class="badge">RACING</span>
-                        <div class="card-img"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=Apache+160'"></div>
+                        <span class="badge">RACING FLAGSHIP</span>
+                        <div class="card-img"><img src="assets/rr310.jpg" alt="Apache RR 310" onerror="this.src='https://placehold.co/600x400?text=RR+310'"></div>
+                        <div class="card-info">
+                            <h3>Apache RR 310</h3>
+                            <p style="color:var(--primary); font-weight:bold;">Starts ₹ 2,72,000*</p>
+                            <ul class="card-specs"><li>312.2 cc</li><li>34 PS</li><li>Ride Modes</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/rr310.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="badge">BESTSELLER</span>
+                        <div class="card-img"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=RTR+160+4V'"></div>
                         <div class="card-info">
                             <h3>Apache RTR 160 4V</h3>
                             <p style="color:var(--primary); font-weight:bold;">Starts ₹ 1,24,000*</p>
-                            <a href="models/apache160.html" class="btn btn-outline full-width">View Details</a>
+                            <ul class="card-specs"><li>159.7 cc</li><li>17.55 PS</li><li>SmartXonnect</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/apache160.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="card">
-                        <span class="badge">PERFORMANCE</span>
-                        <div class="card-img"><img src="assets/apache200.jpg" alt="Apache 200" onerror="this.src='https://placehold.co/600x400?text=Apache+200'"></div>
-                        <div class="card-info">
-                            <h3>Apache RTR 200 4V</h3>
-                            <p style="color:var(--primary); font-weight:bold;">Starts ₹ 1,46,000*</p>
-                            <a href="models/apache200.html" class="btn btn-outline full-width">View Details</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <span class="badge">SPORTY</span>
+                        <span class="badge">WICKED</span>
                         <div class="card-img"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'"></div>
                         <div class="card-info">
                             <h3>TVS Raider 125</h3>
                             <p style="color:var(--primary); font-weight:bold;">Starts ₹ 95,000*</p>
-                            <a href="models/raider.html" class="btn btn-outline full-width">View Details</a>
+                            <ul class="card-specs"><li>124.8 cc</li><li>TFT Display</li><li>57 kmpl</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/raider.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="badge">MODERN RETRO</span>
+                        <div class="card-img"><img src="assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/600x400?text=Ronin'"></div>
+                        <div class="card-info">
+                            <h3>TVS Ronin</h3>
+                            <p style="color:var(--primary); font-weight:bold;">Starts ₹ 1,49,000*</p>
+                            <ul class="card-specs"><li>225.9 cc</li><li>20.4 PS</li><li>USD Forks</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/ronin.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <span class="badge">COMMUTER</span>
+                        <div class="card-img"><img src="assets/radeon.jpg" alt="Radeon" onerror="this.src='https://placehold.co/600x400?text=Radeon'"></div>
+                        <div class="card-info">
+                            <h3>TVS Radeon</h3>
+                            <p style="color:var(--primary); font-weight:bold;">Starts ₹ 62,000*</p>
+                            <ul class="card-specs"><li>109.7 cc</li><li>65 kmpl</li><li>Digi Cluster</li></ul>
+                            <div class="card-btn-row">
+                                <a href="contact.html" class="btn btn-outline">Enquire</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -120,30 +137,44 @@
                 <h2 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; margin-bottom: 30px; border-left: 5px solid var(--accent); padding-left: 15px;">Scooters</h2>
                 <div class="grid-3">
                     <div class="card">
-                        <span class="badge">FAMILY</span>
+                        <span class="badge">NEW</span>
                         <div class="card-img"><img src="assets/jupiter110.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'"></div>
                         <div class="card-info">
                             <h3>New Jupiter 110</h3>
                             <p style="color:var(--primary); font-weight:bold;">Starts ₹ 73,000*</p>
-                            <a href="models/jupiter113.html" class="btn btn-outline full-width">View Details</a>
+                            <ul class="card-specs"><li>109.7 cc</li><li>Smart Alert</li><li>Best Mileage</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/jupiter113.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="card">
                         <span class="badge">COMFORT</span>
                         <div class="card-img"><img src="assets/jupiter125.jpg" alt="Jupiter 125" onerror="this.src='https://placehold.co/600x400?text=Jupiter+125'"></div>
                         <div class="card-info">
                             <h3>Jupiter 125</h3>
                             <p style="color:var(--primary); font-weight:bold;">Starts ₹ 86,000*</p>
-                            <a href="models/jupiter125.html" class="btn btn-outline full-width">View Details</a>
+                            <ul class="card-specs"><li>124.8 cc</li><li>2-Helmet Storage</li><li>Neo-Masculine</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/jupiter125.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="card">
                         <span class="badge">CONNECTED</span>
-                        <div class="card-img"><img src="assets/ntorq.jpg" alt="Ntorq 125" onerror="this.src='https://placehold.co/600x400?text=Ntorq+125'"></div>
+                        <div class="card-img"><img src="assets/ntorq.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400?text=Ntorq+125'"></div>
                         <div class="card-info">
                             <h3>Ntorq 125</h3>
                             <p style="color:var(--primary); font-weight:bold;">Starts ₹ 84,000*</p>
-                            <a href="models/ntorq125.html" class="btn btn-outline full-width">View Details</a>
+                            <ul class="card-specs"><li>124.8 cc</li><li>Bluetooth</li><li>3-Valve Engine</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/ntorq125.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,16 +189,25 @@
                         <div class="card-info">
                             <h3>TVS iQube</h3>
                             <p style="color:var(--primary); font-weight:bold;">Starts ₹ 1,17,000*</p>
-                            <a href="models/iqube.html" class="btn btn-outline full-width">View Details</a>
+                            <ul class="card-specs"><li>100 km Range</li><li>78 km/h Top Speed</li><li>Smart Features</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/iqube.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="card">
                         <span class="badge">HEAVY DUTY</span>
                         <div class="card-img"><img src="assets/xl100.jpg" alt="XL100" onerror="this.src='https://placehold.co/600x400?text=XL100'"></div>
                         <div class="card-info">
                             <h3>XL100 Heavy Duty</h3>
                             <p style="color:var(--primary); font-weight:bold;">Starts ₹ 46,000*</p>
-                            <a href="models/xl100.html" class="btn btn-outline full-width">View Details</a>
+                            <ul class="card-specs"><li>99.7 cc</li><li>Touch Start</li><li>Rugged Body</li></ul>
+                            <div class="card-btn-row">
+                                <a href="models/xl100.html" class="btn btn-outline">Specs</a>
+                                <a href="testdrive.html" class="btn btn-primary">Test Ride</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,13 +225,17 @@
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html#about">About Us</a></li><li><a href="index.html#contact">Contact Us</a></li></ul></div>
-                <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="#motorcycles">Motorcycles</a></li><li><a href="#scooters">Scooters</a></li></ul></div>
-                <div class="footer-col"><h4>Showrooms</h4><ul class="footer-links"><li><a href="index.html#contact">Tirumala TVS Bidarahalli</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="testdrive.html">Test Drive</a></li></ul></div>
+                <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
+                <div class="footer-col"><h4>Showrooms</h4><ul class="footer-links"><li><a href="contact.html">Tirumala TVS Bidarahalli</a></li></ul></div>
             </div>
         </div>
         <div class="container"><div class="footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div></div>
     </footer>
+
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    <a href="https://www.instagram.com/tirumalatvs_bidarahalli/" class="instagram-float" target="_blank">📸</a>
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <script>
         function toggleMenu() {
@@ -199,19 +243,17 @@
             if(nav.style.display === "block") { nav.style.display = "none"; } 
             else { nav.style.display = "block"; nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
         }
-        
-        // Mobile Accordion Logic
         document.addEventListener("DOMContentLoaded", function() {
             if (window.innerWidth <= 900) {
                 var dropdowns = document.querySelectorAll('.nav-item.dropdown > a');
                 dropdowns.forEach(function(link) {
-                    link.addEventListener('click', function(e) {
-                        e.preventDefault(); 
-                        var parent = this.parentElement;
-                        parent.classList.toggle('active');
-                    });
+                    link.addEventListener('click', function(e) { e.preventDefault(); this.parentElement.classList.toggle('active'); });
                 });
             }
+        });
+        window.addEventListener('scroll', function() {
+            var scrollBtn = document.querySelector('.scroll-top-btn');
+            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } else { scrollBtn.classList.remove('visible'); }
         });
     </script>
 </body>
