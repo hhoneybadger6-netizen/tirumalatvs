@@ -1,4 +1,4 @@
-/* --- PREMIUM PERFORMANCE THEME (Mobile & Browser Optimized) --- */
+/* --- PREMIUM PERFORMANCE THEME --- */
 :root {
     --primary: #1a3b8c;       /* Dark Blue */
     --primary-dark: #0f255a;
@@ -12,18 +12,10 @@
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* --- BROWSER RESET & BASICS --- */
+/* --- BROWSER RESET --- */
 * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html { scroll-behavior: smooth; font-size: 16px; }
-body { 
-    font-family: var(--font-body); 
-    background: var(--white); 
-    color: var(--dark); 
-    overflow-x: hidden; 
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale;
-}
+body { font-family: var(--font-body); background: var(--white); color: var(--dark); overflow-x: hidden; line-height: 1.6; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 a { text-decoration: none; color: inherit; transition: var(--transition); }
 img { max-width: 100%; height: auto; display: block; }
 ul { list-style: none; }
@@ -42,21 +34,13 @@ input, select, textarea { font-family: inherit; }
 .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
 .btn-outline:hover { background: var(--primary); color: var(--white); transform: translateY(-2px); }
 
-/* Back Button Style */
+/* --- BACK BUTTON (For Inner Pages) --- */
 .back-btn-wrapper { padding: 20px 0 0 0; }
 .btn-back { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: #666; font-size: 0.9rem; transition: 0.3s; }
 .btn-back:hover { color: var(--primary); transform: translateX(-5px); }
 
-/* --- HEADER (Sticky) --- */
-.main-header { 
-    background: var(--white); 
-    position: -webkit-sticky; 
-    position: sticky; 
-    top: 0; 
-    z-index: 1000; 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
-    border-bottom: 4px solid var(--primary); 
-}
+/* --- HEADER --- */
+.main-header { background: var(--white); position: -webkit-sticky; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary); }
 .header-top { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
 .logo { font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: -1px; }
 .logo span { color: var(--accent); }
@@ -108,7 +92,7 @@ input, select, textarea { font-family: inherit; }
 .action-item span { font-family: var(--font-heading); font-weight: 700; color: var(--dark); display: block; margin-top: 10px; font-size: 1.1rem; text-transform: uppercase; }
 .action-item .icon { font-size: 2rem; margin-bottom: 5px; display: inline-block; }
 
-/* --- CLEAN GRID (For Models Page) --- */
+/* --- CLEAN GRID (New Card Style) --- */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
 
 .clean-card {
@@ -122,6 +106,7 @@ input, select, textarea { font-family: inherit; }
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    text-decoration: none; /* Removes underline from links */
 }
 .clean-card:hover {
     box-shadow: 0 15px 40px rgba(0,0,0,0.08);
@@ -153,11 +138,9 @@ input, select, textarea { font-family: inherit; }
     object-fit: contain;
     transition: transform 0.5s;
 }
-.clean-card:hover .clean-card-img img {
-    transform: scale(1.05);
-}
+.clean-card:hover .clean-card-img img { transform: scale(1.05); }
 
-/* --- HOME PAGE CARDS (With Specs) --- */
+/* --- HOME PAGE CARDS (Classic Style) --- */
 .card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); position: relative; border: 1px solid #eee; }
 .card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,0,0,0.15); }
 .card-img { height: 250px; overflow: hidden; background: #f9f9f9; }
@@ -166,10 +149,6 @@ input, select, textarea { font-family: inherit; }
 .card-info { padding: 30px; text-align: center; }
 .card-info h3 { font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 8px; }
 .badge { position: absolute; top: 15px; right: 15px; background: var(--accent); color: white; padding: 6px 12px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; z-index: 5; }
-.card-specs { display: flex; justify-content: center; gap: 15px; margin: 20px 0; font-size: 0.85rem; color: #555; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 10px 0; }
-.card-specs li { list-style: none; font-weight: 600; }
-.card-btn-row { display: flex; gap: 10px; }
-.card-btn-row .btn { flex: 1; padding: 10px; font-size: 0.85rem; }
 
 /* --- PRO DETAIL LAYOUT (For Inner Page) --- */
 .model-hero { display: flex; align-items: center; justify-content: space-between; padding: 60px 5%; background: linear-gradient(135deg, #f8f9fa 0%, #eef2f5 100%); min-height: 85vh; }
@@ -244,11 +223,13 @@ input, select, textarea { font-family: inherit; }
 
 /* --- MOBILE OPTIMIZATION --- */
 @media (max-width: 900px) {
+    /* Header */
     .header-top { flex-direction: column; gap: 15px; text-align: center; padding: 15px 0; }
     .header-btn-group { display: none; }
     .logo { font-size: 1.8rem; }
     .menu-toggle { display: block; position: absolute; top: 20px; right: 20px; }
     
+    /* Nav */
     .nav-bar { display: none; }
     .nav-menu { flex-direction: column; width: 100%; height: auto; padding: 0; }
     .nav-item { width: 100%; flex-direction: column; align-items: flex-start; border-bottom: 1px solid #f0f0f0; padding: 0; }
@@ -257,16 +238,19 @@ input, select, textarea { font-family: inherit; }
     .nav-item.active .dropdown-menu { display: block; }
     .dropdown-menu a { padding-left: 40px; font-size: 0.9rem; border-bottom: 1px solid #eee; padding-top: 12px; padding-bottom: 12px; }
 
+    /* Hero */
     .hero { height: auto; padding: 100px 0 60px 0; clip-path: none; text-align: center; } 
     .hero h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 15px; }
     .hero-content { padding: 0 20px; }
     .hero-buttons { justify-content: center; flex-direction: column; gap: 10px; }
     .btn { width: 100%; max-width: 300px; margin: 0 auto; }
 
+    /* Action Bar (2x2 Grid + 1) */
     .action-bar { grid-template-columns: 1fr 1fr; margin-top: 30px; gap: 10px; padding: 20px; }
     .action-item { border: none; background: #f9f9f9; padding: 15px; border-radius: 8px; }
-    .action-item:last-child { grid-column: span 2; }
+    .action-item:last-child { grid-column: span 2; } /* Call Service spans bottom */
 
+    /* Hotline Banner */
     .hotline-section { margin-top: 0; padding: 20px 0; }
     .hotline-banner { flex-direction: column; text-align: center; padding: 30px 20px; gap: 30px; }
     .hotline-left { flex-direction: column; width: 100%; gap: 20px; }
@@ -275,18 +259,22 @@ input, select, textarea { font-family: inherit; }
     .hotline-center { border-left: none; padding-left: 0; width: 100%; }
     .hotline-right { justify-content: center; }
 
+    /* Grids & Sections */
     .section-padding { padding: 60px 0; }
     .grid-3 { grid-template-columns: 1fr; gap: 30px; }
     .welcome-grid, .welcome-icons, .footer-contact-row, .footer-cols { grid-template-columns: 1fr; flex-direction: column; gap: 30px; }
     .welcome-text h2 { font-size: 2.2rem; }
     
+    /* Pro Detail Mobile */
     .pro-detail-grid { grid-template-columns: 1fr; gap: 40px; }
     .pro-image-side { order: -1; }
 
+    /* Footer */
     .footer-contact-item { flex-direction: column; text-align: center; }
     .footer-col { text-align: center; }
     .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
 
+    /* Floating Buttons Mobile */
     .whatsapp-float { width: 55px; height: 55px; font-size: 28px; bottom: 20px; right: 20px; }
     .instagram-float { width: 55px; height: 55px; font-size: 28px; bottom: 85px; right: 20px; }
     .scroll-top-btn { bottom: 155px; right: 25px; }
