@@ -4,52 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS XL100 Heavy Duty | Tirumala TVS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
+
+    <header class="main-header">
+        <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="menu-toggle" onclick="toggleMenu()"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
-            <div class="nav-links" id="navMenu">
-                <a href="../index.html">Home</a>
-                <a href="../models.html">Inventory</a>
-                <a href="../index.html#contact" class="btn-nav-contact">Contact Us</a>
+            <div class="header-btn-group">
+                <a href="../service.html" class="btn-header">Book Service</a>
+                <a href="../quotation.html" class="btn-header">Get Quotation</a>
+                <a href="../testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
-    </nav>
-
-    <div class="model-hero">
-        <div class="hero-text-side">
-            <span class="model-tag" style="background:#555;">MULTI-UTILITY</span>
-            <h1 class="model-title">XL100 Heavy Duty</h1>
-            <p class="section-subtitle">The most trusted workhorse. Now with i-Touch Start and 15% more mileage.</p>
-            <div class="model-price">₹ 46,000* <br><span>(Starting Ex-Showroom)</span></div>
-            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="https://wa.me/919964946512?text=Book%20XL100" class="btn btn-primary">Book Now 📦</a>
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
+                    <li class="nav-item"><a href="../models.html">Back to Inventory</a></li>
+                    <li class="nav-item"><a href="../contact.html">Contact Us</a></li>
+                </ul>
             </div>
         </div>
-        <div class="hero-img-side">
-            <img src="../assets/xl100.jpg" alt="TVS XL100" onerror="this.src='https://placehold.co/800x600?text=XL100+Heavy+Duty'">
+    </header>
+
+    <div class="model-hero" style="background: linear-gradient(to right, #f8f9fa, #eef2f5); padding: 60px 0;">
+        <div class="container" style="text-align: center;">
+            <h1 class="model-title" style="color: #1a3b8c;">TVS XL100 Heavy Duty</h1>
+            <p class="model-price" style="font-size: 1.5rem; color: #333;">Starting at ₹ 46,000*</p>
         </div>
     </div>
 
-    <div class="spec-bar-dark">
-        <div class="spec-bar-grid">
-            <div class="dark-spec-item"><h4>99.7cc</h4><p>Engine</p></div>
-            <div class="dark-spec-item"><h4>130kg</h4><p>Payload</p></div>
-            <div class="dark-spec-item"><h4>i-Touch</h4><p>Silent Start</p></div>
-            <div class="dark-spec-item"><h4>Rugged</h4><p>Chassis</p></div>
+    <div class="container pro-detail-section">
+        <div class="pro-detail-grid">
+            <div class="pro-text-side">
+                <h2>Overview</h2>
+                <p>The <strong>TVS XL100 Heavy Duty</strong> is India's most reliable multi-utility vehicle. Built tough for heavy loads, it now comes with i-Touch Start technology for silent and instant starting. It is the perfect partner for your business needs.</p>
+
+                <h2>Engine & Performance</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Engine:</strong> 99.7 cc, 4-stroke, single cylinder</li>
+                    <li><strong>Power:</strong> 4.4 PS @ 6000 rpm</li>
+                    <li><strong>Torque:</strong> 6.5 Nm @ 3500 rpm</li>
+                    <li><strong>Technology:</strong> ETFi (Eco Thrust Fuel Injection) for 15% more mileage</li>
+                    <li><strong>Load Capacity:</strong> Heavy Duty Shock Absorbers</li>
+                </ul>
+
+                <h2>Key Features</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Start System:</strong> Silent i-Touch Start</li>
+                    <li><strong>Seat:</strong> Split Seat (Detachable rear seat for loading)</li>
+                    <li><strong>Charging:</strong> Mobile Charging Port</li>
+                    <li><strong>Safety:</strong> Roll-over Sensor & Sync Braking</li>
+                </ul>
+
+                <div style="margin-top: 40px;">
+                    <a href="../testdrive.html" class="btn btn-primary" style="margin-right: 15px;">Book Test Ride</a>
+                    <a href="../quotation.html" class="btn btn-outline">Get Price Quote</a>
+                </div>
+            </div>
+            <div class="pro-image-side">
+                <img src="../assets/xl100.jpg" alt="TVS XL100" onerror="this.src='https://placehold.co/800x600?text=XL100+Image'">
+            </div>
         </div>
     </div>
-    
-    <div class="section-padding bg-light text-center">
-        <h2 style="margin-bottom: 20px;">Your Business Partner</h2>
-        <a href="https://wa.me/919964946512?text=Get%20Quote%20XL100" class="btn btn-whatsapp">Get On-Road Price 💬</a>
-    </div>
 
-    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
-    <script>function toggleMenu() { document.getElementById("navMenu").classList.toggle("active"); }</script>
+    <footer>
+        <div class="container text-center" style="padding: 20px 0; color: #666;"><p>© 2025 Tirumala TVS. All rights reserved.</p></div>
+    </footer>
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
