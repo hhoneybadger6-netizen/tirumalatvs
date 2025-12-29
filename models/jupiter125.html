@@ -8,37 +8,71 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
     <header class="main-header">
         <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="header-btn-group"><a href="../index.html#contact" class="btn-header">Get Quote</a></div>
+            <div class="header-btn-group">
+                <a href="../service.html" class="btn-header">Book Service</a>
+                <a href="../quotation.html" class="btn-header">Get Quotation</a>
+                <a href="../testdrive.html" class="btn-header">Book Test Drive</a>
+            </div>
         </div>
-        <div class="nav-bar">
-            <div class="container"><ul class="nav-menu"><li class="nav-item"><a href="../index.html">Home</a></li><li class="nav-item"><a href="../models.html">Inventory</a></li><li class="nav-item"><a href="../index.html#contact">Contact</a></li></ul></div>
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
+                    <li class="nav-item"><a href="../models.html">Back to Inventory</a></li>
+                    <li class="nav-item"><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <div class="model-hero">
-        <div class="hero-text-side">
-            <span class="model-tag">ZYADA SE BHI ZYADA</span>
-            <h1 class="model-title">Jupiter 125</h1>
-            <p style="font-size: 1.1rem; color: #555;">Progressive Neo Masculine Styling with biggest under-seat storage in segment.</p>
-            <div class="model-price">₹ 86,000* <br><span>(Ex-Showroom Price)</span></div>
-            <div style="display: flex; gap: 15px;">
-                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
-                <a href="https://wa.me/919964946512?text=Quote%20Jupiter125" class="btn btn-whatsapp">WhatsApp 💬</a>
+    <div class="model-hero" style="background: linear-gradient(to right, #f8f9fa, #eef2f5); padding: 60px 0;">
+        <div class="container" style="text-align: center;">
+            <h1 class="model-title" style="color: #1a3b8c;">TVS Jupiter 125</h1>
+            <p class="model-price" style="font-size: 1.5rem; color: #333;">Starting at ₹ 86,000*</p>
+        </div>
+    </div>
+
+    <div class="container pro-detail-section">
+        <div class="pro-detail-grid">
+            <div class="pro-text-side">
+                <h2>Overview</h2>
+                <p>The <strong>TVS Jupiter 125</strong> is truly "Zyada Se Bhi Zyada". It redefines the 125cc segment with industry-first features like the largest under-seat storage that fits two full-face helmets and progressive neo-masculine styling.</p>
+
+                <h2>Engine & Performance</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Engine:</strong> 124.8 cc, single-cylinder, 2-valve</li>
+                    <li><strong>Power:</strong> 8.15 PS @ 6500 rpm</li>
+                    <li><strong>Torque:</strong> 10.5 Nm @ 4500 rpm</li>
+                    <li><strong>Tech:</strong> IntelliGO (Auto Start/Stop)</li>
+                </ul>
+
+                <h2>Standout Features</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Storage:</strong> 33 Litres Under-seat (Fits 2 Helmets)</li>
+                    <li><strong>Fuel Fill:</strong> Front External Fuel Fill</li>
+                    <li><strong>Comfort:</strong> Longest Seat in Segment</li>
+                    <li><strong>Cluster:</strong> Semi-Digital with Mileage Indicator</li>
+                    <li><strong>Suspension:</strong> 3-Step Adjustable Rear Gas Shocks</li>
+                </ul>
+
+                <div style="margin-top: 40px;">
+                    <a href="../testdrive.html" class="btn btn-primary" style="margin-right: 15px;">Book Test Ride</a>
+                    <a href="../quotation.html" class="btn btn-outline">Get Price Quote</a>
+                </div>
+            </div>
+            <div class="pro-image-side">
+                <img src="../assets/jupiter125.jpg" alt="TVS Jupiter 125" onerror="this.src='https://placehold.co/800x600?text=Jupiter+125+Image'">
             </div>
         </div>
-        <div class="hero-img-side"><img src="../assets/jupiter125.jpg" alt="Jupiter 125" onerror="this.src='https://placehold.co/800x600?text=Jupiter+125'"></div>
     </div>
 
-    <div class="spec-grid">
-        <div class="spec-box"><h3>124.8 cc</h3><p>Engine</p></div>
-        <div class="spec-box"><h3>33L</h3><p>Storage</p></div>
-        <div class="spec-box"><h3>50 kmpl</h3><p>Mileage</p></div>
-        <div class="spec-box"><h3>Metal</h3><p>Body</p></div>
-    </div>
-
-    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <footer>
+        <div class="container text-center" style="padding: 20px 0; color: #666;"><p>© 2025 Tirumala TVS. All rights reserved.</p></div>
+    </footer>
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
