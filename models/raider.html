@@ -8,56 +8,71 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
     <header class="main-header">
         <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
             <div class="header-btn-group">
-                <a href="../index.html#contact" class="btn-header">Get Quote</a>
+                <a href="../service.html" class="btn-header">Book Service</a>
+                <a href="../quotation.html" class="btn-header">Get Quotation</a>
+                <a href="../testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
-        <div class="nav-bar">
+        <div class="nav-bar" id="navMenu">
             <div class="container">
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="../index.html">Home</a></li>
-                    <li class="nav-item"><a href="../models.html">Inventory</a></li>
-                    <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a href="../index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
+                    <li class="nav-item"><a href="../models.html">Back to Inventory</a></li>
+                    <li class="nav-item"><a href="../contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <div class="model-hero">
-        <div class="hero-text-side">
-            <span class="model-tag">THE WICKED RIDE</span>
-            <h1 class="model-title">TVS Raider 125</h1>
-            <p style="font-size: 1.1rem; color: #555;">Best-in-class acceleration with a sporty distinctive look and first-in-segment TFT console.</p>
-            <div class="model-price">₹ 95,219* <br><span>(Ex-Showroom Price)</span></div>
-            <div style="display: flex; gap: 15px;">
-                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
-                <a href="https://wa.me/919964946512?text=Quote%20Raider" class="btn btn-whatsapp">WhatsApp 💬</a>
-            </div>
+    <div class="model-hero" style="background: linear-gradient(to right, #f8f9fa, #eef2f5); padding: 60px 0;">
+        <div class="container" style="text-align: center;">
+            <h1 class="model-title" style="color: #1a3b8c;">TVS Raider 125</h1>
+            <p class="model-price" style="font-size: 1.5rem; color: #333;">Starting at ₹ 95,000*</p>
         </div>
-        <div class="hero-img-side"><img src="../assets/raider.jpg" alt="Raider 125" onerror="this.src='https://placehold.co/800x600?text=Raider'"></div>
     </div>
 
-    <div class="spec-grid">
-        <div class="spec-box"><h3>124.8 cc</h3><p>Engine</p></div>
-        <div class="spec-box"><h3>67 kmpl</h3><p>Mileage</p></div>
-        <div class="spec-box"><h3>5.9s</h3><p>0-60 km/h</p></div>
-        <div class="spec-box"><h3>TFT</h3><p>Console</p></div>
-    </div>
+    <div class="container pro-detail-section">
+        <div class="pro-detail-grid">
+            <div class="pro-text-side">
+                <h2>Overview</h2>
+                <p>The <strong>TVS Raider</strong> is the "Wicked" ride for the new generation. It combines a distinct animalistic design with best-in-class acceleration and a first-in-segment TFT display.</p>
 
-    <section class="info-section bg-light">
-        <div class="container">
-            <div class="section-header text-center" style="margin-bottom:50px;"><h2>Key Features</h2></div>
-            <div class="info-grid">
-                <div class="feature-card"><h4>Animalistic LED Headlamp</h4><p>Unique 'Wicked' design for distinct road presence and superior visibility.</p></div>
-                <div class="feature-card"><h4>Reverse LCD / TFT</h4><p>Digital console with gear shift indicator, distance to empty, and navigation.</p></div>
-                <div class="feature-card"><h4>Under-Seat Storage</h4><p>A convenient storage space under the split seat for your phone or wallet.</p></div>
+                <h2>Engine & Specs</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Engine:</strong> 124.8 cc, 3-valve, air/oil-cooled</li>
+                    <li><strong>Power:</strong> 11.38 PS @ 7500 rpm</li>
+                    <li><strong>Torque:</strong> 11.2 Nm @ 6000 rpm</li>
+                    <li><strong>0-60 km/h:</strong> 5.9 seconds</li>
+                    <li><strong>Gearbox:</strong> 5-speed transmission</li>
+                </ul>
+
+                <h2>Key Highlights</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Display:</strong> 5-inch TFT with Voice Assist</li>
+                    <li><strong>Style:</strong> Animalistic LED Headlamp</li>
+                    <li><strong>Ride Modes:</strong> Eco & Power</li>
+                    <li><strong>Suspension:</strong> Monoshock Rear Suspension</li>
+                </ul>
+
+                <div style="margin-top: 40px;">
+                    <a href="../testdrive.html" class="btn btn-primary" style="margin-right: 15px;">Book Test Ride</a>
+                    <a href="../quotation.html" class="btn btn-outline">Get Price Quote</a>
+                </div>
+            </div>
+            <div class="pro-image-side">
+                <img src="../assets/raider.jpg" alt="TVS Raider" onerror="this.src='https://placehold.co/800x600?text=Raider+125+Image'">
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <footer>
+        <div class="container text-center" style="padding: 20px 0; color: #666;"><p>© 2025 Tirumala TVS. All rights reserved.</p></div>
+    </footer>
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
