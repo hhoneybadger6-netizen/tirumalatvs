@@ -8,48 +8,71 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
     <header class="main-header">
         <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="header-btn-group"><a href="../index.html#contact" class="btn-header">Get Quote</a></div>
+            <div class="header-btn-group">
+                <a href="../service.html" class="btn-header">Book Service</a>
+                <a href="../quotation.html" class="btn-header">Get Quotation</a>
+                <a href="../testdrive.html" class="btn-header">Book Test Drive</a>
+            </div>
         </div>
-        <div class="nav-bar">
-            <div class="container"><ul class="nav-menu"><li class="nav-item"><a href="../index.html">Home</a></li><li class="nav-item"><a href="../models.html">Inventory</a></li><li class="nav-item"><a href="../index.html#contact">Contact</a></li></ul></div>
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
+                    <li class="nav-item"><a href="../models.html">Back to Inventory</a></li>
+                    <li class="nav-item"><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <div class="model-hero">
-        <div class="hero-text-side">
-            <span class="model-tag">#SMARTLYSIMPLE</span>
-            <h1 class="model-title">TVS iQube</h1>
-            <p style="font-size: 1.1rem; color: #555;">Your sensible, silent, and smart travel companion. Switch to electric today.</p>
-            <div class="model-price">₹ 1,17,000* <br><span>(With Subsidy)</span></div>
-            <div style="display: flex; gap: 15px;">
-                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
-                <a href="https://wa.me/919964946512?text=Quote%20iQube" class="btn btn-whatsapp">WhatsApp 💬</a>
-            </div>
+    <div class="model-hero" style="background: linear-gradient(to right, #f8f9fa, #eef2f5); padding: 60px 0;">
+        <div class="container" style="text-align: center;">
+            <h1 class="model-title" style="color: #1a3b8c;">TVS iQube Electric</h1>
+            <p class="model-price" style="font-size: 1.5rem; color: #333;">Starting at ₹ 1,17,000*</p>
         </div>
-        <div class="hero-img-side"><img src="../assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/800x600?text=iQube'"></div>
     </div>
 
-    <div class="spec-grid">
-        <div class="spec-box"><h3>100 km</h3><p>Real Range</p></div>
-        <div class="spec-box"><h3>78 km/h</h3><p>Top Speed</p></div>
-        <div class="spec-box"><h3>₹ 350</h3><p>Cost/Month</p></div>
-        <div class="spec-box"><h3>5 hrs</h3><p>Charging</p></div>
-    </div>
+    <div class="container pro-detail-section">
+        <div class="pro-detail-grid">
+            <div class="pro-text-side">
+                <h2>Overview</h2>
+                <p>The <strong>TVS iQube</strong> is the smart electric scooter for the smart generation. With zero emissions, silent operation, and smart connectivity, it is the future of urban commuting.</p>
 
-    <section class="info-section bg-light">
-        <div class="container">
-            <div class="section-header text-center" style="margin-bottom:50px;"><h2>Key Features</h2></div>
-            <div class="info-grid">
-                <div class="feature-card"><h4>Q-Park Assist</h4><p>Reverse mode makes parking effortless in tight spots.</p></div>
-                <div class="feature-card"><h4>Huge Savings</h4><p>Running cost is less than ₹1 per day (approx 30 paise/km).</p></div>
-                <div class="feature-card"><h4>Smart Connected</h4><p>Geofencing, remote charge status, and ride analytics on your phone.</p></div>
+                <h2>Electric Performance</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Range:</strong> 100 km (Real World)</li>
+                    <li><strong>Top Speed:</strong> 78 km/h</li>
+                    <li><strong>Acceleration:</strong> 0-40 km/h in 4.2 seconds</li>
+                    <li><strong>Motor:</strong> 4.4 kW BLDC Hub Motor</li>
+                    <li><strong>Charging:</strong> 0-80% in 4 hours 30 mins</li>
+                </ul>
+
+                <h2>Smart Features</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Dashboard:</strong> 7-inch TFT Touchscreen (ST Variant)</li>
+                    <li><strong>Connectivity:</strong> Alexa Integration, Music, Call Alerts</li>
+                    <li><strong>Reverse Mode:</strong> Q-Park Assist</li>
+                    <li><strong>Key:</strong> Flip Key with LED Light</li>
+                </ul>
+
+                <div style="margin-top: 40px;">
+                    <a href="../testdrive.html" class="btn btn-primary" style="margin-right: 15px;">Book Test Ride</a>
+                    <a href="../quotation.html" class="btn btn-outline">Get Price Quote</a>
+                </div>
+            </div>
+            <div class="pro-image-side">
+                <img src="../assets/iqube.jpg" alt="TVS iQube" onerror="this.src='https://placehold.co/800x600?text=iQube+Electric+Image'">
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <footer>
+        <div class="container text-center" style="padding: 20px 0; color: #666;"><p>© 2025 Tirumala TVS. All rights reserved.</p></div>
+    </footer>
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
