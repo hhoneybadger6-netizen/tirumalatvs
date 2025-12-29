@@ -16,6 +16,15 @@
                 <a href="index.html" class="btn-header">Back to Home</a>
             </div>
         </div>
+        <div class="nav-bar">
+             <div class="container">
+                <ul class="nav-menu" style="justify-content:center;">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="contact.html" style="color:var(--primary);">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <div class="models-header" style="background: #333; color: white; padding: 40px 0; text-align: center;">
@@ -37,30 +46,16 @@
     <section class="service-section">
         <div class="container">
             <div class="service-layout">
-                
                 <div class="service-form">
                     <h3 style="margin-bottom: 20px;">Send a Message</h3>
                     <form action="https://formspree.io/f/xqezrzkn" method="POST">
                         <input type="hidden" name="_next" value="thankyou.html">
-                        <input type="hidden" name="_subject" value="General Enquiry">
-
                         <label>Name <span class="required">*</span></label>
                         <input type="text" name="name" required>
-
                         <label>Phone <span class="required">*</span></label>
                         <input type="tel" name="phone" required>
-
-                        <label>Type of Enquiry</label>
-                        <select name="type">
-                            <option>General Enquiry</option>
-                            <option>Sales</option>
-                            <option>Service Feedback</option>
-                            <option>Insurance/Finance</option>
-                        </select>
-
                         <label>Message</label>
                         <textarea name="message" rows="4" style="width:100%; padding:10px; border:1px solid #ddd; margin-bottom:20px;"></textarea>
-
                         <button type="submit" class="btn-submit-service">Submit</button>
                     </form>
                 </div>
@@ -71,32 +66,16 @@
                     <div class="step-item"><div class="step-text"><strong>Phone:</strong><br>+91 99649 46512</div></div>
                     <div class="step-item"><div class="step-text"><strong>Email:</strong><br>tirumalatvs716@gmail.com</div></div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-top-bar">
-            <div class="container footer-contact-row">
-                <div class="footer-contact-item"><div class="footer-icon-circle">✉</div><div class="footer-contact-text">tirumalatvs716@gmail.com</div></div>
-                <div class="footer-contact-item"><div class="footer-icon-circle">📞</div><div class="footer-contact-text">+91 99649 46512</div></div>
-            </div>
-        </div>
-        <div class="footer-main">
-            <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="testdrive.html">Test Drive</a></li></ul></div>
-                <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
-                <div class="footer-col"><h4>Showrooms</h4><ul class="footer-links"><li><a href="contact.html">Tirumala TVS Bidarahalli</a></li></ul></div>
-            </div>
-        </div>
-        <div class="container"><div class="footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div></div>
+        <div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div>
     </footer>
 
     <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
-
     <a href="https://www.instagram.com/tirumalatvs_bidarahalli/" class="instagram-float" target="_blank">📸</a>
-    
     <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <script>
