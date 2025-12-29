@@ -8,48 +8,71 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
     <header class="main-header">
         <div class="container header-top">
             <a href="../index.html" class="logo">Tirumala <span>TVS</span></a>
-            <div class="header-btn-group"><a href="../index.html#contact" class="btn-header">Get Quote</a></div>
+            <div class="header-btn-group">
+                <a href="../service.html" class="btn-header">Book Service</a>
+                <a href="../quotation.html" class="btn-header">Get Quotation</a>
+                <a href="../testdrive.html" class="btn-header">Book Test Drive</a>
+            </div>
         </div>
-        <div class="nav-bar">
-            <div class="container"><ul class="nav-menu"><li class="nav-item"><a href="../index.html">Home</a></li><li class="nav-item"><a href="../models.html">Inventory</a></li><li class="nav-item"><a href="../index.html#contact">Contact</a></li></ul></div>
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" style="color: var(--primary);">Home <span class="nav-arrow">↗</span></a></li>
+                    <li class="nav-item"><a href="../models.html">Back to Inventory</a></li>
+                    <li class="nav-item"><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <div class="model-hero">
-        <div class="hero-text-side">
-            <span class="model-tag">UNSCRIPTED LIFE</span>
-            <h1 class="model-title">TVS Ronin</h1>
-            <p style="font-size: 1.1rem; color: #555;">Modern-Retro Scrambler. Built for the city, ready for the highway.</p>
-            <div class="model-price">₹ 1,49,000* <br><span>(Ex-Showroom Price)</span></div>
-            <div style="display: flex; gap: 15px;">
-                <a href="../index.html#contact" class="btn btn-primary">Book Test Ride 📅</a>
-                <a href="https://wa.me/919964946512?text=Quote%20Ronin" class="btn btn-whatsapp">WhatsApp 💬</a>
-            </div>
+    <div class="model-hero" style="background: linear-gradient(to right, #f8f9fa, #eef2f5); padding: 60px 0;">
+        <div class="container" style="text-align: center;">
+            <h1 class="model-title" style="color: #1a3b8c;">TVS Ronin</h1>
+            <p class="model-price" style="font-size: 1.5rem; color: #333;">Starting at ₹ 1,49,000*</p>
         </div>
-        <div class="hero-img-side"><img src="../assets/ronin.jpg" alt="Ronin" onerror="this.src='https://placehold.co/800x600?text=Ronin'"></div>
     </div>
 
-    <div class="spec-grid">
-        <div class="spec-box"><h3>225.9 cc</h3><p>Engine</p></div>
-        <div class="spec-box"><h3>20.4 PS</h3><p>Power</p></div>
-        <div class="spec-box"><h3>Dual Ch</h3><p>ABS</p></div>
-        <div class="spec-box"><h3>USD</h3><p>Front Forks</p></div>
-    </div>
+    <div class="container pro-detail-section">
+        <div class="pro-detail-grid">
+            <div class="pro-text-side">
+                <h2>Overview</h2>
+                <p>The <strong>TVS Ronin</strong> is the industry's first 'Modern-Retro' motorcycle. Designed for the unscripted rider, it handles city streets and highway cruises with equal ease. It features a unique design language and premium tech.</p>
 
-    <section class="info-section bg-light">
-        <div class="container">
-            <div class="section-header text-center" style="margin-bottom:50px;"><h2>Key Features</h2></div>
-            <div class="info-grid">
-                <div class="feature-card"><h4>Offset Speedometer</h4><p>Uniquely positioned digital pod with Bluetooth connectivity and voice assist.</p></div>
-                <div class="feature-card"><h4>T-Face Pilot Lamp</h4><p>Signature modern-retro LED setup that ensures you are seen, day or night.</p></div>
-                <div class="feature-card"><h4>Block Tread Tyres</h4><p>Special purpose tyres designed for both city roads and off-road trails.</p></div>
+                <h2>Engine & Performance</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>Engine:</strong> 225.9 cc, Oil-cooled, 4-valve</li>
+                    <li><strong>Power:</strong> 20.4 PS @ 7750 rpm</li>
+                    <li><strong>Torque:</strong> 19.93 Nm @ 3750 rpm</li>
+                    <li><strong>Clutch:</strong> Assist & Slipper Clutch</li>
+                    <li><strong>Refinement:</strong> Silent Start (ISG)</li>
+                </ul>
+
+                <h2>Premium Features</h2>
+                <ul class="pro-specs-list">
+                    <li><strong>ABS:</strong> Dual Channel ABS with Rain & Urban Modes</li>
+                    <li><strong>Suspension:</strong> Gold USD Front Forks</li>
+                    <li><strong>Lighting:</strong> All LED Lamps with T-Face Pilot Lamp</li>
+                    <li><strong>Console:</strong> Asymmetric Digital Speedometer</li>
+                </ul>
+
+                <div style="margin-top: 40px;">
+                    <a href="../testdrive.html" class="btn btn-primary" style="margin-right: 15px;">Book Test Ride</a>
+                    <a href="../quotation.html" class="btn btn-outline">Get Price Quote</a>
+                </div>
+            </div>
+            <div class="pro-image-side">
+                <img src="../assets/ronin.jpg" alt="TVS Ronin" onerror="this.src='https://placehold.co/800x600?text=Ronin+Image'">
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer class="footer"><div class="container text-center"><p>&copy; 2025 Tirumala TVS.</p></div></footer>
+    <footer>
+        <div class="container text-center" style="padding: 20px 0; color: #666;"><p>© 2025 Tirumala TVS. All rights reserved.</p></div>
+    </footer>
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
