@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <div class="models-header" style="background: #f4f4f4; color: var(--dark); padding: 50px 0; text-align: center; border-bottom:1px solid #ddd;">
+    <div class="models-header" style="background: #f4f4f4; padding: 50px 0; text-align: center; border-bottom:1px solid #ddd;">
         <div class="container">
             <h1 style="font-size: 2.5rem; font-family: 'Oswald', sans-serif; text-transform: uppercase;">Our Complete Collection</h1>
             <p>Explore the full range of TVS vehicles available at Tirumala TVS.</p>
@@ -43,6 +43,7 @@
 
     <section class="section-padding">
         <div class="container">
+            
             <div id="motorcycles" style="margin-bottom: 80px; scroll-margin-top: 140px;">
                 <div class="classification-header"><h2>MOTORCYCLES</h2></div>
                 <div class="grid-3">
@@ -176,12 +177,20 @@
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="models.html">All Models</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="service.html">Book Service</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
                 <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
                 <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
             </div>
         </div>
         <div class="container footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navMenu");
+            nav.style.display = (nav.style.display === "block") ? "none" : "block";
+            if(nav.style.display === "block") { nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+        }
+    </script>
 </body>
 </html>
