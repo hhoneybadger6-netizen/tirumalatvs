@@ -1,12 +1,12 @@
 /* --- PREMIUM AUTOMOTIVE THEME (2025 Modern) --- */
 :root {
     /* Modern Palette */
-    --primary: #0b2351;       /* Deep Royal Navy (Premium) */
-    --primary-dark: #051636;  /* Darker Navy */
+    --primary: #0b2351;       /* Deep Royal Navy */
+    --primary-dark: #051636;
     --accent: #e31e2d;        /* Vivid TVS Red */
-    --dark: #111111;          /* Pure Black */
-    --text-grey: #444444;     /* Softer Text Black */
-    --light: #f3f6f9;         /* Cool Grey Background (Modern) */
+    --dark: #111111;
+    --text-grey: #444444;
+    --light: #f3f6f9;
     --white: #ffffff;
     
     /* Typography */
@@ -14,21 +14,21 @@
     --font-body: 'Poppins', sans-serif;
     
     /* Effects */
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Softer, modern shadow */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     --shadow-hover: 0 15px 35px rgba(11, 35, 81, 0.15);
     --transition: all 0.3s ease-in-out;
 }
 
 /* --- BROWSER RESET & BASICS --- */
 * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html { scroll-behavior: smooth; font-size: 16px; } /* Base size */
+html { scroll-behavior: smooth; font-size: 16px; }
 
 body { 
     font-family: var(--font-body); 
     background: var(--white); 
     color: var(--text-grey); 
     overflow-x: hidden; 
-    line-height: 1.5; /* Tighter line height */
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased; 
 }
 
@@ -36,23 +36,23 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 img { max-width: 100%; height: auto; display: block; }
 ul { list-style: none; }
 
-/* --- UTILITY (Refined Spacing) --- */
+/* --- UTILITY --- */
 .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
-.section-padding { padding: 60px 0; } /* Reduced from 100px to remove "Huge Rooms" */
+.section-padding { padding: 60px 0; }
 .text-center { text-align: center; }
 .bg-light { background: var(--light); }
 
-/* --- BUTTONS (Modern Pill Shape) --- */
+/* --- BUTTONS --- */
 .btn { 
     display: inline-block; 
     padding: 12px 30px; 
-    border-radius: 50px; /* Modern Pill Shape */
+    border-radius: 50px;
     font-weight: 600; 
     text-transform: uppercase; 
     letter-spacing: 0.5px; 
     border: none; 
     cursor: pointer; 
-    font-family: var(--font-body); /* Switch to Poppins for cleaner look */
+    font-family: var(--font-body);
     font-size: 0.95rem; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -61,7 +61,7 @@ ul { list-style: none; }
 .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
 .btn-outline:hover { background: var(--primary); color: var(--white); border-color: var(--primary); transform: translateY(-2px); }
 
-/* --- HEADER (Clean & Compact) --- */
+/* --- HEADER --- */
 .main-header { 
     background: var(--white); 
     position: -webkit-sticky; 
@@ -77,15 +77,15 @@ ul { list-style: none; }
 .btn-header { background: var(--accent); color: white; padding: 8px 18px; font-weight: 600; font-size: 0.8rem; border-radius: 4px; text-transform: uppercase; }
 .btn-header:hover { background: var(--dark); }
 
-/* --- NAV BAR (Modern Font Sizing) --- */
+/* --- NAV BAR --- */
 .nav-bar { background: #fff; }
 .nav-menu { display: flex; justify-content: center; align-items: center; width: 100%; max-width: 1200px; margin: 0 auto; height: 60px; gap: 35px; }
 .nav-item { position: relative; height: 100%; display: flex; align-items: center; }
 .nav-item > a { 
-    font-family: var(--font-body); /* Cleaner Font */
+    font-family: var(--font-body);
     font-weight: 600; 
     text-transform: uppercase; 
-    font-size: 0.95rem; /* Readable but not huge */
+    font-size: 0.95rem;
     color: var(--dark); 
     padding: 0 5px; 
     height: 100%; 
@@ -107,15 +107,23 @@ ul { list-style: none; }
 .btn-back { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: #666; font-size: 0.95rem; transition: 0.3s; }
 .btn-back:hover { color: var(--accent); transform: translateX(-5px); }
 
-/* --- HERO (Premium Gradient) --- */
-.hero { height: 80vh; background: url('../assets/hero-bg.jpg.jpg') center/cover no-repeat; position: relative; display: flex; align-items: center; margin-bottom: 0; }
+/* --- HERO (FIXED IMAGE PATH) --- */
+.hero { 
+    height: 80vh; 
+    /* THIS WAS THE FIX: changed hero-bg.jpg.jpg to hero-bg.jpg */
+    background: url('../assets/hero-bg.jpg') center/cover no-repeat; 
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 0; 
+}
 .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(11, 35, 81, 0.9) 0%, rgba(11, 35, 81, 0.5) 50%, rgba(0,0,0,0) 100%); }
 .hero-content { position: relative; z-index: 2; max-width: 800px; color: white; padding-left: 40px; }
 .hero h1 { font-family: var(--font-heading); font-size: 4.5rem; line-height: 1.1; margin-bottom: 20px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
 .hero p { font-size: 1.3rem; opacity: 0.9; margin-bottom: 30px; max-width: 600px; font-weight: 300; }
 .hero-buttons { display: flex; gap: 15px; }
 
-/* --- HOTLINE BANNER (Compact & Clean) --- */
+/* --- HOTLINE BANNER --- */
 .hotline-section { position: relative; z-index: 20; margin-top: -40px; margin-bottom: 40px; }
 .hotline-banner { background: #ffffff; box-shadow: 0 20px 50px rgba(0,0,0,0.1); border-radius: 8px; border-top: 5px solid var(--accent); padding: 30px 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
 .hotline-left { display: flex; align-items: center; gap: 20px; flex: 2; }
@@ -128,7 +136,7 @@ ul { list-style: none; }
 .hotline-right { flex: 1; display: flex; justify-content: flex-end; }
 .tvs-horse-logo { height: 45px; width: auto; }
 
-/* --- ACTION BAR (Modern Icons) --- */
+/* --- ACTION BAR --- */
 .action-bar { display: grid; grid-template-columns: repeat(5, 1fr); background: var(--white); padding: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); margin-top: 0; margin-bottom: 60px; position: relative; z-index: 10; border-radius: 12px; gap: 0; border: 1px solid #f0f0f0; }
 .action-item { text-align: center; border-right: 1px solid #f0f0f0; padding: 5px 10px; transition: transform 0.2s; }
 .action-item:last-child { border: none; }
@@ -146,7 +154,7 @@ ul { list-style: none; }
 .icon-box h4 { font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 5px; }
 .icon-circle { width: 45px; height: 45px; border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 15px; color: var(--accent); background: white; }
 
-/* --- GRIDS & CARDS (Clean White Look) --- */
+/* --- GRIDS & CARDS --- */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 
 .card, .clean-card { 
@@ -200,7 +208,7 @@ ul { list-style: none; }
 .btn-submit-service { width: 100%; padding: 15px; font-size: 1.1rem; border-radius: 6px; background: var(--primary); color: white; border: none; font-weight: 700; cursor: pointer; }
 .btn-submit-service:hover { background: var(--accent); }
 
-/* --- FOOTER (Clean Dark) --- */
+/* --- FOOTER --- */
 .footer-top-bar { background-color: var(--primary); color: white; padding: 35px 0; text-align: center; }
 .footer-contact-row { gap: 60px; }
 .footer-icon-circle { background: rgba(255,255,255,0.15); color: white; }
@@ -223,10 +231,9 @@ ul { list-style: none; }
 @media (max-width: 900px) {
     .header-top { flex-direction: column; gap: 10px; }
     .header-btn-group { display: none; }
-    .nav-bar { display: none; } /* Hide Desktop Nav */
+    .nav-bar { display: none; }
     .menu-toggle { display: block; position: absolute; top: 20px; right: 20px; font-size: 1.8rem; color: var(--primary); }
     
-    /* Mobile Menu Logic */
     .nav-menu { flex-direction: column; height: auto; padding: 20px 0; background: white; border-bottom: 2px solid var(--accent); }
     .nav-item { width: 100%; border-bottom: 1px solid #f0f0f0; }
     .nav-item > a { padding: 15px 20px; justify-content: space-between; font-size: 1.1rem; }
@@ -240,7 +247,6 @@ ul { list-style: none; }
     .hero-buttons { justify-content: center; flex-direction: column; }
     .btn { width: 100%; max-width: 320px; margin: 0 auto; }
 
-    /* Stack Grids */
     .hotline-banner, .action-bar, .welcome-grid, .grid-3, .footer-contact-row, .footer-cols, .pro-detail-grid { grid-template-columns: 1fr; flex-direction: column; gap: 30px; text-align: center; }
     
     .hotline-left, .hotline-numbers { flex-direction: column; width: 100%; border-bottom: none; }
@@ -251,7 +257,7 @@ ul { list-style: none; }
     .action-item { border: none; background: #f8f9fa; padding: 15px; border-radius: 8px; }
     .action-item:last-child { grid-column: span 2; }
 
-    .pro-image-side { order: -1; } /* Image first on mobile */
+    .pro-image-side { order: -1; }
     .whatsapp-float, .instagram-float { width: 55px; height: 55px; right: 20px; }
     .scroll-top-btn { right: 20px; }
 }
