@@ -12,104 +12,75 @@
     <header class="main-header">
         <div class="container header-top">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="header-btn-group">
-                <a href="index.html" class="btn-header">Back to Home</a>
+                <a href="service.html" class="btn-header">Book Service</a>
+                <a href="quotation.html" class="btn-header">Get Quotation</a>
+                <a href="testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
-        <div class="nav-bar">
-             <div class="container">
-                <ul class="nav-menu" style="justify-content:center;">
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="about.html">About</a></li>
-                    <li class="nav-item"><a href="contact.html" style="color:var(--primary);">Contact Us</a></li>
+                    <li class="nav-item"><a href="models.html">All Models</a></li>
+                    <li class="nav-item"><a href="service.html">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" style="color: var(--primary); font-weight:bold;">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <div class="models-header" style="background: #333; color: white; padding: 40px 0; text-align: center;">
+    <div class="section-padding bg-light">
         <div class="container">
-            <h1 style="font-size: 2.5rem; font-family: 'Oswald', sans-serif; text-transform: uppercase;">Contact Us</h1>
-            <p>General Enquiries, Test Drives & Feedback</p>
-        </div>
-    </div>
+            <div class="text-center section-header">
+                <h2>Get In Touch</h2>
+                <p>Visit our showroom or contact us for any queries.</p>
+            </div>
 
-    <div class="container">
-        <div class="action-bar">
-            <a href="service.html" class="action-item"><span class="icon">📅</span><span>Book Service</span></a>
-            <a href="testdrive.html" class="action-item"><span class="icon">🏍️</span><span>Test Ride</span></a>
-            <a href="https://wa.me/919964946512" class="action-item"><span class="icon">💬</span><span>WhatsApp</span></a>
-            <a href="tel:+919964946512" class="action-item"><span class="icon">📞</span><span>Call Sales</span></a>
-            <a href="tel:+919964946511" class="action-item"><span class="icon">🔧</span><span>Call Service</span></a>
-        </div>
-    </div>
-
-    <section class="service-section">
-        <div class="container">
-            <div class="service-layout">
-                <div class="service-form">
-                    <h3 style="margin-bottom: 20px;">Send a Message</h3>
-                    <form action="https://formspree.io/f/xqezrzkn" method="POST">
-                        <input type="hidden" name="_next" value="thankyou.html">
-                        <label>Name <span class="required">*</span></label>
-                        <input type="text" name="name" required>
-                        <label>Phone <span class="required">*</span></label>
-                        <input type="tel" name="phone" required>
-                        <label>Message</label>
-                        <textarea name="message" rows="4" style="width:100%; padding:10px; border:1px solid #ddd; margin-bottom:20px;"></textarea>
-                        <button type="submit" class="btn-submit-service">Submit</button>
-                    </form>
+            <div class="grid-3" style="align-items: start;">
+                <div class="clean-card" style="padding: 30px; text-align: left;">
+                    <h3 style="color: var(--primary);">Showroom Address</h3>
+                    <p style="margin-bottom: 20px;">Tirumala TVS, Main Road,<br>Bidarahalli, Bangalore - 560049</p>
+                    
+                    <h3 style="color: var(--primary);">Phone</h3>
+                    <p><strong>Sales:</strong> <a href="tel:+919964946512" style="color:var(--accent);">+91 99649 46512</a></p>
+                    <p style="margin-bottom: 20px;"><strong>Service:</strong> <a href="tel:+919964946511" style="color:var(--accent);">+91 99649 46511</a></p>
+                    
+                    <h3 style="color: var(--primary);">Email</h3>
+                    <p>tirumalatvs716@gmail.com</p>
                 </div>
 
-                <div class="service-info">
-                    <h3>Visit Showroom</h3>
-                    <div class="step-item"><div class="step-text"><strong>Address:</strong><br>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</div></div>
-                    
-                    <div class="step-item">
-                        <div class="step-text">
-                            <strong>Sales:</strong> <a href="tel:+919964946512">+91 99649 46512</a><br>
-                            <strong>Service:</strong> <a href="tel:+919964946511">+91 99649 46511</a>
-                        </div>
-                    </div>
-
-                    <div class="step-item"><div class="step-text"><strong>Email:</strong><br>tirumalatvs716@gmail.com</div></div>
+                <div class="clean-card" style="grid-column: span 2; height: 400px; padding: 0;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.188496283734!2d77.70997737507736!3d13.023665987296488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae106655555555%3A0x6666666666666666!2sBidarahalli%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer>
         <div class="footer-top-bar">
             <div class="container footer-contact-row">
-                <div class="footer-contact-item"><div class="footer-icon-circle">✉</div><div class="footer-contact-text">tirumalatvs716@gmail.com</div></div>
-                <div class="footer-contact-item"><div class="footer-icon-circle">📞</div>
-                    <div>
-                        <div class="footer-contact-text">Sales: +91 99649 46512</div>
-                        <div class="footer-contact-text" style="font-size: 0.9em; opacity: 0.9;">Service: +91 99649 46511</div>
-                    </div>
-                </div>
+                <div class="footer-contact-item"><div class="footer-icon-circle">✉</div><div>tirumalatvs716@gmail.com</div></div>
+                <div class="footer-contact-item"><div class="footer-icon-circle">📞</div><div>Sales: +91 99649 46512</div></div>
             </div>
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="testdrive.html">Test Drive</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="models.html">All Models</a></li></ul></div>
                 <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
-                <div class="footer-col"><h4>Showrooms</h4><ul class="footer-links"><li><a href="contact.html">Tirumala TVS Bidarahalli</a></li></ul></div>
+                <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
             </div>
         </div>
-        <div class="container"><div class="footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div></div>
+        <div class="container footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div>
     </footer>
 
-    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
-    <a href="https://www.instagram.com/tirumalatvs_bidarahalli/" class="instagram-float" target="_blank">📸</a>
-    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
-
     <script>
-        window.addEventListener('scroll', function() {
-            var scrollBtn = document.querySelector('.scroll-top-btn');
-            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } 
-            else { scrollBtn.classList.remove('visible'); }
-        });
+        function toggleMenu() {
+            var nav = document.getElementById("navMenu");
+            nav.style.display = (nav.style.display === "block") ? "none" : "block";
+            if(nav.style.display === "block") { nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+        }
     </script>
 </body>
 </html>
