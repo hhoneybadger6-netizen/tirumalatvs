@@ -107,10 +107,9 @@ ul { list-style: none; }
 .btn-back { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: #666; font-size: 0.95rem; transition: 0.3s; }
 .btn-back:hover { color: var(--accent); transform: translateX(-5px); }
 
-/* --- HERO (FIXED IMAGE PATH) --- */
+/* --- HERO --- */
 .hero { 
     height: 80vh; 
-    /* THIS WAS THE FIX: changed hero-bg.jpg.jpg to hero-bg.jpg */
     background: url('../assets/hero-bg.jpg') center/cover no-repeat; 
     position: relative; 
     display: flex; 
@@ -212,11 +211,42 @@ ul { list-style: none; }
 .footer-top-bar { background-color: var(--primary); color: white; padding: 35px 0; text-align: center; }
 .footer-contact-row { gap: 60px; }
 .footer-icon-circle { background: rgba(255,255,255,0.15); color: white; }
+
 .footer-main { background-color: #f8f9fa; padding: 70px 0; border-bottom: 1px solid #e0e0e0; }
-.footer-col h4 { color: var(--primary); font-size: 1.2rem; margin-bottom: 25px; letter-spacing: 1px; }
-.footer-links a { font-size: 1rem; color: #555; padding: 5px 0; display: block; }
-.footer-links a:hover { color: var(--accent); transform: translateX(5px); }
-.footer-bottom { background: #fff; color: #888; font-size: 0.9rem; padding: 20px 0; }
+
+.footer-cols { 
+    display: grid; 
+    /* FIXED: 3 columns to match content */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    /* FIXED: Center text alignment */
+    text-align: center; 
+}
+
+.footer-col h4 { 
+    color: var(--primary); 
+    font-size: 1.2rem; 
+    margin-bottom: 25px; 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+}
+
+.footer-links li { margin-bottom: 12px; }
+
+.footer-links a { 
+    font-size: 1rem; 
+    color: #555; 
+    padding: 5px 0; 
+    display: inline-block; 
+    transition: 0.3s;
+}
+
+.footer-links a:hover { 
+    color: var(--accent); 
+    transform: translateX(5px); 
+}
+
+.footer-bottom { background: #fff; color: #888; font-size: 0.9rem; padding: 20px 0; text-align: center; }
 
 /* --- FLOATING BUTTONS --- */
 .whatsapp-float, .instagram-float { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: fixed; right: 25px; z-index: 10000; font-size: 30px; color: white !important; box-shadow: 0 5px 20px rgba(0,0,0,0.25); transition: 0.3s; }
@@ -247,8 +277,10 @@ ul { list-style: none; }
     .hero-buttons { justify-content: center; flex-direction: column; }
     .btn { width: 100%; max-width: 320px; margin: 0 auto; }
 
-    .hotline-banner, .action-bar, .welcome-grid, .grid-3, .footer-contact-row, .footer-cols, .pro-detail-grid { grid-template-columns: 1fr; flex-direction: column; gap: 30px; text-align: center; }
+    .hotline-banner, .action-bar, .welcome-grid, .grid-3, .footer-contact-row, .pro-detail-grid { grid-template-columns: 1fr; flex-direction: column; gap: 30px; text-align: center; }
     
+    .footer-cols { grid-template-columns: 1fr; gap: 30px; } /* Footer stacks on mobile */
+
     .hotline-left, .hotline-numbers { flex-direction: column; width: 100%; border-bottom: none; }
     .hotline-center { border-left: none; padding: 0; }
     .hotline-right { justify-content: center; }
