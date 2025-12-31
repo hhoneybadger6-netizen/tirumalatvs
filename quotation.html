@@ -12,23 +12,28 @@
     <header class="main-header">
         <div class="container header-top">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="header-btn-group">
                 <a href="service.html" class="btn-header">Book Service</a>
                 <a href="quotation.html" class="btn-header">Get Quotation</a>
                 <a href="testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
-        <div class="nav-bar"><div class="container"><ul class="nav-menu">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><a href="models.html">All Models</a></li>
-            <li class="nav-item"><a href="contact.html">Contact</a></li>
-        </ul></div></div>
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="models.html">All Models</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <div class="section-padding bg-light">
         <div class="container">
-            <div class="text-center" style="margin-bottom: 40px;">
-                <h1 style="font-family: 'Oswald'; color: var(--primary); text-transform: uppercase;">Get On-Road Price</h1>
+            <div class="text-center section-header">
+                <h2>Get On-Road Price</h2>
                 <p>Get the best price quote for your dream TVS vehicle.</p>
             </div>
 
@@ -38,11 +43,11 @@
                 <label>Select Model</label>
                 <select>
                     <option>Select Vehicle</option>
-                    <option>Jupiter 110/125</option>
-                    <option>Ntorq 125</option>
-                    <option>Apache Series</option>
-                    <option>Raider 125</option>
-                    <option>iQube Electric</option>
+                    <option>Jupiter</option>
+                    <option>Ntorq</option>
+                    <option>Apache</option>
+                    <option>Raider</option>
+                    <option>iQube</option>
                     <option>XL100</option>
                 </select>
                 <label>Message (Optional)</label><textarea rows="3" placeholder="Any specific requirements?"></textarea>
@@ -60,14 +65,28 @@
     </div>
 
     <footer>
-        <div class="footer-main">
-            <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="service.html">Book Service</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
-                <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
-                <div class="footer-col"><h4>Contact</h4><p>Sales: +91 99649 46512<br>Service: +91 99649 46511</p></div>
+        <div class="footer-top-bar">
+            <div class="container footer-contact-row">
+                <div class="footer-contact-item"><div class="footer-icon-circle">✉</div><div>tirumalatvs716@gmail.com</div></div>
+                <div class="footer-contact-item"><div class="footer-icon-circle">📞</div><div>Sales: +91 99649 46512</div></div>
             </div>
         </div>
-        <div class="container footer-bottom"><p>© 2025 Tirumala TVS. All rights reserved.</p></div>
+        <div class="footer-main">
+            <div class="container footer-cols">
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="models.html">All Models</a></li></ul></div>
+                <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
+                <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
+            </div>
+        </div>
+        <div class="container footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navMenu");
+            nav.style.display = (nav.style.display === "block") ? "none" : "block";
+            if(nav.style.display === "block") { nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+        }
+    </script>
 </body>
 </html>
