@@ -62,12 +62,86 @@
         </div>
     </section>
 
+    <div class="container hotline-section">
+        <div class="hotline-banner">
+            <div class="hotline-left">
+                <div class="hotline-circle">📞</div>
+                <div class="hotline-numbers">
+                    <div class="number-block">
+                        <span>Sales Hotline</span>
+                        <a href="tel:+919964946512">+91 99649 46512</a>
+                    </div>
+                    <div class="number-block">
+                        <span>Service Hotline</span>
+                        <a href="tel:+919964946511">+91 99649 46511</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hotline-center">Use our hotline for quick get<br>in touch for 24 hours.</div>
+            <div class="hotline-right">
+                <div style="font-family:'Oswald'; font-weight:bold; font-size:1.5rem; color:#e31e2d; font-style:italic;">TVS Racing 🐎</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center section-header" style="margin-bottom:40px;">
+                <h2 style="font-family:'Oswald'; color:#0b2351; font-size:2.5rem; text-transform:uppercase;">Top Selling Vehicles</h2>
+                <p>Our customers' favorite rides.</p>
+            </div>
+            <div class="grid-3">
+                <a href="models/jupiter113.html" class="clean-card">
+                    <div class="clean-card-content">
+                        <h3>New Jupiter 110</h3>
+                        <div class="price">Zyada Ka Fayda</div>
+                        <div class="clean-card-img"><img src="assets/jupiter113.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'"></div>
+                    </div>
+                </a>
+                <a href="models/ntorq125.html" class="clean-card">
+                    <div class="clean-card-content">
+                        <h3>TVS Ntorq 125</h3>
+                        <div class="price">Play Smart</div>
+                        <div class="clean-card-img"><img src="assets/ntorq125.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400?text=Ntorq+125'"></div>
+                    </div>
+                </a>
+                <a href="models/raider.html" class="clean-card">
+                    <div class="clean-card-content">
+                        <h3>TVS Raider 125</h3>
+                        <div class="price">The Wicked Ride</div>
+                        <div class="clean-card-img"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'"></div>
+                    </div>
+                </a>
+                <a href="models/iqube.html" class="clean-card">
+                    <div class="clean-card-content">
+                        <h3>TVS iQube</h3>
+                        <div class="price">Smartly Simple</div>
+                        <div class="clean-card-img"><img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400?text=iQube'"></div>
+                    </div>
+                </a>
+                <a href="models/zest110.html" class="clean-card">
+                    <div class="clean-card-content">
+                        <h3>Scooty Zest 110</h3>
+                        <div class="price">Compact Power</div>
+                        <div class="clean-card-img"><img src="assets/zest110.jpg" alt="Zest" onerror="this.src='https://placehold.co/600x400?text=Zest+110'"></div>
+                    </div>
+                </a>
+                <a href="models/apache160.html" class="clean-card">
+                    <div class="clean-card-content">
+                        <h3>Apache RTR 160 4V</h3>
+                        <div class="price">Racing DNA</div>
+                        <div class="clean-card-img"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=Apache+160'"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-top-bar">
-            <div class="container">
-                <div class="text-center" style="color: white; font-weight: bold;">
-                    Need Help? Call Sales: +91 99649 46512
-                </div>
+            <div class="container footer-contact-row">
+                <div class="footer-contact-item"><div class="footer-icon-circle">✉</div><div>tirumalatvs716@gmail.com</div></div>
+                <div class="footer-contact-item"><div class="footer-icon-circle">📞</div><div>Sales: +91 99649 46512</div></div>
             </div>
         </div>
         <div class="footer-main">
@@ -77,13 +151,18 @@
                 <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
             </div>
         </div>
-        <div class="container"><div class="footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div></div>
+        <div class="container footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div>
     </footer>
+
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    <a href="https://www.instagram.com/tirumalatvs_bidarahalli/" class="instagram-float" target="_blank">📸</a>
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <script>
         function toggleMenu() {
             var nav = document.getElementById("navMenu");
             nav.style.display = (nav.style.display === "block") ? "none" : "block";
+            if(nav.style.display === "block") { nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
         }
     </script>
 </body>
