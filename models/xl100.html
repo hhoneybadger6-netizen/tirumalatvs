@@ -29,6 +29,10 @@
         </div>
     </header>
 
+    <div class="container back-btn-wrapper">
+        <a href="../models.html" class="btn-back">← Back to All Models</a>
+    </div>
+
     <div class="model-hero" style="background: linear-gradient(to right, #f8f9fa, #eef2f5); padding: 60px 0;">
         <div class="container" style="text-align: center;">
             <h1 class="model-title" style="color: #1a3b8c;">TVS XL100 Heavy Duty</h1>
@@ -38,6 +42,7 @@
 
     <div class="container pro-detail-section">
         <div class="pro-detail-grid">
+            
             <div class="pro-text-side">
                 <h2>Overview</h2>
                 <p>The <strong>TVS XL100 Heavy Duty</strong> is India's most reliable multi-utility vehicle. Built tough for heavy loads, it now comes with i-Touch Start technology for silent and instant starting. It is the perfect partner for your business needs.</p>
@@ -64,15 +69,36 @@
                     <a href="../quotation.html" class="btn btn-outline">Get Price Quote</a>
                 </div>
             </div>
+
             <div class="pro-image-side">
-                <img src="../assets/xl100.jpg" alt="TVS XL100" onerror="this.src='https://placehold.co/800x600?text=XL100+Image'">
+                <img src="../assets/xl100.jpg" alt="TVS XL100 Heavy Duty" onerror="this.src='https://placehold.co/800x600?text=XL100+Image'">
             </div>
+
         </div>
     </div>
 
     <footer>
-        <div class="container text-center" style="padding: 20px 0; color: #666;"><p>© 2025 Tirumala TVS. All rights reserved.</p></div>
+        <div class="footer-top-bar">
+            <div class="container footer-contact-row">
+                <div class="footer-contact-item"><div class="footer-icon-circle">✉</div><div class="footer-contact-text">tirumalatvs716@gmail.com</div></div>
+                <div class="footer-contact-item"><div class="footer-icon-circle">📞</div><div><div class="footer-contact-text">Sales: +91 99649 46512</div><div class="footer-contact-text" style="font-size:0.9em; opacity:0.9;">Service: +91 99649 46511</div></div></div>
+            </div>
+        </div>
+        <div class="container text-center" style="padding: 20px 0; color: #666;">
+            <p>© 2025 Tirumala TVS. All rights reserved.</p>
+        </div>
     </footer>
+
     <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollBtn = document.querySelector('.scroll-top-btn');
+            if (window.scrollY > 300) { scrollBtn.classList.add('visible'); } 
+            else { scrollBtn.classList.remove('visible'); }
+        });
+    </script>
+
 </body>
 </html>
