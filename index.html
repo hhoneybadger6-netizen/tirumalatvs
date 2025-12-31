@@ -12,6 +12,7 @@
     <header class="main-header">
         <div class="container header-top">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="header-btn-group">
                 <a href="service.html" class="btn-header">Book Service</a>
@@ -85,21 +86,20 @@
 
     <section class="section-padding">
         <div class="container">
-            <div class="welcome-grid">
+            <div class="welcome-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
                 <div class="welcome-text">
-                    <span class="welcome-badge">AUTHORIZED DEALER</span>
-                    <h2>The Tirumala TVS Legacy</h2>
-                    <p>Welcome to Tirumala TVS, your most trusted partner for TVS Motor Company in Bangalore. We are dedicated to delivering the "Racing DNA" experience to every customer, offering a complete range of motorcycles, scooters, and electric vehicles.</p>
-                    <ul class="welcome-check-list">
-                        <li>✅ Genuine Spare Parts & Accessories</li>
-                        <li>✅ Certified Service Engineers</li>
-                        <li>✅ Best Exchange Value Assured</li>
-                        <li>✅ Quick Finance & Loan Options</li>
+                    <span style="font-weight: bold; background: rgba(11, 35, 81, 0.1); color: var(--primary); padding: 5px 15px; border-radius: 30px; font-size: 0.85rem; letter-spacing: 1px;">AUTHORIZED DEALER</span>
+                    <h2 style="font-family: 'Oswald'; font-size: 3rem; margin: 20px 0; color: var(--primary); text-transform: uppercase;">The Tirumala TVS Legacy</h2>
+                    <p style="margin-bottom: 25px; line-height: 1.8;">Welcome to Tirumala TVS, your most trusted partner for TVS Motor Company in Bangalore. We are dedicated to delivering the "Racing DNA" experience to every customer, offering a complete range of motorcycles, scooters, and electric vehicles.</p>
+                    <ul style="margin-bottom: 30px;">
+                        <li style="margin-bottom: 10px;">✅ Genuine Spare Parts & Accessories</li>
+                        <li style="margin-bottom: 10px;">✅ Certified Service Engineers</li>
+                        <li style="margin-bottom: 10px;">✅ Best Exchange Value Assured</li>
                     </ul>
-                    <a href="about.html" class="btn btn-primary" style="margin-top: 20px;">Read More About Us</a>
+                    <a href="about.html" class="btn btn-primary">Read More About Us</a>
                 </div>
                 <div class="welcome-image">
-                    <img src="assets/apache160.jpg" alt="Tirumala TVS Showroom" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <img src="assets/apache160.jpg" alt="Tirumala TVS Showroom" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%;">
                 </div>
             </div>
         </div>
@@ -107,51 +107,63 @@
 
     <section class="section-padding bg-light">
         <div class="container">
-            <div class="section-header">
-                <h2>Top Selling Vehicles</h2>
+            <div class="text-center section-header" style="margin-bottom: 40px;">
+                <h2 style="font-family: 'Oswald'; color: var(--primary); font-size: 2.5rem; text-transform: uppercase;">Top Selling Vehicles</h2>
                 <p>Our customers' favorite rides.</p>
             </div>
+            
             <div class="grid-3">
                 <a href="models/jupiter113.html" class="clean-card">
+                    <div class="clean-card-img"><img src="assets/jupiter113.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'"></div>
                     <div class="clean-card-content">
                         <h3>New Jupiter 110</h3>
                         <div class="price">Zyada Ka Fayda</div>
-                        <div class="clean-card-img"><img src="assets/jupiter113.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'"></div>
+                        <span class="btn btn-outline btn-block" style="font-size:0.8rem; padding:8px;">View Details</span>
                     </div>
                 </a>
+
                 <a href="models/ntorq125.html" class="clean-card">
+                    <div class="clean-card-img"><img src="assets/ntorq125.jpg" alt="Ntorq 125" onerror="this.src='https://placehold.co/600x400?text=Ntorq+125'"></div>
                     <div class="clean-card-content">
                         <h3>TVS Ntorq 125</h3>
                         <div class="price">Play Smart</div>
-                        <div class="clean-card-img"><img src="assets/ntorq125.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400?text=Ntorq+125'"></div>
+                        <span class="btn btn-outline btn-block" style="font-size:0.8rem; padding:8px;">View Details</span>
                     </div>
                 </a>
+
                 <a href="models/raider.html" class="clean-card">
+                    <div class="clean-card-img"><img src="assets/raider.jpg" alt="Raider 125" onerror="this.src='https://placehold.co/600x400?text=Raider+125'"></div>
                     <div class="clean-card-content">
                         <h3>TVS Raider 125</h3>
                         <div class="price">The Wicked Ride</div>
-                        <div class="clean-card-img"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'"></div>
+                        <span class="btn btn-outline btn-block" style="font-size:0.8rem; padding:8px;">View Details</span>
                     </div>
                 </a>
+
                 <a href="models/iqube.html" class="clean-card">
+                    <div class="clean-card-img"><img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400?text=iQube'"></div>
                     <div class="clean-card-content">
                         <h3>TVS iQube</h3>
                         <div class="price">Smartly Simple</div>
-                        <div class="clean-card-img"><img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400?text=iQube'"></div>
+                        <span class="btn btn-outline btn-block" style="font-size:0.8rem; padding:8px;">View Details</span>
                     </div>
                 </a>
+
                 <a href="models/zest110.html" class="clean-card">
+                    <div class="clean-card-img"><img src="assets/zest110.jpg" alt="Zest 110" onerror="this.src='https://placehold.co/600x400?text=Zest+110'"></div>
                     <div class="clean-card-content">
                         <h3>Scooty Zest 110</h3>
                         <div class="price">Compact Power</div>
-                        <div class="clean-card-img"><img src="assets/zest110.jpg" alt="Zest" onerror="this.src='https://placehold.co/600x400?text=Zest+110'"></div>
+                        <span class="btn btn-outline btn-block" style="font-size:0.8rem; padding:8px;">View Details</span>
                     </div>
                 </a>
+
                 <a href="models/apache160.html" class="clean-card">
+                    <div class="clean-card-img"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=Apache+160'"></div>
                     <div class="clean-card-content">
                         <h3>Apache RTR 160 4V</h3>
                         <div class="price">Racing DNA</div>
-                        <div class="clean-card-img"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=Apache+160'"></div>
+                        <span class="btn btn-outline btn-block" style="font-size:0.8rem; padding:8px;">View Details</span>
                     </div>
                 </a>
             </div>
@@ -160,40 +172,26 @@
 
     <section class="section-padding">
         <div class="container">
-            <div class="section-header">
-                <h2>Happy Riders</h2>
+            <div class="text-center section-header" style="margin-bottom: 40px;">
+                <h2 style="font-family: 'Oswald'; color: var(--primary); font-size: 2.5rem; text-transform: uppercase;">Happy Riders</h2>
                 <p>What our customers say about Tirumala TVS.</p>
             </div>
+            
             <div class="grid-3">
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Excellent service! Bought my Ntorq 125 here. The delivery was on time and the staff explained all features clearly."</p>
-                    <div class="reviewer-name">- Rahul K.</div>
+                <div class="clean-card" style="padding: 30px; text-align: left;">
+                    <div style="color: #FFD700; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Excellent service! Bought my Ntorq 125 here. The delivery was on time and the staff explained all features clearly."</p>
+                    <strong style="color: var(--primary);">- Rahul K.</strong>
                 </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Best showroom in Bidarahalli. Very transparent pricing and quick loan approval process. Highly recommended!"</p>
-                    <div class="reviewer-name">- Priya S.</div>
+                <div class="clean-card" style="padding: 30px; text-align: left;">
+                    <div style="color: #FFD700; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Best showroom in Bidarahalli. Very transparent pricing and quick loan approval process. Highly recommended!"</p>
+                    <strong style="color: var(--primary);">- Priya S.</strong>
                 </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★☆</div>
-                    <p class="review-text">"Good servicing experience. They picked up my bike and dropped it back. Very convenient."</p>
-                    <div class="reviewer-name">- Amit Verma</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Got my iQube electric scooter. The team guided me on the subsidy process very well."</p>
-                    <div class="reviewer-name">- Sneha R.</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Friendly staff and good ambience. Keep up the good work Tirumala TVS!"</p>
-                    <div class="reviewer-name">- Mohammed I.</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Wide range of helmets and accessories available too. One stop shop for TVS lovers."</p>
-                    <div class="reviewer-name">- Karthik Gowda</div>
+                <div class="clean-card" style="padding: 30px; text-align: left;">
+                    <div style="color: #FFD700; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    <p style="font-style: italic; color: #555; margin-bottom: 20px;">"Got my iQube electric scooter. The team guided me on the subsidy process very well."</p>
+                    <strong style="color: var(--primary);">- Sneha R.</strong>
                 </div>
             </div>
         </div>
