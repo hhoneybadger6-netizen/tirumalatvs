@@ -207,7 +207,7 @@ ul { list-style: none; }
 .btn-submit-service { width: 100%; padding: 15px; font-size: 1.1rem; border-radius: 6px; background: var(--primary); color: white; border: none; font-weight: 700; cursor: pointer; }
 .btn-submit-service:hover { background: var(--accent); }
 
-/* --- FOOTER --- */
+/* --- FOOTER (FIXED ALIGNMENT) --- */
 .footer-top-bar { background-color: var(--primary); color: white; padding: 35px 0; text-align: center; }
 .footer-contact-row { gap: 60px; }
 .footer-icon-circle { background: rgba(255,255,255,0.15); color: white; }
@@ -215,12 +215,17 @@ ul { list-style: none; }
 .footer-main { background-color: #f8f9fa; padding: 70px 0; border-bottom: 1px solid #e0e0e0; }
 
 .footer-cols { 
-    display: grid; 
-    /* FIXED: 3 columns to match content */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 40px; 
-    /* FIXED: Center text alignment */
+    display: flex; 
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; 
     text-align: center; 
+}
+
+.footer-col { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .footer-col h4 { 
@@ -279,7 +284,8 @@ ul { list-style: none; }
 
     .hotline-banner, .action-bar, .welcome-grid, .grid-3, .footer-contact-row, .pro-detail-grid { grid-template-columns: 1fr; flex-direction: column; gap: 30px; text-align: center; }
     
-    .footer-cols { grid-template-columns: 1fr; gap: 30px; } /* Footer stacks on mobile */
+    /* Center Footer on Mobile */
+    .footer-cols { flex-direction: column; gap: 40px; }
 
     .hotline-left, .hotline-numbers { flex-direction: column; width: 100%; border-bottom: none; }
     .hotline-center { border-left: none; padding: 0; }
