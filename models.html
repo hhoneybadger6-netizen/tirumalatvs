@@ -6,6 +6,10 @@
     <title>All Models | Tirumala TVS</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .classification-header { margin: 40px 0 20px; padding: 10px 20px; background: #f0f0f0; border-left: 5px solid var(--accent); }
+        .classification-header h2 { font-family: var(--font-heading); font-size: 1.8rem; color: var(--primary); margin: 0; }
+    </style>
 </head>
 <body>
 
@@ -19,7 +23,7 @@
                 <a href="testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
-        <div class="nav-bar" id="navMenu">
+        <nav class="nav-bar" id="navMenu">
             <div class="container">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html">Home</a></li>
@@ -31,10 +35,10 @@
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <div class="models-header" style="background: #f4f4f4; padding: 50px 0; text-align: center; border-bottom:1px solid #ddd;">
+    <div style="background: #f4f4f4; padding: 50px 0; text-align: center; border-bottom:1px solid #ddd;">
         <div class="container">
             <h1 style="font-size: 2.5rem; font-family: 'Oswald', sans-serif; text-transform: uppercase;">Our Complete Collection</h1>
             <p>Explore the full range of TVS vehicles available at Tirumala TVS.</p>
@@ -44,7 +48,7 @@
     <section class="section-padding">
         <div class="container">
             
-            <div id="motorcycles" style="margin-bottom: 80px; scroll-margin-top: 140px;">
+            <div id="motorcycles">
                 <div class="classification-header"><h2>MOTORCYCLES</h2></div>
                 <div class="grid-3">
                     <a href="models/rr310.html" class="clean-card">
@@ -67,7 +71,7 @@
                         <div class="clean-card-img"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=Apache+160'"></div>
                         <div class="clean-card-content">
                             <h3>Apache RTR 160 4V</h3>
-                            <div class="price">Unleash The Racing DNA</div>
+                            <div class="price">Racing DNA</div>
                             <span class="btn btn-outline btn-block">View Details</span>
                         </div>
                     </a>
@@ -106,7 +110,7 @@
                 </div>
             </div>
             
-            <div id="scooters" style="margin-bottom: 80px; scroll-margin-top: 140px;">
+            <div id="scooters" style="margin-top: 60px;">
                 <div class="classification-header"><h2>SCOOTERS</h2></div>
                 <div class="grid-3">
                     <a href="models/jupiter113.html" class="clean-card">
@@ -144,7 +148,7 @@
                 </div>
             </div>
             
-            <div id="electric" style="margin-bottom: 80px; scroll-margin-top: 140px;">
+            <div id="electric" style="margin-top: 60px;">
                 <div class="classification-header"><h2>ELECTRIC & MOPEDS</h2></div>
                 <div class="grid-3">
                     <a href="models/iqube.html" class="clean-card">
@@ -165,6 +169,7 @@
                     </a>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -177,19 +182,19 @@
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="service.html">Book Service</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
-                <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="service.html">Book Service</a><a href="contact.html">Contact Us</a></div></div>
+                <div class="footer-col"><h4>Models</h4><div class="footer-links"><a href="models.html#motorcycles">Motorcycles</a><a href="models.html#scooters">Scooters</a></div></div>
                 <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
             </div>
         </div>
-        <div class="container footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div>
+        <div class="footer-bottom">
+            <div class="container">Copyright © 2025 Tirumala TVS. All rights reserved.</div>
+        </div>
     </footer>
 
     <script>
         function toggleMenu() {
-            var nav = document.getElementById("navMenu");
-            nav.style.display = (nav.style.display === "block") ? "none" : "block";
-            if(nav.style.display === "block") { nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+            document.getElementById("navMenu").classList.toggle("active");
         }
     </script>
 </body>
