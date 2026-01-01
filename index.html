@@ -12,6 +12,7 @@
     <header class="main-header">
         <div class="container header-top">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <div class="header-btn-group">
                 <a href="service.html" class="btn-header">Book Service</a>
@@ -50,49 +51,14 @@
     </header>
 
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Unleash The <br><span style="color: #ffcc00;">Racing DNA</span></h1>
+            <h1>Unleash The <br><span style="color: var(--accent);">Racing DNA</span></h1>
             <p>Your Authorized TVS Main Dealership in Bidarahalli, Bangalore.</p>
             <div class="hero-buttons">
                 <a href="models.html" class="btn btn-primary">Explore Inventory</a>
-                <a href="contact.html" class="btn btn-outline">Visit Showroom</a>
+                <a href="contact.html" class="btn btn-outline" style="color:white; border-color:white; box-shadow: inset 0 0 0 2px white;">Visit Showroom</a>
             </div>
-        </div>
-    </section>
-
-    <section class="festival-banner">
-        <div class="container">
-            <h2 class="festival-title">🎄 MEGA FESTIVAL OFFER 🎉</h2>
-            <p style="font-size:1.1rem; margin-bottom:20px; opacity: 0.9;">Christmas • New Year • Sankranti • Shivaratri</p>
-            
-            <div class="festival-grid">
-                <div class="festival-offer-box">
-                    <div class="offer-highlight">FREE GIFTS 🎁</div>
-                    <ul class="offer-list">
-                        <li>✅ Free <strong>HELMET</strong></li>
-                        <li>✅ Free <strong>BODY COVER</strong></li>
-                        <li>✅ Accessories @ <strong>60% OFF</strong></li>
-                    </ul>
-                </div>
-                <div class="festival-offer-box" style="background:rgba(255,255,255,0.2); border:2px solid #ffcc00;">
-                    <div class="offer-highlight">FINANCE DEALS 💰</div>
-                    <ul class="offer-list">
-                        <li>✅ <strong>₹2,000 Cash Back</strong></li>
-                        <li>✅ Low Down Payment</li>
-                        <li>✅ Low Interest Rates</li>
-                        <li>✅ Spot Finance Delivery</li>
-                    </ul>
-                </div>
-                <div class="festival-offer-box">
-                    <div class="offer-highlight">SERVICE SPECIAL 🛠️</div>
-                    <ul class="offer-list">
-                        <li>✅ Labour: <strong>10% DISCOUNT</strong></li>
-                        <li>✅ Spares: <strong>5% DISCOUNT</strong></li>
-                        <li>✅ Pickup & Drop Available</li>
-                    </ul>
-                </div>
-            </div>
-            <p style="margin-top:20px; font-size:0.8rem; opacity:0.7;">*T&C Apply. Valid for limited period.</p>
         </div>
     </section>
 
@@ -112,6 +78,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="hotline-center">Reach out for quick assistance.<br>Available 24/7 for queries.</div>
                 <div class="hotline-right">TVS Racing 🐎</div>
             </div>
         </div>
@@ -119,15 +86,15 @@
 
     <section class="section-padding">
         <div class="container">
-            <div class="welcome-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;" class="welcome-grid">
                 <div class="welcome-text">
-                    <span style="font-weight: bold; color: var(--primary);">EST. 2025</span>
-                    <h2 style="font-size: 2.5rem; margin: 15px 0;">The Tirumala TVS Legacy</h2>
-                    <p style="margin-bottom: 20px;">Welcome to Tirumala TVS, your newest and most trusted partner for TVS Motor Company in Bangalore.</p>
+                    <span style="font-weight: bold; background: rgba(11, 35, 81, 0.1); color: var(--primary); padding: 5px 15px; border-radius: 30px; font-size: 0.85rem; letter-spacing: 1px;">AUTHORIZED DEALER</span>
+                    <h2 style="font-family: 'Oswald'; font-size: 3rem; margin: 20px 0; color: var(--primary); text-transform: uppercase;">The Tirumala TVS Legacy</h2>
+                    <p style="margin-bottom: 25px; line-height: 1.8;">Welcome to Tirumala TVS, your most trusted partner for TVS Motor Company in Bangalore. We are dedicated to delivering the "Racing DNA" experience to every customer.</p>
                     <a href="about.html" class="btn btn-primary">Read More About Us</a>
                 </div>
                 <div class="welcome-image">
-                    <img src="assets/apache160.jpg" alt="Tirumala TVS Showroom" style="border-radius: 8px;">
+                    <img src="assets/apache160.jpg" alt="Tirumala TVS Showroom" style="border-radius: 12px; box-shadow: var(--shadow-pop); width: 100%;">
                 </div>
             </div>
         </div>
@@ -137,14 +104,16 @@
         <div class="container">
             <div class="text-center section-header">
                 <h2>6 Hot Selling Vehicles</h2>
+                <p>Our customers' favorite rides.</p>
             </div>
+            
             <div class="grid-3">
                 <a href="models/jupiter113.html" class="clean-card">
                     <div class="clean-card-img"><img src="assets/jupiter113.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'"></div>
                     <div class="clean-card-content">
                         <h3>New Jupiter 110</h3>
                         <div class="price">Zyada Ka Fayda</div>
-                        <span class="btn btn-block btn-primary">View Details</span>
+                        <span class="btn btn-primary btn-block">View Details</span>
                     </div>
                 </a>
                 <a href="models/ntorq125.html" class="clean-card">
@@ -152,7 +121,7 @@
                     <div class="clean-card-content">
                         <h3>TVS Ntorq 125</h3>
                         <div class="price">Play Smart</div>
-                        <span class="btn btn-block btn-primary">View Details</span>
+                        <span class="btn btn-primary btn-block">View Details</span>
                     </div>
                 </a>
                 <a href="models/raider.html" class="clean-card">
@@ -160,7 +129,7 @@
                     <div class="clean-card-content">
                         <h3>TVS Raider 125</h3>
                         <div class="price">The Wicked Ride</div>
-                        <span class="btn btn-block btn-primary">View Details</span>
+                        <span class="btn btn-primary btn-block">View Details</span>
                     </div>
                 </a>
                 <a href="models/iqube.html" class="clean-card">
@@ -168,7 +137,7 @@
                     <div class="clean-card-content">
                         <h3>TVS iQube</h3>
                         <div class="price">Smartly Simple</div>
-                        <span class="btn btn-block btn-primary">View Details</span>
+                        <span class="btn btn-primary btn-block">View Details</span>
                     </div>
                 </a>
                 <a href="models/zest110.html" class="clean-card">
@@ -176,7 +145,7 @@
                     <div class="clean-card-content">
                         <h3>Scooty Zest 110</h3>
                         <div class="price">Compact Power</div>
-                        <span class="btn btn-block btn-primary">View Details</span>
+                        <span class="btn btn-primary btn-block">View Details</span>
                     </div>
                 </a>
                 <a href="models/apache160.html" class="clean-card">
@@ -184,16 +153,117 @@
                     <div class="clean-card-content">
                         <h3>Apache RTR 160 4V</h3>
                         <div class="price">Racing DNA</div>
-                        <span class="btn btn-block btn-primary">View Details</span>
+                        <span class="btn btn-primary btn-block">View Details</span>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2>6 Recent Awards</h2>
+                <p>Excellence recognized globally.</p>
+            </div>
+            <div class="grid-3">
+                <div class="award-card">
+                    <span class="award-icon">🏆</span>
+                    <h3>Car & Bike Awards 2025</h3>
+                    <p>Upgrade of the Year - <strong>TVS Apache RR 310</strong></p>
+                </div>
+                <div class="award-card">
+                    <span class="award-icon">🥇</span>
+                    <h3>J.D. Power Award 2024</h3>
+                    <p>Most Appealing Economy Scooter - <strong>TVS Jupiter 110</strong></p>
+                </div>
+                <div class="award-card">
+                    <span class="award-icon">⚡</span>
+                    <h3>J.D. Power Award 2024</h3>
+                    <p>Highest Ranked Electric Scooter - <strong>TVS iQube</strong></p>
+                </div>
+                <div class="award-card">
+                    <span class="award-icon">🚀</span>
+                    <h3>Acko Drive Awards 2025</h3>
+                    <p>Best Concept Bike - <strong>TVS iQube Vision</strong></p>
+                </div>
+                <div class="award-card">
+                    <span class="award-icon">🎨</span>
+                    <h3>MotorBeam Awards 2024</h3>
+                    <p>Design of the Year - <strong>TVS Apache RTR 310</strong></p>
+                </div>
+                <div class="award-card">
+                    <span class="award-icon">⭐</span>
+                    <h3>India Design Mark 2023</h3>
+                    <p>Best Design Project - <strong>TVS Ronin</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2>Happy Riders</h2>
+                <p>What our customers say about Tirumala TVS.</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Excellent service! Bought my Ntorq 125 here. The delivery was on time and the staff explained all features clearly."</p>
+                    <div class="review-author">- Rahul K.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Best showroom in Bidarahalli. Very transparent pricing and quick loan approval process. Highly recommended!"</p>
+                    <div class="review-author">- Priya S.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Got my iQube electric scooter. The team guided me on the subsidy process very well."</p>
+                    <div class="review-author">- Sneha R.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">"Service center is good. They picked up my Apache 160 for servicing and dropped it back in the evening. Convenient."</p>
+                    <div class="review-author">- Amit V.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Purchased the new Jupiter 110. The mileage is amazing and the boot space is huge. Thanks Tirumala TVS!"</p>
+                    <div class="review-author">- Karthik G.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Friendly staff and good ambience. They let me take a long test drive of the Ronin before I decided to buy."</p>
+                    <div class="review-author">- Mohammed I.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Bought a Scooty Zest for my daughter. The process was smooth and they gave us a good deal on accessories."</p>
+                    <div class="review-author">- Anjali M.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I was confused between Raider and Apache. The sales executive explained the differences well. Went with Raider!"</p>
+                    <div class="review-author">- Vikram R.</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">"Good stock of spare parts. I found genuine parts for my old Jupiter here which were not available elsewhere."</p>
+                    <div class="review-author">- Suresh B.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-top-bar">
-            <div class="container text-center">Sales: +91 99649 46512 | Service: +91 99649 46511</div>
+            <div class="container footer-contact-row">
+                <div class="footer-contact-item"><div class="footer-icon-circle">✉</div><div>tirumalatvs716@gmail.com</div></div>
+                <div class="footer-contact-item"><div class="footer-icon-circle">📞</div><div>Sales: +91 99649 46512</div></div>
+            </div>
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
@@ -206,6 +276,7 @@
     </footer>
 
     <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    <a href="https://www.instagram.com/tirumalatvs_bidarahalli/" class="instagram-float" target="_blank">📸</a>
     <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <script>
