@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* --- SMART WIDGET CSS (Internal for now) --- */
+        /* --- SMART WIDGET CSS --- */
         .offer-widget { position: fixed; bottom: 20px; left: 20px; width: 340px; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); z-index: 9990; font-family: 'Poppins', sans-serif; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: 2px solid #e31e2d; }
         .offer-widget.minimized { width: 200px; height: 50px; overflow: hidden; cursor: pointer; bottom: 20px; border-radius: 50px; border: none; background: #e31e2d; box-shadow: 0 5px 15px rgba(227, 30, 45, 0.4); }
         .widget-header { background: #0b2351; color: white; padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; border-radius: 10px 10px 0 0; }
@@ -15,8 +15,6 @@
         .widget-controls span { cursor: pointer; font-size: 1.2rem; margin-left: 10px; color: white; opacity: 0.8; }
         .widget-controls span:hover { opacity: 1; }
         .widget-body { padding: 15px; max-height: 450px; overflow-y: auto; }
-        
-        /* Inner Content */
         .mini-festivals { font-size: 0.75rem; color: #666; text-align: center; margin-bottom: 10px; font-weight: 600; }
         .mini-cashback { background: #fff0f0; border: 2px dashed #e31e2d; padding: 10px; text-align: center; border-radius: 8px; margin-bottom: 12px; }
         .mini-cashback strong { display: block; font-family: 'Oswald'; font-size: 1.4rem; color: #e31e2d; }
@@ -25,17 +23,13 @@
         .mini-service { background: #ffffcc; padding: 8px; font-size: 0.8rem; text-align: center; border-radius: 6px; border: 1px solid #e6e600; margin-bottom: 12px; }
         .mini-free { background: #0b2351; color: white; text-align: center; font-size: 0.9rem; padding: 8px; font-family: 'Oswald'; margin: 0 -15px 12px; }
         .btn-widget { display: block; width: 100%; text-align: center; background: #e31e2d; color: white; padding: 10px; border-radius: 6px; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; animation: pulse 2s infinite; }
-        
-        /* Minimized State Content */
         .minimized-content { display: none; align-items: center; justify-content: center; height: 100%; gap: 10px; color: white; font-weight: 700; text-transform: uppercase; }
         .offer-widget.minimized .widget-header, .offer-widget.minimized .widget-body { display: none; }
         .offer-widget.minimized .minimized-content { display: flex; }
-        
-        /* Mobile Adjustment */
         @media (max-width: 768px) {
             .offer-widget { left: 0; bottom: 0; width: 100%; border-radius: 16px 16px 0 0; border: none; border-top: 3px solid #e31e2d; }
             .offer-widget.minimized { width: 50px; height: 50px; left: 10px; bottom: 85px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-            .minimized-content span { display: none; } /* Hide text on mobile minimize */
+            .minimized-content span { display: none; }
             .minimized-content::before { content: '🎁'; font-size: 24px; }
         }
     </style>
@@ -116,12 +110,11 @@
         </div>
     </div>
 
-    <section class="container" style="margin-bottom: 60px;">
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft);">
-            <img src="assets/promo-banner.jpg" alt="Special Offer" style="width: 100%; height: auto; display: block;">
+    <section class="container" style="margin-bottom: 60px; margin-top: 30px;">
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft); border: 1px solid #eee;">
+            <img src="assets/promo-banner.jpg.jpeg" alt="Tirumala TVS Festival Offers" style="width: 100%; height: auto; display: block;">
         </div>
     </section>
-
     <section class="section-padding">
         <div class="container">
             <div class="welcome-grid">
@@ -304,37 +297,17 @@
     <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <div id="offerWidget" class="offer-widget">
-        <div class="minimized-content" onclick="toggleWidget()">
-            <span>🎁 View Offer</span>
-        </div>
-
+        <div class="minimized-content" onclick="toggleWidget()"><span>🎁 View Offer</span></div>
         <div class="widget-header">
             <h3>FESTIVE OFFER 🎁</h3>
-            <div class="widget-controls">
-                <span onclick="toggleWidget()">−</span>
-                <span onclick="closeWidget()">×</span>
-            </div>
+            <div class="widget-controls"><span onclick="toggleWidget()">−</span><span onclick="closeWidget()">×</span></div>
         </div>
-
         <div class="widget-body">
             <div class="mini-festivals">Christmas • New Year • Sankranti</div>
-            <div class="mini-cashback">
-                <strong>₹2,000 OFF</strong>
-                On Every Vehicle Purchase
-            </div>
-            <ul class="mini-features">
-                <li>✅ Low Down Payment</li>
-                <li>✅ Low Interest Rates</li>
-                <li>✅ Spot Finance & Delivery</li>
-                <li>✅ <strong>Accessories 60% OFF</strong></li>
-            </ul>
-            <div class="mini-service">
-                <strong>🛠️ SERVICE OFFER</strong><br>
-                10% OFF Labour | 5% OFF Spares
-            </div>
-            <div class="mini-free">
-                FREE HELMET & BODY COVER
-            </div>
+            <div class="mini-cashback"><strong>₹2,000 OFF</strong> On Every Vehicle Purchase</div>
+            <ul class="mini-features"><li>✅ Low Down Payment</li><li>✅ Low Interest Rates</li><li>✅ Spot Finance & Delivery</li><li>✅ <strong>Accessories 60% OFF</strong></li></ul>
+            <div class="mini-service"><strong>🛠️ SERVICE OFFER</strong><br>10% OFF Labour | 5% OFF Spares</div>
+            <div class="mini-free">FREE HELMET & BODY COVER</div>
             <a href="https://wa.me/919964946512?text=I%20want%20to%20claim%20the%20Festival%20Offer" class="btn-widget">Claim Now</a>
         </div>
     </div>
