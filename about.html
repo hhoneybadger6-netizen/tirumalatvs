@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Tirumala TVS</title>
+    <title>About Us | Tirumala TVS Legacy</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-text p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.8; color: #444; text-align: justify; }
+        .about-highlight { border-left: 5px solid var(--accent); padding-left: 20px; font-style: italic; background: #f9f9f9; padding: 20px; border-radius: 0 8px 8px 0; margin: 30px 0; }
+        .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; text-align: center; }
+        .stat-box { background: var(--primary); color: white; padding: 30px; border-radius: 12px; }
+        .stat-number { font-size: 2.5rem; font-weight: 700; font-family: 'Oswald'; color: var(--accent); }
+    </style>
 </head>
 <body>
 
@@ -19,63 +26,73 @@
                 <a href="testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
-        <div class="nav-bar" id="navMenu">
+        <nav class="nav-bar" id="navMenu">
             <div class="container">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="about.html" style="color: var(--accent);">About Us</a></li>
                     <li class="nav-item"><a href="models.html">All Models</a></li>
+                    <li class="nav-item"><a href="models.html#motorcycles">Motorcycles</a></li>
+                    <li class="nav-item"><a href="models.html#scooters">Scooters</a></li>
+                    <li class="nav-item"><a href="models.html#electric">Electric</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <div class="section-padding">
+    <div style="background: linear-gradient(rgba(11, 35, 81, 0.9), rgba(11, 35, 81, 0.7)), url('assets/hero-bg.jpg') center/cover; padding: 100px 0; text-align: center; color: white;">
         <div class="container">
-            <div class="welcome-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-                <div class="welcome-text">
-                    <span style="font-weight: bold; background: rgba(11, 35, 81, 0.1); color: var(--primary); padding: 5px 15px; border-radius: 30px; font-size: 0.85rem; letter-spacing: 1px;">EST. 2025</span>
-                    <h2 style="font-family: 'Oswald'; font-size: 3rem; margin: 20px 0; color: var(--primary); text-transform: uppercase;">New Beginnings,<br>Legendary Heritage</h2>
-                    
-                    <h3 style="font-size: 1.4rem; color: var(--accent); margin-bottom: 15px;">The Power of 100+ Years</h3>
-                    <p style="margin-bottom: 20px; line-height: 1.8;">Tirumala TVS is proud to be the newest gateway to the world of TVS Motor Company in Bidarahalli. While our showroom is brand new, the legacy we represent spans over a century.</p>
-                    
-                    <p style="margin-bottom: 20px; line-height: 1.8;"><strong>TVS Racing DNA:</strong> Since 1982, TVS Racing has been the breeding ground for India’s automobile innovation. From the tracks to the roads, every TVS vehicle carries the spirit of a champion.</p>
-                    
-                    <p style="margin-bottom: 25px; line-height: 1.8;"><strong>Innovation First:</strong> TVS is the first Indian manufacturer to deploy ABS, the first to introduce Dual-Clutch technology, and a pioneer in green mobility with the iQube.</p>
-
-                    <a href="contact.html" class="btn btn-primary">Visit Our New Showroom</a>
-                </div>
-                <div class="welcome-image">
-                    <img src="assets/apache160.jpg" alt="TVS Racing Legacy" style="border-radius: 12px; box-shadow: var(--shadow-pop); width: 100%;">
-                </div>
-            </div>
+            <h1 style="font-size: 3.5rem; font-family: 'Oswald', sans-serif; text-transform: uppercase;">Our Legacy</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Trust, Value, and Service since 1911</p>
         </div>
     </div>
 
-    <div class="section-padding bg-light">
-        <div class="container text-center">
+    <section class="section-padding">
+        <div class="container about-text">
             <div class="section-header">
-                <h2>Your Newest Partner</h2>
-                <p>Established in 2025 to serve Bidarahalli with excellence.</p>
+                <h2>The TVS Story</h2>
+                <p>More than just a manufacturer, we are a tradition of trust.</p>
             </div>
-            <div class="grid-3">
-                <div class="clean-card" style="padding: 30px;">
-                    <h3 style="color: var(--primary);">Fresh Experience</h3>
-                    <p>A modern, state-of-the-art showroom designed for your comfort.</p>
+
+            <p><strong>TVS Motor Company</strong> is a reputed two and three-wheeler manufacturer globally, championing progress through sustainable mobility. We are the flagship company of the USD 8.5 billion TVS Group, which has a heritage of over 100 years. Rooted in our 100-year legacy of Trust, Value, and Passion for Customers and Exactness, we take pride in making internationally aspirational products of the highest quality through innovative and sustainable processes.</p>
+
+            <p>The story began in 1911, when our founder, <strong>T.V. Sundaram Iyengar</strong>, established a bus service in Madurai. He was a visionary who believed that the foundation of any business should be laid on the solid ground of ethics and customer satisfaction. This belief has been passed down through generations, evolving into the core philosophy of the TVS Group: <em>Trust, Value, and Service</em>. Today, we are the only two-wheeler manufacturer to have received the prestigious Deming Application Prize, the highest international award for Total Quality Management.</p>
+
+            <div class="about-highlight">
+                <h3>"The Racing DNA"</h3>
+                <p>Racing is not just a sport for us; it is in our DNA. <strong>TVS Racing</strong>, established in 1982, has been the pioneer of motorsports in India. With over 40 years of racing heritage, we have consistently dominated the tracks, winning unmatched championships. This intense experience on the track fuels the engineering of our production vehicles. The TVS Apache series and the TVS Ntorq are direct descendants of this racing pedigree, bringing track-tuned performance to your daily ride.</p>
+            </div>
+
+            <h3>Innovation & Technology</h3>
+            <p>At TVS, innovation is a way of life. From launching India's first 2-seater moped to introducing the revolutionary <strong>RT-Fi (Race Tuned Fuel Injection)</strong> technology, we have always been at the forefront of engineering excellence. Our collaboration with BMW Motorrad has resulted in world-class 310cc motorcycles that are celebrated globally. Furthermore, our leap into the future with the <strong>TVS iQube</strong> Electric showcases our commitment to a greener, sustainable future without compromising on performance.</p>
+
+            <h3>Tirumala TVS: Your Trusted Partner in Bangalore</h3>
+            <p><strong>Tirumala TVS</strong> is proud to represent this glorious legacy in Bidarahalli, Bangalore. As an authorized main dealer, we do not just sell vehicles; we build relationships. Our state-of-the-art showroom allows you to experience the full range of TVS vehicles in a comfortable environment. Our service center is staffed with factory-trained technicians who treat your vehicle with the care it deserves, using only genuine TVS parts.</p>
+
+            <p>We understand that buying a two-wheeler is a significant milestone for every Indian family. Whether you are a college student looking for the thrill of an Apache, a family man seeking the comfort of a Jupiter, or a professional switching to the smart efficiency of the iQube, Tirumala TVS is here to guide you. We promise transparent pricing, quick finance options, and an after-sales experience that keeps you smiling for miles.</p>
+
+            <div class="stat-grid">
+                <div class="stat-box">
+                    <div class="stat-number">100+</div>
+                    <div>Years of Legacy</div>
                 </div>
-                <div class="clean-card" style="padding: 30px;">
-                    <h3 style="color: var(--primary);">Full Range</h3>
-                    <p>From the Ronin to the XL100, we stock the entire TVS portfolio.</p>
+                <div class="stat-box">
+                    <div class="stat-number">50M+</div>
+                    <div>Happy Customers</div>
                 </div>
-                <div class="clean-card" style="padding: 30px;">
-                    <h3 style="color: var(--primary);">Expert Service</h3>
-                    <p>Our technicians are trained directly by TVS to handle the latest tech.</p>
+                <div class="stat-box">
+                    <div class="stat-number">80+</div>
+                    <div>Countries Present</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">24/7</div>
+                    <div>Roadside Assist</div>
                 </div>
             </div>
+
         </div>
-    </div>
+    </section>
 
     <footer>
         <div class="footer-top-bar">
@@ -86,23 +103,19 @@
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="service.html">Book Service</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
-                <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html" style="color:var(--accent);">About Us</a><a href="service.html">Book Service</a><a href="models.html">All Models</a></div></div>
+                <div class="footer-col"><h4>Models</h4><div class="footer-links"><a href="models.html#motorcycles">Motorcycles</a><a href="models.html#scooters">Scooters</a></div></div>
                 <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
             </div>
         </div>
-        <div class="container footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div>
+        <div class="footer-bottom">
+            <div class="container">Copyright © 2025 Tirumala TVS. All rights reserved.</div>
+        </div>
     </footer>
-
-    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
-    <a href="https://www.instagram.com/tirumalatvs_bidarahalli/" class="instagram-float" target="_blank">📸</a>
-    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
     <script>
         function toggleMenu() {
-            var nav = document.getElementById("navMenu");
-            nav.style.display = (nav.style.display === "block") ? "none" : "block";
-            if(nav.style.display === "block") { nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+            document.getElementById("navMenu").classList.toggle("active");
         }
     </script>
 </body>
