@@ -6,27 +6,52 @@
     <title>Tirumala TVS | Authorized Dealer | Bidarahalli</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Popup Styles */
+        .popup-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(5px); animation: fadeIn 0.5s; }
+        .popup-content { background: white; width: 90%; max-width: 500px; border-radius: 12px; overflow: hidden; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.5); text-align: center; animation: zoomIn 0.4s; font-family: 'Poppins', sans-serif; }
+        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 30px; color: white; cursor: pointer; z-index: 10; font-weight: bold; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+        .popup-header { background: #0b2351; color: white; padding: 20px 10px; border-bottom: 5px solid #e31e2d; }
+        .popup-header h2 { font-family: 'Oswald', sans-serif; margin: 0; font-size: 2rem; letter-spacing: 1px; color: #ffff00; text-transform: uppercase; }
+        .popup-header p { margin: 0; font-size: 1rem; opacity: 0.9; letter-spacing: 2px; }
+        .popup-body { padding: 20px; }
+        .festivals { color: #e31e2d; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; }
+        .main-offer { margin-bottom: 20px; }
+        .cashback { background: #fff5f5; border: 2px dashed #e31e2d; padding: 10px; border-radius: 8px; font-size: 1.4rem; font-weight: 800; color: #e31e2d; font-family: 'Oswald'; }
+        .cashback small { display: block; font-size: 0.8rem; color: #555; font-family: 'Poppins'; font-weight: 500; }
+        .offer-grid { display: flex; gap: 15px; margin-bottom: 20px; text-align: left; }
+        .features-list { flex: 1; list-style: none; font-size: 0.85rem; color: #333; line-height: 1.8; }
+        .service-box { flex: 1; background: #ffff00; padding: 10px; border-radius: 8px; border: 2px solid #000; color: black; text-align: center; }
+        .service-box h3 { font-size: 0.9rem; font-weight: 800; margin-bottom: 5px; text-decoration: underline; }
+        .service-box p { font-size: 0.8rem; margin: 2px 0; font-weight: 600; }
+        .service-box small { font-size: 0.7rem; display: block; margin-top: 5px; }
+        .free-gift-bar { background: #0b2351; color: white; padding: 12px; font-family: 'Oswald'; font-size: 1.2rem; text-transform: uppercase; margin: 0 -20px 20px; border-top: 3px solid #e31e2d; border-bottom: 3px solid #e31e2d; }
+        .contact-info { background: #f9f9f9; padding: 10px; border-radius: 6px; font-size: 0.9rem; margin-bottom: 15px; color: #333; }
+        .contact-info p { margin: 3px 0; }
+        .btn-popup { width: 100%; padding: 12px; font-size: 1.1rem; animation: pulse 2s infinite; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes zoomIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        @media (max-width: 480px) { .offer-grid { flex-direction: column; } .popup-header h2 { font-size: 1.5rem; } .free-gift-bar { font-size: 1rem; } }
+    </style>
 </head>
 <body>
 
     <header class="main-header">
         <div class="container header-top">
             <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
-            
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-            
             <div class="header-btn-group">
                 <a href="service.html" class="btn-header">Book Service</a>
                 <a href="quotation.html" class="btn-header">Get Quotation</a>
                 <a href="testdrive.html" class="btn-header">Book Test Drive</a>
             </div>
         </div>
-        
         <nav class="nav-bar" id="navMenu">
             <div class="container">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" style="color: var(--accent);">Home</a></li>
-                    <li class="nav-item"><a href="about.html">About Us</a></li> <li class="nav-item"><a href="models.html">All Models</a></li>
+                    <li class="nav-item"><a href="about.html">About Us</a></li>
+                    <li class="nav-item"><a href="models.html">All Models</a></li>
                     <li class="nav-item">
                         <a href="models.html#motorcycles">Motorcycles <span class="nav-arrow">▼</span></a>
                         <ul class="dropdown-menu">
@@ -214,52 +239,36 @@
                 <h2>Happy Riders</h2>
                 <p>What our customers say about Tirumala TVS.</p>
             </div>
-            
             <div class="grid-3">
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Excellent service! Bought my Ntorq 125 here. The delivery was on time and the staff explained all features clearly."</p>
+                    <p class="review-text">"Excellent service! Bought my Ntorq 125 here. The delivery was on time."</p>
                     <div class="review-author">- Rahul K.</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Best showroom in Bidarahalli. Very transparent pricing and quick loan approval process. Highly recommended!"</p>
+                    <p class="review-text">"Best showroom in Bidarahalli. Very transparent pricing."</p>
                     <div class="review-author">- Priya S.</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Got my iQube electric scooter. The team guided me on the subsidy process very well."</p>
+                    <p class="review-text">"The team guided me on the subsidy process very well."</p>
                     <div class="review-author">- Sneha R.</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">★★★★☆</div>
-                    <p class="review-text">"Service center is good. They picked up my Apache 160 for servicing and dropped it back in the evening. Convenient."</p>
+                    <p class="review-text">"Service center is good. They picked up my Apache 160 for servicing."</p>
                     <div class="review-author">- Amit V.</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Purchased the new Jupiter 110. The mileage is amazing and the boot space is huge. Thanks Tirumala TVS!"</p>
+                    <p class="review-text">"Purchased the new Jupiter 110. The mileage is amazing."</p>
                     <div class="review-author">- Karthik G.</div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Friendly staff and good ambience. They let me take a long test drive of the Ronin before I decided to buy."</p>
+                    <p class="review-text">"Friendly staff and good ambience. Allowed a long test drive."</p>
                     <div class="review-author">- Mohammed I.</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"Bought a Scooty Zest for my daughter. The process was smooth and they gave us a good deal on accessories."</p>
-                    <div class="review-author">- Anjali M.</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p class="review-text">"I was confused between Raider and Apache. The sales executive explained the differences well. Went with Raider!"</p>
-                    <div class="review-author">- Vikram R.</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★☆</div>
-                    <p class="review-text">"Good stock of spare parts. I found genuine parts for my old Jupiter here which were not available elsewhere."</p>
-                    <div class="review-author">- Suresh B.</div>
                 </div>
             </div>
         </div>
@@ -274,7 +283,7 @@
         </div>
         <div class="footer-main">
             <div class="container footer-cols">
-                <div class="footer-col"><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="service.html">Book Service</a><a href="models.html">All Models</a></div></div>
+                <div class="footer-col"><h4>Quick Links</h4><div class="footer-links"><a href="about.html">About Us</a><a href="contact.html">Contact Us</a><a href="service.html">Book Service</a><a href="models.html">All Models</a></div></div>
                 <div class="footer-col"><h4>Models</h4><div class="footer-links"><a href="models.html#motorcycles">Motorcycles</a><a href="models.html#scooters">Scooters</a></div></div>
                 <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
             </div>
@@ -288,9 +297,56 @@
     <a href="https://www.instagram.com/tirumalatvs_bidarahalli/" class="instagram-float" target="_blank">📸</a>
     <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
+    <div id="campaignPopup" class="popup-overlay" style="display:none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <div class="popup-header">
+                <h2>Tirumala TVS</h2>
+                <p>FESTIVE MEGA OFFER</p>
+            </div>
+            <div class="popup-body">
+                <div class="festivals">Christmas • New Year • Sankranti • Shivaratri</div>
+                <div class="main-offer">
+                    <div class="cashback"><span class="icon">💰</span> ₹2,000 CASHBACK <br><small>On Every Purchase</small></div>
+                </div>
+                <div class="offer-grid">
+                    <ul class="features-list">
+                        <li>✅ Low Down Payment</li>
+                        <li>✅ Low Interest Rates</li>
+                        <li>✅ Spot Finance / Delivery</li>
+                        <li>✅ <strong>Accessories 60% OFF</strong></li>
+                    </ul>
+                    <div class="service-box">
+                        <h3>SERVICE OFFER</h3>
+                        <p>🛠️ <strong>10% OFF</strong> on Labour</p>
+                        <p>⚙️ <strong>5% OFF</strong> on Spares</p>
+                        <small>Pickup & Drop Available</small>
+                    </div>
+                </div>
+                <div class="free-gift-bar">FREE HELMET ⛑️ & BODY COVER 🏍️</div>
+                <div class="contact-info">
+                    <p><strong>Sales:</strong> 99649 46512</p>
+                    <p><strong>Service:</strong> 99649 46511 / 99452 34956</p>
+                </div>
+                <a href="https://wa.me/919964946512?text=I%20am%20interested%20in%20the%20Festival%20Offer" class="btn btn-primary btn-popup">Claim Offer Now</a>
+            </div>
+        </div>
+    </div>
+
     <script>
         function toggleMenu() {
             document.getElementById("navMenu").classList.toggle("active");
+        }
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                if (!sessionStorage.getItem('popupShown')) {
+                    document.getElementById('campaignPopup').style.display = 'flex';
+                    sessionStorage.setItem('popupShown', 'true');
+                }
+            }, 2000);
+        });
+        function closePopup() {
+            document.getElementById('campaignPopup').style.display = 'none';
         }
     </script>
 </body>
