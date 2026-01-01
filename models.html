@@ -10,31 +10,31 @@
         .classification-header { margin: 40px 0 20px; padding: 10px 20px; background: #f0f0f0; border-left: 5px solid var(--accent); }
         .classification-header h2 { font-family: var(--font-heading); font-size: 1.8rem; color: var(--primary); margin: 0; }
         
-        /* Popup Styles */
-        .popup-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(5px); animation: fadeIn 0.5s; }
-        .popup-content { background: white; width: 90%; max-width: 500px; border-radius: 12px; overflow: hidden; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.5); text-align: center; animation: zoomIn 0.4s; font-family: 'Poppins', sans-serif; }
-        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 30px; color: white; cursor: pointer; z-index: 10; font-weight: bold; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
-        .popup-header { background: #0b2351; color: white; padding: 20px 10px; border-bottom: 5px solid #e31e2d; }
-        .popup-header h2 { font-family: 'Oswald', sans-serif; margin: 0; font-size: 2rem; letter-spacing: 1px; color: #ffff00; text-transform: uppercase; }
-        .popup-header p { margin: 0; font-size: 1rem; opacity: 0.9; letter-spacing: 2px; }
-        .popup-body { padding: 20px; }
-        .festivals { color: #e31e2d; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; }
-        .main-offer { margin-bottom: 20px; }
-        .cashback { background: #fff5f5; border: 2px dashed #e31e2d; padding: 10px; border-radius: 8px; font-size: 1.4rem; font-weight: 800; color: #e31e2d; font-family: 'Oswald'; }
-        .cashback small { display: block; font-size: 0.8rem; color: #555; font-family: 'Poppins'; font-weight: 500; }
-        .offer-grid { display: flex; gap: 15px; margin-bottom: 20px; text-align: left; }
-        .features-list { flex: 1; list-style: none; font-size: 0.85rem; color: #333; line-height: 1.8; }
-        .service-box { flex: 1; background: #ffff00; padding: 10px; border-radius: 8px; border: 2px solid #000; color: black; text-align: center; }
-        .service-box h3 { font-size: 0.9rem; font-weight: 800; margin-bottom: 5px; text-decoration: underline; }
-        .service-box p { font-size: 0.8rem; margin: 2px 0; font-weight: 600; }
-        .service-box small { font-size: 0.7rem; display: block; margin-top: 5px; }
-        .free-gift-bar { background: #0b2351; color: white; padding: 12px; font-family: 'Oswald'; font-size: 1.2rem; text-transform: uppercase; margin: 0 -20px 20px; border-top: 3px solid #e31e2d; border-bottom: 3px solid #e31e2d; }
-        .contact-info { background: #f9f9f9; padding: 10px; border-radius: 6px; font-size: 0.9rem; margin-bottom: 15px; color: #333; }
-        .contact-info p { margin: 3px 0; }
-        .btn-popup { width: 100%; padding: 12px; font-size: 1.1rem; animation: pulse 2s infinite; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes zoomIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-        @media (max-width: 480px) { .offer-grid { flex-direction: column; } .popup-header h2 { font-size: 1.5rem; } .free-gift-bar { font-size: 1rem; } }
+        /* Internal Widget CSS */
+        .offer-widget { position: fixed; bottom: 20px; left: 20px; width: 340px; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); z-index: 9990; font-family: 'Poppins', sans-serif; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: 2px solid #e31e2d; }
+        .offer-widget.minimized { width: 200px; height: 50px; overflow: hidden; cursor: pointer; bottom: 20px; border-radius: 50px; border: none; background: #e31e2d; box-shadow: 0 5px 15px rgba(227, 30, 45, 0.4); }
+        .widget-header { background: #0b2351; color: white; padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; border-radius: 10px 10px 0 0; }
+        .widget-header h3 { font-family: 'Oswald'; font-size: 1.1rem; margin: 0; color: #ffff00; letter-spacing: 1px; }
+        .widget-controls span { cursor: pointer; font-size: 1.2rem; margin-left: 10px; color: white; opacity: 0.8; }
+        .widget-controls span:hover { opacity: 1; }
+        .widget-body { padding: 15px; max-height: 450px; overflow-y: auto; }
+        .mini-festivals { font-size: 0.75rem; color: #666; text-align: center; margin-bottom: 10px; font-weight: 600; }
+        .mini-cashback { background: #fff0f0; border: 2px dashed #e31e2d; padding: 10px; text-align: center; border-radius: 8px; margin-bottom: 12px; }
+        .mini-cashback strong { display: block; font-family: 'Oswald'; font-size: 1.4rem; color: #e31e2d; }
+        .mini-features { list-style: none; font-size: 0.8rem; margin-bottom: 12px; padding-left: 5px; }
+        .mini-features li { margin-bottom: 4px; }
+        .mini-service { background: #ffffcc; padding: 8px; font-size: 0.8rem; text-align: center; border-radius: 6px; border: 1px solid #e6e600; margin-bottom: 12px; }
+        .mini-free { background: #0b2351; color: white; text-align: center; font-size: 0.9rem; padding: 8px; font-family: 'Oswald'; margin: 0 -15px 12px; }
+        .btn-widget { display: block; width: 100%; text-align: center; background: #e31e2d; color: white; padding: 10px; border-radius: 6px; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; animation: pulse 2s infinite; }
+        .minimized-content { display: none; align-items: center; justify-content: center; height: 100%; gap: 10px; color: white; font-weight: 700; text-transform: uppercase; }
+        .offer-widget.minimized .widget-header, .offer-widget.minimized .widget-body { display: none; }
+        .offer-widget.minimized .minimized-content { display: flex; }
+        @media (max-width: 768px) {
+            .offer-widget { left: 0; bottom: 0; width: 100%; border-radius: 16px 16px 0 0; border: none; border-top: 3px solid #e31e2d; }
+            .offer-widget.minimized { width: 50px; height: 50px; left: 10px; bottom: 85px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+            .minimized-content span { display: none; } /* Hide text on mobile minimize */
+            .minimized-content::before { content: '🎁'; font-size: 24px; }
+        }
     </style>
 </head>
 <body>
@@ -223,52 +223,29 @@
         function toggleMenu() {
             document.getElementById("navMenu").classList.toggle("active");
         }
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                if (!sessionStorage.getItem('popupShown')) {
-                    document.getElementById('campaignPopup').style.display = 'flex';
-                    sessionStorage.setItem('popupShown', 'true');
-                }
-            }, 2000);
-        });
-        function closePopup() {
-            document.getElementById('campaignPopup').style.display = 'none';
+        
+        function toggleWidget() {
+            document.getElementById("offerWidget").classList.toggle("minimized");
+        }
+        
+        function closeWidget() {
+            document.getElementById("offerWidget").style.display = 'none';
         }
     </script>
     
-    <div id="campaignPopup" class="popup-overlay" style="display:none;">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">×</span>
-            <div class="popup-header">
-                <h2>Tirumala TVS</h2>
-                <p>FESTIVE MEGA OFFER</p>
-            </div>
-            <div class="popup-body">
-                <div class="festivals">Christmas • New Year • Sankranti • Shivaratri</div>
-                <div class="main-offer">
-                    <div class="cashback"><span class="icon">💰</span> ₹2,000 CASHBACK <br><small>On Every Purchase</small></div>
-                </div>
-                <div class="offer-grid">
-                    <ul class="features-list">
-                        <li>✅ Low Down Payment</li>
-                        <li>✅ Low Interest Rates</li>
-                        <li>✅ Spot Finance / Delivery</li>
-                        <li>✅ <strong>Accessories 60% OFF</strong></li>
-                    </ul>
-                    <div class="service-box">
-                        <h3>SERVICE OFFER</h3>
-                        <p>🛠️ <strong>10% OFF</strong> on Labour</p>
-                        <p>⚙️ <strong>5% OFF</strong> on Spares</p>
-                        <small>Pickup & Drop Available</small>
-                    </div>
-                </div>
-                <div class="free-gift-bar">FREE HELMET ⛑️ & BODY COVER 🏍️</div>
-                <div class="contact-info">
-                    <p><strong>Sales:</strong> 99649 46512</p>
-                    <p><strong>Service:</strong> 99649 46511 / 99452 34956</p>
-                </div>
-                <a href="https://wa.me/919964946512?text=I%20am%20interested%20in%20the%20Festival%20Offer" class="btn btn-primary btn-popup">Claim Offer Now</a>
-            </div>
+    <div id="offerWidget" class="offer-widget">
+        <div class="minimized-content" onclick="toggleWidget()"><span>🎁 View Offer</span></div>
+        <div class="widget-header">
+            <h3>FESTIVE OFFER 🎁</h3>
+            <div class="widget-controls"><span onclick="toggleWidget()">−</span><span onclick="closeWidget()">×</span></div>
+        </div>
+        <div class="widget-body">
+            <div class="mini-festivals">Christmas • New Year • Sankranti</div>
+            <div class="mini-cashback"><strong>₹2,000 OFF</strong> On Every Vehicle Purchase</div>
+            <ul class="mini-features"><li>✅ Low Down Payment</li><li>✅ Low Interest Rates</li><li>✅ Spot Finance & Delivery</li><li>✅ <strong>Accessories 60% OFF</strong></li></ul>
+            <div class="mini-service"><strong>🛠️ SERVICE OFFER</strong><br>10% OFF Labour | 5% OFF Spares</div>
+            <div class="mini-free">FREE HELMET & BODY COVER</div>
+            <a href="https://wa.me/919964946512?text=I%20want%20to%20claim%20the%20Festival%20Offer" class="btn-widget">Claim Now</a>
         </div>
     </div>
 </body>
