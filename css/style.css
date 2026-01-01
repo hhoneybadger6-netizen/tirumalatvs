@@ -1,164 +1,158 @@
-/* --- TIRUMALA TVS: COMPLETE MASTER CSS --- */
-:root {
-    --primary: #0b2351;
-    --accent: #e31e2d;
-    --accent-grad: linear-gradient(135deg, #e31e2d 0%, #ff4b2b 100%);
-    --dark: #111111;
-    --text-grey: #444444;
-    --light: #f4f6f9;
-    --white: #ffffff;
-    --font-heading: 'Oswald', sans-serif;
-    --font-body: 'Poppins', sans-serif;
-    --shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirumala TVS | Authorized Dealer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-/* --- RESET --- */
-* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-body { font-family: var(--font-body); color: var(--text-grey); line-height: 1.6; background-color: var(--white); overflow-x: hidden; }
-a { text-decoration: none; color: inherit; transition: 0.3s; }
-img { max-width: 100%; height: auto; display: block; }
-ul { list-style: none; }
+    <header class="main-header">
+        <div class="container header-top">
+            <a href="index.html" class="logo">Tirumala <span>TVS</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <div class="header-btn-group">
+                <a href="service.html" class="btn-header">Book Service</a>
+                <a href="quotation.html" class="btn-header">Get Quotation</a>
+                <a href="testdrive.html" class="btn-header">Book Test Drive</a>
+            </div>
+        </div>
+        <div class="nav-bar" id="navMenu">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" style="color: var(--accent);">Home</a></li>
+                    <li class="nav-item"><a href="models.html">All Models</a></li>
+                    <li class="nav-item"><a href="service.html">Services</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-/* --- UTILITY --- */
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%; }
-.section-padding { padding: 60px 0; }
-.bg-light { background-color: var(--light); }
-.text-center { text-align: center; }
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Unleash The <br><span style="color: #ffcc00;">Racing DNA</span></h1>
+            <p>Your Authorized TVS Main Dealership in Bidarahalli, Bangalore.</p>
+            <div class="hero-buttons">
+                <a href="models.html" class="btn btn-primary">Explore Inventory</a>
+                <a href="contact.html" class="btn btn-outline">Visit Showroom</a>
+            </div>
+        </div>
+    </section>
 
-/* --- TYPOGRAPHY --- */
-h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; font-weight: 700; color: var(--primary); margin-bottom: 15px; }
-.section-header { margin-bottom: 40px; text-align: center; }
-.section-header h2 { font-size: 2.5rem; }
-.section-header p { font-size: 1.1rem; color: #666; max-width: 800px; margin: 0 auto; }
+    <section class="festival-banner">
+        <div class="container">
+            <h2 class="festival-title">🎄 MEGA FESTIVAL OFFER 🎉</h2>
+            <p style="font-size:1.1rem; margin-bottom:20px; opacity: 0.9;">Christmas • New Year • Sankranti • Shivaratri</p>
+            <div class="festival-grid">
+                <div class="festival-offer-box"><div class="offer-highlight">FREE GIFTS 🎁</div><ul class="offer-list"><li>✅ Free <strong>HELMET</strong></li><li>✅ Free <strong>BODY COVER</strong></li><li>✅ Accessories @ <strong>60% OFF</strong></li></ul></div>
+                <div class="festival-offer-box" style="background:rgba(255,255,255,0.2); border:2px solid #ffcc00;"><div class="offer-highlight">FINANCE DEALS 💰</div><ul class="offer-list"><li>✅ <strong>₹2,000 Cash Back</strong></li><li>✅ Low Down Payment</li><li>✅ Low Interest Rates</li></ul></div>
+                <div class="festival-offer-box"><div class="offer-highlight">SERVICE SPECIAL 🛠️</div><ul class="offer-list"><li>✅ Labour: <strong>10% DISCOUNT</strong></li><li>✅ Spares: <strong>5% DISCOUNT</strong></li><li>✅ Pickup & Drop Available</li></ul></div>
+            </div>
+        </div>
+    </section>
 
-/* --- BUTTONS --- */
-.btn { display: inline-block; padding: 12px 30px; border-radius: 4px; font-weight: 600; text-transform: uppercase; border: none; cursor: pointer; transition: 0.3s; text-align: center; font-size: 0.9rem; }
-.btn-primary { background: var(--accent-grad); color: white; }
-.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(227, 30, 45, 0.4); }
-.btn-outline { border: 2px solid var(--white); color: var(--white); background: transparent; }
-.btn-outline:hover { background: var(--white); color: var(--primary); }
-.btn-block { display: block; width: 100%; margin-top: 10px; }
+    <div class="hotline-section">
+        <div class="container hotline-banner">
+            <div class="hotline-left">
+                <div class="hotline-circle">📞</div>
+                <div class="hotline-numbers">
+                    <div class="number-block"><span>Sales Hotline</span><a href="tel:+919964946512">+91 99649 46512</a></div>
+                    <div class="number-block"><span>Service Hotline</span><a href="tel:+919964946511">+91 99649 46511</a></div>
+                </div>
+            </div>
+            <div class="hotline-right">TVS Racing 🐎</div>
+        </div>
+    </div>
 
-/* --- HEADER --- */
-.main-header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
-.header-top { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #eee; }
-a.logo { font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: -1px; display: flex; align-items: center; }
-a.logo span { color: var(--accent); margin-left: 5px; }
-.header-btn-group { display: flex; gap: 10px; }
-.btn-header { background: var(--accent); color: white; padding: 8px 15px; font-size: 0.8rem; border-radius: 4px; font-weight: 600; text-transform: uppercase; }
+    <section class="section-padding">
+        <div class="container">
+            <div class="welcome-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                <div class="welcome-text">
+                    <span style="font-weight: bold; color: var(--primary);">EST. 2025</span>
+                    <h2 style="font-size: 2.5rem; margin: 15px 0;">New Beginnings, Legendary Heritage</h2>
+                    <p style="margin-bottom: 20px;">Tirumala TVS is proud to be the newest gateway to the world of TVS Motor Company in Bidarahalli. We bring you over 100 years of trust and racing innovation.</p>
+                    <ul style="margin-bottom: 20px;">
+                        <li><strong>🏁 Racing DNA:</strong> Since 1982, bred on the track.</li>
+                        <li><strong>💡 Innovation:</strong> First with ABS & Dual-Clutch tech.</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-primary">Read More About Us</a>
+                </div>
+                <div class="welcome-image">
+                    <img src="assets/apache160.jpg" alt="Tirumala TVS Showroom" style="border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* --- NAVIGATION --- */
-.nav-bar { background: white; border-bottom: 1px solid #f0f0f0; }
-.nav-menu { display: flex; justify-content: center; gap: 30px; padding: 15px 0; margin: 0; }
-.nav-item > a { font-weight: 600; text-transform: uppercase; font-size: 0.9rem; color: var(--dark); display: block; }
-.nav-item > a:hover { color: var(--accent); }
-.menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; color: var(--primary); }
-.dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: white; border: 1px solid #eee; min-width: 200px; z-index: 100; box-shadow: var(--shadow); }
-.nav-item:hover .dropdown-menu { display: block; }
-.dropdown-menu a { display: block; padding: 10px 15px; border-bottom: 1px solid #f0f0f0; }
-.nav-item { position: relative; }
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center section-header"><h2>6 Hot Selling Vehicles</h2></div>
+            <div class="grid-3">
+                <a href="models/jupiter113.html" class="clean-card"><div class="clean-card-img"><img src="assets/jupiter113.jpg" alt="Jupiter 110" onerror="this.src='https://placehold.co/600x400?text=Jupiter+110'"></div><div class="clean-card-content"><h3>New Jupiter 110</h3><div class="price">Zyada Ka Fayda</div><span class="btn btn-block btn-primary">View Details</span></div></a>
+                <a href="models/ntorq125.html" class="clean-card"><div class="clean-card-img"><img src="assets/ntorq125.jpg" alt="Ntorq" onerror="this.src='https://placehold.co/600x400?text=Ntorq'"></div><div class="clean-card-content"><h3>TVS Ntorq 125</h3><div class="price">Play Smart</div><span class="btn btn-block btn-primary">View Details</span></div></a>
+                <a href="models/raider.html" class="clean-card"><div class="clean-card-img"><img src="assets/raider.jpg" alt="Raider" onerror="this.src='https://placehold.co/600x400?text=Raider'"></div><div class="clean-card-content"><h3>TVS Raider 125</h3><div class="price">The Wicked Ride</div><span class="btn btn-block btn-primary">View Details</span></div></a>
+                <a href="models/iqube.html" class="clean-card"><div class="clean-card-img"><img src="assets/iqube.jpg" alt="iQube" onerror="this.src='https://placehold.co/600x400?text=iQube'"></div><div class="clean-card-content"><h3>TVS iQube</h3><div class="price">Smartly Simple</div><span class="btn btn-block btn-primary">View Details</span></div></a>
+                <a href="models/zest110.html" class="clean-card"><div class="clean-card-img"><img src="assets/zest110.jpg" alt="Zest" onerror="this.src='https://placehold.co/600x400?text=Zest'"></div><div class="clean-card-content"><h3>Scooty Zest 110</h3><div class="price">Compact Power</div><span class="btn btn-block btn-primary">View Details</span></div></a>
+                <a href="models/apache160.html" class="clean-card"><div class="clean-card-img"><img src="assets/apache160.jpg" alt="Apache 160" onerror="this.src='https://placehold.co/600x400?text=Apache+160'"></div><div class="clean-card-content"><h3>Apache RTR 160 4V</h3><div class="price">Racing DNA</div><span class="btn btn-block btn-primary">View Details</span></div></a>
+            </div>
+        </div>
+    </section>
 
-/* --- HERO --- */
-.hero { background: linear-gradient(rgba(11, 35, 81, 0.8), rgba(11, 35, 81, 0.8)), url('../assets/hero-bg.jpg') center/cover no-repeat; padding: 100px 0; color: white; }
-.hero-content { position: relative; z-index: 2; max-width: 800px; }
-.hero h1 { color: white; font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; }
-.hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
-.hero-buttons { display: flex; gap: 15px; }
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center section-header"><h2>6 Recent Awards</h2></div>
+            <div class="grid-3">
+                <div class="award-card"><span class="award-icon">🏆</span><h3>Car & Bike Awards 2025</h3><p>Upgrade of the Year - <strong>TVS Apache RR 310</strong></p></div>
+                <div class="award-card"><span class="award-icon">🥇</span><h3>J.D. Power Award 2024</h3><p>Most Appealing Economy Scooter - <strong>TVS Jupiter 110</strong></p></div>
+                <div class="award-card"><span class="award-icon">⚡</span><h3>J.D. Power Award 2024</h3><p>Highest Ranked Electric Scooter - <strong>TVS iQube</strong></p></div>
+                <div class="award-card"><span class="award-icon">🚀</span><h3>Acko Drive Awards 2025</h3><p>Best Concept Bike - <strong>TVS iQube Vision</strong></p></div>
+                <div class="award-card"><span class="award-icon">🎨</span><h3>MotorBeam Awards 2024</h3><p>Design of the Year - <strong>TVS Apache RTR 310</strong></p></div>
+                <div class="award-card"><span class="award-icon">⭐</span><h3>India Design Mark 2023</h3><p>Best Design Project - <strong>TVS Ronin</strong></p></div>
+            </div>
+        </div>
+    </section>
 
-/* --- FESTIVAL BANNER --- */
-.festival-banner { background: linear-gradient(135deg, #0b2351 0%, #0056b3 100%); color: white; padding: 40px 0; border-top: 5px solid #ff6600; border-bottom: 5px solid #ff6600; text-align: center; }
-.festival-title { font-family: 'Oswald', sans-serif; font-size: 2.5rem; color: #ffcc00; margin-bottom: 5px; }
-.festival-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
-.festival-offer-box { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); text-align: left; }
-.offer-highlight { font-size: 1.2rem; font-weight: bold; color: #fff; background: #ff0000; display: inline-block; padding: 5px 10px; border-radius: 4px; margin-bottom: 15px; text-transform: uppercase; }
-.offer-list li { list-style: none; margin-bottom: 8px; font-size: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px; }
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center section-header"><h2>Happy Riders</h2></div>
+            <div class="grid-3">
+                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Excellent service! Bought my Ntorq 125 here."</p><div class="review-author">- Rahul K.</div></div>
+                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Best showroom in Bidarahalli. Very transparent pricing."</p><div class="review-author">- Priya S.</div></div>
+                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Got my iQube electric scooter. Guided me on subsidy."</p><div class="review-author">- Sneha R.</div></div>
+                <div class="review-card"><div class="review-stars">★★★★☆</div><p class="review-text">"Service center is good. Pick up and drop available."</p><div class="review-author">- Amit V.</div></div>
+                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Purchased the new Jupiter 110. Great mileage!"</p><div class="review-author">- Karthik G.</div></div>
+                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Friendly staff. Good test drive experience."</p><div class="review-author">- Mohammed I.</div></div>
+                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Bought a Scooty Zest. Smooth process."</p><div class="review-author">- Anjali M.</div></div>
+                <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Sales executive explained features well."</p><div class="review-author">- Vikram R.</div></div>
+                <div class="review-card"><div class="review-stars">★★★★☆</div><p class="review-text">"Found genuine parts for my old Jupiter."</p><div class="review-author">- Suresh B.</div></div>
+            </div>
+        </div>
+    </section>
 
-/* --- HOTLINE --- */
-.hotline-section { background: #f8f9fa; padding: 30px 0; border-bottom: 1px solid #ddd; }
-.hotline-banner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; background: white; padding: 20px; border-radius: 8px; box-shadow: var(--shadow); border-left: 5px solid var(--accent); }
-.hotline-left { display: flex; align-items: center; gap: 20px; }
-.hotline-circle { font-size: 2.5rem; color: var(--accent); }
-.number-block span { display: block; font-size: 0.8rem; opacity: 0.7; text-transform: uppercase; font-weight: 700; }
-.number-block a { color: var(--primary); font-weight: 700; font-size: 1.3rem; font-family: var(--font-heading); }
-.hotline-right { font-family: 'Oswald'; font-size: 1.5rem; font-style: italic; color: var(--accent); font-weight: 700; }
+    <footer>
+        <div class="footer-top-bar"><div class="container text-center">Sales: +91 99649 46512 | Service: +91 99649 46511</div></div>
+        <div class="footer-main">
+            <div class="container footer-cols">
+                <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="service.html">Book Service</a></li><li><a href="models.html">All Models</a></li></ul></div>
+                <div class="footer-col"><h4>Models</h4><ul class="footer-links"><li><a href="models.html#motorcycles">Motorcycles</a></li><li><a href="models.html#scooters">Scooters</a></li></ul></div>
+                <div class="footer-col"><h4>Showroom</h4><p>Tirumala TVS Bidarahalli,<br>Main Road, Bangalore - 560049</p></div>
+            </div>
+        </div>
+        <div class="container footer-bottom"><div>Copyright © 2025 Tirumala TVS. All rights reserved.</div></div>
+    </footer>
 
-/* --- GRIDS & CARDS --- */
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.clean-card { background: white; border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: 0.3s; display: flex; flex-direction: column; height: 100%; box-shadow: var(--shadow); }
-.clean-card:hover { transform: translateY(-5px); border-color: var(--primary); }
-.clean-card-img { height: 220px; background: #fff; display: flex; align-items: center; justify-content: center; padding: 20px; border-bottom: 1px solid #f0f0f0; }
-.clean-card-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
-.clean-card-content { padding: 20px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-.clean-card h3 { font-size: 1.4rem; color: var(--dark); margin-bottom: 5px; }
-.clean-card .price { color: #666; font-weight: 600; margin-bottom: 15px; }
+    <a href="https://wa.me/919964946512" class="whatsapp-float" target="_blank">💬</a>
+    <div class="scroll-top-btn" onclick="window.scrollTo(0,0);">▲</div>
 
-/* Awards & Reviews */
-.award-card { background: white; padding: 25px; text-align: center; border: 1px solid #eee; border-radius: 8px; box-shadow: var(--shadow); height: 100%; }
-.award-icon { font-size: 3rem; display: block; margin-bottom: 15px; }
-.review-card { background: white; padding: 25px; border: 1px solid #eee; border-radius: 8px; box-shadow: var(--shadow); height: 100%; }
-.review-stars { color: #ffc107; margin-bottom: 10px; font-size: 1.2rem; }
-.review-text { font-style: italic; color: #555; margin-bottom: 15px; }
-.review-author { font-weight: 700; color: var(--primary); }
-
-/* --- MODEL INNER LAYOUTS (FIXED) --- */
-.model-page-header { background: #f4f6f9; padding: 60px 0; text-align: center; border-bottom: 1px solid #ddd; }
-.model-title { font-size: 3rem; margin-bottom: 10px; }
-.product-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: start; }
-.product-image-wrapper { background: white; padding: 20px; border: 1px solid #eee; border-radius: 8px; box-shadow: var(--shadow); }
-.product-image-wrapper img { width: 100%; height: auto; }
-.specs-list { margin-bottom: 20px; border: 1px solid #eee; padding: 20px; border-radius: 8px; background: #fff; }
-.specs-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
-.action-buttons { display: flex; gap: 15px; margin-top: 20px; }
-
-/* --- FOOTER --- */
-.footer-top-bar { background: var(--primary); color: white; padding: 30px 0; text-align: center; }
-.footer-main { background: #f8f9fa; padding: 60px 0; }
-.footer-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.footer-col h4 { margin-bottom: 20px; font-size: 1.2rem; border-bottom: 2px solid var(--accent); display: inline-block; }
-.footer-links a { display: block; margin-bottom: 8px; color: #555; }
-.footer-bottom { padding: 20px 0; text-align: center; background: white; color: #888; border-top: 1px solid #eee; }
-
-/* --- MOBILE RESPONSIVE (Strict Rules) --- */
-@media (max-width: 900px) {
-    /* Header */
-    .header-top { flex-direction: column; gap: 15px; padding: 15px 0; }
-    .header-btn-group { display: none; }
-    .nav-bar { display: none; }
-    .menu-toggle { display: block; position: absolute; right: 20px; top: 25px; }
-    .nav-menu { flex-direction: column; padding: 20px 0; background: white; border-top: 1px solid #eee; }
-    
-    /* Hero */
-    .hero { text-align: center; padding: 60px 0; }
-    .hero h1 { font-size: 2.2rem; }
-    .hero-buttons { flex-direction: column; width: 100%; }
-    .hero-buttons .btn { width: 100%; }
-
-    /* Festival */
-    .festival-grid { grid-template-columns: 1fr; gap: 20px; }
-    
-    /* Hotline */
-    .hotline-banner { flex-direction: column; text-align: center; }
-    .hotline-left { flex-direction: column; width: 100%; gap: 15px; }
-    .hotline-center { display: none; }
-    .hotline-right { margin-top: 10px; }
-    
-    /* Grids (FORCE STACK) */
-    .grid-3, .footer-cols, .product-grid, .welcome-grid { 
-        grid-template-columns: 1fr !important; 
-        gap: 30px; 
-    }
-    
-    /* Models */
-    .product-image-wrapper { margin-bottom: 20px; }
-    .action-buttons { flex-direction: column; }
-    .model-title { font-size: 2.5rem; }
-    
-    /* Global */
-    .container { padding: 0 15px; }
-}
-
-/* Floating Buttons */
-.whatsapp-float, .instagram-float { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: fixed; right: 20px; z-index: 9999; color: white !important; font-size: 26px; }
-.whatsapp-float { bottom: 20px; background: #25D366; }
-.instagram-float { bottom: 80px; background: #E1306C; }
-.scroll-top-btn { bottom: 140px; right: 25px; width: 40px; height: 40px; background: #333; color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; position: fixed; cursor: pointer; }
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navMenu");
+            nav.style.display = (nav.style.display === "block") ? "none" : "block";
+            if(nav.style.display === "block") { nav.style.position="absolute"; nav.style.top="100%"; nav.style.left="0"; nav.style.width="100%"; nav.style.zIndex="1000"; }
+        }
+    </script>
+</body>
+</html>
