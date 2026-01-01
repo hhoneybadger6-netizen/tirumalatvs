@@ -12,6 +12,32 @@
         .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; text-align: center; }
         .stat-box { background: var(--primary); color: white; padding: 30px; border-radius: 12px; }
         .stat-number { font-size: 2.5rem; font-weight: 700; font-family: 'Oswald'; color: var(--accent); }
+        
+        /* Popup Styles */
+        .popup-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(5px); animation: fadeIn 0.5s; }
+        .popup-content { background: white; width: 90%; max-width: 500px; border-radius: 12px; overflow: hidden; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.5); text-align: center; animation: zoomIn 0.4s; font-family: 'Poppins', sans-serif; }
+        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 30px; color: white; cursor: pointer; z-index: 10; font-weight: bold; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+        .popup-header { background: #0b2351; color: white; padding: 20px 10px; border-bottom: 5px solid #e31e2d; }
+        .popup-header h2 { font-family: 'Oswald', sans-serif; margin: 0; font-size: 2rem; letter-spacing: 1px; color: #ffff00; text-transform: uppercase; }
+        .popup-header p { margin: 0; font-size: 1rem; opacity: 0.9; letter-spacing: 2px; }
+        .popup-body { padding: 20px; }
+        .festivals { color: #e31e2d; font-weight: 700; font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; }
+        .main-offer { margin-bottom: 20px; }
+        .cashback { background: #fff5f5; border: 2px dashed #e31e2d; padding: 10px; border-radius: 8px; font-size: 1.4rem; font-weight: 800; color: #e31e2d; font-family: 'Oswald'; }
+        .cashback small { display: block; font-size: 0.8rem; color: #555; font-family: 'Poppins'; font-weight: 500; }
+        .offer-grid { display: flex; gap: 15px; margin-bottom: 20px; text-align: left; }
+        .features-list { flex: 1; list-style: none; font-size: 0.85rem; color: #333; line-height: 1.8; }
+        .service-box { flex: 1; background: #ffff00; padding: 10px; border-radius: 8px; border: 2px solid #000; color: black; text-align: center; }
+        .service-box h3 { font-size: 0.9rem; font-weight: 800; margin-bottom: 5px; text-decoration: underline; }
+        .service-box p { font-size: 0.8rem; margin: 2px 0; font-weight: 600; }
+        .service-box small { font-size: 0.7rem; display: block; margin-top: 5px; }
+        .free-gift-bar { background: #0b2351; color: white; padding: 12px; font-family: 'Oswald'; font-size: 1.2rem; text-transform: uppercase; margin: 0 -20px 20px; border-top: 3px solid #e31e2d; border-bottom: 3px solid #e31e2d; }
+        .contact-info { background: #f9f9f9; padding: 10px; border-radius: 6px; font-size: 0.9rem; margin-bottom: 15px; color: #333; }
+        .contact-info p { margin: 3px 0; }
+        .btn-popup { width: 100%; padding: 12px; font-size: 1.1rem; animation: pulse 2s infinite; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes zoomIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        @media (max-width: 480px) { .offer-grid { flex-direction: column; } .popup-header h2 { font-size: 1.5rem; } .free-gift-bar { font-size: 1rem; } }
     </style>
 </head>
 <body>
@@ -54,24 +80,17 @@
                 <h2>The TVS Story</h2>
                 <p>More than just a manufacturer, we are a tradition of trust.</p>
             </div>
-
             <p><strong>TVS Motor Company</strong> is a reputed two and three-wheeler manufacturer globally, championing progress through sustainable mobility. We are the flagship company of the USD 8.5 billion TVS Group, which has a heritage of over 100 years. Rooted in our 100-year legacy of Trust, Value, and Passion for Customers and Exactness, we take pride in making internationally aspirational products of the highest quality through innovative and sustainable processes.</p>
-
             <p>The story began in 1911, when our founder, <strong>T.V. Sundaram Iyengar</strong>, established a bus service in Madurai. He was a visionary who believed that the foundation of any business should be laid on the solid ground of ethics and customer satisfaction. This belief has been passed down through generations, evolving into the core philosophy of the TVS Group: <em>Trust, Value, and Service</em>. Today, we are the only two-wheeler manufacturer to have received the prestigious Deming Application Prize, the highest international award for Total Quality Management.</p>
-
             <div class="about-highlight">
                 <h3>"The Racing DNA"</h3>
                 <p>Racing is not just a sport for us; it is in our DNA. <strong>TVS Racing</strong>, established in 1982, has been the pioneer of motorsports in India. With over 40 years of racing heritage, we have consistently dominated the tracks, winning unmatched championships. This intense experience on the track fuels the engineering of our production vehicles. The TVS Apache series and the TVS Ntorq are direct descendants of this racing pedigree, bringing track-tuned performance to your daily ride.</p>
             </div>
-
             <h3>Innovation & Technology</h3>
             <p>At TVS, innovation is a way of life. From launching India's first 2-seater moped to introducing the revolutionary <strong>RT-Fi (Race Tuned Fuel Injection)</strong> technology, we have always been at the forefront of engineering excellence. Our collaboration with BMW Motorrad has resulted in world-class 310cc motorcycles that are celebrated globally. Furthermore, our leap into the future with the <strong>TVS iQube</strong> Electric showcases our commitment to a greener, sustainable future without compromising on performance.</p>
-
             <h3>Tirumala TVS: Your Trusted Partner in Bangalore</h3>
             <p><strong>Tirumala TVS</strong> is proud to represent this glorious legacy in Bidarahalli, Bangalore. As an authorized main dealer, we do not just sell vehicles; we build relationships. Our state-of-the-art showroom allows you to experience the full range of TVS vehicles in a comfortable environment. Our service center is staffed with factory-trained technicians who treat your vehicle with the care it deserves, using only genuine TVS parts.</p>
-
             <p>We understand that buying a two-wheeler is a significant milestone for every Indian family. Whether you are a college student looking for the thrill of an Apache, a family man seeking the comfort of a Jupiter, or a professional switching to the smart efficiency of the iQube, Tirumala TVS is here to guide you. We promise transparent pricing, quick finance options, and an after-sales experience that keeps you smiling for miles.</p>
-
             <div class="stat-grid">
                 <div class="stat-box">
                     <div class="stat-number">100+</div>
@@ -90,7 +109,6 @@
                     <div>Roadside Assist</div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -117,6 +135,53 @@
         function toggleMenu() {
             document.getElementById("navMenu").classList.toggle("active");
         }
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                if (!sessionStorage.getItem('popupShown')) {
+                    document.getElementById('campaignPopup').style.display = 'flex';
+                    sessionStorage.setItem('popupShown', 'true');
+                }
+            }, 2000);
+        });
+        function closePopup() {
+            document.getElementById('campaignPopup').style.display = 'none';
+        }
     </script>
+    
+    <div id="campaignPopup" class="popup-overlay" style="display:none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <div class="popup-header">
+                <h2>Tirumala TVS</h2>
+                <p>FESTIVE MEGA OFFER</p>
+            </div>
+            <div class="popup-body">
+                <div class="festivals">Christmas • New Year • Sankranti • Shivaratri</div>
+                <div class="main-offer">
+                    <div class="cashback"><span class="icon">💰</span> ₹2,000 CASHBACK <br><small>On Every Purchase</small></div>
+                </div>
+                <div class="offer-grid">
+                    <ul class="features-list">
+                        <li>✅ Low Down Payment</li>
+                        <li>✅ Low Interest Rates</li>
+                        <li>✅ Spot Finance / Delivery</li>
+                        <li>✅ <strong>Accessories 60% OFF</strong></li>
+                    </ul>
+                    <div class="service-box">
+                        <h3>SERVICE OFFER</h3>
+                        <p>🛠️ <strong>10% OFF</strong> on Labour</p>
+                        <p>⚙️ <strong>5% OFF</strong> on Spares</p>
+                        <small>Pickup & Drop Available</small>
+                    </div>
+                </div>
+                <div class="free-gift-bar">FREE HELMET ⛑️ & BODY COVER 🏍️</div>
+                <div class="contact-info">
+                    <p><strong>Sales:</strong> 99649 46512</p>
+                    <p><strong>Service:</strong> 99649 46511 / 99452 34956</p>
+                </div>
+                <a href="https://wa.me/919964946512?text=I%20am%20interested%20in%20the%20Festival%20Offer" class="btn btn-primary btn-popup">Claim Offer Now</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
